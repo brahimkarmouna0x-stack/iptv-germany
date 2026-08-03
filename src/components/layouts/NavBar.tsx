@@ -145,7 +145,7 @@ const NavBar = () => {
 
         <nav
           className="hidden lg:flex flex-1 items-center justify-center gap-4 xl:gap-6 2xl:gap-8"
-          aria-label="Hoofdnavigatie"
+          aria-label="Hauptnavigation"
         >
           {NAV_LINKS.map((link) => {
             const isActive = activeLink === link.href;
@@ -178,14 +178,14 @@ const NavBar = () => {
             type="button"
             className="hidden lg:inline-flex whitespace-nowrap btn-shine items-center justify-center px-5 py-2.5 rounded-full bg-rouge-500 text-blanc-50 text-xs font-black uppercase tracking-[0.12em] shadow-lg shadow-rouge-500/20 hover:bg-rouge-600 active:scale-[0.98] transition-all duration-200"
           >
-            Kies een abonnement
+            Abonnement wählen
           </button>
         </div>
         <div className="flex items-center gap-2 sm:gap-3">
           <button
             ref={menuToggleRef}
             type="button"
-            aria-label={menuOpen ? "Menu sluiten" : "Menu openen"}
+            aria-label={menuOpen ? "Menü schließen" : "Menü öffnen"}
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
             onClick={() => setMenuOpen((open) => !open)}
@@ -201,14 +201,14 @@ const NavBar = () => {
         ref={mobileMenuRef}
         role="dialog"
         aria-modal="true"
-        aria-label="Navigatiemenu"
+        aria-label="Navigationsmenü"
         className={`lg:hidden overflow-hidden border-t border-blanc-800/20 bg-france-950/98 backdrop-blur-xl transition-[max-height,opacity] duration-300 ${
           menuOpen ? "max-h-[520px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <nav
           className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-4 sm:px-6"
-          aria-label="Mobiele navigatie"
+          aria-label="Mobile Navigation"
         >
           {NAV_LINKS.map((link) => {
             const isActive = activeLink === link.href;
@@ -233,7 +233,7 @@ const NavBar = () => {
             onClick={goToPricing}
             className="mt-2 rounded-xl bg-rouge-500 px-4 py-3 text-sm font-black text-blanc-50 shadow-[0_12px_30px_rgba(220,38,38,0.18)] hover:bg-rouge-600 transition-colors"
           >
-            Kies een abonnement
+            Abonnement wählen
           </button>
         </nav>
       </div>

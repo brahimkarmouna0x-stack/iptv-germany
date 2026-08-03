@@ -56,33 +56,34 @@ const nextConfig: NextConfig = {
     },
   },
 
-  // Consolidate legacy /iptv-gids/* paths onto the primary root landing pages
-  // (canonical de-duplication — 308 so search engines transfer ranking signals).
+  // Consolidate legacy /iptv-ratgeber/* paths onto the primary root landing
+  // pages (canonical de-duplication — 308 so search engines transfer ranking
+  // signals).
   async redirects() {
     return [
       {
-        source: "/iptv-gids/iptv-nederland",
-        destination: "/iptv-nederland",
+        source: "/iptv-ratgeber/iptv-deutschland",
+        destination: "/iptv-deutschland",
         permanent: true,
       },
       {
-        source: "/iptv-gids/iptv-abonnement",
+        source: "/iptv-ratgeber/iptv-abonnement",
         destination: "/iptv-abonnement",
         permanent: true,
       },
       {
-        source: "/iptv-gids/iptv-smarters-pro",
+        source: "/iptv-ratgeber/iptv-smarters-pro",
         destination: "/iptv-smarters-pro",
         permanent: true,
       },
       {
-        source: "/iptv-gids/iptv-kopen",
-        destination: "/iptv-kopen",
+        source: "/iptv-ratgeber/iptv-kaufen",
+        destination: "/iptv-kaufen",
         permanent: true,
       },
       {
-        source: "/iptv-gids/iptv-aanbieder",
-        destination: "/iptv-aanbieder",
+        source: "/iptv-ratgeber/iptv-anbieter",
+        destination: "/iptv-anbieter",
         permanent: true,
       },
     ];

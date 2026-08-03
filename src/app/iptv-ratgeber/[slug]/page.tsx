@@ -35,19 +35,19 @@ export async function generateMetadata({
 
   if (!page) {
     return {
-      title: "Page introuvable | IPTV Smarter",
+      title: "Seite nicht gefunden | IPTV Germany",
       robots: { index: false, follow: false },
     };
   }
 
   const languages: Record<string, string> = {
-    "fr-NL": page.hreflang.nl,
-    "x-default": page.hreflang.nl,
+    "de-DE": page.hreflang.de,
+    "x-default": page.hreflang.de,
   };
   if (page.hreflang.en) languages["en"] = page.hreflang.en;
 
   return {
-    // `absolute` bypasses the root layout's "%s | IPTV Smarter" template
+    // `absolute` bypasses the root layout's "%s | IPTV Germany" template
     // so the brand isn't appended twice (metaTitle already includes it).
     title: { absolute: page.metaTitle },
     description: page.metaDescription,
@@ -58,10 +58,10 @@ export async function generateMetadata({
     openGraph: {
       type: page.structuredData === "Product" ? "website" : "article",
       url: page.canonicalUrl,
-      siteName: "IPTV Smarter",
+      siteName: "IPTV Germany",
       title: page.metaTitle,
       description: page.metaDescription,
-      locale: "fr_NL",
+      locale: "de_DE",
       images: [page.ogImage],
     },
     twitter: {
@@ -98,11 +98,11 @@ export default async function IptvGermanSlugPage({ params }: PageProps) {
       <div className="border-t border-blanc-50/5 py-12">
         <div className="mx-auto max-w-7xl px-4 text-center">
           <Link
-            href="/iptv-gids"
+            href="/iptv-ratgeber"
             className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-blanc-500 transition-colors hover:text-blanc-50"
           >
             <ArrowLeft size={16} aria-hidden="true" />
-            Retour à la base de connaissances
+            Zurück zur Wissensdatenbank
           </Link>
         </div>
       </div>

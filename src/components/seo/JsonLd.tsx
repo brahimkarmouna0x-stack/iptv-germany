@@ -38,7 +38,7 @@ function buildPrimarySchema(page: IPTVPage): Record<string, unknown> {
     name: page.metaTitle,
     description: page.metaDescription,
     url: page.canonicalUrl,
-    // Match the document language (site is French/fr-NL; a few pages are English).
+    // Match the document language (site is German/de-DE; a few pages are English).
     inLanguage: page.lang === "en" ? "en" : SITE.hreflang,
     image: page.ogImage,
   };

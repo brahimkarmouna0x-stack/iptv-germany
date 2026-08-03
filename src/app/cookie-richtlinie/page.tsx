@@ -3,10 +3,10 @@ import { getPhoneNumber, whatsappUrl } from "@/lib/settings";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Cookiebeleid — Transparant gebruik van cookies | IPTV Smarter",
+  title: "Cookie-Richtlinie — Transparenter Umgang mit Cookies | IPTV Germany",
   description:
-    "Ontdek hoe IPTV Smarter cookies gebruikt voor noodzakelijke functies, analyses en voorkeuren. Cookiebeleid conform de AVG.",
-  path: "/cookie-policy",
+    "Erfahren Sie, wie IPTV Germany Cookies für notwendige Funktionen, Analysen und Präferenzen verwendet. Cookie-Richtlinie gemäß der DSGVO.",
+  path: "/cookie-richtlinie",
 });
 
 const CookiePolicyPage = async () => {
@@ -17,49 +17,49 @@ const CookiePolicyPage = async () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16 animate-fade-in">
           <span className="inline-block px-4 py-1.5 rounded-full glass text-france-400 text-sm font-bold mb-4 uppercase tracking-wider glow-gold">
-            Juridische informatie
+            Rechtliche Informationen
           </span>
           <h1 className="font-display font-black text-4xl sm:text-6xl mb-6 text-blanc-50 leading-tight">
-            Cookiebeleid
+            Cookie-Richtlinie
           </h1>
           <p className="text-blanc-400 text-lg">
-            Laatst bijgewerkt: 6 mei 2026
+            Zuletzt aktualisiert: 6. Mai 2026
           </p>
         </div>
 
         <div className="glass rounded-2xl p-5 sm:p-8 lg:p-12 space-y-10 sm:space-y-12 animate-slide-up">
           <section>
             <h2 className="text-2xl font-bold text-blanc-50 mb-4">
-              Wat zijn cookies?
+              Was sind Cookies?
             </h2>
             <p className="text-blanc-300 leading-relaxed">
-              Cookies zijn kleine tekstbestanden die op uw
-              apparaat worden opgeslagen wanneer u een website bezoekt. Ze helpen de site om
-              uw apparaat te herkennen en informatie over
-              uw bezoek te onthouden, zoals uw voorkeurstaal en andere instellingen.
+              Cookies sind kleine Textdateien, die auf Ihrem
+              Gerät gespeichert werden, wenn Sie eine Website besuchen. Sie helfen der Seite,
+              Ihr Gerät wiederzuerkennen und Informationen über
+              Ihren Besuch zu speichern, etwa Ihre bevorzugte Sprache und andere Einstellungen.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-blanc-50 mb-4">
-              Hoe wij cookies gebruiken
+              Wie wir Cookies verwenden
             </h2>
             <p className="text-blanc-300 mb-6">
-              Wij gebruiken cookies voor de volgende doeleinden:
+              Wir verwenden Cookies für folgende Zwecke:
             </p>
             <div className="grid gap-4">
               {[
                 {
-                  title: "Noodzakelijke cookies",
-                  desc: "Essentieel voor de juiste werking van de site, zoals sessiebeheer en beveiliging.",
+                  title: "Notwendige Cookies",
+                  desc: "Unverzichtbar für die einwandfreie Funktion der Seite, etwa Sitzungsverwaltung und Sicherheit.",
                 },
                 {
-                  title: "Voorkeurscookies",
-                  desc: "Onthouden uw instellingen en keuzes voor een meer gepersonaliseerde ervaring.",
+                  title: "Präferenz-Cookies",
+                  desc: "Speichern Ihre Einstellungen und Auswahl für ein persönlicheres Erlebnis.",
                 },
                 {
-                  title: "Analytische cookies",
-                  desc: "Helpen ons te begrijpen hoe bezoekers onze site gebruiken door anonieme gegevens te verzamelen.",
+                  title: "Analyse-Cookies",
+                  desc: "Helfen uns zu verstehen, wie Besucher unsere Seite nutzen, indem sie anonyme Daten erheben.",
                 },
               ].map((cookie, index) => (
                 <div
@@ -77,23 +77,23 @@ const CookiePolicyPage = async () => {
 
           <section>
             <h2 className="text-2xl font-bold text-blanc-50 mb-4">
-              Cookies beheren
+              Cookies verwalten
             </h2>
             <p className="text-blanc-300 leading-relaxed">
-              De meeste webbrowsers staan u toe cookies te beheren
-              via hun instellingen. U kunt ervoor kiezen om alle cookies te blokkeren
-              of alleen die van derden. Houd er rekening mee dat het uitschakelen van essentiële cookies
-              de werking van onze dienst kan beïnvloeden.
+              Die meisten Webbrowser erlauben Ihnen, Cookies
+              über ihre Einstellungen zu verwalten. Sie können alle Cookies blockieren
+              oder nur die von Drittanbietern. Bitte beachten Sie, dass das Deaktivieren notwendiger Cookies
+              die Funktion unseres Dienstes beeinträchtigen kann.
             </p>
           </section>
 
           <section className="pt-8 border-t border-blanc-50/10">
             <h2 className="text-xl font-bold text-blanc-50 mb-4">
-              Neem contact op
+              Kontakt aufnehmen
             </h2>
             <p className="text-blanc-300">
-              Hebt u vragen over ons gebruik van cookies?
-              Neem contact op via{" "}
+              Haben Sie Fragen zu unserer Verwendung von Cookies?
+              Kontaktieren Sie uns über{" "}
               <a
                 href={whatsapp}
                 target="_blank"

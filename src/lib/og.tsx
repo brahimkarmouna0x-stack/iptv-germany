@@ -3,17 +3,17 @@
 /**
  * Shared 1200×630 Open Graph image generator. Used by the per-route
  * `opengraph-image.tsx` files so every key page ships a unique, on-brand
- * social card (Dutch-flag palette, high-contrast title for CTR).
+ * social card (German-flag palette, high-contrast title for CTR).
  */
 export const OG_SIZE = { width: 1200, height: 630 } as const;
 export const OG_CONTENT_TYPE = "image/png" as const;
 
-const BADGES = ["31.000+ zenders", "Films & series op aanvraag", "4K / 8K", "Gratis proefperiode"];
+const BADGES = ["31.000+ Sender", "Filme & Serien auf Abruf", "4K / 8K", "Kostenlose Testphase"];
 
 export function renderOgImage({
   title,
   subtitle,
-  eyebrow = "Premium IPTV · Nederland",
+  eyebrow = "Premium IPTV · Deutschland",
 }: {
   title: string;
   subtitle: string;
@@ -33,7 +33,7 @@ export function renderOgImage({
           position: "relative",
         }}
       >
-        {/* Dutch-flag accent bar */}
+        {/* German-flag accent bar */}
         <div
           style={{
             position: "absolute",
@@ -44,9 +44,9 @@ export function renderOgImage({
             display: "flex",
           }}
         >
-          <div style={{ flex: 1, background: "#AE1C28" }} />
-          <div style={{ flex: 1, background: "#FFFFFF" }} />
-          <div style={{ flex: 1, background: "#21468B" }} />
+          <div style={{ flex: 1, background: "#000000" }} />
+          <div style={{ flex: 1, background: "#DD0000" }} />
+          <div style={{ flex: 1, background: "#FFCE00" }} />
         </div>
 
         {/* Brand */}
@@ -56,7 +56,7 @@ export function renderOgImage({
               width: "60px",
               height: "60px",
               borderRadius: "16px",
-              background: "#AE1C28",
+              background: "#DD0000",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -68,7 +68,7 @@ export function renderOgImage({
             ▶
           </div>
           <div style={{ color: "#fff", fontSize: "34px", fontWeight: 800 }}>
-            IPTV Smarter
+            IPTV Germany
           </div>
         </div>
 

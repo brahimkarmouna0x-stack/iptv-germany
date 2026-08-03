@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
+import { SITE } from "@/lib/seo";
 
-const baseUrl = "https://iptvsmarter.nl";
+const baseUrl = SITE.url;
 
 export default function robots(): MetadataRoute.Robots {
   return {

@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 
 // ─── Site configuration ────────────────────────────────────────────────────
 export const SITE = {
-  name: "IPTV Smarter",
-  url: "https://iptvsmarter.nl",
-  locale: "nl_NL",
-  localeAlt: "nl_NL",
-  /** BCP-47 language tag for hreflang / content-language (Dutch, Netherlands). */
-  hreflang: "nl-NL",
+  name: "IPTV Germany",
+  url: "https://iptv-germany.com",
+  locale: "de_DE",
+  localeAlt: "de_DE",
+  /** BCP-47 language tag for hreflang / content-language (German, Germany). */
+  hreflang: "de-DE",
   /** HTML lang attribute value. */
-  lang: "nl",
+  lang: "de",
   description:
-    "Premium IPTV in Nederland: meer dan 31.000 TV-zenders, films en series in 4K, zonder onderbrekingen. Ontdek het beste IPTV-abonnement bij IPTV Smarter.",
+    "Premium IPTV in Deutschland: über 31.000 TV-Sender, Filme und Serien in 4K, ohne Unterbrechungen. Entdecken Sie das beste IPTV-Abonnement bei IPTV Germany.",
   twitterHandle: undefined as string | undefined,
 } as const;
 
@@ -27,7 +27,7 @@ export const OG_IMAGE = {
   url: `${SITE.url}/images/logo-iptv-streaming.png`,
   width: 1200,
   height: 630,
-  alt: "IPTV Smarter – Premium IPTV-abonnement in Nederland",
+  alt: "IPTV Germany – Premium IPTV-Abonnement in Deutschland",
 };
 
 // ─── Build canonical + alternate metadata ───────────────────────────────────

@@ -1,8 +1,8 @@
 {
-  "name": "IPTV Smarter",
-  "short_name": "IPTV Smarter",
-  "description": "Onderbroken 4K streaming met meer dan 31.000 zenders. Ontdek het beste premium IPTV-abonnement in Nederland bij IPTV Smarter.",
-  "lang": "nl-NL",
+  "name": "IPTV Germany",
+  "short_name": "IPTV Germany",
+  "description": "Ununterbrochenes 4K-Streaming mit über 31.000 Sendern. Entdecken Sie das beste Premium-IPTV-Abonnement in Deutschland bei IPTV Germany.",
+  "lang": "de-DE",
   "dir": "ltr",
   "start_url": "/",
   "display": "standalone",

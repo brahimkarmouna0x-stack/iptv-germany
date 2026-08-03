@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Logo from "../shared/Logo";
 import KeywordCloud from "../shared/KeywordCloud";
-import { productsFooterLinks, supportFooterLinks } from "@/constants/data";
+import { productsFooterLinks, supportFooterLinks, legalFooterLinks } from "@/constants/data";
 import { MessageCircle } from "lucide-react";
 import { getPhoneNumber, whatsappUrl } from "@/lib/settings";
 
@@ -22,7 +22,7 @@ const Footer = async () => {
               <Logo className="h-16 w-auto sm:h-20 lg:h-24" />
             </div>
             <p className="text-blanc-400 text-sm leading-relaxed mb-8 max-w-sm mt-6">
-              De ultieme premium IPTV-ervaring. Meer dan 31.000 zenders in 4K Ultra HD zonder onderbreking. Onbeperkt entertainment.
+              Das ultimative Premium-IPTV-Erlebnis. Über 31.000 Sender in 4K Ultra HD ohne Unterbrechung. Unbegrenzte Unterhaltung.
             </p>
           </div>
 
@@ -39,11 +39,11 @@ const Footer = async () => {
                 className="text-emerald-300"
                 aria-hidden="true"
               />
-              WhatsApp Ondersteuning
+              WhatsApp-Support
             </h2>
             <p className="text-sm text-blanc-400 mb-6 leading-relaxed">
-              Vragen over installatie, activering of abonnementen?
-              Chat direct met ons team.
+              Fragen zu Installation, Aktivierung oder Abonnements?
+              Chatten Sie direkt mit unserem Team.
             </p>
             <a
               href={whatsapp}
@@ -52,7 +52,7 @@ const Footer = async () => {
               className="inline-flex w-full max-w-sm items-center justify-center gap-2 rounded-xl bg-emerald-400 px-5 py-3 text-sm font-black text-blanc-950 shadow-[0_0_15px_rgba(16,185,129,0.25)] transition-colors hover:bg-emerald-300"
             >
               <MessageCircle size={16} aria-hidden="true" />
-              Chat op WhatsApp
+              Auf WhatsApp chatten
             </a>
           </div>
         </div>
@@ -62,17 +62,14 @@ const Footer = async () => {
           <p className="text-sm text-blanc-500">
             &copy; 2026{" "}
             <span className="font-display font-black text-blanc-50">
-              IPTV Smarter
+              IPTV Germany
             </span>
-            . Alle rechten voorbehouden.
+            . Alle Rechte vorbehalten.
           </p>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2">
-            <FooterBottomLink label="Privacybeleid" href="/privacy-policy" />
-            <FooterBottomLink
-              label="Algemene voorwaarden"
-              href="/terms-of-service"
-            />
-            <FooterBottomLink label="Cookiebeleid" href="/cookie-policy" />
+            {legalFooterLinks.map((link) => (
+              <FooterBottomLink key={link.href} label={link.label} href={link.href} />
+            ))}
           </div>
         </div>
       </div>
@@ -93,7 +90,7 @@ const ProductsLinks = () => {
   return (
     <div className="flex flex-col items-center sm:items-start">
       <h2 className="text-sm font-black uppercase tracking-widest text-blanc-50/50 mb-6">
-        Producten
+        Produkte
       </h2>
       <ul className="space-y-4">
         {productsFooterLinks.map((link, idx) => (
@@ -116,7 +113,7 @@ const SupportLinks = () => {
   return (
     <div className="flex flex-col items-center sm:items-start">
       <h2 className="text-sm font-black uppercase tracking-widest text-blanc-50/50 mb-6">
-        Ondersteuning
+        Support
       </h2>
       <ul className="space-y-4">
         {supportFooterLinks.map((link, idx) => (

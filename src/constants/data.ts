@@ -1,4 +1,4 @@
-﻿import { Link } from ".";
+import { Link } from ".";
 import {
   getIptvGermanPath,
   IPTV_GERMAN_PAGES,
@@ -6,114 +6,133 @@ import {
 
 export const NAV_LINKS: Link[] = [
   {
-    label: "IPTV Smarter",
+    label: "IPTV Germany",
     href: "/",
   },
   {
-    label: "Prijzen",
+    label: "Preise",
     href: "#prijzen",
   },
   {
-    label: "IPTV kopen",
-    href: "/iptv-kopen",
+    label: "IPTV kaufen",
+    href: "/iptv-kaufen",
   },
   {
     label: "Abonnement",
     href: "/iptv-abonnement",
   },
   {
-    label: "Aanbieder",
-    href: "/iptv-aanbieder",
+    label: "Anbieter",
+    href: "/iptv-anbieter",
   },
   {
-    label: "IPTV Nederland",
-    href: "/iptv-nederland",
+    label: "IPTV Deutschland",
+    href: "/iptv-deutschland",
   },
   {
     label: "IPTV Smarters Pro",
     href: "/iptv-smarters-pro",
   },
   {
-    label: "Contact",
+    label: "Kontakt",
     href: "/support/contact",
   },
 ];
 export const productsFooterLinks: Link[] = [
   {
-    label: "Voordelen",
+    label: "Vorteile",
     href: "/#voordelen",
   },
   {
-    label: "Prijzen",
+    label: "Preise",
     href: "/#prijzen",
   },
   {
-    label: "Zenders",
+    label: "Sender",
     href: "/#kanalen",
   },
   {
-    label: "Pakketten",
+    label: "Pakete",
     href: "/#pakketten",
   },
 ];
 
 export const supportFooterLinks: Link[] = [
   {
-    label: "Helpcentrum",
+    label: "Hilfe-Center",
     href: "/support",
   },
   {
-    label: "Installatiegidsen",
+    label: "Installationsanleitungen",
     href: "/support/guides",
   },
   {
-    label: "Contact",
+    label: "Kontakt",
     href: "/support/contact",
   },
   {
-    label: "Systeemstatus",
+    label: "Systemstatus",
     href: "/support/status",
   },
   {
-    label: "Over ons",
-    href: "/over-ons",
+    label: "Über uns",
+    href: "/ueber-uns",
+  },
+];
+
+export const legalFooterLinks: Link[] = [
+  {
+    label: "Impressum",
+    href: "/impressum",
+  },
+  {
+    label: "Datenschutz",
+    href: "/datenschutz",
+  },
+  {
+    label: "AGB",
+    href: "/agb",
+  },
+  {
+    label: "Cookie-Richtlinie",
+    href: "/cookie-richtlinie",
   },
 ];
 
 export const categories = [
   {
     name: "Sport",
-    count: "Honderden sportzenders",
+    count: "Hunderte Sportsender",
     image:
       "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1200&q=80&auto=format&fit=crop",
   },
   {
-    name: "Films",
-    count: "Duizenden films",
+    name: "Filme",
+    count: "Tausende Filme",
     image:
       "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1200&q=82&auto=format&fit=crop&crop=entropy",
   },
   {
-    name: "Series",
-    count: "Duizenden series",
+    name: "Serien",
+    count: "Tausende Serien",
     image:
       "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=1200&q=82&auto=format&fit=crop&crop=entropy",
   },
   {
-    name: "Documentaires",
-    count: "Grote selectie",
+    name: "Dokumentationen",
+    count: "Große Auswahl",
     image:
       "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=1200&q=82&auto=format&fit=crop&crop=entropy",
   },
   {
-    name: "Kinderzenders",
-    count: "Veilig en gevarieerd",
+    name: "Kindersender",
+    count: "Sicher und vielfältig",
     image:
       "https://images.unsplash.com/photo-1607453998774-d533f65dac99?w=1200&q=82&auto=format&fit=crop&crop=entropy",
   },
   {
-    name: "Internationale zenders",
-    count: "190+ landen",
+    name: "Internationale Sender",
+    count: "190+ Länder",
     image:
       "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=1200&q=82&auto=format&fit=crop&crop=entropy",
   },
@@ -121,54 +140,54 @@ export const categories = [
 
 export const features = [
   {
-    title: "Ultra HD 4K streaming",
+    title: "Ultra-HD-4K-Streaming",
     description:
-      "Haarscherpe 4K-resolutie met HDR-ondersteuning. Ervaar elk beeld met adembenemende details.",
+      "Gestochen scharfe 4K-Auflösung mit HDR-Unterstützung. Erleben Sie jedes Bild in atemberaubendem Detail.",
     icon: "tv",
     color: "text-france-400",
     gradient: "from-france-600/30 to-france-400/15",
     hoverBorder: "hover:border-france-500/40",
   },
   {
-    title: "Supersnelle servers",
+    title: "Blitzschnelle Server",
     description:
-      "Wereldwijd CDN-netwerk met 99,9% uptime. De inhoud wordt gestreamd vanaf de dichtstbijzijnde server.",
+      "Weltweites CDN-Netzwerk mit 99,9 % Verfügbarkeit. Der Inhalt wird vom nächstgelegenen Server gestreamt.",
     icon: "server",
     color: "text-rouge-400",
     gradient: "from-rouge-600/30 to-rouge-500/15",
     hoverBorder: "hover:border-rouge-500/40",
   },
   {
-    title: "Geen onderbrekingen",
+    title: "Keine Unterbrechungen",
     description:
-      "Adaptieve streamingtechnologie zorgt voor vloeiende weergave, zelfs bij een tragere internetverbinding.",
+      "Adaptive Streamingtechnologie sorgt für eine flüssige Wiedergabe, selbst bei langsamerer Internetverbindung.",
     icon: "bolt",
     color: "text-france-400",
     gradient: "from-france-600/30 to-france-400/15",
     hoverBorder: "hover:border-france-500/40",
   },
   {
-    title: "Multi-apparaten",
+    title: "Mehrere Geräte",
     description:
-      "Kijk op Smart TV, smartphone, tablet of laptop. Naadloze synchronisatie tussen al je apparaten.",
+      "Schauen Sie auf Smart-TV, Smartphone, Tablet oder Laptop. Nahtlose Synchronisierung zwischen all Ihren Geräten.",
     icon: "mobile",
     color: "text-rouge-400",
     gradient: "from-rouge-600/30 to-rouge-500/15",
     hoverBorder: "hover:border-rouge-500/40",
   },
   {
-    title: "Zenders van over de hele wereld",
+    title: "Sender aus aller Welt",
     description:
-      "Toegang tot content uit meer dan 190 landen. Lokale en internationale zenders verzameld op één plek.",
+      "Zugriff auf Inhalte aus mehr als 190 Ländern. Lokale und internationale Sender an einem Ort gebündelt.",
     icon: "globe",
     color: "text-france-400",
     gradient: "from-france-600/30 to-france-400/15",
     hoverBorder: "hover:border-france-500/40",
   },
   {
-    title: "Klantenservice 24/7",
+    title: "Kundenservice rund um die Uhr",
     description:
-      "Expert-ondersteuning dag en nacht. Gemiddelde responstijd van minder dan 5 minuten.",
+      "Fachkundiger Support Tag und Nacht. Durchschnittliche Reaktionszeit von unter 5 Minuten.",
     icon: "headset",
     color: "text-rouge-400",
     gradient: "from-rouge-600/30 to-rouge-500/15",
@@ -178,114 +197,114 @@ export const features = [
 
 export const faqs = [
   {
-    question: "Wat is een IPTV-abonnement precies?",
+    question: "Was ist ein IPTV-Abonnement genau?",
     answer:
-      "Een IPTV-abonnement (Internet Protocol Television) geeft je toegang tot live tv-zenders, films en series via je internetverbinding, in plaats van via de traditionele kabel of schotel. Met IPTV Smarter kijk je op elk apparaat, waar je ook bent, met meer dan 31.000 zenders en een uitgebreide VOD-bibliotheek in 4K.",
+      "Ein IPTV-Abonnement (Internet Protocol Television) gibt Ihnen über Ihre Internetverbindung Zugriff auf Live-TV-Sender, Filme und Serien, anstatt über klassisches Kabel- oder Satellitenfernsehen. Mit IPTV Germany schauen Sie auf jedem Gerät, egal wo Sie sind, mit über 31.000 Sendern und einer umfangreichen VOD-Bibliothek in 4K.",
   },
   {
-    question: "Welke apparaten worden ondersteund?",
+    question: "Welche Geräte werden unterstützt?",
     answer:
-      "IPTV Smarter werkt op vrijwel elk modern apparaat: Smart TV (Samsung, LG, Sony), smartphones en tablets Android, iPhone en iPad, computers met Windows en Mac, Amazon Fire TV Stick, Android TV-box, Chromecast en MAG-apparaten. We ondersteunen ook populaire IPTV-apps zoals IPTV Smarters Pro, TiviMate en VLC.",
+      "IPTV Germany funktioniert auf praktisch jedem modernen Gerät: Smart-TV (Samsung, LG, Sony), Android-Smartphones und -Tablets, iPhone und iPad, Windows- und Mac-Computer, Amazon Fire TV Stick, Android-TV-Box, Chromecast und MAG-Geräte. Wir unterstützen zudem beliebte IPTV-Apps wie IPTV Smarters Pro, TiviMate und VLC.",
   },
   {
-    question: "Hoe stel ik mijn IPTV-abonnement in?",
+    question: "Wie richte ich mein IPTV-Abonnement ein?",
     answer:
-      "De installatie duurt minder dan 5 minuten. Na je bestelling ontvang je direct een e-mail met je M3U-afspeellijst-URL en je Xtream Codes API-invoergegevens. Voer deze gegevens in bij je favoriete IPTV-app en je kunt meteen kijken. Ons supportteam begeleidt je 24/7 bij de installatie.",
+      "Die Einrichtung dauert weniger als 5 Minuten. Nach Ihrer Bestellung erhalten Sie sofort eine E-Mail mit Ihrer M3U-Playlist-URL und Ihren Xtream-Codes-API-Zugangsdaten. Geben Sie diese Daten in Ihrer bevorzugten IPTV-App ein und Sie können sofort loslegen. Unser Support-Team begleitet Sie rund um die Uhr bei der Einrichtung.",
   },
   {
-    question: "Is een gratis proefperiode beschikbaar?",
+    question: "Gibt es eine kostenlose Testphase?",
     answer:
-      "Ja! We bieden een gratis IPTV-proefperiode zodat je onze dienst kunt uitproberen voordat je een beslissing neemt. De proefperiode geeft volledige toegang tot alle zenders en VOD-content. Neem contact op met ons supportteam via WhatsApp om je gratis proefperiode aan te vragen.",
+      "Ja! Wir bieten eine kostenlose IPTV-Testphase an, damit Sie unseren Dienst ausprobieren können, bevor Sie sich entscheiden. Die Testphase gewährt vollen Zugriff auf alle Sender und VOD-Inhalte. Kontaktieren Sie unser Support-Team über WhatsApp, um Ihre kostenlose Testphase anzufragen.",
   },
   {
-    question: "Kan ik tegelijkertijd op meerdere apparaten kijken?",
+    question: "Kann ich gleichzeitig auf mehreren Geräten schauen?",
     answer:
-      "Ja! Afhankelijk van je abonnement kun je tegelijk streamen op 1 tot 4 apparaten. Zo kan het hele gezin tegelijk verschillende programma's kijken op verschillende apparaten, zonder onderbrekingen.",
+      "Ja! Je nach Abonnement können Sie gleichzeitig auf 1 bis 4 Geräten streamen. So kann die ganze Familie zeitgleich unterschiedliche Programme auf verschiedenen Geräten ansehen, ohne Unterbrechungen.",
   },
   {
-    question: "Welke internetsnelheid heb ik nodig voor IPTV?",
+    question: "Welche Internetgeschwindigkeit benötige ich für IPTV?",
     answer:
-      "Voor optimale streaming raden we aan: SD-kwaliteit (10 Mbps), HD-kwaliteit (15 Mbps) en 4K Ultra HD (25 Mbps). Onze adaptieve streamingtechnologie past de kwaliteit automatisch aan je verbinding aan om onderbrekingen te voorkomen.",
+      "Für optimales Streaming empfehlen wir: SD-Qualität (10 Mbit/s), HD-Qualität (15 Mbit/s) und 4K Ultra HD (25 Mbit/s). Unsere adaptive Streamingtechnologie passt die Qualität automatisch an Ihre Verbindung an, um Unterbrechungen zu vermeiden.",
   },
   {
-    question: "Wat is de beste IPTV-aanbieder in Nederland?",
+    question: "Was ist der beste IPTV-Anbieter in Deutschland?",
     answer:
-      "De beste IPTV-aanbieder biedt een stabiele verbinding, 4K-kwaliteit, een ruime keuze aan Nederlandse, Franse en internationale zenders, snelle servers en betrouwbare klantenservice 24/7. IPTV Smarter combineert dit alles met concurrerende prijzen en een gratis proefperiode, waardoor we tot de beste premium IPTV-aanbieders van Nederland behoren.",
+      "Der beste IPTV-Anbieter bietet eine stabile Verbindung, 4K-Qualität, eine breite Auswahl an deutschen und internationalen Sendern, schnelle Server und einen zuverlässigen Kundenservice rund um die Uhr. IPTV Germany vereint all das mit wettbewerbsfähigen Preisen und einer kostenlosen Testphase und zählt damit zu den besten Premium-IPTV-Anbietern in Deutschland.",
   },
   {
-    question: "Is IPTV legaal in Nederland?",
+    question: "Ist IPTV in Deutschland legal?",
     answer:
-      "IPTV is een technologie voor televisiedistributie via internet. De legaliteit van een dienst hangt af van het bezit van de juiste uitzendrechten. We raden je aan om altijd een dienst te kiezen die over de vereiste rechten beschikt en de lokale regelgeving te controleren die op jouw situatie van toepassing is.",
+      "IPTV ist eine Technologie zur Fernsehübertragung über das Internet. Die Rechtmäßigkeit eines Dienstes hängt davon ab, ob die erforderlichen Senderechte vorliegen. Wir empfehlen Ihnen, stets einen Anbieter zu wählen, der über die notwendigen Rechte verfügt, und die für Sie geltenden lokalen Vorschriften zu prüfen.",
   },
   {
-    question: "Welke zenders zijn beschikbaar?",
+    question: "Welche Sender sind verfügbar?",
     answer:
-      "Ons aanbod omvat een ruime keuze aan populaire Nederlandse zenders (publieke, privé, entertainment en sport) evenals veel Franse zenders (generalistisch, publiek, film en sport). Daarnaast heb je toegang tot duizenden internationale zenders uit meer dan 190 landen. Het beschikbare aanbod kan variëren per regio.",
+      "Unser Angebot umfasst eine breite Auswahl beliebter deutscher Sender (öffentlich-rechtlich, privat, Entertainment und Sport) sowie zahlreiche internationale Sender. Zusätzlich haben Sie Zugriff auf Tausende Sender aus mehr als 190 Ländern. Das verfügbare Angebot kann je nach Region variieren.",
   },
   {
-    question: "Kan ik live sport kijken via IPTV?",
+    question: "Kann ich Live-Sport über IPTV schauen?",
     answer:
-      "Onze pakketten bieden een ruime keuze aan live sportzenders: voetbal, autosport, tennis en vele andere sporten, in HD en 4K. Het aanbod aan zenders kan variëren per regio en kan veranderen.",
+      "Unsere Pakete bieten eine große Auswahl an Live-Sportsendern: Fußball, Motorsport, Tennis und viele weitere Sportarten in HD und 4K. Das Senderangebot kann je nach Region variieren und sich ändern.",
   },
   {
-    question: "Wat is het verschil tussen IPTV en traditionele kabeltelevisie?",
+    question: "Was ist der Unterschied zwischen IPTV und klassischem Kabelfernsehen?",
     answer:
-      "Bij traditionele kabeltelevisie betaal je een vast bedrag via een coaxkabel of schotel. IPTV streamt de content via internet, waardoor je veel meer zenders, films en series krijgt voor een lagere prijs, zonder vast contract en bruikbaar op al je apparaten.",
+      "Beim klassischen Kabelfernsehen zahlen Sie einen festen Betrag über ein Koaxialkabel oder eine Satellitenschüssel. IPTV streamt die Inhalte über das Internet, wodurch Sie deutlich mehr Sender, Filme und Serien zu einem niedrigeren Preis erhalten, ganz ohne festen Vertrag und nutzbar auf all Ihren Geräten.",
   },
   {
-    question: "Hoe bestel ik een IPTV-abonnement?",
+    question: "Wie bestelle ich ein IPTV-Abonnement?",
     answer:
-      "Je kiest eenvoudig een pakket op onze prijzenpagina, selecteert het aantal verbindingen en de looptijd, en rondt de bestelling af. Vervolgens ontvang je je gegevens per e-mail. Een IPTV-abonnement bij IPTV Smarter bestel je in enkele minuten.",
+      "Wählen Sie einfach ein Paket auf unserer Preisseite, legen Sie die Anzahl der Verbindungen und die Laufzeit fest und schließen Sie die Bestellung ab. Anschließend erhalten Sie Ihre Zugangsdaten per E-Mail. Ein IPTV-Abonnement bei IPTV Germany bestellen Sie in wenigen Minuten.",
   },
   {
-    question: "Welke IPTV-speler of -app raden jullie aan?",
+    question: "Welchen IPTV-Player oder welche App empfehlt ihr?",
     answer:
-      "Populaire IPTV-spelers zijn IPTV Smarters Pro, TiviMate en VLC. Op Fire TV Stick werkt IPTV Smarters Pro uitstekend, terwijl TiviMate de favoriet is op Android TV. We voorzien je van een duidelijke handleiding voor elke app.",
+      "Beliebte IPTV-Player sind IPTV Smarters Pro, TiviMate und VLC. Auf dem Fire TV Stick funktioniert IPTV Smarters Pro hervorragend, während TiviMate der Favorit auf Android TV ist. Wir stellen Ihnen für jede App eine übersichtliche Anleitung zur Verfügung.",
   },
   {
-    question: "Ondersteunen jullie 4K- en 8K-streaming?",
+    question: "Unterstützt ihr 4K- und 8K-Streaming?",
     answer:
-      "Ja. Een groot deel van ons aanbod is beschikbaar in 4K Ultra HD met HDR, en een selectie aan content zelfs in 8K. Voor 4K raden we een minimale internetsnelheid van 25 Mbps aan voor een vloeiende ervaring zonder onderbrekingen.",
+      "Ja. Ein Großteil unseres Angebots ist in 4K Ultra HD mit HDR verfügbar, eine Auswahl an Inhalten sogar in 8K. Für 4K empfehlen wir eine Mindest-Internetgeschwindigkeit von 25 Mbit/s für ein flüssiges Erlebnis ohne Unterbrechungen.",
   },
   {
-    question: "Is IPTV Smarter een goedkoop IPTV-abonnement?",
+    question: "Ist IPTV Germany ein günstiges IPTV-Abonnement?",
     answer:
-      "We bieden premium IPTV aan tegen concurrerende prijzen. Hoe langer de gekozen looptijd, hoe lager de maandelijkse kosten. Zo bieden we een van de voordeligste en betrouwbaarste IPTV-abonnementen van Nederland, zonder compromissen op kwaliteit.",
+      "Wir bieten Premium-IPTV zu wettbewerbsfähigen Preisen an. Je länger die gewählte Laufzeit, desto niedriger die monatlichen Kosten. So bieten wir eines der günstigsten und zuverlässigsten IPTV-Abonnements in Deutschland, ohne Kompromisse bei der Qualität.",
   },
   {
-    question: "Hoe vergelijk ik verschillende IPTV-abonnementen?",
+    question: "Wie vergleiche ich verschiedene IPTV-Abonnements?",
     answer:
-      "Bij het vergelijken van IPTV-abonnementen let je op beeldkwaliteit (HD/4K), het aantal zenders, de stabiliteit van de servers, het aantal gelijktijdige verbindingen, de klantenservice en de prijs. Op onze prijzenpagina staat alles duidelijk naast elkaar.",
+      "Beim Vergleich von IPTV-Abonnements sollten Sie auf Bildqualität (HD/4K), die Anzahl der Sender, die Serverstabilität, die Anzahl gleichzeitiger Verbindungen, den Kundenservice und den Preis achten. Auf unserer Preisseite finden Sie alles übersichtlich gegenübergestellt.",
   },
   {
-    question: "Werkt IPTV ook met een VPN?",
+    question: "Funktioniert IPTV auch mit einem VPN?",
     answer:
-      "Ja, onze dienst werkt uitstekend met een VPN. Een VPN kan zelfs handig zijn als je internetprovider bepaalde streams beperkt. De streamingkwaliteit kan enigszins variëren afhankelijk van de gekozen VPN-server.",
+      "Ja, unser Dienst funktioniert hervorragend mit einem VPN. Ein VPN kann sogar nützlich sein, wenn Ihr Internetanbieter bestimmte Streams drosselt. Die Streamingqualität kann je nach gewähltem VPN-Server leicht variieren.",
   },
   {
-    question: "Heb ik ook toegang tot films en series op afroep (VOD)?",
+    question: "Habe ich auch Zugriff auf Filme und Serien auf Abruf (VOD)?",
     answer:
-      "Uiteraard. Naast live tv heb je toegang tot een uitgebreide VOD-bibliotheek met films en series, inclusief de nieuwste releases. Kijk wanneer het jou uitkomt, met ondertiteling indien beschikbaar.",
+      "Selbstverständlich. Neben Live-TV haben Sie Zugriff auf eine umfangreiche VOD-Bibliothek mit Filmen und Serien, einschließlich der neuesten Veröffentlichungen. Schauen Sie, wann es Ihnen passt, mit Untertiteln, sofern verfügbar.",
   },
   {
-    question: "Wat gebeurt er als een zender niet werkt?",
+    question: "Was passiert, wenn ein Sender nicht funktioniert?",
     answer:
-      "Onze servers worden 24/7 gemonitord en problemen worden doorgaans binnen enkele minuten opgelost. Werkt een zender toch niet? Neem contact op via WhatsApp of e-mail; ons supportteam is dag en nacht beschikbaar.",
+      "Unsere Server werden rund um die Uhr überwacht, und Probleme werden in der Regel innerhalb weniger Minuten behoben. Funktioniert ein Sender dennoch nicht? Kontaktieren Sie uns über WhatsApp oder E-Mail; unser Support-Team ist Tag und Nacht erreichbar.",
   },
   {
-    question: "Is mijn betaling veilig?",
+    question: "Ist meine Zahlung sicher?",
     answer:
-      "Alle betalingen lopen via een beveiligde verbinding. We behandelen je gegevens zorgvuldig en delen deze nooit met derden. Bekijk ons privacybeleid voor meer informatie over de bescherming van je gegevens.",
+      "Alle Zahlungen laufen über eine gesicherte Verbindung. Wir behandeln Ihre Daten sorgfältig und geben sie niemals an Dritte weiter. Weitere Informationen zum Schutz Ihrer Daten finden Sie in unserer Datenschutzerklärung.",
   },
   {
-    question: "Kan ik mijn IPTV-abonnement verlengen of upgraden?",
+    question: "Kann ich mein IPTV-Abonnement verlängern oder upgraden?",
     answer:
-      "Ja, je kunt je abonnement op elk moment verlengen of upgraden naar meer verbindingen of een langere looptijd. Neem contact op met ons supportteam en wij regelen de wijziging zonder onderbreking van je dienst.",
+      "Ja, Sie können Ihr Abonnement jederzeit verlängern oder auf mehr Verbindungen oder eine längere Laufzeit upgraden. Kontaktieren Sie unser Support-Team, und wir erledigen die Änderung ohne Unterbrechung Ihres Dienstes.",
   },
   {
-    question: "Hoe zeg ik mijn abonnement op?",
+    question: "Wie kündige ich mein Abonnement?",
     answer:
-      "Je kunt op elk moment opzeggen door contact op te nemen met ons supportteam. Er zijn geen opzegkosten of verborgen kosten. Je dienst blijft actief tot het einde van je huidige facturatieperiode.",
+      "Sie können jederzeit kündigen, indem Sie sich an unser Support-Team wenden. Es fallen keine Kündigungsgebühren oder versteckten Kosten an. Ihr Dienst bleibt bis zum Ende Ihres aktuellen Abrechnungszeitraums aktiv.",
   },
 ];
 export const FOOTER_PAGES: Link[] = IPTV_GERMAN_PAGES.map((page) => ({

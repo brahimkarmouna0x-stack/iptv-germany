@@ -11,9 +11,9 @@ import {
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Installatiegidsen IPTV — Smart TV, Android & iOS | IPTV Smarter",
+  title: "IPTV-Installationsanleitungen — Smart TV, Android & iOS | IPTV Germany",
   description:
-    "Stap-voor-stap installatiegidsen voor IPTV op Smart TV, Android, Firestick en Apple. Stream in minder dan 5 minuten met IPTV Smarter.",
+    "Schritt-für-Schritt-Installationsanleitungen für IPTV auf Smart TV, Android, Firestick und Apple. In weniger als 5 Minuten streamen mit IPTV Germany.",
   path: "/support/guides",
 });
 
@@ -29,10 +29,10 @@ const SetupGuidesPage = () => {
       Icon: MonitorPlay,
       apps: ["IPTV Smarters Pro", "TiviMate", "Nanomid"],
       steps: [
-        "Download de gewenste applicatie uit de app store van de TV.",
-        "Open de applicatie en kies voor « Login with Xtream Codes API ».",
-        "Vul de naam, gebruikersnaam, wachtwoord en URL in die u per e-mail heeft ontvangen.",
-        "Klik op « Gebruiker toevoegen » en wacht tot de content wordt geladen.",
+        "Laden Sie die gewünschte Anwendung aus dem App Store Ihres Fernsehers herunter.",
+        "Öffnen Sie die Anwendung und wählen Sie « Login with Xtream Codes API ».",
+        "Geben Sie den Namen, Benutzernamen, das Passwort und die URL ein, die Sie per E-Mail erhalten haben.",
+        "Klicken Sie auf « Benutzer hinzufügen » und warten Sie, bis die Inhalte geladen sind.",
       ],
     },
     {
@@ -40,10 +40,10 @@ const SetupGuidesPage = () => {
       Icon: Box,
       apps: ["Downloader", "IPTV Smarters", "Perfect Player"],
       steps: [
-        "Schakel « Apps van onbekende bronnen » in bij de instellingen van het apparaat.",
-        "Gebruik de « Downloader »-app om de gewenste IPTV-speler te installeren.",
-        "Voer uw inloggegevens in (M3U of Xtream Codes).",
-        "Start de applicatie opnieuw om de zenderlijst te vernieuwen.",
+        "Aktivieren Sie « Apps aus unbekannten Quellen » in den Geräteeinstellungen.",
+        "Verwenden Sie die App « Downloader », um den gewünschten IPTV-Player zu installieren.",
+        "Geben Sie Ihre Zugangsdaten ein (M3U oder Xtream Codes).",
+        "Starten Sie die Anwendung neu, um die Senderliste zu aktualisieren.",
       ],
     },
     {
@@ -51,10 +51,10 @@ const SetupGuidesPage = () => {
       Icon: Apple,
       apps: ["GSE Smart IPTV", "Cloud Stream", "iPlayTV"],
       steps: [
-        "Zoek naar « GSE Smart IPTV » in de App Store.",
-        "Ga naar « Remote Playlists » en klik op het « + »-symbool.",
-        "Kies voor « M3U-URL toevoegen » en plak uw unieke link.",
-        "Geef de playlist een naam en klik op « Toevoegen ».",
+        "Suchen Sie im App Store nach « GSE Smart IPTV ».",
+        "Gehen Sie zu « Remote Playlists » und tippen Sie auf das Symbol « + ».",
+        "Wählen Sie « M3U-URL hinzufügen » und fügen Sie Ihren persönlichen Link ein.",
+        "Geben Sie der Playlist einen Namen und tippen Sie auf « Hinzufügen ».",
       ],
     },
   ];
@@ -64,14 +64,14 @@ const SetupGuidesPage = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16 animate-fade-in">
           <span className="inline-block px-4 py-1.5 rounded-full glass text-france-400 text-sm font-bold mb-4 uppercase tracking-wider glow-gold">
-            Handleidingen
+            Anleitungen
           </span>
           <h1 className="font-display font-black text-4xl sm:text-6xl mb-6 text-blanc-50 leading-tight">
-            Installatie<span className="text-gradient">gidsen</span>
+            Installations<span className="text-gradient">anleitungen</span>
           </h1>
           <p className="text-blanc-400 text-base sm:text-lg max-w-2xl mx-auto">
-            Eenvoudige stap-voor-stap gidsen om op elk apparaat te streamen
-            in minder dan 5 minuten.
+            Einfache Schritt-für-Schritt-Anleitungen, um auf jedem Gerät in
+            weniger als 5 Minuten zu streamen.
           </p>
         </div>
 
@@ -92,7 +92,7 @@ const SetupGuidesPage = () => {
 
               <div className="mb-6">
                 <span className="text-xs font-bold text-blanc-500 uppercase tracking-widest block mb-3">
-                  Aanbevolen applicaties
+                  Empfohlene Anwendungen
                 </span>
                 <div className="flex flex-wrap gap-2">
                   {guide.apps.map((app, i) => (
@@ -120,7 +120,7 @@ const SetupGuidesPage = () => {
               </div>
 
               <Link href="/support/contact" className="w-full py-4 mt-10 rounded-xl glass text-blanc-50 text-sm font-bold hover:bg-blanc-50/10 transition-all border border-blanc-50/10 text-center block">
-                Hulp nodig?
+                Brauchen Sie Hilfe?
               </Link>
             </div>
           ))}
@@ -130,11 +130,12 @@ const SetupGuidesPage = () => {
         <div className="mt-14 sm:mt-20 glass rounded-2xl p-6 sm:p-8 md:p-12 border border-blanc-50/10 bg-linear-to-br from-blanc-50/5 to-transparent flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="flex-1">
               <h2 className="text-2xl sm:text-3xl font-bold text-blanc-50 mb-4">
-                Geeft u de voorkeur aan een video?
+                Bevorzugen Sie ein Video?
               </h2>
               <p className="text-blanc-400 mb-8">
-                Bekijk onze gedetailleerde videogidsen. Wij behandelen alles, van de
-                eerste installatie tot geavanceerd gebruik.
+                Sehen Sie sich unsere ausführlichen Videoanleitungen an. Wir
+                zeigen Ihnen alles von der ersten Installation bis zur
+                fortgeschrittenen Nutzung.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
@@ -142,13 +143,13 @@ const SetupGuidesPage = () => {
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-red-600 text-blanc-50 font-bold hover:bg-red-700 transition-all shadow-lg shadow-red-600/20"
                 >
                   <Play className="h-5 w-5 fill-current" aria-hidden="true" />
-                  Installatiehulp
+                  Installationshilfe
                 </Link>
                 <a
                   href="/support/contact"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl glass text-blanc-50 font-bold hover:bg-blanc-50/10 transition-all border border-blanc-50/10"
                 >
-                  Hulp nodig?
+                  Brauchen Sie Hilfe?
                 </a>
             </div>
           </div>

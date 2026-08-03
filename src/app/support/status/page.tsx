@@ -14,9 +14,9 @@ import {
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Systeemstatus — Beschikbaarheidsmonitor IPTV | IPTV Smarter",
+  title: "Systemstatus — Verfügbarkeitsmonitor IPTV | IPTV Germany",
   description:
-    "Realtime overzicht van de status en beschikbaarheid van alle streamingdiensten en serverclusters van IPTV Smarter. Alle systemen operationeel.",
+    "Echtzeit-Überblick über den Status und die Verfügbarkeit aller Streamingdienste und Servercluster von IPTV Germany. Alle Systeme betriebsbereit.",
   path: "/support/status",
 });
 
@@ -27,19 +27,19 @@ const StatusPage = () => {
     health: number;
     Icon: LucideIcon;
   }> = [
-    { name: "Wereldwijd streamingcluster", status: "Operationeel", health: 100, Icon: Server },
-    { name: "API Xtream Codes", status: "Operationeel", health: 100, Icon: Code2 },
-    { name: "Toegang tot VOD-bibliotheek", status: "Operationeel", health: 100, Icon: Film },
-    { name: "EPG-gegevensaanbieder", status: "Operationeel", health: 99, Icon: List },
-    { name: "Betalingsverwerking", status: "Operationeel", health: 100, Icon: CreditCard },
-    { name: "Klantenserviceportaal", status: "Operationeel", health: 100, Icon: Headphones }
+    { name: "Globaler Streaming-Cluster", status: "Betriebsbereit", health: 100, Icon: Server },
+    { name: "Xtream-Codes-API", status: "Betriebsbereit", health: 100, Icon: Code2 },
+    { name: "Zugriff auf VOD-Bibliothek", status: "Betriebsbereit", health: 100, Icon: Film },
+    { name: "EPG-Datenanbieter", status: "Betriebsbereit", health: 99, Icon: List },
+    { name: "Zahlungsabwicklung", status: "Betriebsbereit", health: 100, Icon: CreditCard },
+    { name: "Kundenserviceportal", status: "Betriebsbereit", health: 100, Icon: Headphones }
   ];
 
   const regions = [
-    { name: "Noord-Amerika", latency: "24ms", load: "34%" },
+    { name: "Nordamerika", latency: "24ms", load: "34%" },
     { name: "Europa", latency: "18ms", load: "42%" },
-    { name: "Midden-Oosten", latency: "45ms", load: "28%" },
-    { name: "Azië-Pacific", latency: "62ms", load: "31%" }
+    { name: "Naher Osten", latency: "45ms", load: "28%" },
+    { name: "Asien-Pazifik", latency: "62ms", load: "31%" }
   ];
 
   return (
@@ -48,13 +48,13 @@ const StatusPage = () => {
         <div className="text-center mb-12 sm:mb-16 animate-fade-in">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-emerald-400 text-sm font-bold mb-4 uppercase tracking-wider">
             <span className="h-2 w-2 rounded-full bg-emerald-400 animate-live-pulse" aria-hidden="true" />
-            Alle systemen operationeel
+            Alle Systeme betriebsbereit
           </span>
           <h1 className="font-display font-black text-4xl sm:text-6xl mb-6       text-blanc-50 leading-tight">
-            Systeem<span className="text-gradient">status</span>
+            System<span className="text-gradient">status</span>
           </h1>
           <p className="text-blanc-400 text-base sm:text-lg max-w-2xl mx-auto">
-            Realtime bewaking van onze wereldwijde infrastructuur en streamingdiensten.
+            Echtzeitüberwachung unserer weltweiten Infrastruktur und Streamingdienste.
           </p>
         </div>
 
@@ -71,13 +71,13 @@ const StatusPage = () => {
               <div className="absolute inset-0 bg-emerald-500/20 blur-xl rounded-full"></div>
             </div>
             <div>
-              <h2 className="text-xl sm:text-2xl font-bold       text-blanc-50 mb-1">Alle systemen operationeel</h2>
-              <p className="text-blanc-400 text-sm">Laatste controle: zojuist (automatische bijwerking)</p>
+              <h2 className="text-xl sm:text-2xl font-bold       text-blanc-50 mb-1">Alle Systeme betriebsbereit</h2>
+              <p className="text-blanc-400 text-sm">Letzte Prüfung: soeben (automatische Aktualisierung)</p>
             </div>
           </div>
           <div className="flex gap-4 w-full md:w-auto">
              <button className="px-6 py-3 rounded-xl glass       text-blanc-50 font-bold hover:bg-blanc-50/10 transition-all border border-blanc-50/10">
-                Status vernieuwen
+                Status aktualisieren
              </button>
           </div>
         </div>
@@ -85,7 +85,7 @@ const StatusPage = () => {
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Main Services */}
           <div className="lg:col-span-2 space-y-4 animate-slide-up">
-            <h2 className="text-xl font-bold       text-blanc-50 mb-6 ml-2">Hoofddiensten</h2>
+            <h2 className="text-xl font-bold       text-blanc-50 mb-6 ml-2">Hauptdienste</h2>
             {services.map((service, i) => (
               <div key={i} className="glass rounded-2xl p-5 sm:p-6 border border-blanc-50/5 hover:border-blanc-50/10 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-4 group">
                 <div className="flex items-center gap-4 min-w-0">
@@ -101,7 +101,7 @@ const StatusPage = () => {
                           style={{ width: `${service.health}%` }}
                         ></div>
                       </div>
-                      <span className="text-[10px] text-blanc-500">{service.health}% gezondheid</span>
+                      <span className="text-[10px] text-blanc-500">{service.health}% Zustand</span>
                     </div>
                   </div>
                 </div>
@@ -116,7 +116,7 @@ const StatusPage = () => {
           {/* Regional Status */}
           <div className="space-y-8 animate-slide-up">
             <div>
-              <h2 className="text-xl font-bold       text-blanc-50 mb-6 ml-2">Regionale knooppunten</h2>
+              <h2 className="text-xl font-bold       text-blanc-50 mb-6 ml-2">Regionale Knotenpunkte</h2>
               <div className="glass rounded-2xl p-6 sm:p-8 border border-blanc-50/5 space-y-8">
                 {regions.map((region, i) => (
                   <div key={i} className="space-y-3">
@@ -131,7 +131,7 @@ const StatusPage = () => {
                       ></div>
                     </div>
                     <div className="flex justify-between text-[10px] font-medium text-blanc-500">
-                      <span>Serverbelasting</span>
+                      <span>Serverauslastung</span>
                       <span>{region.load}</span>
                     </div>
                   </div>

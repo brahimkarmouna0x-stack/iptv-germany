@@ -18,36 +18,36 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://iptvsmarter.nl"),
-  applicationName: "IPTV Smarter",
+  metadataBase: new URL("https://iptv-germany.com"),
+  applicationName: "IPTV Germany",
   title: {
     default:
-      "IPTV Nederland 31.000+ Zenders 4K | Directe Activering | IPTV Smarter",
-    template: "%s | IPTV Smarter",
+      "IPTV Germany: 31.000+ Sender in 4K | Sofortige Aktivierung",
+    template: "%s | IPTV Germany",
   },
   description:
-    "Premium IPTV in Nederland: meer dan 31.000 TV-zenders, films en series in 4K, zonder onderbrekingen. Directe activering en snelle servers bij IPTV Smarter.",
+    "Premium IPTV in Deutschland: über 31.000 TV-Sender, Filme und Serien in 4K, ohne Unterbrechungen. Sofortige Aktivierung und schnelle Server bei IPTV Germany.",
   keywords: [
-    "iptv abonnement",
-    "iptv abonnement nederland",
-    "iptv nederland",
-    "beste iptv",
-    "premium iptv nederland",
+    "iptv abo",
+    "iptv abo deutschland",
+    "iptv deutschland",
+    "bestes iptv",
+    "premium iptv deutschland",
     "iptv 4k",
-    "goedkoop iptv",
-    "iptv kopen",
-    "iptv 4k kopen",
+    "günstiges iptv",
+    "iptv kaufen",
+    "iptv 4k kaufen",
     "iptv smarters pro",
-    "iptv nederlands",
-    "iptv zenders",
+    "iptv anbieter",
+    "iptv sender",
   ],
-  authors: [{ name: "IPTV Smarter" }],
+  authors: [{ name: "IPTV Germany" }],
   // hreflang is emitted per-page via metadata.alternates; here we declare the
   // site's primary content language for crawlers.
   alternates: {
     languages: {
-      "nl-NL": "https://iptvsmarter.nl",
-      "x-default": "https://iptvsmarter.nl",
+      "de-DE": "https://iptv-germany.com",
+      "x-default": "https://iptv-germany.com",
     },
   },
   manifest: "/site.webmanifest",

@@ -19,7 +19,7 @@ interface LogoProps {
 
 /**
  * The brand wordmark asset and its TRUE intrinsic dimensions.
- * `site-logo.png` is a wide horizontal wordmark (icon + "IPTV SMARTER").
+ * `site-logo.png` is a wide horizontal wordmark (icon + brand name).
  * The real pixel ratio is 2500x700 (3.57:1) — declaring the correct ratio is
  * essential so `w-auto` derives the proper width and the mark is never
  * letterboxed/shrunk inside a mismatched box (and keeps CLS at zero).
@@ -29,7 +29,7 @@ const LOGO_WIDTH = 2500;
 const LOGO_HEIGHT = 700;
 
 /**
- * Single source of truth for the IPTV Smarter brand mark.
+ * Single source of truth for the IPTV Germany brand mark.
  *
  * Renders the official brand image (`site-logo.png`) only. The image keeps its
  * native aspect ratio and is sized via the `className` height utility — never
@@ -43,7 +43,7 @@ const Logo = ({
   const mark = (
     <Image
       src={LOGO_SRC}
-      alt="IPTV Smarter"
+      alt="IPTV Germany"
       width={LOGO_WIDTH}
       height={LOGO_HEIGHT}
       preload={preload}
@@ -62,7 +62,7 @@ const Logo = ({
     <Link
       href={href}
       className="group flex shrink-0 items-center"
-      aria-label="IPTV Smarter – Startpagina"
+      aria-label="IPTV Germany – Startseite"
     >
       {mark}
     </Link>

@@ -24,7 +24,7 @@ export function organizationSchema(phoneNumber?: string) {
     contactPoint,
     address: {
       "@type": "PostalAddress",
-      addressCountry: "NL",
+      addressCountry: "DE",
     },
     sameAs: [] as string[],
   };
@@ -176,14 +176,14 @@ export function serviceSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Service",
-    serviceType: "IPTV Streaming Service",
+    serviceType: "IPTV-Streamingdienst",
     provider: {
       "@type": "Organization",
       name: SITE.name,
     },
-    name: "Premium IPTV-abonnement",
+    name: "Premium IPTV-Abonnement",
     image: `${SITE.url}/images/logo-iptv-streaming.png`,
-    description: "Het beste premium IPTV-abonnement in Nederland met meer dan 31.000 zenders en een uitgebreide VOD-bibliotheek in 4K/8K.",
+    description: "Das beste Premium-IPTV-Abonnement in Deutschland mit über 31.000 Sendern und einer umfangreichen VOD-Bibliothek in 4K/8K.",
     brand: {
       "@type": "Brand",
       name: SITE.name,

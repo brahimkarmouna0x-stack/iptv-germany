@@ -15,9 +15,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Helpcentrum — Ondersteuning IPTV & Gidsen | IPTV Smarter",
+  title: "Hilfe-Center — IPTV-Support & Anleitungen | IPTV Germany",
   description:
-    "Vind antwoorden op uw IPTV-vragen. Installatiegidsen voor Smart TV, Android, Apple TV en meer. WhatsApp-ondersteuning 24/7 via IPTV Smarter.",
+    "Finden Sie Antworten auf Ihre IPTV-Fragen. Installationsanleitungen für Smart TV, Android, Apple TV und mehr. WhatsApp-Support 24/7 bei IPTV Germany.",
   path: "/support",
 });
 
@@ -31,55 +31,55 @@ const HelpCenterPage = () => {
   }> = [
     {
       Icon: Rocket,
-      title: "Aan de slag",
-      desc: "Ontdek hoe u uw abonnement in enkele minuten op elk apparaat installeert.",
+      title: "Erste Schritte",
+      desc: "Erfahren Sie, wie Sie Ihr Abonnement in wenigen Minuten auf jedem Gerät einrichten.",
       color: "text-france-400",
       href: "/support/guides",
     },
     {
       Icon: CreditCard,
-      title: "Facturering & pakketten",
-      desc: "Informatie over abonnementen, verlengingen en betaalmethoden.",
+      title: "Abrechnung & Pakete",
+      desc: "Informationen zu Abonnements, Verlängerungen und Zahlungsmethoden.",
       color: "text-rouge-400",
       href: "#",
     },
     {
       Icon: ShieldCheck,
-      title: "Beveiliging",
-      desc: "Hoe wij uw gegevens beschermen en tips om uw account te beveiligen.",
+      title: "Sicherheit",
+      desc: "Wie wir Ihre Daten schützen und Tipps zur Absicherung Ihres Kontos.",
       color: "text-emerald-400",
       href: "#",
     },
     {
       Icon: Wrench,
-      title: "Probleemoplossing",
-      desc: "Los veelvoorkomende streaming- en weergaveproblemen op.",
+      title: "Fehlerbehebung",
+      desc: "Lösen Sie häufige Streaming- und Wiedergabeprobleme.",
       color: "text-france-300",
       href: "#",
     },
     {
       Icon: Tv,
-      title: "Content & zenders",
-      desc: "Ontdek onze zenderlijsten, de VOD-bibliotheek en EPG-details.",
+      title: "Inhalte & Sender",
+      desc: "Entdecken Sie unsere Senderlisten, die VOD-Bibliothek und EPG-Details.",
       color: "text-rouge-500",
       href: "#",
     },
     {
       Icon: CircleHelp,
-      title: "Algemene FAQ",
-      desc: "Snel antwoord op de meest gestelde vragen.",
+      title: "Allgemeine FAQ",
+      desc: "Schnelle Antworten auf die häufigsten Fragen.",
       color: "text-france-400",
       href: "#",
     },
   ];
 
   const articles = [
-    "Hoe configureer ik IPTV Smarters Pro",
-    "Welke apparaten ondersteunen 4K-streaming?",
-    "Hoe vernieuw ik mijn abonnement",
-    "De Xtream Codes API begrijpen",
-    "Veelgebruikte oplossingen tegen onderbrekingen",
-    "Hoe gebruik ik de Programmagids (EPG)",
+    "Wie konfiguriere ich IPTV Smarters Pro",
+    "Welche Geräte unterstützen 4K-Streaming?",
+    "Wie verlängere ich mein Abonnement",
+    "Die Xtream-Codes-API verstehen",
+    "Bewährte Lösungen gegen Unterbrechungen",
+    "Wie nutze ich den Programmführer (EPG)",
   ];
 
   return (
@@ -88,15 +88,15 @@ const HelpCenterPage = () => {
         {/* Header Section */}
         <div className="text-center mb-12 sm:mb-16 animate-fade-up">
           <span className="inline-block px-4 py-1.5 rounded-full glass text-france-400 text-sm font-bold mb-4 uppercase tracking-wider">
-            Ondersteuning
+            Support
           </span>
           <h1 className="font-display font-black text-4xl sm:text-6xl mb-6 text-blanc-50 leading-tight">
-            <span className="text-gradient">Helpcentrum</span>
+            <span className="text-gradient">Hilfe-Center</span>
           </h1>
           <div className="max-w-2xl mx-auto relative mt-8">
             <input
               type="text"
-              placeholder="Zoek artikelen, gidsen of oplossingen..."
+              placeholder="Artikel, Anleitungen oder Lösungen suchen..."
               className="w-full px-5 sm:px-8 py-4 sm:py-5 rounded-2xl glass text-blanc-50 placeholder-blanc-500 border border-blanc-50/10 focus:outline-none focus:border-france-500/50 text-base sm:text-lg shadow-2xl"
             />
             <Search
@@ -128,7 +128,7 @@ const HelpCenterPage = () => {
         <div className="glass rounded-2xl p-5 sm:p-8 md:p-12 border border-blanc-50/10">
           <h2 className="text-xl sm:text-2xl font-bold text-blanc-50 mb-6 sm:mb-8 flex items-center gap-3">
             <Flame className="h-6 w-6 text-orange-500" aria-hidden="true" />
-            Populaire artikelen
+            Beliebte Artikel
           </h2>
           <div className="grid sm:grid-cols-2 gap-6">
             {articles.map((article, index) => (

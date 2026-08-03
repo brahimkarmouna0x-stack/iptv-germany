@@ -8,10 +8,10 @@ import { buildMetadata } from "@/lib/seo";
 import { breadcrumbSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = buildMetadata({
-  title: "IPTV-kennisbank",
+  title: "IPTV-Ratgeber",
   description:
-    "Blader door de IPTV-kennisbank van IPTV Smarter met gidsen over applicaties, abonnementen, 4K, IPTV, M3U-playlists en beveiligd streamen.",
-  path: "/iptv-gids",
+    "Durchsuchen Sie den IPTV-Ratgeber von IPTV Germany mit Anleitungen zu Apps, Abonnements, 4K, IPTV, M3U-Playlists und sicherem Streaming.",
+  path: "/iptv-ratgeber",
 });
 
 export default function IPTVStreamingPage() {
@@ -21,23 +21,23 @@ export default function IPTVStreamingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbSchema([
-            { name: "Home", url: "https://iptvsmarter.nl" },
-            { name: "IPTV-gids", url: "https://iptvsmarter.nl/iptv-gids" },
+            { name: "Home", url: "https://iptv-germany.com" },
+            { name: "IPTV-Ratgeber", url: "https://iptv-germany.com/iptv-ratgeber" },
           ])),
         }}
       />
       <main className="flex-1 px-4 pb-20 pt-32 sm:px-6 lg:px-8 lg:pt-40">
       <div className="mx-auto max-w-7xl">
         <p className="mb-5 inline-flex rounded-full border border-france-500/25 bg-france-500/15 px-4 py-2 text-xs font-black uppercase tracking-[0.16em] text-france-100">
-          IPTV-kennisbank
+          IPTV-Wissensdatenbank
         </p>
         <h1 className="max-w-4xl text-4xl font-black leading-tight tracking-tight text-blanc-50 sm:text-5xl lg:text-6xl">
-          IPTV-gids
+          IPTV-Ratgeber
         </h1>
         <p className="mt-6 max-w-3xl text-base leading-8 text-blanc-300 sm:text-lg">
-          Een centrale bibliotheek met praktische IPTV-gidsen voor
-          applicaties, spelers, apparaten, abonnementen, kwaliteit en
-          beveiligd streamen.
+          Eine zentrale Bibliothek mit praktischen IPTV-Ratgebern zu
+          Apps, Playern, Geräten, Abonnements, Qualität und
+          sicherem Streaming.
         </p>
 
         <div className="mt-12">
@@ -67,8 +67,8 @@ export default function IPTVStreamingPage() {
 
       <div className="mt-32">
         <CTA
-          title={<>Begin vandaag nog met <span className="text-gradient">IPTV Smarter</span></>}
-          description="Ontdek de beste IPTV-ervaring met duizenden zenders, films en series in de hoogste kwaliteit."
+          title={<>Starten Sie noch heute mit <span className="text-gradient">IPTV Germany</span></>}
+          description="Entdecken Sie das beste IPTV-Erlebnis mit Tausenden Sendern, Filmen und Serien in höchster Qualität."
         />
       </div>
     </main>
