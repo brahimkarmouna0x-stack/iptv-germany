@@ -1,235 +1,235 @@
-﻿import type { SixteenSectionContent } from "./types";
+import type { SixteenSectionContent } from "./types";
 
 const LINK = {
-  kopen: { label: "Koop IPTV", href: "/iptv-kopen", description: "Koop direct een IPTV met een veilige betaling en activering in 5 minuten." },
-  abonnement: { label: "IPTV Abonnement", href: "/iptv-abonnement", description: "Vergelijk alle IPTV-abonnementen met flexibele looptijden en 4K-kwaliteit." },
-  aanbieder: { label: "IPTV Aanbieder", href: "/iptv-aanbieder", description: "Ontdek waarom IPTV Smarter de beste IPTV-aanbieder van Nederland is." },
-  nederland: { label: "IPTV Nederland", href: "/iptv-nederland", description: "Alle Franse en Nederlandse zenders, voetbal en live sport in 4K." },
-  smarters: { label: "IPTV Smarters Pro", href: "/iptv-smarters-pro", description: "Configureer IPTV Smarters Pro met M3U of Xtream Codes — stap voor stap." },
+  kaufen: { label: "IPTV kaufen", href: "/iptv-kaufen", description: "Kaufen Sie IPTV direkt mit sicherer Zahlung und Aktivierung in 5 Minuten." },
+  abonnement: { label: "IPTV-Abonnement", href: "/iptv-abonnement", description: "Vergleichen Sie alle IPTV-Abonnements mit flexiblen Laufzeiten und 4K-Qualität." },
+  anbieter: { label: "IPTV-Anbieter", href: "/iptv-anbieter", description: "Entdecken Sie, warum IPTV Germany der beste IPTV-Anbieter Deutschlands ist." },
+  deutschland: { label: "IPTV Deutschland", href: "/iptv-deutschland", description: "Alle deutschen Sender, Fußball und Live-Sport in 4K." },
+  smarters: { label: "IPTV Smarters Pro", href: "/iptv-smarters-pro", description: "Konfigurieren Sie IPTV Smarters Pro mit M3U oder Xtream Codes — Schritt für Schritt." },
 };
 
 const home: SixteenSectionContent = {
   slug: "",
   path: "/",
   meta: {
-    title: "IPTV Smarter – Het Beste IPTV-abonnement van Nederland",
-    description: "Kies de beste IPTV-aanbieder. IPTV Smarter biedt 31.000+ zenders en VOD in 4K. Een betrouwbare IPTV-service zonder onderbreking. Begin nu!",
-    h1: "IPTV Smarter Nederland – Het premium IPTV-abonnement",
+    title: "IPTV Germany – Das beste IPTV-Abonnement in Deutschland",
+    description: "Wählen Sie den besten IPTV-Anbieter. IPTV Germany bietet 31.000+ Sender und VOD in 4K. Ein zuverlässiger IPTV-Service ohne Unterbrechungen. Jetzt starten!",
+    h1: "IPTV Germany – Das Premium-IPTV-Abonnement",
   },
 
   // ── Section 1: Hero ─────────────────────────────────────────────────────
   hero: {
-    pill: "IPTV Smarter · Premium streaming",
-    title: "De premium IPTV-service voor Nederland en België",
-    subtitle: "Wilt u een betrouwbare IPTV kopen? Duizenden kijkers kiezen elke dag onze stabiele IPTV-service. Geniet van alle zenders en 4K-kwaliteit op elk apparaat.",
+    pill: "IPTV Germany · Premium Streaming",
+    title: "Der Premium-IPTV-Service für Deutschland, Österreich und die Schweiz",
+    subtitle: "Möchten Sie ein zuverlässiges IPTV abonnieren? Tausende Zuschauer entscheiden sich täglich für unseren stabilen IPTV-Service. Genießen Sie alle Sender und 4K-Qualität auf jedem Gerät.",
     bg: "/images/hero-bg.webp",
-    ctaPrimary: "Start de gratis proefperiode",
+    ctaPrimary: "Kostenlose Testphase starten",
     ctaPrimaryHref: "#pakketten",
-    ctaSecondary: "Bekijk de pakketten",
+    ctaSecondary: "Pakete ansehen",
     ctaSecondaryHref: "#pakketten",
   },
 
   // ── Section 2: Trust bar ────────────────────────────────────────────────
   trustBar: {
     items: [
-      { label: "tevreden kijkers", value: "10.000+" },
-      { label: "live zenders", value: "31.000+" },
-      { label: "films & series", value: "140.000+" },
-      { label: "streaming kwaliteit", value: "99,9%" },
-      { label: "Google beoordeling", value: "4,9/5" },
+      { label: "zufriedene Zuschauer", value: "10.000+" },
+      { label: "Live-Sender", value: "31.000+" },
+      { label: "Filme & Serien", value: "140.000+" },
+      { label: "Streaming-Qualität", value: "99,9%" },
+      { label: "Google-Bewertung", value: "4,9/5" },
     ],
   },
 
   // ── Section 3: Problem ──────────────────────────────────────────────────
   problem: {
-    eyebrow: "Herkenbaar?",
-    title: "Genoeg van de frustraties met uw huidige tv-aanbieder",
-    subtitle: "U bent niet de enige die vastzit aan traditionele televisie. Dit zijn de meest voorkomende ergernissen.",
+    eyebrow: "Kommt Ihnen das bekannt vor?",
+    title: "Genug von den Frustrationen mit Ihrem aktuellen TV-Anbieter",
+    subtitle: "Sie sind nicht die Einzigen, die noch am klassischen Fernsehen festhängen. Das sind die häufigsten Ärgernisse.",
     pains: [
-      { title: "Te hoge maandkosten", desc: "U betaalt 50 tot 80 euro per maand voor een standaard tv-pakket, maar kijkt maar een fractie van de zenders. En de prijzen stijgen elk jaar." },
-      { title: "Vaste jaarcontracten", desc: "U zit vast aan lange contracten met dure opzegboetes. Bij een verhuizing of veranderende behoeften kost u dat veel." },
-      { title: "Beperkt zenderaanbod", desc: "De zenders die u graag wilt zien ontbreken. Sport, internationale zenders of films zijn vaak niet beschikbaar of tegen meerprijs." },
-      { title: "Onderbrekingen en haperingen", desc: "Tijdens een spannende wedstrijd of uw favoriete serie valt het beeld weg of blijft het laden. De ergernis is groot." },
+      { title: "Zu hohe monatliche Kosten", desc: "Sie zahlen 50 bis 80 Euro im Monat für ein Standard-TV-Paket, sehen davon aber nur einen Bruchteil der Sender. Und die Preise steigen Jahr für Jahr." },
+      { title: "Feste Jahresverträge", desc: "Sie sind an lange Vertragslaufzeiten mit teuren Kündigungsgebühren gebunden. Bei einem Umzug oder veränderten Bedürfnissen kostet Sie das schnell viel Geld." },
+      { title: "Begrenztes Senderangebot", desc: "Ausgerechnet die Sender, die Sie sehen möchten, fehlen. Sport, internationale Sender oder Filme sind oft nicht verfügbar oder kosten Aufpreis." },
+      { title: "Unterbrechungen und Aussetzer", desc: "Mitten im spannenden Spiel oder Ihrer Lieblingsserie bleibt das Bild hängen oder lädt endlos. Der Ärger darüber ist groß." },
     ],
   },
 
   // ── Section 4: Solution ─────────────────────────────────────────────────
   solution: {
-    eyebrow: "De oplossing",
-    title: "IPTV Nederland: meer zenders, goedkoper",
-    subtitle: "Wij lossen al uw tv-frustraties op met onze premium IPTV-service. Geen contract, geen onderbreking, maar de ervaring van de beste IPTV-aanbieder.",
+    eyebrow: "Die Lösung",
+    title: "IPTV Germany: mehr Sender, günstiger",
+    subtitle: "Wir lösen Ihre TV-Frustrationen mit unserem Premium-IPTV-Service. Kein Vertrag, keine Unterbrechungen — dafür das Erlebnis des besten IPTV-Anbieters.",
     points: [
-      { title: "Betaal minder dan de helft", desc: "Voor een fractie van de kabeltelevisieprijs krijgt u duizenden zenders, films en series in 4K. Al vanaf een paar euro per maand." },
-      { title: "Zonder contract, volledige vrijheid", desc: "Geen jaarcontract en geen opzegboete. Uw abonnement stopt wanneer u wilt. U bent volledig vrij." },
-      { title: "Alles inbegrepen, geen extra kosten", desc: "Sport, films, 4K, Franse en Nederlandse zenders en internationale zenders — alles in één abonnement zonder verborgen kosten." },
-      { title: "Stabiele 4K-streams zonder onderbreking", desc: "Onze servers nabij Nederland bieden een vloeiend beeld, zelfs op piekmomenten. Geen haperingen meer tijdens uw favoriete programma." },
+      { title: "Weniger als die Hälfte zahlen", desc: "Für einen Bruchteil des Kabelfernsehpreises erhalten Sie Tausende Sender, Filme und Serien in 4K. Schon ab wenigen Euro im Monat." },
+      { title: "Ohne Vertrag, volle Freiheit", desc: "Kein Jahresvertrag und keine Kündigungsgebühr. Ihr Abonnement endet, wann Sie möchten. Sie bleiben völlig flexibel." },
+      { title: "Alles inklusive, keine Zusatzkosten", desc: "Sport, Filme, 4K, deutsche und internationale Sender — alles in einem Abonnement, ganz ohne versteckte Kosten." },
+      { title: "Stabile 4K-Streams ohne Unterbrechung", desc: "Unsere Server in der Nähe Deutschlands sorgen für ein flüssiges Bild, selbst zu Spitzenzeiten. Aussetzer während Ihrer Lieblingssendung gehören der Vergangenheit an." },
     ],
   },
 
   // ── Section 5: Features ─────────────────────────────────────────────────
   features: {
-    eyebrow: "Wat u krijgt",
-    title: "Een premium IPTV met unieke voordelen",
-    subtitle: " Elk abonnement bevat deze kenmerken — zonder extra kosten.",
+    eyebrow: "Das erhalten Sie",
+    title: "Ein Premium-IPTV mit einzigartigen Vorteilen",
+    subtitle: "Jedes Abonnement enthält diese Merkmale — ganz ohne Aufpreis.",
     features: [
-      { title: "4K & 8K Ultra HD", desc: "Een ultrahelder beeld met HDR. Stream films, sport en series in de hoogste resolutie, zonder haperingen." },
-      { title: "Zero onderbrekingen gegarandeerd", desc: "Adaptieve streaming-technologie past de kwaliteit automatisch aan uw verbinding aan. Geen onderbrekingen tijdens sport of films." },
-      { title: "Alle Franse & NL zenders", desc: "Een ruime keuze aan Franse zenders (generalistisch, publiek, cinema, cultuur) en Nederlandse zenders (publiek, commercieel, sport) en regionale zenders, in HD en 4K." },
-      { title: "Werkt op elk apparaat", desc: "Smart TV, Fire TV Stick, Android TV, Apple TV, iPhone, iPad, Windows, Mac en MAG-box. Één abonnement, al uw schermen." },
-      { title: "Volledige VOD-bibliotheek", desc: "140.000+ films en series op aanvraag, met ondertiteling. Altijd iets nieuws te ontdekken, zonder extra kosten." },
-      { title: "Gratis proefperiode", desc: "Test de volledige service een uur gratis — zonder creditcard of risico. Ontdek waarom IPTV Smarter de beste keuze is." },
+      { title: "4K & 8K Ultra HD", desc: "Ein gestochen scharfes Bild mit HDR. Streamen Sie Filme, Sport und Serien in höchster Auflösung, ohne Aussetzer." },
+      { title: "Null Unterbrechungen garantiert", desc: "Adaptive Streaming-Technologie passt die Qualität automatisch an Ihre Verbindung an. Keine Unterbrechungen mehr bei Sport oder Filmen." },
+      { title: "Alle deutschen & internationalen Sender", desc: "Eine große Auswahl deutscher Sender (öffentlich-rechtlich, privat, Sport) sowie internationale und Regionalsender, in HD und 4K." },
+      { title: "Funktioniert auf jedem Gerät", desc: "Smart TV, Fire TV Stick, Android TV, Apple TV, iPhone, iPad, Windows, Mac und MAG-Box. Ein Abonnement, alle Ihre Bildschirme." },
+      { title: "Vollständige VOD-Bibliothek", desc: "140.000+ Filme und Serien auf Abruf, mit Untertiteln. Immer etwas Neues zu entdecken, ohne Aufpreis." },
+      { title: "Kostenlose Testphase", desc: "Testen Sie den vollen Service eine Stunde lang kostenlos — ohne Kreditkarte, ohne Risiko. Entdecken Sie, warum IPTV Germany die beste Wahl ist." },
     ],
   },
 
   // ── Section 6: Why Us ───────────────────────────────────────────────────
   whyUs: {
-    eyebrow: "Waarom IPTV Smarter",
-    title: "Waarom wij de beste IPTV-aanbieder zijn",
-    subtitle: "Als toonaangevende IPTV-aanbieder voor IPTV in Nederland doen wij het anders. Dit is wat het verschil maakt.",
+    eyebrow: "Warum IPTV Germany",
+    title: "Warum wir der beste IPTV-Anbieter sind",
+    subtitle: "Als führender IPTV-Anbieter für IPTV in Deutschland machen wir es anders. Das ist unser Unterschied.",
     reasons: [
-      { title: "Onze eigen servers nabij Nederland", desc: "Geen gedeelde buitenlandse infrastructuur. Onze servers bevinden zich in Nederland en België voor de laagste latentie, de snelste zenderwisselingen en maximale stabiliteit." },
-      { title: "Nederlandstalige support, 24/7", desc: "Geen chatbots of gebrekkig Engels. Ons team is dag en nacht bereikbaar via WhatsApp met een responstijd van minder dan 5 minuten. Door mensen, niet door robots." },
-      { title: "Altijd up-to-date en compleet", desc: "Duizenden zenders uit meer dan 190 landen, elke dag bijgewerkt. Nieuwe zenders en VOD worden continu toegevoegd, zonder enige actie van uw kant." },
+      { title: "Unsere eigenen Server nahe Deutschland", desc: "Keine geteilte ausländische Infrastruktur. Unsere Server stehen in Deutschland und Österreich — für die niedrigste Latenz, die schnellsten Senderwechsel und maximale Stabilität." },
+      { title: "Deutschsprachiger Support, 24/7", desc: "Keine Chatbots und kein gebrochenes Englisch. Unser Team ist Tag und Nacht über WhatsApp erreichbar, mit einer Antwortzeit unter 5 Minuten. Von echten Menschen, nicht von Robotern." },
+      { title: "Immer aktuell und vollständig", desc: "Tausende Sender aus mehr als 190 Ländern, täglich aktualisiert. Neue Sender und VOD-Inhalte kommen laufend hinzu, ganz ohne Ihr Zutun." },
     ],
   },
 
   // ── Section 7: How It Works ─────────────────────────────────────────────
   how: {
-    eyebrow: "Om te beginnen",
-    title: "Begin in 3 stappen met streamen",
-    subtitle: "Van ontdekking naar kijken in minder dan 10 minuten. Geen installatiekosten of technische kennis vereist.",
+    eyebrow: "Los geht's",
+    title: "In 3 Schritten mit dem Streamen beginnen",
+    subtitle: "Von der Entdeckung bis zum Zuschauen in weniger als 10 Minuten. Keine Installationskosten oder Fachkenntnisse erforderlich.",
     steps: [
-      { step: "01", title: "Vraag een gratis proefperiode aan", desc: "Neem contact op via WhatsApp en ontvang direct een uur gratis proefperiode. Test alle zenders, beeldkwaliteit en stabiliteit op uw eigen apparaat." },
-      { step: "02", title: "Kies uw ideale abonnement", desc: "Selecteer de looptijd en het aantal verbindingen. Hoe langer de looptijd, hoe lager de maandprijs — zonder verborgen kosten." },
-      { step: "03", title: "Stream onbeperkt in 4K", desc: "Na betaling ontvangt u binnen 5 minuten uw M3U-link en Xtream Codes. Voer ze in uw IPTV-app in en stream direct duizenden zenders." },
+      { step: "01", title: "Kostenlose Testphase anfragen", desc: "Kontaktieren Sie uns über WhatsApp und erhalten Sie sofort eine Stunde kostenlose Testphase. Testen Sie alle Sender, Bildqualität und Stabilität auf Ihrem eigenen Gerät." },
+      { step: "02", title: "Ihr ideales Abonnement wählen", desc: "Wählen Sie die Laufzeit und die Anzahl der Verbindungen. Je länger die Laufzeit, desto niedriger der Monatspreis — ganz ohne versteckte Kosten." },
+      { step: "03", title: "Unbegrenzt in 4K streamen", desc: "Nach der Zahlung erhalten Sie innerhalb von 5 Minuten Ihren M3U-Link und Ihre Xtream Codes. Geben Sie diese in Ihre IPTV-App ein und streamen Sie sofort Tausende Sender." },
     ],
   },
 
   // ── Section 8: Device Compatibility ──────────────────────────────────────
   devices: {
-    eyebrow: "Overal te gebruiken",
-    title: "Werkt op vrijwel elk apparaat",
-    subtitle: "Of u nu een Smart TV, telefoon, tablet of computer gebruikt — ons IPTV-abonnement werkt op al uw apparaten.",
+    eyebrow: "Überall nutzbar",
+    title: "Funktioniert auf nahezu jedem Gerät",
+    subtitle: "Ob Smart TV, Smartphone, Tablet oder Computer — unser IPTV-Abonnement funktioniert auf all Ihren Geräten.",
     deviceGroups: [
       { name: "Smart TV", items: ["Samsung Smart TV", "LG webOS", "Sony Android TV", "Philips Android TV", "Panasonic", "Hisense", "TCL"] },
-      { name: "Streaming-apparaten", items: ["Amazon Fire TV Stick", "Chromecast with Google TV", "Nvidia Shield", "Apple TV 4K", "Roku", "Formuler Z11"] },
-      { name: "Mobiel & tablet", items: ["iPhone", "iPad", "Samsung Galaxy", "Google Pixel", "Huawei", "OnePlus", "Xiaomi"] },
+      { name: "Streaming-Geräte", items: ["Amazon Fire TV Stick", "Chromecast with Google TV", "Nvidia Shield", "Apple TV 4K", "Roku", "Formuler Z11"] },
+      { name: "Mobil & Tablet", items: ["iPhone", "iPad", "Samsung Galaxy", "Google Pixel", "Huawei", "OnePlus", "Xiaomi"] },
       { name: "Computer", items: ["PC Windows", "MacBook & iMac", "Linux", "VLC Media Player", "IPTV Smarters Pro", "TiviMate"] },
     ],
-    ctaText: "Bekijk de volledige lijst",
+    ctaText: "Vollständige Liste ansehen",
   },
 
   // ── Section 9: Channels ─────────────────────────────────────────────────
   channels: {
-    eyebrow: "Het aanbod",
-    title: "31.000+ zenders uit meer dan 190 landen",
-    subtitle: "Van de beste Franse en Nederlandse zenders tot internationale sport — alle premium zenders op één plek.",
+    eyebrow: "Das Angebot",
+    title: "31.000+ Sender aus mehr als 190 Ländern",
+    subtitle: "Vom besten deutschen Senderangebot bis zu internationalem Sport — alle Premium-Sender an einem Ort.",
     channelGroups: [
-      { name: "Frans & NL aanbod", items: ["Franse generalistische zenders", "Film- en cultuurzenders", "Nederlandse publieke zenders", "Nederlandse commerciële zenders", "Sportzenders", "Regionale zenders", "Muziek- en entertainmentzenders"] },
-      { name: "Live sport", items: ["Voetbal", "Europese competities", "Autosport", "Motorsport", "Vechtsporten", "Basketbal & Amerikaanse sport", "Tennis"] },
-      { name: "Internationale zenders", items: ["Internationale nieuwskanalen", "Film & documentaires", "Jeugdzenders", "Duitse, Spaanse zenders", "Arabische & Turkse zenders", "Afrikaanse & Aziatische zenders"] },
-      { name: "Films & series (VOD)", items: ["Nieuwste bioscoopfilms", "Exclusieve originals", "Volledige series-boxsets", "Top 250 IMDb", "Documentaires", "Jeugdfilms"] },
+      { name: "Deutsches Angebot", items: ["Öffentlich-rechtliche Sender", "Private Vollprogramme", "Sportsender", "Regionale Sender", "Nachrichtensender", "Kultur- und Dokusender", "Musik- und Unterhaltungssender"] },
+      { name: "Live-Sport", items: ["Fußball", "Europapokal-Wettbewerbe", "Motorsport", "Wintersport", "Kampfsport", "Basketball & US-Sport", "Tennis"] },
+      { name: "Internationale Sender", items: ["Internationale Nachrichtensender", "Film & Dokumentationen", "Kindersender", "Englische & spanische Sender", "Arabische & türkische Sender", "Afrikanische & asiatische Sender"] },
+      { name: "Filme & Serien (VOD)", items: ["Neueste Kinofilme", "Exklusive Originals", "Komplette Serien-Boxsets", "IMDb Top 250", "Dokumentationen", "Kinderfilme"] },
     ],
   },
 
   // ── Section 10: Pricing (uses existing component) ─────────────────────────
   pricing: {
-    pillText: "Onze tarieven",
-    title: "Kies het IPTV-abonnement dat bij u past",
-    subtitle: "Hoe langer de looptijd, hoe voordeliger uw IPTV-abonnement. Alle pakketten van onze IPTV-service bevatten sport, 4K en Franse en Nederlandse zenders.",
+    pillText: "Unsere Tarife",
+    title: "Wählen Sie das IPTV-Abonnement, das zu Ihnen passt",
+    subtitle: "Je länger die Laufzeit, desto günstiger Ihr IPTV-Abonnement. Alle Pakete unseres IPTV-Service enthalten Sport, 4K und deutsche sowie internationale Sender.",
   },
 
   // ── Section 11: Comparison vs Competitors ────────────────────────────────
   comparison: {
-    eyebrow: "Vergelijking",
-    title: "IPTV Smarter vs. traditionele tv-aanbieders",
-    subtitle: "Zelfs op onze sterkste punten doen we beter. Dit is waarom steeds meer huishoudens de overstap maken.",
+    eyebrow: "Vergleich",
+    title: "IPTV Germany vs. traditionelle TV-Anbieter",
+    subtitle: "Selbst bei den Stärken der Anbieter legen wir noch eine Schippe drauf. Deshalb wechseln immer mehr Haushalte zu uns.",
     rows: [
-      { feature: "Maandprijs", us: "Vanaf €7,99/maand", them: "€50 - €80/maand" },
-      { feature: "Aantal zenders", us: "31.000+", them: "50 - 100" },
-      { feature: "4K & 8K kwaliteit", us: "Standaard inbegrepen", them: "Niet beschikbaar of extra" },
-      { feature: "VOD-bibliotheek", us: "140.000+ titels", them: "Beperkt of afwezig" },
-      { feature: "Jaarcontract", us: "Niet vereist", them: "Verplicht 1-2 jaar" },
-      { feature: "Opzegboete", us: "Geen", them: "Tot €150" },
-      { feature: "Internationale zenders", us: "190+ landen", them: "Alleen lokaal" },
-      { feature: "24/7 support", us: "Nederlandstalig", them: "Beperkt / Engels" },
-      { feature: "Gratis proefperiode", us: "Ja, 1 uur", them: "Nee" },
+      { feature: "Monatspreis", us: "Ab 7,99 €/Monat", them: "50 € – 80 €/Monat" },
+      { feature: "Anzahl der Sender", us: "31.000+", them: "50 – 100" },
+      { feature: "4K & 8K-Qualität", us: "Standardmäßig inklusive", them: "Nicht verfügbar oder Aufpreis" },
+      { feature: "VOD-Bibliothek", us: "140.000+ Titel", them: "Begrenzt oder nicht vorhanden" },
+      { feature: "Jahresvertrag", us: "Nicht erforderlich", them: "Verpflichtend, 1–2 Jahre" },
+      { feature: "Kündigungsgebühr", us: "Keine", them: "Bis zu 150 €" },
+      { feature: "Internationale Sender", us: "190+ Länder", them: "Nur lokal" },
+      { feature: "24/7-Support", us: "Deutschsprachig", them: "Begrenzt / Englisch" },
+      { feature: "Kostenlose Testphase", us: "Ja, 1 Stunde", them: "Nein" },
     ],
   },
 
   // ── Section 12: Testimonials ─────────────────────────────────────────────
   testimonials: {
-    eyebrow: "Wat klanten zeggen",
-    title: "4,9/5 op Google — beoordeeld door duizenden",
-    subtitle: "Onze klanten beoordelen ons als de best beoordeelde IPTV-aanbieder in Nederland.",
+    eyebrow: "Was Kunden sagen",
+    title: "4,9/5 bei Google — bewertet von Tausenden",
+    subtitle: "Unsere Kunden bewerten uns als den bestbewerteten IPTV-Anbieter in Deutschland.",
   },
 
   // ── Section 13: Security & Reliability ────────────────────────────────────
   security: {
-    eyebrow: "Veilig & betrouwbaar",
-    title: "Uw privacy en stabiliteit zijn onze prioriteit",
-    subtitle: "Wij nemen beveiliging en betrouwbaarheid serieus — zonder uitzondering.",
+    eyebrow: "Sicher & zuverlässig",
+    title: "Ihre Privatsphäre und Stabilität haben für uns Priorität",
+    subtitle: "Wir nehmen Sicherheit und Zuverlässigkeit ernst — ausnahmslos.",
     items: [
-      { title: "SSL-versleutelde betalingen", desc: "Alle transacties lopen via beveiligde verbindingen met erkende betalingspartners als Mollie en Stripe. Uw betaalgegevens worden nooit opgeslagen." },
-      { title: "99,9% serverbeschikbaarheid", desc: "Onze servers worden 24/7 gemonitord met redundante systemen. Storingen worden automatisch gedetecteerd en binnen enkele seconden omgeleid." },
-      { title: "Privacy by design", desc: "Wij passen strikte privacy-normen toe en delen uw gegevens nooit met derden. Uw kijkgedrag wordt niet gevolgd of verkocht." },
-      { title: "Anti-freeze technologie", desc: "Slimme loadbalancing houdt de streams vloeiend, zelfs op piekmomenten. Speciaal ontwikkeld voor de Nederlandse markt." },
+      { title: "SSL-verschlüsselte Zahlungen", desc: "Alle Transaktionen laufen über gesicherte Verbindungen mit anerkannten Zahlungsdienstleistern wie Stripe. Ihre Zahlungsdaten werden niemals gespeichert." },
+      { title: "99,9% Serververfügbarkeit", desc: "Unsere Server werden rund um die Uhr mit redundanten Systemen überwacht. Störungen werden automatisch erkannt und innerhalb weniger Sekunden umgeleitet." },
+      { title: "Privacy by Design", desc: "Wir wenden strenge Datenschutzstandards an und geben Ihre Daten niemals an Dritte weiter. Ihr Sehverhalten wird weder verfolgt noch verkauft." },
+      { title: "Anti-Freeze-Technologie", desc: "Intelligentes Lastmanagement hält die Streams flüssig, selbst zu Spitzenzeiten. Speziell für den deutschen Markt entwickelt." },
     ],
   },
 
   // ── Section 14: FAQ (exactly 8) ─────────────────────────────────────────
   faq: {
     eyebrow: "FAQ",
-    title: "Veelgestelde vragen over IPTV Smarter",
-    subtitle: "Alles wat u moet weten over onze service.",
+    title: "Häufig gestellte Fragen zu IPTV Germany",
+    subtitle: "Alles, was Sie über unseren Service wissen müssen.",
     faqs: [
       {
-        question: "Wat is IPTV Smarter precies?",
-        answer: "IPTV Smarter is een premium IPTV-service die live televisie, sport, films en series streamt via uw internetverbinding. Geen kabel of schotel. U streamt op elk apparaat duizenden zenders in 4K, tegen een vast maandbedrag zonder jaarcontract."
+        question: "Was genau ist IPTV Germany?",
+        answer: "IPTV Germany ist ein Premium-IPTV-Service, der live Fernsehen, Sport, Filme und Serien über Ihre Internetverbindung streamt. Kein Kabel, keine Schüssel. Sie streamen auf jedem Gerät Tausende Sender in 4K, zu einem festen Monatspreis ohne Jahresvertrag."
       },
       {
-        question: "Wat onderscheidt IPTV Smarter van anderen?",
-        answer: "Wij onderscheiden ons door een eigen serverinfrastructuur nabij Nederland, Nederlandstalige 24/7 support (zonder chatbots), een dagelijks bijgewerkt zenderaanbod en een tevreden-of-geld-terug-garantie. Onze beoordeling van 4,9/5 op Google bevestigt onze kwaliteit."
+        question: "Was unterscheidet IPTV Germany von anderen Anbietern?",
+        answer: "Wir unterscheiden uns durch eine eigene Serverinfrastruktur nahe Deutschland, deutschsprachigen 24/7-Support (ohne Chatbots), ein täglich aktualisiertes Senderangebot und eine Zufrieden-oder-Geld-zurück-Garantie. Unsere Bewertung von 4,9/5 bei Google bestätigt unsere Qualität."
       },
       {
-        question: "Op welke apparaten werkt IPTV Smarter?",
-        answer: "Op vrijwel elk modern apparaat: Samsung, LG en Sony Smart TV's, Amazon Fire TV Stick, Android TV-boxen, Apple TV, iPhone, iPad, Android-telefoons, Windows- en Mac-computers, en MAG/Formuler-boxen. Uw abonnement werkt op meerdere apparaten."
+        question: "Auf welchen Geräten funktioniert IPTV Germany?",
+        answer: "Auf nahezu jedem modernen Gerät: Samsung-, LG- und Sony-Smart-TVs, Amazon Fire TV Stick, Android-TV-Boxen, Apple TV, iPhone, iPad, Android-Smartphones, Windows- und Mac-Computer sowie MAG-/Formuler-Boxen. Ihr Abonnement funktioniert auf mehreren Geräten."
       },
       {
-        question: "Kan ik gratis testen voordat ik een abonnement neem?",
-        answer: "Ja, u ontvangt een uur gratis proefperiode met volledige toegang tot alle zenders, sport en de VOD-bibliotheek. Vraag uw proefperiode aan via WhatsApp en oordeel zelf over de kwaliteit op uw eigen apparaat — zonder risico."
+        question: "Kann ich kostenlos testen, bevor ich ein Abonnement abschließe?",
+        answer: "Ja, Sie erhalten eine Stunde kostenlose Testphase mit vollem Zugriff auf alle Sender, Sport und die VOD-Bibliothek. Fordern Sie Ihre Testphase über WhatsApp an und überzeugen Sie sich selbst von der Qualität auf Ihrem eigenen Gerät — ohne Risiko."
       },
       {
-        question: "Welke Franse, Nederlandse en sportzenders kan ik kijken?",
-        answer: "Een ruime keuze aan populaire Franse zenders (generalistisch, publiek, cinema) en Nederlandse zenders (publiek, commercieel, sport) en regionale zenders. Daarnaast voetbal, autosport, basketbal, tennis en meer — in HD en 4K. Het beschikbare aanbod kan per regio variëren."
+        question: "Welche deutschen und internationalen Sportsender kann ich sehen?",
+        answer: "Eine große Auswahl an beliebten deutschen Sendern (öffentlich-rechtlich, privat) und internationalen Sendern sowie Regionalsendern. Dazu Fußball, Motorsport, Basketball, Tennis und mehr — in HD und 4K. Das verfügbare Angebot kann je nach Region variieren."
       },
       {
-        question: "Is IPTV Smarter veilig en betrouwbaar?",
-        answer: "Absoluut. Wij hanteren de hoogste beveiligingsnormen met SSL-versleutelde betalingen en strikte privacyregels. Onze servers hebben een beschikbaarheid van 99,9% en worden 24/7 gemonitord. Uw gegevens worden nooit gedeeld met derden."
+        question: "Ist IPTV Germany sicher und zuverlässig?",
+        answer: "Absolut. Wir setzen auf höchste Sicherheitsstandards mit SSL-verschlüsselten Zahlungen und strengen Datenschutzregeln. Unsere Server erreichen eine Verfügbarkeit von 99,9% und werden rund um die Uhr überwacht. Ihre Daten werden niemals an Dritte weitergegeben."
       },
       {
-        question: "Welke betaalmethoden worden geaccepteerd?",
-        answer: "U kunt veilig betalen met iDEAL, creditcard (Visa, Mastercard) en PayPal. Alle betalingen lopen via een beveiligde en versleutelde omgeving. Na ontvangst wordt uw account binnen enkele minuten geactiveerd."
+        question: "Welche Zahlungsmethoden werden akzeptiert?",
+        answer: "Sie können sicher mit Kreditkarte (Visa, Mastercard), PayPal und SEPA-Überweisung bezahlen. Alle Zahlungen laufen über eine gesicherte und verschlüsselte Umgebung. Nach Zahlungseingang wird Ihr Konto innerhalb weniger Minuten aktiviert."
       },
       {
-        question: "Kan ik mijn abonnement opzeggen of wijzigen?",
-        answer: "Ja, u kunt op elk moment upgraden naar meer verbindingen of een langere looptijd. Opzeggen is eenvoudig via ons supportteam — zonder kosten of boetes. Uw service blijft actief tot het einde van de betaalde periode."
+        question: "Kann ich mein Abonnement kündigen oder ändern?",
+        answer: "Ja, Sie können jederzeit auf mehr Verbindungen oder eine längere Laufzeit upgraden. Die Kündigung ist über unser Support-Team einfach möglich — ohne Kosten oder Strafen. Ihr Service bleibt bis zum Ende des bezahlten Zeitraums aktiv."
       },
     ],
   },
 
   // ── Section 15: Internal Linking Hub ──────────────────────────────────────
   internalLinks: {
-    eyebrow: "Ontdek meer",
-    title: "Alles over IPTV in Nederland",
-    subtitle: "Verdiep u in de verschillende aspecten van onze service.",
-    links: [LINK.kopen, LINK.abonnement, LINK.aanbieder, LINK.nederland, LINK.smarters],
+    eyebrow: "Mehr entdecken",
+    title: "Alles über IPTV in Deutschland",
+    subtitle: "Vertiefen Sie sich in die verschiedenen Aspekte unseres Service.",
+    links: [LINK.kaufen, LINK.abonnement, LINK.anbieter, LINK.deutschland, LINK.smarters],
   },
 
   // ── Section 16: Final CTA ────────────────────────────────────────────────
   finalCta: {
-    title: "Begin vandaag nog met IPTV Smarter",
-    description: "Sluit u aan bij duizenden tevreden kijkers in Nederland. Krijg direct toegang tot alle zenders, sport en films — of begin met een gratis proefperiode.",
+    title: "Beginnen Sie noch heute mit IPTV Germany",
+    description: "Schließen Sie sich Tausenden zufriedenen Zuschauern in Deutschland an. Erhalten Sie sofortigen Zugang zu allen Sendern, Sport und Filmen — oder starten Sie mit einer kostenlosen Testphase.",
   },
 };
 

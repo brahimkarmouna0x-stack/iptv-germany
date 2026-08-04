@@ -142,10 +142,10 @@ const StatusPage = () => {
             {/* Support Callout */}
             <div className="glass rounded-2xl p-6 sm:p-8 border border-france-500/20 bg-france-500/5 relative overflow-hidden group">
                <div className="absolute -right-8 -bottom-8 w-24 h-24 bg-france-500/10 blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
-               <h2 className="text-lg font-bold       text-blanc-50 mb-2">Probleem gedetecteerd?</h2>
-               <p className="text-sm text-blanc-400 mb-6 leading-relaxed">Ondervindt u streamingproblemen die hier niet worden weergegeven? Neem contact met ons op.</p>
+               <h2 className="text-lg font-bold       text-blanc-50 mb-2">Problem festgestellt?</h2>
+               <p className="text-sm text-blanc-400 mb-6 leading-relaxed">Haben Sie Streaming-Probleme, die hier nicht angezeigt werden? Kontaktieren Sie uns.</p>
                <Link href="/support/contact" className="text-sm font-bold text-france-500 hover:      text-blanc-50 transition-colors flex items-center gap-2 group/btn">
-                  Probleem melden
+                  Problem melden
                   <ArrowRight
                     className="h-4 w-4 transition-transform group-hover/btn:translate-x-1"
                     aria-hidden="true"

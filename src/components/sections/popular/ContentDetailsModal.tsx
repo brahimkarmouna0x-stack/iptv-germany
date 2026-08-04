@@ -95,7 +95,7 @@ export const ContentDetailsModal = ({
           type="button"
           onClick={onClose}
           className="absolute top-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full glass text-blanc-50 transition-colors hover:bg-blanc-50/10"
-          aria-label="Details sluiten"
+          aria-label="Details schließen"
         >
           <X size={20} aria-hidden="true" />
         </button>
@@ -129,7 +129,7 @@ export const ContentDetailsModal = ({
                       aria-hidden="true"
                     />
                     <p className="text-sm font-bold uppercase tracking-widest text-blanc-400">
-                      Geen trailer beschikbaar
+                      Kein Trailer verfügbar
                     </p>
                   </div>
                 </div>
@@ -161,7 +161,7 @@ export const ContentDetailsModal = ({
               </div>
               <p className="mb-10 text-base leading-relaxed text-blanc-400">
                 {item.overview ||
-                  "Geen beschrijving beschikbaar voor deze titel. Geniet van een premium kijkervaring met IPTV Smarter."}
+                  "Keine Beschreibung für diesen Titel verfügbar. Genießen Sie ein Premium-Seherlebnis mit IPTV Germany."}
               </p>
             </div>
 
@@ -171,13 +171,13 @@ export const ContentDetailsModal = ({
                 className="flex w-full items-center justify-center gap-3 rounded-2xl bg-rouge-500 py-4 text-lg font-bold text-blanc-50 shadow-lg shadow-rouge-500/25 transition-transform hover:scale-[1.02] active:scale-[0.98]"
               >
                 <Play size={20} fill="currentColor" aria-hidden="true" />
-                Bekijk de trailer
+                Trailer ansehen
               </button>
               <button
                 type="button"
                 className="w-full rounded-2xl py-4 glass font-bold text-blanc-50 transition-colors hover:bg-blanc-50/10"
               >
-                Toevoegen aan mijn lijst
+                Zu meiner Liste hinzufügen
               </button>
             </div>
           </div>

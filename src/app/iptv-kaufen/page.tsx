@@ -30,8 +30,8 @@ export default function IptvKopenPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbSchema([
-            { name: "Home", url: "https://iptvsmarter.nl" },
-            { name: "IPTV kopen", url: "https://iptvsmarter.nl/iptv-kopen" },
+            { name: "Home", url: "https://iptv-germany.com" },
+            { name: "IPTV kaufen", url: "https://iptv-germany.com/iptv-kaufen" },
           ])),
         }}
       />

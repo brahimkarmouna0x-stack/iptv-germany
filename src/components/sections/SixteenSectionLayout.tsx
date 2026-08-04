@@ -395,13 +395,13 @@ function ComparisonSection({
         <div className="overflow-hidden rounded-3xl border border-blanc-50/10">
           <div className="grid grid-cols-[1fr_1fr_1fr] text-sm">
             <div className="border-b border-blanc-50/5 bg-blanc-50/[0.02] p-4 font-bold uppercase tracking-wider text-blanc-500">
-              Functie
+              Funktion
             </div>
             <div className="border-b border-l border-france-500/20 bg-france-500/10 p-4 text-center font-black uppercase tracking-wider text-france-300">
-              IPTV Smarter
+              IPTV Germany
             </div>
             <div className="border-b border-l border-blanc-50/5 bg-blanc-50/[0.02] p-4 text-center font-black uppercase tracking-wider text-blanc-500">
-              Anderen
+              Andere
             </div>
             {rows.map((row, idx) => (
               <Fragment key={idx}>

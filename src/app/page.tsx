@@ -7,9 +7,9 @@ import { serviceSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = buildMetadata({
   title:
-    "IPTV Smarter Nederland 31.000+ Zenders 4K | Directe Activering | IPTV Smarter",
+    "IPTV Germany 31.000+ Sender 4K | Sofortige Aktivierung | IPTV Germany",
   description:
-    "Premium IPTV in Nederland: meer dan 31.000 zenders, films en series in 4K, zonder onderbrekingen. Directe activering, snelle servers en gratis proefperiode.",
+    "Premium IPTV in Deutschland: über 31.000 Sender, Filme und Serien in 4K, ohne Unterbrechungen. Sofortige Aktivierung, schnelle Server und kostenlose Testphase.",
   path: "/",
   // The root `opengraph-image.tsx` supplies the branded 1200×630 social card.
   // Setting `ogImage: false` keeps `twitter.images` unset too, so the Twitter

@@ -3,9 +3,9 @@ import { BadgeCheck, Lock, MessageCircle, RefreshCw } from "lucide-react";
 const promises = [
   {
     icon: RefreshCw,
-    title: "7 dagen gratis proefperiode",
+    title: "7 Tage kostenlose Testphase",
     description:
-      "Test onze service volledig zonder risico. Niet tevreden? Geen kosten, geen vragen.",
+      "Testen Sie unseren Service völlig risikofrei. Nicht zufrieden? Keine Kosten, keine Fragen.",
     color: "text-france-400",
     gradient: "from-france-600/30 to-france-400/15",
     border: "border-france-500/25",
@@ -13,9 +13,9 @@ const promises = [
   },
   {
     icon: Lock,
-    title: "Beveiligd & versleuteld",
+    title: "Sicher & verschlüsselt",
     description:
-      "Alle betalingen verlopen via beveiligde SSL-verbindingen. Uw gegevens worden nooit gedeeld met derden.",
+      "Alle Zahlungen erfolgen über sichere SSL-Verbindungen. Ihre Daten werden niemals an Dritte weitergegeben.",
     color: "text-rouge-400",
     gradient: "from-rouge-600/30 to-rouge-500/15",
     border: "border-rouge-500/25",
@@ -23,9 +23,9 @@ const promises = [
   },
   {
     icon: MessageCircle,
-    title: "Persoonlijke ondersteuning 24/7",
+    title: "Persönlicher Support rund um die Uhr",
     description:
-      "Ons supportteam is dag en nacht bereikbaar via WhatsApp. Gemiddelde responstijd: minder dan 5 minuten.",
+      "Unser Support-Team ist Tag und Nacht per WhatsApp erreichbar. Durchschnittliche Antwortzeit: unter 5 Minuten.",
     color: "text-france-400",
     gradient: "from-france-600/30 to-france-400/15",
     border: "border-france-500/25",
@@ -33,9 +33,9 @@ const promises = [
   },
   {
     icon: BadgeCheck,
-    title: "Zonder verplichtingen",
+    title: "Ohne Verpflichtungen",
     description:
-      "Geen vast contract en geen verborgen kosten. Stop wanneer u wilt, zonder opzegkosten of gedoe.",
+      "Kein fester Vertrag und keine versteckten Kosten. Kündigen Sie, wann Sie möchten, ohne Kündigungsgebühren oder Aufwand.",
     color: "text-rouge-400",
     gradient: "from-rouge-600/30 to-rouge-500/15",
     border: "border-rouge-500/25",
@@ -56,14 +56,14 @@ const Guarantee = () => {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <span className="inline-block px-4 py-1.5 rounded-full glass text-rouge-400 text-sm font-bold mb-4 uppercase tracking-wider glow-red">
-            Onze belofte
+            Unser Versprechen
           </span>
           <h2 className="font-display font-bold text-4xl sm:text-5xl mb-4 text-blanc-50">
-            Uw tevredenheid, <span className="text-gradient">gegarandeerd</span>
+            Ihre Zufriedenheit, <span className="text-gradient">garantiert</span>
           </h2>
           <p className="text-blanc-400 max-w-2xl mx-auto font-medium">
-            We staan volledig achter onze service. Daarom elimineren we
-            elk risico voor u vanaf de eerste dag.
+            Wir stehen voll und ganz hinter unserem Service. Deshalb
+            schließen wir jedes Risiko für Sie von Anfang an aus.
           </p>
         </div>
 

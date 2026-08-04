@@ -5,31 +5,31 @@
 // compliance. Do not reintroduce named third-party channels as "included"
 // without a documented carriage/distribution licence.
 const dutchChannels = [
-  { name: "Algemene NL zenders", tag: "Algemeen" },
-  { name: "Openbare NL zenders", tag: "Openbaar" },
-  { name: "NL Entertainment", tag: "Entertainment" },
-  { name: "Film & series", tag: "Film" },
-  { name: "Live sport", tag: "Sport" },
-  { name: "Voetbal", tag: "Sport" },
-  { name: "Openbare zenders NL", tag: "Openbaar NL" },
-  { name: "Entertainment NL", tag: "Entertainment" },
-  { name: "Regionale zenders NL", tag: "Regionaal" },
-  { name: "Sportzenders NL", tag: "Sport" },
+  { name: "Deutsche Sender", tag: "Allgemein" },
+  { name: "Öffentlich-rechtliche Sender", tag: "Öffentlich-rechtlich" },
+  { name: "Deutsches Entertainment", tag: "Entertainment" },
+  { name: "Filme & Serien", tag: "Filme" },
+  { name: "Live-Sport", tag: "Sport" },
+  { name: "Fußball", tag: "Sport" },
+  { name: "Regionale Sender", tag: "Regional" },
+  { name: "Unterhaltungssender", tag: "Entertainment" },
+  { name: "Lokale Sender", tag: "Lokal" },
+  { name: "Sportsender", tag: "Sport" },
 ];
 
 const internationalChannels = [
-  { name: "Nieuwskanalen (VK)", tag: "VK" },
-  { name: "Internationaal nieuws", tag: "Nieuws" },
-  { name: "Documentaires", tag: "Docu" },
-  { name: "Natuur & ontdekking", tag: "Docu" },
-  { name: "Internationale sport", tag: "Sport" },
-  { name: "Cultuurzenders", tag: "Cultuur" },
-  { name: "Autosport", tag: "Sport" },
-  { name: "Arabische nieuwskanalen", tag: "Nieuws" },
-  { name: "Franstalige zenders", tag: "Frans" },
-  { name: "Gevechtssporten", tag: "Sport" },
-  { name: "Filmzenders", tag: "Film" },
-  { name: "Zwitserse zenders", tag: "Zwitserland" },
+  { name: "Nachrichtenkanäle (UK)", tag: "UK" },
+  { name: "Internationale Nachrichten", tag: "Nachrichten" },
+  { name: "Dokumentationen", tag: "Docu" },
+  { name: "Natur & Entdeckung", tag: "Docu" },
+  { name: "Internationaler Sport", tag: "Sport" },
+  { name: "Kultursender", tag: "Kultur" },
+  { name: "Motorsport", tag: "Sport" },
+  { name: "Arabische Nachrichtenkanäle", tag: "Nachrichten" },
+  { name: "Französischsprachige Sender", tag: "Französisch" },
+  { name: "Kampfsport", tag: "Sport" },
+  { name: "Filmsender", tag: "Filme" },
+  { name: "Schweizer Sender", tag: "Schweiz" },
 ];
 
 interface ChannelPillProps {
@@ -73,14 +73,14 @@ const ChannelShowcase = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <span className="inline-block px-4 py-1.5 rounded-full glass text-france-400 text-sm font-bold mb-4 uppercase tracking-wider glow-gold">
-            Zenderaanbod
+            Senderangebot
           </span>
           <h2 className="font-display font-bold text-4xl sm:text-5xl mb-4 text-blanc-50">
-            <span className="text-gradient">Populaire</span> zenders
+            <span className="text-gradient">Beliebte</span> Sender
           </h2>
           <p className="text-blanc-400 max-w-2xl mx-auto font-medium">
-            Van Nederlandse zenders tot grote internationale sportevenementen
-            — alles in één abonnement.
+            Von deutschen Sendern bis zu großen internationalen
+            Sportereignissen — alles in einem Abonnement.
           </p>
         </div>
 
@@ -89,7 +89,7 @@ const ChannelShowcase = () => {
             <div className="flex items-center gap-3 mb-5">
               <span className="h-px flex-1 bg-blanc-50/5" />
               <span className="text-xs font-black uppercase tracking-widest text-france-400">
-                Nederlandse &amp; internationale zenders
+                Deutsche &amp; internationale Sender
               </span>
               <span className="h-px flex-1 bg-blanc-50/5" />
             </div>
@@ -104,7 +104,7 @@ const ChannelShowcase = () => {
             <div className="flex items-center gap-3 mb-5">
               <span className="h-px flex-1 bg-blanc-50/5" />
               <span className="text-xs font-black uppercase tracking-widest text-blanc-500">
-                Internationale zenders
+                Internationale Sender
               </span>
               <span className="h-px flex-1 bg-blanc-50/5" />
             </div>
@@ -116,8 +116,8 @@ const ChannelShowcase = () => {
           </div>
 
           <p className="text-center text-blanc-500 text-sm font-medium">
-            + <span className="text-blanc-300 font-bold">30.976 andere zenders</span> uit
-            meer dan 190 landen
+            + <span className="text-blanc-300 font-bold">30.976 weitere Sender</span> aus
+            mehr als 190 Ländern
           </p>
         </div>
       </div>

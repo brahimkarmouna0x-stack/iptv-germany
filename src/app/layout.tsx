@@ -77,29 +77,29 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "nl_NL",
-    url: "https://iptvsmarter.nl",
-    siteName: "IPTV Smarter",
+    locale: "de_DE",
+    url: "https://iptv-germany.com",
+    siteName: "IPTV Germany",
     title:
-      "IPTV Nederland 31.000+ Zenders 4K | IPTV Smarter",
+      "IPTV Germany: 31.000+ Sender in 4K",
     description:
-      "Stabiele 4K streaming, meer dan 31.000 zenders en geen onderbrekingen.",
+      "Stabiles 4K-Streaming, über 31.000 Sender und keine Unterbrechungen.",
     images: [
       {
-        url: "https://iptvsmarter.nl/images/logo-iptv-streaming.png",
+        url: "https://iptv-germany.com/images/logo-iptv-streaming.png",
         width: 1505,
         height: 1352,
-        alt: "IPTV Smarter – Premium IPTV-abonnement in Nederland",
+        alt: "IPTV Germany – Premium IPTV-Abonnement in Deutschland",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "IPTV Nederland 31.000+ Zenders 4K | IPTV Smarter",
+      "IPTV Germany: 31.000+ Sender in 4K",
     description:
-      "Stabiele 4K streaming, meer dan 31.000 zenders en geen onderbrekingen.",
-    images: ["https://iptvsmarter.nl/images/logo-iptv-streaming.png"],
+      "Stabiles 4K-Streaming, über 31.000 Sender und keine Unterbrechungen.",
+    images: ["https://iptv-germany.com/images/logo-iptv-streaming.png"],
   },
   robots: {
     index: true,
@@ -131,7 +131,7 @@ export default async function RootLayout({
   const phoneNumber = await getPhoneNumber();
   return (
     <html
-      lang="nl"
+      lang="de"
       className={`h-full antialiased ${inter.variable}`}
       suppressHydrationWarning
     >

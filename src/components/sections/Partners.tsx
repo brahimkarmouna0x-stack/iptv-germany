@@ -24,13 +24,13 @@ const CATEGORIES: {
   label: string;
   icon: LucideIcon;
 }[] = [
-  { name: "Nieuwste films", label: "Films op aanvraag", icon: Popcorn },
-  { name: "Populaire series", label: "Volledige seizoenen", icon: Clapperboard },
-  { name: "Grote klassiekers", label: "Filmtheek", icon: Film },
-  { name: "Documentaires", label: "Natuur, wetenschap & geschiedenis", icon: Tv },
-  { name: "Kinderzenders", label: "Gezinsinhoud", icon: Baby },
-  { name: "Internationale inhoud", label: "190+ landen", icon: Globe2 },
-  { name: "Premium selectie", label: "4K Ultra HD", icon: Sparkles },
+  { name: "Neueste Filme", label: "Filme auf Abruf", icon: Popcorn },
+  { name: "Beliebte Serien", label: "Ganze Staffeln", icon: Clapperboard },
+  { name: "Große Klassiker", label: "Filmbibliothek", icon: Film },
+  { name: "Dokumentationen", label: "Natur, Wissenschaft & Geschichte", icon: Tv },
+  { name: "Kindersender", label: "Familieninhalte", icon: Baby },
+  { name: "Internationale Inhalte", label: "190+ Länder", icon: Globe2 },
+  { name: "Premium-Auswahl", label: "4K Ultra HD", icon: Sparkles },
 ];
 
 const LOOP_CATEGORIES = [...CATEGORIES, ...CATEGORIES, ...CATEGORIES];
@@ -46,14 +46,14 @@ const Partners = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-10 max-w-3xl text-center sm:mb-14">
           <span className="inline-flex rounded-full border border-france-300/20 bg-france-500/15 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-france-100">
-            VOD-bibliotheek
+            VOD-Bibliothek
           </span>
           <h2 className="mt-5 font-display text-4xl font-black tracking-tight text-blanc-50 sm:text-6xl">
-            Series & <span className="text-gradient">Films</span>
+            Serien & <span className="text-gradient">Filme</span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base font-medium leading-8 text-blanc-300 sm:text-lg">
-            Een uitgebreide bibliotheek van films en series op aanvraag, gecategoriseerd
-            per genre, in HD- en 4K-kwaliteit.
+            Eine umfangreiche Bibliothek mit Filmen und Serien auf Abruf,
+            kategorisiert nach Genre, in HD- und 4K-Qualität.
           </p>
         </div>
 

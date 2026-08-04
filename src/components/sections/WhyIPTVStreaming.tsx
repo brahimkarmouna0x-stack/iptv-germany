@@ -1,4 +1,4 @@
-﻿import {
+import {
   BadgeCheck,
   HeadphonesIcon,
   MonitorPlay,
@@ -11,9 +11,9 @@ const reasons = [
   {
     number: "01",
     icon: Tv2,
-    title: "IPTV Smarter biedt het grootste aanbod van Nederland",
+    title: "IPTV Germany bietet das größte Angebot in Deutschland",
     description:
-      "Met meer dan 31.000 live zenders en 140.000+ films en series biedt IPTV Smarter het meest complete IPTV-pakket op de markt — van Franse en Nederlandse zenders tot internationale nieuwskanalen en grote sportevenementen.",
+      "Mit mehr als 31.000 Live-Sendern und 140.000+ Filmen und Serien bietet IPTV Germany das umfassendste IPTV-Paket auf dem Markt — von deutschen Sendern bis zu internationalen Nachrichtenkanälen und großen Sportereignissen.",
     color: "text-france-400",
     gradient: "from-france-600/25 to-france-400/10",
     border: "border-france-500/20",
@@ -21,9 +21,9 @@ const reasons = [
   {
     number: "02",
     icon: Server,
-    title: "IPTV Smarter garandeert 99,9% beschikbaarheid",
+    title: "IPTV Germany garantiert 99,9% Verfügbarkeit",
     description:
-      "IPTV Smarter draait op redundante servers met hoge beschikbaarheid, verdeeld over meerdere datacentra. Bij storing schakelen we automatisch over zodat u nooit een seconde mist.",
+      "IPTV Germany läuft auf redundanten Hochverfügbarkeits-Servern, verteilt auf mehrere Rechenzentren. Bei einer Störung schalten wir automatisch um, damit Sie keine Sekunde verpassen.",
     color: "text-rouge-400",
     gradient: "from-rouge-600/25 to-rouge-500/10",
     border: "border-rouge-500/20",
@@ -31,9 +31,9 @@ const reasons = [
   {
     number: "03",
     icon: MonitorPlay,
-    title: "IPTV Smarter levert echte 4K-kwaliteit",
+    title: "IPTV Germany liefert echte 4K-Qualität",
     description:
-      "Geen compressieartefakten en geen gepixellde randen. IPTV Smarter streamt in echt 4K Ultra HD met HDR-ondersteuning, zodat elke film, serie en live wedstrijd spectaculair is.",
+      "Keine Kompressionsartefakte und keine verpixelten Kanten. IPTV Germany streamt in echtem 4K Ultra HD mit HDR-Unterstützung, damit jeder Film, jede Serie und jedes Live-Spiel spektakulär aussieht.",
     color: "text-france-400",
     gradient: "from-france-600/25 to-france-400/10",
     border: "border-france-500/20",
@@ -41,9 +41,9 @@ const reasons = [
   {
     number: "04",
     icon: HeadphonesIcon,
-    title: "IPTV Smarter helpt u 24/7 via WhatsApp",
+    title: "IPTV Germany hilft Ihnen rund um die Uhr per WhatsApp",
     description:
-      "Ons supportteam is dag en nacht bereikbaar via WhatsApp, met een gemiddelde responstijd van minder dan 5 minuten. IPTV Smarter zorgt ervoor dat u altijd snel geholpen wordt.",
+      "Unser Support-Team ist Tag und Nacht per WhatsApp erreichbar, mit einer durchschnittlichen Antwortzeit von unter 5 Minuten. IPTV Germany sorgt dafür, dass Ihnen immer schnell geholfen wird.",
     color: "text-rouge-400",
     gradient: "from-rouge-600/25 to-rouge-500/10",
     border: "border-rouge-500/20",
@@ -51,9 +51,9 @@ const reasons = [
   {
     number: "05",
     icon: BadgeCheck,
-    title: "IPTV Smarter zonder verplichtingen of verborgen kosten",
+    title: "IPTV Germany ohne Verpflichtungen oder versteckte Kosten",
     description:
-      "Geen jaarcontract, geen installatiekosten, geen verborgen tarieven. IPTV Smarter werkt met volledige transparantie: u betaalt alleen wat u gebruikt en stopt wanneer u wilt.",
+      "Kein Jahresvertrag, keine Installationskosten, keine versteckten Gebühren. IPTV Germany arbeitet mit voller Transparenz: Sie zahlen nur, was Sie nutzen, und kündigen, wann Sie möchten.",
     color: "text-france-400",
     gradient: "from-france-600/25 to-france-400/10",
     border: "border-france-500/20",
@@ -61,9 +61,9 @@ const reasons = [
   {
     number: "06",
     icon: PackageCheck,
-    title: "IPTV Smarter is direct actief na bestelling",
+    title: "IPTV Germany ist sofort nach der Bestellung aktiv",
     description:
-      "Direct na uw betaling ontvangt u uw persoonlijke inloggegevens via e-mail. De activering van IPTV Smarter duurt gemiddeld minder dan 5 minuten — geen wachttijd, geen monteur aan huis.",
+      "Direkt nach Ihrer Zahlung erhalten Sie Ihre persönlichen Zugangsdaten per E-Mail. Die Aktivierung von IPTV Germany dauert im Schnitt weniger als 5 Minuten — keine Wartezeit, kein Techniker vor Ort.",
     color: "text-rouge-400",
     gradient: "from-rouge-600/25 to-rouge-500/10",
     border: "border-rouge-500/20",
@@ -82,15 +82,16 @@ const WhyIPTVStreaming = () => {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <span className="inline-block px-4 py-1.5 rounded-full glass text-rouge-400 text-sm font-bold mb-4 uppercase tracking-wider glow-red">
-            Waarom IPTV Smarter
+            Warum IPTV Germany
           </span>
           <h2 className="font-display font-bold text-4xl sm:text-5xl mb-4 text-blanc-50">
-            6 redenen om te kiezen voor{" "}
-            <span className="text-gradient">IPTV Smarter</span>
+            6 Gründe, sich für{" "}
+            <span className="text-gradient">IPTV Germany</span> zu entscheiden
           </h2>
           <p className="text-blanc-400 max-w-2xl mx-auto font-medium">
-            IPTV Smarter combineert een ongeëvenaard zenderaanbod, 4K-kwaliteit
-            en persoonlijke service — voor een vast en laag tarief.
+            IPTV Germany kombiniert ein unvergleichliches Senderangebot,
+            4K-Qualität und persönlichen Service — zu einem festen, günstigen
+            Preis.
           </p>
         </div>
 

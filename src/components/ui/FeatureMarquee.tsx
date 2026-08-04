@@ -21,18 +21,18 @@ import {
  * without documented licensing/authorization from each rights holder.
  */
 const CATEGORIES: { name: string; icon: LucideIcon }[] = [
-  { name: "Live sport", icon: Trophy },
-  { name: "Voetbal", icon: Trophy },
-  { name: "Films & series", icon: Clapperboard },
-  { name: "Nederlandse zenders", icon: Tv },
-  { name: "Internationale zenders", icon: Tv },
-  { name: "Wereldwijde zenders", icon: Globe2 },
-  { name: "24/7 nieuws", icon: Newspaper },
-  { name: "Kinderzenders", icon: Baby },
-  { name: "Muziek", icon: Music },
-  { name: "Documentaires", icon: MonitorPlay },
-  { name: "Premium 4K zenders", icon: Radio },
-  { name: "Terugkijken & VOD", icon: Clock },
+  { name: "Live-Sport", icon: Trophy },
+  { name: "Fußball", icon: Trophy },
+  { name: "Filme & Serien", icon: Clapperboard },
+  { name: "Deutsche Sender", icon: Tv },
+  { name: "Internationale Sender", icon: Tv },
+  { name: "Weltweite Sender", icon: Globe2 },
+  { name: "24/7-Nachrichten", icon: Newspaper },
+  { name: "Kindersender", icon: Baby },
+  { name: "Musik", icon: Music },
+  { name: "Dokumentationen", icon: MonitorPlay },
+  { name: "Premium-4K-Sender", icon: Radio },
+  { name: "Wiederholung & VOD", icon: Clock },
 ];
 
 const MARQUEE_ITEMS = [...CATEGORIES, ...CATEGORIES];
@@ -42,7 +42,7 @@ const FeatureMarquee = () => {
     <section
       className="relative overflow-hidden border-y border-blanc-50/10 bg-france-950/70 py-6"
       style={{ contentVisibility: "auto", containIntrinsicSize: "auto 92px" }}
-      aria-label="Inhoudscategorieën"
+      aria-label="Inhaltskategorien"
     >
       <div className="absolute inset-0 bg-linear-to-r from-france-500/10 via-transparent to-emerald-300/5" />
       <div className="pointer-events-none absolute left-1/2 top-1/2 h-28 w-[86%] -translate-x-1/2 -translate-y-1/2 rounded-full border border-france-300/15 bg-france-300/10 blur-[1px]" />

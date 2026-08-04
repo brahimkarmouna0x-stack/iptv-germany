@@ -2,12 +2,12 @@
 
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
-export const alt = "IPTV Nederland — alle zenders, sport & 4K — IPTV Smarter";
+export const alt = "IPTV Deutschland — alle Sender, Sport & 4K — IPTV Germany";
 
 export default function Image() {
   return renderOgImage({
-    eyebrow: "IPTV Nederland",
-    title: "IPTV Nederland",
-    subtitle: "Alle Nederlandse & internationale zenders, voetbal en sport in 4K.",
+    eyebrow: "IPTV Deutschland",
+    title: "IPTV Deutschland",
+    subtitle: "Alle deutschen & internationalen Sender, Fußball und Sport in 4K.",
   });
 }

@@ -14,7 +14,7 @@ function Cell({ value }: { value: boolean | string }) {
     return value ? (
       <Check size={18} aria-label="Ja" className="mx-auto text-emerald-400" />
     ) : (
-      <X size={18} aria-label="Nee" className="mx-auto text-blanc-600" />
+      <X size={18} aria-label="Nein" className="mx-auto text-blanc-600" />
     );
   }
   return <span className="text-sm font-medium text-blanc-200">{value}</span>;
@@ -68,7 +68,7 @@ export default function ComparisonSection({
                   scope="col"
                   className="sticky left-0 z-10 bg-france-900 px-5 py-4 text-xs font-black uppercase tracking-wider text-blanc-400"
                 >
-                  Kenmerk
+                  Merkmal
                 </th>
                 {columns.map((col, index) => (
                   <th

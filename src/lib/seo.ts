@@ -39,7 +39,7 @@ export function canonicalMetadata(
   return {
     alternates: {
       canonical: url,
-      // Self-referencing hreflang for the single nl-NL locale (Google-recommended).
+      // Self-referencing hreflang for the single de-DE locale (Google-recommended).
       languages: { [language]: url, "x-default": url },
     },
   };
@@ -112,7 +112,7 @@ export function buildMetadata({
   return {
     title,
     description,
-    // Canonical + self-referencing nl-NL hreflang on every page.
+    // Canonical + self-referencing de-DE hreflang on every page.
     alternates: { canonical: url, languages: { [SITE.hreflang]: url, "x-default": url } },
     openGraph: {
       type,

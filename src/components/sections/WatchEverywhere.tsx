@@ -13,9 +13,9 @@ import {
 } from "lucide-react";
 
 const highlights = [
-  "31.000+ live zenders over de hele wereld",
-  "140.000+ films en series op aanvraag",
-  "TV-gids (EPG) inbegrepen op al uw schermen",
+  "31.000+ Live-Sender aus aller Welt",
+  "140.000+ Filme und Serien auf Abruf",
+  "TV-Guide (EPG) auf allen Ihren Bildschirmen inklusive",
 ];
 
 /**
@@ -25,12 +25,12 @@ const highlights = [
  * confirming it contains no third-party logos, app icons, or title marks.
  */
 const SCREEN_TILES: { label: string; icon: LucideIcon }[] = [
-  { label: "Films & series", icon: Clapperboard },
-  { label: "Live sport", icon: Trophy },
-  { label: "Nieuws", icon: Newspaper },
-  { label: "Muziek", icon: Music },
-  { label: "Jeugdzenders", icon: Baby },
-  { label: "Internationaal", icon: Globe2 },
+  { label: "Filme & Serien", icon: Clapperboard },
+  { label: "Live-Sport", icon: Trophy },
+  { label: "Nachrichten", icon: Newspaper },
+  { label: "Musik", icon: Music },
+  { label: "Kindersender", icon: Baby },
+  { label: "International", icon: Globe2 },
 ];
 
 const WatchEverywhere = () => {
@@ -53,7 +53,7 @@ const WatchEverywhere = () => {
                 <span className="h-3 w-3 rounded-full bg-blanc-50/20" aria-hidden="true" />
                 <span className="h-3 w-3 rounded-full bg-blanc-50/20" aria-hidden="true" />
                 <span className="ml-auto text-[10px] font-black uppercase tracking-[0.16em] text-blanc-500">
-                  Categorie-overzicht
+                  Kategorie-Übersicht
                 </span>
               </div>
               <div className="grid grid-cols-3 gap-3 sm:gap-4">
@@ -79,7 +79,7 @@ const WatchEverywhere = () => {
               </span>
               <div className="leading-tight">
                 <p className="text-sm font-bold text-blanc-50">4K Ultra HD</p>
-                <p className="text-[11px] text-blanc-400">Zonder onderbreking</p>
+                <p className="text-[11px] text-blanc-400">Ohne Unterbrechung</p>
               </div>
             </div>
           </div>
@@ -87,22 +87,23 @@ const WatchEverywhere = () => {
           {/* Right — compact message + CTA, sized to match image height */}
           <div className="animate-slide-up">
             <span className="inline-block rounded-full glass px-3 py-1 text-xs font-bold uppercase tracking-wider text-france-400 glow-gold">
-              Complete bibliotheek
+              Komplette Bibliothek
             </span>
             <h2 className="mt-3 font-display text-2xl font-black leading-tight text-blanc-50 sm:text-3xl">
-              Alle televisie die u zoekt, verzameld op{" "}
-              <span className="text-gradient">een plek</span>
+              Das gesamte Fernsehen, das Sie suchen, an{" "}
+              <span className="text-gradient">einem Ort</span>
             </h2>
             <p className="mt-2.5 text-sm leading-relaxed text-blanc-400">
-              Op zoek naar een betrouwbaar IPTV-abonnement? Profiteer van de beste service bij de{" "}
+              Auf der Suche nach einem zuverlässigen IPTV-Abonnement?
+              Profitieren Sie vom besten Service bei den{" "}
               <Link
                 href="/iptv-aanbieder"
                 className="font-semibold text-france-400 hover:text-france-300 hover:underline"
               >
-                IPTV-aanbieders
+                IPTV-Anbietern
               </Link>{" "}
-              voor een betaalbaar tarief, met een complete catalogus en een ingebouwde tv-gids,
-              compatibel met al uw apparaten.
+              zu einem fairen Preis, mit einem vollständigen Katalog und einem
+              integrierten TV-Guide, kompatibel mit all Ihren Geräten.
             </p>
 
             <ul className="mt-3.5 flex flex-wrap gap-2">

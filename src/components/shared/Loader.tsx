@@ -27,7 +27,7 @@ const Loader = ({ size = "md", fullScreen = false }: LoaderProps) => {
       >
         <Image
           src="/images/logo.png?v=2"
-          alt="IPTV Smarter"
+          alt="IPTV Germany"
           width={iconSizes[size]}
           height={iconSizes[size]}
           className="h-full w-full object-contain p-1 animate-pulse-gentle"
@@ -46,7 +46,7 @@ const Loader = ({ size = "md", fullScreen = false }: LoaderProps) => {
       <div className="fixed inset-0 z-9999 flex flex-col items-center justify-center bg-france-950/80 backdrop-blur-md">
         {loaderContent}
         <p className="mt-6 text-blanc-400 font-display font-medium tracking-widest uppercase text-xs animate-pulse">
-          IPTV Smarter laden...
+          IPTV Germany wird geladen...
         </p>
       </div>
     );

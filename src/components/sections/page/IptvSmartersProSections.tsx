@@ -8,28 +8,28 @@
 
 const smartersFeatures = [
   {
-    title: "Ondersteuning voor M3U-playlists",
-    desc: "IPTV Smarters Pro laadt direct elke M3U-link. Plak de URL van uw playlist en alle zenders verschijnen meteen, gesorteerd in de app.",
+    title: "Unterstützung für M3U-Playlists",
+    desc: "IPTV Smarters Pro lädt jeden M3U-Link direkt. Fügen Sie die URL Ihrer Playlist ein, und alle Sender erscheinen sofort, sortiert in der App.",
   },
   {
-    title: "API Xtream Codes",
-    desc: "Log in met uw gebruikersnaam, wachtwoord en het serveradres van IPTV Smarter. De app haalt automatisch uw zenders, VOD en EPG op.",
+    title: "Xtream Codes API",
+    desc: "Melden Sie sich mit Ihrem Benutzernamen, Passwort und der Serveradresse von IPTV Germany an. Die App ruft automatisch Ihre Sender, VOD und EPG ab.",
   },
   {
-    title: "Live TV, VOD en series",
-    desc: "Eén app voor alles: live zenders, films op aanvraag en series in aparte tabbladen. Wissel moeiteloos tussen inhoud.",
+    title: "Live-TV, VOD und Serien",
+    desc: "Eine App für alles: Live-Sender, Filme auf Abruf und Serien in getrennten Tabs. Wechseln Sie mühelos zwischen den Inhalten.",
   },
   {
-    title: "Elektronische programmagids (EPG)",
-    desc: "IPTV Smarters Pro toont de volledige EPG-gids. Zie wat er nu en straks op elke zender wordt uitgezonden.",
+    title: "Elektronischer Programmführer (EPG)",
+    desc: "IPTV Smarters Pro zeigt den vollständigen EPG-Guide. Sehen Sie, was jetzt und demnächst auf jedem Sender läuft.",
   },
   {
-    title: "Multi-scherm & ouderlijk toezicht",
-    desc: "Maak meerdere profielen voor elk gezinslid, met eigen favorieten en ouderlijk toezicht per profiel.",
+    title: "Multi-Screen & Kindersicherung",
+    desc: "Erstellen Sie mehrere Profile für jedes Familienmitglied, mit eigenen Favoriten und Kindersicherung pro Profil.",
   },
   {
-    title: "4K & HDR streaming",
-    desc: "De app ondersteunt volledig 4K UHD- en HDR-inhoud. Koppel uw IPTV Smarter-account voor maximale beeldkwaliteit.",
+    title: "4K & HDR-Streaming",
+    desc: "Die App unterstützt vollständig 4K-UHD- und HDR-Inhalte. Verbinden Sie Ihr IPTV-Germany-Konto für maximale Bildqualität.",
   },
 ];
 
@@ -42,15 +42,15 @@ export function IptvSmartersAbout() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <span className="inline-block px-4 py-1.5 rounded-full glass text-france-400 text-sm font-bold mb-4 uppercase tracking-wider glow-gold">
-            De app uitgelegd
+            Die App erklärt
           </span>
           <h2 className="font-display font-bold text-4xl sm:text-5xl mb-4 text-blanc-50">
-            Wat is{" "}
+            Was ist{" "}
             <span className="text-gradient">IPTV Smarters Pro</span>?
           </h2>
           <p className="text-blanc-400 max-w-2xl mx-auto font-medium">
-            IPTV Smarters Pro is een van de populairste IPTV-apps ter wereld.
-            Het werkt perfect met uw IPTV Smarter-abonnement op Android, iOS, Fire TV Stick en meer.
+            IPTV Smarters Pro ist eine der beliebtesten IPTV-Apps weltweit.
+            Sie funktioniert perfekt mit Ihrem IPTV-Germany-Abonnement auf Android, iOS, Fire TV Stick und mehr.
           </p>
         </div>
 
@@ -79,8 +79,8 @@ const installSteps = [
   {
     step: "01",
     icon: Download,
-    title: "Download IPTV Smarters Pro",
-    desc: 'Zoek naar "IPTV Smarters Pro" op de Google Play Store, de Apple App Store of de Amazon Appstore. Download en installeer de gratis app op uw apparaat.',
+    title: "IPTV Smarters Pro herunterladen",
+    desc: 'Suchen Sie im Google Play Store, im Apple App Store oder im Amazon Appstore nach „IPTV Smarters Pro". Laden Sie die kostenlose App herunter und installieren Sie sie auf Ihrem Gerät.',
     color: "text-france-400",
     gradient: "from-france-600/30 to-france-400/15",
     border: "border-france-500/25",
@@ -88,8 +88,8 @@ const installSteps = [
   {
     step: "02",
     icon: Settings,
-    title: "Kies uw verbindingsmethode",
-    desc: 'Open de app en kies "Login with Xtream Codes API" voor de eenvoudigste configuratie, of "Add URL/M3U" als u een playlist-link van IPTV Smarter heeft ontvangen.',
+    title: "Wählen Sie Ihre Verbindungsmethode",
+    desc: 'Öffnen Sie die App und wählen Sie „Login with Xtream Codes API" für die einfachste Konfiguration, oder „Add URL/M3U", wenn Sie einen Playlist-Link von IPTV Germany erhalten haben.',
     color: "text-rouge-400",
     gradient: "from-rouge-600/30 to-rouge-500/15",
     border: "border-rouge-500/25",
@@ -97,8 +97,8 @@ const installSteps = [
   {
     step: "03",
     icon: List,
-    title: "Voer uw IPTV Smarter-inloggegevens in",
-    desc: "Vul uw gebruikersnaam, wachtwoord en de server-URL in die u per e-mail heeft ontvangen na aankoop. Druk op Toevoegen — de app laadt uw zenders automatisch.",
+    title: "Geben Sie Ihre IPTV-Germany-Zugangsdaten ein",
+    desc: "Geben Sie Ihren Benutzernamen, Ihr Passwort und die Server-URL ein, die Sie nach dem Kauf per E-Mail erhalten haben. Drücken Sie auf Hinzufügen — die App lädt Ihre Sender automatisch.",
     color: "text-france-400",
     gradient: "from-france-600/30 to-france-400/15",
     border: "border-france-500/25",
@@ -106,8 +106,8 @@ const installSteps = [
   {
     step: "04",
     icon: Smartphone,
-    title: "Stel uw voorkeuren in",
-    desc: "Voeg uw favoriete zenders toe, configureer de EPG voor de programmagids en schakel ouderlijk toezicht in indien gewenst. De interface is in het Engels maar intuïtief.",
+    title: "Stellen Sie Ihre Präferenzen ein",
+    desc: "Fügen Sie Ihre Lieblingssender hinzu, konfigurieren Sie die EPG für den Programmführer und aktivieren Sie bei Bedarf die Kindersicherung. Die Oberfläche ist auf Englisch, aber intuitiv.",
     color: "text-rouge-400",
     gradient: "from-rouge-600/30 to-rouge-500/15",
     border: "border-rouge-500/25",
@@ -115,8 +115,8 @@ const installSteps = [
   {
     step: "05",
     icon: Play,
-    title: "Begin met streamen",
-    desc: "Selecteer Live TV, VOD of Series en kies een zender of film. IPTV Smarters Pro verbindt direct met de servers van IPTV Smarter voor een stabiele 4K-stream.",
+    title: "Mit dem Streamen beginnen",
+    desc: "Wählen Sie Live-TV, VOD oder Serien und suchen Sie einen Sender oder Film aus. IPTV Smarters Pro verbindet sich sofort mit den Servern von IPTV Germany für einen stabilen 4K-Stream.",
     color: "text-france-400",
     gradient: "from-france-600/30 to-france-400/15",
     border: "border-france-500/25",
@@ -135,15 +135,15 @@ export function IptvSmartersInstall() {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <span className="inline-block px-4 py-1.5 rounded-full glass text-rouge-400 text-sm font-bold mb-4 uppercase tracking-wider glow-red">
-            Stap voor stap
+            Schritt für Schritt
           </span>
           <h2 className="font-display font-bold text-4xl sm:text-5xl mb-4 text-blanc-50">
-            Installeer <span className="text-gradient">IPTV Smarters Pro</span> met
-            IPTV Smarter
+            Installieren Sie <span className="text-gradient">IPTV Smarters Pro</span> mit
+            IPTV Germany
           </h2>
           <p className="text-blanc-400 max-w-2xl mx-auto font-medium">
-            Van download naar live TV in minder dan 5 minuten — volg deze
-            eenvoudige stappen voor IPTV Smarters Pro.
+            Vom Download zum Live-TV in weniger als 5 Minuten — folgen Sie diesen
+            einfachen Schritten für IPTV Smarters Pro.
           </p>
         </div>
 

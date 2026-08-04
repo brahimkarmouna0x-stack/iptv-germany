@@ -15,9 +15,9 @@ const PLATFORM_LABEL: Record<DevicePlatform | "all", string> = {
   ios: "iOS",
   "smart-tv": "Smart TV",
   browser: "Browser",
-  box: "TV-box",
+  box: "TV-Box",
   windows: "Windows",
-  other: "Overig",
+  other: "Sonstige",
 };
 
 export default function DevicesSection({ heading, subheading, list }: Props) {
@@ -53,7 +53,7 @@ export default function DevicesSection({ heading, subheading, list }: Props) {
 
         <div
           role="tablist"
-          aria-label="Apparaten filteren"
+          aria-label="Geräte filtern"
           className="mb-10 flex flex-wrap justify-center gap-2"
         >
           {platforms.map((platform) => {
@@ -92,7 +92,7 @@ export default function DevicesSection({ heading, subheading, list }: Props) {
                   {device.name}
                 </h3>
                 <p className="text-xs font-bold uppercase tracking-wider text-blanc-500">
-                  {device.steps} stappen om in te stellen
+                  {device.steps} Schritte zur Einrichtung
                 </p>
               </div>
             );

@@ -3,9 +3,9 @@ import PopularContent from "@/components/sections/PopularContent";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Populaire content — Films & series om te ontdekken | IPTV Smarter",
+  title: "Beliebte Inhalte — Filme & Serien entdecken | IPTV Germany",
   description:
-    "Ontdek de meest populaire films en series van dit moment en de contentcategorieën van IPTV Smarter. Film-/seriedata geleverd door TMDB.",
+    "Entdecken Sie die aktuell beliebtesten Filme und Serien sowie die Inhaltskategorien von IPTV Germany. Film-/Seriendaten bereitgestellt von TMDB.",
   path: "/popular",
 });
 

@@ -1,31 +1,31 @@
 import { CheckCircle2, Globe2, Infinity, Sparkles, Tv, Zap } from "lucide-react";
 
 const accessItems = [
-  "Toegang tot duizenden live zenders over de hele wereld",
-  "Nederlandse, Franse & internationale zenders (algemeen, publiek & prive)",
-  "Premium sportzenders & filmbibliotheek",
-  "Zonder contract of verborgen kosten",
+  "Zugang zu Tausenden Live-Sendern aus aller Welt",
+  "Deutsche & internationale Sender (öffentlich-rechtlich & privat)",
+  "Premium-Sportsender & Filmbibliothek",
+  "Ohne Vertrag oder versteckte Kosten",
 ];
 
 const featureItems = [
   {
-    title: "Volledige flexibiliteit",
+    title: "Volle Flexibilität",
     description:
-      "In tegenstelling tot traditionele televisie biedt IPTV functies zoals pauzeren, terugspoelen en opnemen. U bepaalt uw eigen programma.",
+      "Im Gegensatz zum klassischen Fernsehen bietet IPTV Funktionen wie Pausieren, Zurückspulen und Aufnehmen. Sie bestimmen Ihr eigenes Programm.",
     icon: Infinity,
     tone: "text-france-100 bg-france-500/15 border-france-500/25",
   },
   {
-    title: "Eenvoudige installatie",
+    title: "Einfache Einrichtung",
     description:
-      "Geen technicus nodig. Voer uw IPTV-code in apps zoals IPTV Smarters of TiviMate in en begin direct met streamen.",
+      "Kein Techniker nötig. Geben Sie Ihren IPTV-Code in Apps wie IPTV Smarters oder TiviMate ein und beginnen Sie sofort mit dem Streamen.",
     icon: Sparkles,
     tone: "text-france-100 bg-france-700/15 border-france-700/25",
   },
   {
-    title: "Kijk overal",
+    title: "Überall schauen",
     description:
-      "Of u nu thuis bent of onderweg, u heeft toegang tot uw favoriete zenders op elk aangesloten apparaat.",
+      "Ob zu Hause oder unterwegs — Sie haben Zugriff auf Ihre Lieblingssender auf jedem verbundenen Gerät.",
     icon: Globe2,
     tone: "text-emerald-100 bg-emerald-300/10 border-emerald-300/20",
   },
@@ -40,26 +40,26 @@ const Guide = () => {
         <div className="mb-14 grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-14">
           <div>
             <span className="inline-flex rounded-full border border-france-500/25 bg-france-500/15 px-4 py-1.5 text-sm font-black uppercase tracking-[0.14em] text-france-100">
-              De volledige gids
+              Der komplette Leitfaden
             </span>
             <h2 className="mt-6 font-display text-4xl font-black leading-tight text-blanc-50 sm:text-5xl">
-              Wat is IPTV en <br />
-              <span className="text-gradient">hoe werkt het?</span>
+              Was ist IPTV und <br />
+              <span className="text-gradient">wie funktioniert es?</span>
             </h2>
             <div className="mt-7 space-y-5 text-base leading-7 text-blanc-300 sm:text-lg">
               <p>
-                IPTV staat voor{" "}
+                IPTV steht für{" "}
                 <span className="font-semibold text-blanc-50">
                   Internet Protocol Television
                 </span>{" "}
-                en verwijst naar televisie die via internet wordt uitgezonden. In plaats van kabel of
-                satelliet worden tv-zenders gestreamd als beveiligde datapakketten
-                direct naar uw apparaat.
+                und bezeichnet Fernsehen, das über das Internet übertragen wird. Anstelle von Kabel oder
+                Satellit werden TV-Sender als gesicherte Datenpakete
+                direkt auf Ihr Gerät gestreamt.
               </p>
               <p>
-                Met een stabiele internetverbinding kijkt u thuis of
-                onderweg op uw Smart TV, smartphone, tablet, computer of
-                tv-box.
+                Mit einer stabilen Internetverbindung schauen Sie zu Hause oder
+                unterwegs auf Ihrem Smart-TV, Smartphone, Tablet, Computer oder
+                Ihrer TV-Box.
               </p>
             </div>
           </div>
@@ -71,7 +71,7 @@ const Guide = () => {
               <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-france-500/25 bg-france-500/15 text-france-100">
                 <Zap size={21} aria-hidden="true" />
               </span>
-              Directe toegang
+              Direkter Zugang
             </h3>
 
             <ul className="relative space-y-3">
@@ -88,7 +88,7 @@ const Guide = () => {
             </ul>
 
             <div className="relative mt-7 rounded-xl border border-blanc-50/10 bg-blanc-50/[0.04] p-4 text-sm italic text-blanc-300">
-              &quot;De toekomst van televisie is hier. Flexibel, betaalbaar en zonder grenzen.&quot;
+              &quot;Die Zukunft des Fernsehens ist da. Flexibel, erschwinglich und ohne Grenzen.&quot;
             </div>
           </div>
         </div>

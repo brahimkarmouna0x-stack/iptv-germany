@@ -27,18 +27,18 @@ const Features = ({ title }: { title?: string }) => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <span className="inline-block px-4 py-1.5 rounded-full glass text-france-400 text-sm font-bold mb-4 uppercase tracking-wider glow-gold">
-            Waarom IPTV Smarter
+            Warum IPTV Germany
           </span>
           <h2 className="font-display font-bold text-4xl sm:text-5xl mb-4 text-blanc-50">
             {title || (
               <>
-                Ontworpen voor <span className="text-gradient">perfectie</span>
+                Entwickelt für <span className="text-gradient">Perfektion</span>
               </>
             )}
           </h2>
           <p className="text-blanc-400 max-w-2xl mx-auto font-medium">
-            Elk detail is ontworpen voor de ultieme kijkervaring. Een
-            premium infrastructuur gecombineerd met een intuïtief ontwerp.
+            Jedes Detail ist auf das ultimative Seherlebnis ausgelegt. Eine
+            erstklassige Infrastruktur kombiniert mit einem intuitiven Design.
           </p>
         </div>
 

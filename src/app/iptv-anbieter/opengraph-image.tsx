@@ -2,12 +2,12 @@
 
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
-export const alt = "Uw betrouwbare IPTV-aanbieder in Nederland — IPTV Smarter";
+export const alt = "Ihr zuverlässiger IPTV-Anbieter in Deutschland — IPTV Germany";
 
 export default function Image() {
   return renderOgImage({
-    eyebrow: "IPTV-aanbieder",
-    title: "Uw betrouwbare IPTV-aanbieder",
-    subtitle: "99,9% uptime, 4K-kwaliteit en Nederlandstalige support 24/7.",
+    eyebrow: "IPTV-Anbieter",
+    title: "Ihr zuverlässiger IPTV-Anbieter",
+    subtitle: "99,9% Uptime, 4K-Qualität und deutschsprachiger Support 24/7.",
   });
 }

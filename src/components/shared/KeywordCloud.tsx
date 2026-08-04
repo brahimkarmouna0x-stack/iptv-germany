@@ -8,7 +8,7 @@ import { FOOTER_PAGES } from "@/constants/data";
 const KeywordCloud = () => {
   return (
     <nav
-      aria-label="Populaire onderwerpen en gidsen"
+      aria-label="Beliebte Themen und Anleitungen"
       className="footer-keyword-cloud mb-24 relative"
       style={{ contentVisibility: "auto", containIntrinsicSize: "auto 800px" }}
     >
@@ -20,14 +20,14 @@ const KeywordCloud = () => {
 
       <div className="text-center mb-10 sm:mb-12">
         <span className="inline-block px-3 py-1 rounded-full bg-blanc-50/5 border border-blanc-50/10 text-[10px] font-black uppercase tracking-[0.2em] text-france-400 mb-4">
-          Kennisbank &amp; Gidsen
+          Wissensdatenbank &amp; Anleitungen
         </span>
         <h2 className="text-3xl sm:text-4xl font-black text-blanc-50 tracking-tight">
-          <span className="text-gradient">Populaire</span> onderwerpen
+          <span className="text-gradient">Beliebte</span> Themen
         </h2>
         <p className="mt-3 text-sm font-medium text-blanc-400 max-w-md mx-auto">
-          Ontdek meer dan {FOOTER_PAGES.length} gidsen over IPTV in Nederland — van
-          installatie tot het beste pakket.
+          Entdecken Sie mehr als {FOOTER_PAGES.length} Anleitungen rund um IPTV
+          in Deutschland — von der Installation bis zum besten Paket.
         </p>
       </div>
 
@@ -57,9 +57,9 @@ const KeywordCloud = () => {
           <summary className="list-none text-center cursor-pointer mb-8">
             <span className="inline-flex items-center gap-2 min-h-[44px] px-5 py-3 rounded-xl bg-blanc-50/[0.04] border border-blanc-50/[0.08] text-xs font-bold text-blanc-300 hover:text-blanc-50 hover:bg-france-500/10 hover:border-france-500/40 transition-all duration-200 group-open:border-france-500/40 group-open:text-france-300">
               <span className="group-open:hidden">
-                Toon {FOOTER_PAGES.length} onderwerpen
+                {FOOTER_PAGES.length} Themen anzeigen
               </span>
-              <span className="hidden group-open:inline">Toon minder</span>
+              <span className="hidden group-open:inline">Weniger anzeigen</span>
               <svg
                 className="w-3.5 h-3.5 transition-transform duration-300 group-open:rotate-180"
                 viewBox="0 0 24 24"

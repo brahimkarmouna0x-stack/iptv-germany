@@ -54,8 +54,8 @@ const ConnectionButton = memo(({
         aria-hidden="true"
       />
       {num === 4
-        ? "4+ écrans"
-        : `${num} ${num === 1 ? "écran" : "écrans"}`}
+        ? "4+ Geräte"
+        : `${num} ${num === 1 ? "Gerät" : "Geräte"}`}
     </button>
   );
 });

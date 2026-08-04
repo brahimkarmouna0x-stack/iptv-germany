@@ -1,233 +1,233 @@
-﻿import type { SixteenSectionContent } from "./types";
+import type { SixteenSectionContent } from "./types";
 
 const LINK = {
-  home: { label: "Home IPTV Smarter", href: "/", description: "Het beste IPTV-abonnement van Nederland met 31.000+ zenders en 4K." },
-  kopen: { label: "IPTV kopen", href: "/iptv-kopen", description: "Koop een IPTV-voorziening met directe activatie en gratis proefperiode." },
-  abonnement: { label: "IPTV-abonnement", href: "/iptv-abonnement", description: "Vergelijk IPTV-abonnementen met flexibele looptijden." },
-  aanbieder: { label: "IPTV-aanbieder", href: "/iptv-aanbieder", description: "Vergelijk IPTV-aanbieders en ontdek de beste keuze." },
-  smarters: { label: "IPTV Smarters Pro", href: "/iptv-smarters-pro", description: "Installatiegids voor IPTV Smarters Pro op al uw apparaten." },
+  home: { label: "Home IPTV Germany", href: "/", description: "Das beste IPTV-Abonnement Deutschlands mit 31.000+ Sendern und 4K." },
+  kaufen: { label: "IPTV kaufen", href: "/iptv-kaufen", description: "Kaufen Sie ein IPTV-Angebot mit direkter Aktivierung und kostenloser Testphase." },
+  abonnement: { label: "IPTV-Abonnement", href: "/iptv-abonnement", description: "Vergleichen Sie IPTV-Abonnements mit flexiblen Laufzeiten." },
+  anbieter: { label: "IPTV-Anbieter", href: "/iptv-anbieter", description: "Vergleichen Sie IPTV-Anbieter und entdecken Sie die beste Wahl." },
+  smarters: { label: "IPTV Smarters Pro", href: "/iptv-smarters-pro", description: "Installationsanleitung für IPTV Smarters Pro auf all Ihren Geräten." },
 };
 
-const nederland: SixteenSectionContent = {
-  slug: "iptv-nederland",
-  path: "/iptv-nederland",
+const deutschland: SixteenSectionContent = {
+  slug: "iptv-deutschland",
+  path: "/iptv-deutschland",
   meta: {
-    title: "IPTV Nederland ✓ Complete Gids voor Zenders & Sport 2026",
-    description: "IPTV Nederland: alle Franse en Nederlandse zenders, voetbal, autosport en live sport in 4K. De beste IPTV met 31.000+ zenders. Gratis proefperiode.",
-    h1: "IPTV Nederland – de ultieme gids voor Franstaligen in Nederland",
+    title: "IPTV Deutschland ✓ Kompletter Guide zu Sendern & Sport 2026",
+    description: "IPTV Deutschland: alle deutschen und internationalen Sender, Fußball, Motorsport und Live-Sport in 4K. Das beste IPTV mit 31.000+ Sendern. Kostenlose Testphase.",
+    h1: "IPTV Deutschland – der ultimative Guide zum TV-Streaming",
   },
 
   // ── Section 1: Hero ─────────────────────────────────────────────────────
   hero: {
-    pill: "IPTV Nederland · Frans & Nederlands aanbod",
-    title: "IPTV Nederland: het beste van TV, sport en films",
-    subtitle: "U zoekt een IPTV-voorziening met een compleet aanbod van Franse en Nederlandse zenders, voetbal en alle sportzenders? Bij IPTV Smarter krijgt u alles in 4K.",
+    pill: "IPTV Deutschland · Komplettes Senderangebot",
+    title: "IPTV Deutschland: das Beste aus TV, Sport und Filmen",
+    subtitle: "Sie suchen ein IPTV-Angebot mit einem kompletten Paket an deutschen und internationalen Sendern, Fußball und allen Sportsendern? Bei IPTV Germany erhalten Sie alles in 4K.",
     bg: "/images/hero-bg.webp",
-    ctaPrimary: "Bekijk het aanbod",
+    ctaPrimary: "Angebot ansehen",
     ctaPrimaryHref: "#pakketten",
-    ctaSecondary: "Start de gratis proefperiode",
+    ctaSecondary: "Kostenlose Testphase starten",
     ctaSecondaryHref: "#pakketten",
   },
 
   // ── Section 2: Trust bar ────────────────────────────────────────────────
   trustBar: {
     items: [
-      { label: "Franse & NL zenders", value: "200+" },
-      { label: "Franstalig supportteam", value: "24/7" },
-      { label: "Serverlocatie", value: "Nederland" },
-      { label: "Tevreden klanten", value: "10.000+" },
+      { label: "Deutsche & int. Sender", value: "200+" },
+      { label: "Deutschsprachiges Support-Team", value: "24/7" },
+      { label: "Serverstandort", value: "Deutschland" },
+      { label: "Zufriedene Kunden", value: "10.000+" },
     ],
   },
 
   // ── Section 3: Problem ──────────────────────────────────────────────────
   problem: {
-    eyebrow: "Wat er ontbreekt",
-    title: "Waarom Franstaligen in Nederland teleurgesteld zijn in hun huidige TV",
-    subtitle: "U woont in Nederland en wilt gewoon uw Franse en Nederlandse zenders kijken. Maar uw huidige aanbieder maakt het duur en ingewikkeld.",
+    eyebrow: "Was fehlt",
+    title: "Warum Zuschauer in Deutschland von ihrem aktuellen TV enttäuscht sind",
+    subtitle: "Sie möchten einfach Ihre Sender in bester Qualität sehen. Doch Ihr aktueller Anbieter macht es teuer und kompliziert.",
     pains: [
-      { title: "IPTV Nederland: Franse zenders slecht beschikbaar", desc: "Buitenlandse IPTV-aanbieders bieden vaak Franse zenders die ontbreken of van slechte kwaliteit zijn. De grote landelijke en filmzenders zijn niet beschikbaar of in lage resolutie." },
-      { title: "IPTV Nederland: voetbal en sport duur", desc: "Via de traditionele weg betaalt u tientallen euro's extra voor sportzenders. Een duur sportpakket bovenop uw basisabonnement." },
-      { title: "IPTV Nederland: geen Franstalige ondersteuning", desc: "Bij problemen moet u uw Engels erbij pakken of wachten op een eindeloze e-mailwisseling. Geen Franstalige klantenservice die u snel begrijpt." },
-      { title: "IPTV Nederland: geen Franse zenders in het buitenland", desc: "Woonachtig in Nederland kunt u vaak uw favoriete Franse zenders en Nederlandse regionale zenders niet ontvangen." },
+      { title: "IPTV Deutschland: schlechte Verfügbarkeit im Ausland", desc: "Ausländische IPTV-Anbieter bieten deutsche Sender oft nur lückenhaft oder in schlechter Qualität an. Die großen öffentlich-rechtlichen und privaten Sender fehlen häufig oder laufen nur in niedriger Auflösung." },
+      { title: "IPTV Deutschland: Fußball und Sport sind teuer", desc: "Über den klassischen Weg zahlen Sie zusätzlich Dutzende Euro für Sportsender — ein teures Sportpaket obendrauf auf Ihr Basisabonnement." },
+      { title: "IPTV Deutschland: kein deutschsprachiger Support", desc: "Bei Problemen müssen Sie auf Englisch ausweichen oder auf eine endlose E-Mail-Korrespondenz warten. Ein deutschsprachiger Kundenservice, der Sie schnell versteht, fehlt." },
+      { title: "IPTV Deutschland: Sender im Ausland nicht empfangbar", desc: "Im Ausland oder auf Reisen können Sie Ihre deutschen Lieblingssender und Regionalprogramme oft nicht empfangen." },
     ],
   },
 
   // ── Section 4: Solution ─────────────────────────────────────────────────
   solution: {
-    eyebrow: "De oplossing voor Franstaligen in Nederland",
-    title: "IPTV Nederland bij IPTV Smarter — al uw zenders op één plek",
-    subtitle: "Speciaal voor Franstaligen in Nederland. Ontvang alle Franse, Nederlandse en regionale zenders zonder gedoe.",
+    eyebrow: "Die Lösung für Zuschauer in Deutschland",
+    title: "IPTV Deutschland bei IPTV Germany — alle Sender an einem Ort",
+    subtitle: "Speziell für Zuschauer in Deutschland, Österreich und der Schweiz. Erhalten Sie alle deutschen, internationalen und Regionalsender ohne Aufwand.",
     points: [
-      { title: "IPTV Nederland: FR & NL zenders — alles compleet", desc: "Compleet pakket: Franse landelijke, publieke, film- en sportzenders, evenals Nederlandse publieke, commerciële en regionale zenders." },
-      { title: "IPTV Nederland: voetbal en sport in 4K", desc: "Voetbal, autosport, motorsport, basketbal en meer — een ruime keuze aan sportzenders inbegrepen bij uw abonnement. Geen extra sportpakket nodig." },
-      { title: "IPTV Nederland: Franstalige ondersteuning door echte adviseurs", desc: "Ons team spreekt Frans en begrijpt uw vragen. Bereikbaar via WhatsApp met een maximale responstijd van 5 minuten." },
-      { title: "IPTV Nederland: uw zenders overal ter wereld", desc: "Op vakantie of op reis? Met IPTV ontvangt u overal ter wereld uw Franse en Nederlandse zenders. Een simpele internetverbinding volstaat." },
+      { title: "IPTV Deutschland: das komplette Senderpaket", desc: "Ein Komplettpaket: deutsche öffentlich-rechtliche, private, Film- und Sportsender sowie internationale und regionale Sender." },
+      { title: "IPTV Deutschland: Fußball und Sport in 4K", desc: "Fußball, Motorsport, Wintersport, Basketball und mehr — eine große Auswahl an Sportsendern ist in Ihrem Abonnement inbegriffen. Kein zusätzliches Sportpaket nötig." },
+      { title: "IPTV Deutschland: deutschsprachiger Support durch echte Berater", desc: "Unser Team spricht Deutsch und versteht Ihre Fragen. Erreichbar über WhatsApp mit einer maximalen Antwortzeit von 5 Minuten." },
+      { title: "IPTV Deutschland: Ihre Sender überall auf der Welt", desc: "Im Urlaub oder auf Reisen? Mit IPTV empfangen Sie Ihre deutschen Sender weltweit. Eine einfache Internetverbindung genügt." },
     ],
   },
 
   // ── Section 5: Features ─────────────────────────────────────────────────
   features: {
-    eyebrow: "Het aanbod in detail",
-    title: "IPTV Nederland: functies bedacht voor Franstaligen",
-    subtitle: "Onze dienst is speciaal ontworpen voor Franstaligen wonend in Nederland.",
+    eyebrow: "Das Angebot im Detail",
+    title: "IPTV Deutschland: Funktionen speziell für den deutschen Markt",
+    subtitle: "Unser Service ist speziell für Zuschauer in Deutschland konzipiert.",
     features: [
-      { title: "IPTV Nederland: compleet programma-overzicht (EPG)", desc: "Een elektronisch programma-overzicht met tijden, beschrijvingen en genres. Wilt u weten wat er op uw Franse of Nederlandse zenders is? Het staat in het overzicht." },
-      { title: "IPTV Nederland: catch-up TV", desc: "Een aflevering van TPMP of het Journaal gemist? Met catch-up bekijkt u programma's tot 7 dagen terug. Voor Franse en Nederlandse zenders." },
-      { title: "IPTV Nederland: Franse ondertitels", desc: "Al onze VOD-inhoud en een selectie van live-zenders bieden Franse ondertitels. Films, series en documentaires met ondertitels." },
-      { title: "IPTV Nederland: sportstream in 4K", desc: "Voetbal, autosport, motorsport en grote kampioenschappen in Ultra HD. Speciaal geoptimaliseerd voor sportliefhebbers." },
-      { title: "IPTV Nederland: alle Nederlandse regionale zenders", desc: "Alle regionale zenders: Omroep Brabant, RTV Oost, Omroep Gelderland, RTV Noord, Omrop Fryslân, L1, RTV Rijnmond, Omroep West, NH Nieuws, Omroep Zeeland en meer." },
-      { title: "IPTV Nederland: themazenders", desc: "Franse en Nederlandse themazenders: film, eten, comedy, muziek en meer. Ontdek nieuwe favoriete zenders." },
+      { title: "IPTV Deutschland: vollständiger Programmführer (EPG)", desc: "Ein elektronischer Programmführer mit Zeiten, Beschreibungen und Genres. Möchten Sie wissen, was auf Ihren Sendern läuft? Der Überblick zeigt es Ihnen." },
+      { title: "IPTV Deutschland: Catch-up-TV", desc: "Eine Folge der Tagesschau oder Ihrer Lieblingssendung verpasst? Mit Catch-up sehen Sie Sendungen bis zu 7 Tage zurück — für deutsche und internationale Sender." },
+      { title: "IPTV Deutschland: deutsche Untertitel", desc: "Alle unsere VOD-Inhalte und eine Auswahl an Live-Sendern bieten deutsche Untertitel. Filme, Serien und Dokumentationen mit Untertiteln." },
+      { title: "IPTV Deutschland: Sport-Stream in 4K", desc: "Fußball, Motorsport, Wintersport und große Meisterschaften in Ultra HD. Speziell für Sportfans optimiert." },
+      { title: "IPTV Deutschland: alle deutschen Regionalsender", desc: "Alle Regionalsender: BR, WDR, NDR, MDR, SWR, HR, rbb, SR und viele mehr." },
+      { title: "IPTV Deutschland: Themensender", desc: "Deutsche und internationale Themensender: Film, Kochen, Comedy, Musik und mehr. Entdecken Sie neue Lieblingssender." },
     ],
   },
 
   // ── Section 6: Why Us ────────────────────────────────────────────────────
   whyUs: {
-    eyebrow: "Waarom wij kiezen?",
-    title: "Daarom is IPTV Smarter de beste keuze voor IPTV in Nederland",
-    subtitle: "Onze dienst is speciaal geoptimaliseerd voor de Nederlandse markt en de Franstalige gemeenschap.",
+    eyebrow: "Warum wir?",
+    title: "Deshalb ist IPTV Germany die beste Wahl für IPTV in Deutschland",
+    subtitle: "Unser Service ist speziell auf den deutschen Markt zugeschnitten.",
     reasons: [
-      { title: "IPTV Nederland: nabijgelegen servers voor vlotte streaming", desc: "Onze servers staan in Amsterdam en België. De verbinding is ultrasnel, zenders starten direct en storingen behoren tot het verleden. Optimale ondersteuning voor Nederlandse internetproviders." },
-      { title: "IPTV Nederland: alles in het Frans", desc: "Website in het Frans, ondersteuning in het Frans, programma-overzicht in het Frans. Geen vertalingen of internationaal gedoe. Wij spreken uw taal." },
-      { title: "IPTV Nederland: vertrouwd met de Franse en Nederlandse TV-cultuur", desc: "Wij weten wat voor Franstaligen in Nederland belangrijk is: voetbal, grote sportevenementen, Franse programma's en Nederlands sport — alles in hoge kwaliteit." },
+      { title: "IPTV Deutschland: nahegelegene Server für flüssiges Streaming", desc: "Unsere Server stehen in Deutschland und Österreich. Die Verbindung ist ultraschnell, Sender starten sofort und Störungen gehören der Vergangenheit an. Optimale Unterstützung für deutsche Internetanbieter." },
+      { title: "IPTV Deutschland: alles auf Deutsch", desc: "Website auf Deutsch, Support auf Deutsch, Programmführer auf Deutsch. Keine Übersetzungen und kein internationaler Aufwand. Wir sprechen Ihre Sprache." },
+      { title: "IPTV Deutschland: vertraut mit der deutschen TV-Kultur", desc: "Wir wissen, was Zuschauern in Deutschland wichtig ist: Fußball, große Sportevents, deutsche Produktionen und internationaler Sport — alles in hoher Qualität." },
     ],
   },
 
   // ── Section 7: How It Works ─────────────────────────────────────────────
   how: {
-    eyebrow: "Aan de slag",
-    title: "IPTV Nederland: kijk IPTV in Nederland in 3 stappen",
-    subtitle: "Van aanmelding tot het streamen van uw favoriete zenders.",
+    eyebrow: "Los geht's",
+    title: "IPTV Deutschland: in 3 Schritten IPTV in Deutschland sehen",
+    subtitle: "Von der Anmeldung bis zum Streamen Ihrer Lieblingssender.",
     steps: [
-      { step: "01", title: "IPTV Nederland: kies een pakket", desc: "Selecteer het aantal verbindingen en de gewenste looptijd. Alle pakketten bevatten het volledige aanbod van Franse en Nederlandse zenders en alle sport zonder extra kosten." },
-      { step: "02", title: "IPTV Nederland: installeer op uw apparaat", desc: "Download IPTV Smarters Pro, TiviMate of VLC op uw TV, telefoon of tablet. Voer uw M3U-link of Xtream Codes in en de zenders verschijnen." },
-      { step: "03", title: "IPTV Nederland: kijk TV in 4K", desc: "Schakel direct over naar uw favoriete Franse, Nederlandse of regionale zenders. Geniet van een scherp beeld en vloeiende streams — waar u ook bent." },
+      { step: "01", title: "IPTV Deutschland: Paket wählen", desc: "Wählen Sie die Anzahl der Verbindungen und die gewünschte Laufzeit. Alle Pakete enthalten das komplette Angebot an deutschen und internationalen Sendern sowie allen Sport ohne Aufpreis." },
+      { step: "02", title: "IPTV Deutschland: auf Ihrem Gerät installieren", desc: "Laden Sie IPTV Smarters Pro, TiviMate oder VLC auf Ihrem TV, Smartphone oder Tablet herunter. Geben Sie Ihren M3U-Link oder Ihre Xtream Codes ein, und die Sender erscheinen." },
+      { step: "03", title: "IPTV Deutschland: in 4K fernsehen", desc: "Schalten Sie sofort zu Ihren deutschen, internationalen oder Regionalsendern um. Genießen Sie ein gestochen scharfes Bild und flüssige Streams — wo auch immer Sie sind." },
     ],
   },
 
   // ── Section 8: Device Compatibility ──────────────────────────────────────
   devices: {
-    eyebrow: "Veelgebruikte apparaten",
-    title: "IPTV Nederland: werkt op alle veelgebruikte apparaten in Nederland",
-    subtitle: "Onze dienst is getest en geoptimaliseerd voor de populairste apparaten in Nederlandse huishoudens.",
+    eyebrow: "Gängige Geräte",
+    title: "IPTV Deutschland: funktioniert auf allen gängigen Geräten in Deutschland",
+    subtitle: "Unser Service ist getestet und optimiert für die beliebtesten Geräte in deutschen Haushalten.",
     deviceGroups: [
-      { name: "Populaire Smart TV's in NL", items: ["Samsung (marktleider NL)", "LG OLED", "Philips Ambilight TV", "Sony Bravia", "Panasonic", "Hisense"] },
-      { name: "Meest gebruikt in Nederland", items: ["Ziggo Mediabox Next", "Amazon Fire TV Stick", "Google Chromecast", "Apple TV 4K", "Nvidia Shield", "Formuler Z11"] },
-      { name: "Mobiel in Nederland", items: ["Samsung Galaxy S-serie", "iPhone", "OnePlus", "Motorola", "Fairphone", "iPad"] },
-      { name: "IPTV-applicaties", items: ["IPTV Smarters Pro", "TiviMate", "VLC Media Player", "Kodi", "GSE Smart IPTV", "IPTX"] },
+      { name: "Beliebte Smart-TVs in Deutschland", items: ["Samsung (Marktführer DE)", "LG OLED", "Philips Ambilight TV", "Sony Bravia", "Panasonic", "Hisense"] },
+      { name: "Meistgenutzt in Deutschland", items: ["Amazon Fire TV Stick", "Google Chromecast", "Apple TV 4K", "Nvidia Shield", "Formuler Z11", "Xiaomi Mi Box S"] },
+      { name: "Mobil in Deutschland", items: ["Samsung Galaxy S-Serie", "iPhone", "OnePlus", "Google Pixel", "Fairphone", "iPad"] },
+      { name: "IPTV-Anwendungen", items: ["IPTV Smarters Pro", "TiviMate", "VLC Media Player", "Kodi", "GSE Smart IPTV", "IPTX"] },
     ],
-    ctaText: "Installatiegidsen voor elk apparaat",
+    ctaText: "Installationsanleitungen für jedes Gerät",
   },
 
   // ── Section 9: Channels ─────────────────────────────────────────────────
   channels: {
-    eyebrow: "Het zenderaanbod",
-    title: "IPTV Nederland: het complete aanbod van Franse en Nederlandse zenders",
-    subtitle: "IPTV Nederland: alle zenders die u verwacht — en nog veel meer.",
+    eyebrow: "Das Senderangebot",
+    title: "IPTV Deutschland: das komplette Angebot an deutschen und internationalen Sendern",
+    subtitle: "IPTV Deutschland: alle Sender, die Sie erwarten — und noch viele mehr.",
     channelGroups: [
-      { name: "Franse zenders", items: ["Landelijke zenders HD", "Publieke zenders HD", "Filmzenders HD", "Amusementszenders HD", "Cultuurzenders HD", "Jeugdzenders HD", "Muziekzenders HD"] },
-      { name: "Nederlandse zenders", items: ["Publieke zenders HD", "Commerciële zenders HD", "Amusementszenders HD", "Familiezenders HD", "Lifestylezenders HD", "Regionale zenders HD", "Muziekzenders HD"] },
-      { name: "Live sport", items: ["Voetbal", "Internationale sport", "Grote kampioenschappen", "Autosport", "Motorsport", "Vechtsporten", "Tennis", "Basketbal"] },
-      { name: "Regionaal & thematisch", items: ["Regionale NL-zenders", "Lokaal nieuws", "Provinciale zenders", "Regionaal nieuws", "Eten & lifestyle", "Muziek", "Comedy"] },
+      { name: "Deutsche Sender", items: ["Öffentlich-rechtliche Sender HD", "Private Vollprogramme HD", "Filmsender HD", "Unterhaltungssender HD", "Kultursender HD", "Kindersender HD", "Musiksender HD"] },
+      { name: "Internationale Sender", items: ["Öffentliche Sender HD", "Kommerzielle Sender HD", "Unterhaltungssender HD", "Familiensender HD", "Lifestyle-Sender HD", "Regionale Sender HD", "Musiksender HD"] },
+      { name: "Live-Sport", items: ["Fußball", "Internationaler Sport", "Große Meisterschaften", "Motorsport", "Wintersport", "Kampfsport", "Tennis", "Basketball"] },
+      { name: "Regional & thematisch", items: ["Regionale DE-Sender", "Lokale Nachrichten", "Bundesländer-Sender", "Regionale Nachrichten", "Essen & Lifestyle", "Musik", "Comedy"] },
     ],
   },
 
   // ── Section 10: Pricing ─────────────────────────────────────────────────
   pricing: {
-    pillText: "Prijzen",
-    title: "IPTV Nederland — kies uw pakket",
-    subtitle: "Bekijk de prijzen. Alle Franse en Nederlandse zenders, sport en films inbegrepen. Geen verborgen kosten.",
+    pillText: "Preise",
+    title: "IPTV Deutschland — wählen Sie Ihr Paket",
+    subtitle: "Sehen Sie sich die Preise an. Alle deutschen und internationalen Sender, Sport und Filme inklusive. Keine versteckten Kosten.",
   },
 
   // ── Section 11: Comparison ────────────────────────────────────────────────
   comparison: {
-    eyebrow: "Vergelijking",
-    title: "IPTV Smarter versus traditionele Nederlandse TV-aanbieders",
-    subtitle: "Ziggo, KPN en T-Mobile versus IPTV Smarter — de verschillen zijn groot.",
+    eyebrow: "Vergleich",
+    title: "IPTV Germany im Vergleich zu klassischen deutschen TV-Anbietern",
+    subtitle: "Vodafone, Telekom und o2 gegen IPTV Germany — die Unterschiede sind groß.",
     rows: [
-      { feature: "Basismaandbedrag", us: "Vanaf €7,99/maand", them: "€55 - €80/maand" },
-      { feature: "Franse & NL zenders", us: "200+ in HD/4K", them: "50-60 in HD" },
-      { feature: "Voetbal & kampioenschappen", us: "Inbegrepen", them: "Sportpakket +€15-30" },
-      { feature: "4K-beeldkwaliteit", us: "Standaard", them: "Beperkte HD" },
-      { feature: "Regionale zenders", us: "Alle 13", them: "Alleen digitale TV" },
-      { feature: "Snelheid zender wisselen", us: "<1 seconde", them: "1-3 seconden" },
-      { feature: "Opzegtermijn", us: "Geen", them: "1 maand + boete" },
+      { feature: "Monatlicher Grundpreis", us: "Ab 7,99 €/Monat", them: "55 € – 80 €/Monat" },
+      { feature: "Deutsche & int. Sender", us: "200+ in HD/4K", them: "50-60 in HD" },
+      { feature: "Fußball & Meisterschaften", us: "Inklusive", them: "Sportpaket +15-30 €" },
+      { feature: "4K-Bildqualität", us: "Standard", them: "Begrenztes HD" },
+      { feature: "Regionale Sender", us: "Alle Bundesländer", them: "Nur digitales TV" },
+      { feature: "Senderwechsel-Geschwindigkeit", us: "<1 Sekunde", them: "1-3 Sekunden" },
+      { feature: "Kündigungsfrist", us: "Keine", them: "1 Monat + Gebühr" },
     ],
   },
 
   // ── Section 12: Testimonials ─────────────────────────────────────────────
   testimonials: {
-    eyebrow: "Ervaringen",
-    title: "Wat Franstaligen in Nederland zeggen over IPTV Nederland",
-    subtitle: "Duizenden kijkers hebben hun ervaring gedeeld.",
+    eyebrow: "Erfahrungen",
+    title: "Was Zuschauer in Deutschland über IPTV Deutschland sagen",
+    subtitle: "Tausende Zuschauer haben ihre Erfahrung geteilt.",
   },
 
   // ── Section 13: Security & Reliability ────────────────────────────────────
   security: {
-    eyebrow: "Beveiliging",
-    title: "IPTV Nederland: veilig IPTV kijken bij ons",
-    subtitle: "Wij voldoen aan de hoogste Nederlandse en Europese beveiligingsnormen.",
+    eyebrow: "Sicherheit",
+    title: "IPTV Deutschland: sicher IPTV bei uns schauen",
+    subtitle: "Wir erfüllen die höchsten deutschen und europäischen Sicherheitsstandards.",
     items: [
-      { title: "IPTV Nederland: privacywetgeving (AVG/GDPR)", desc: "Wij voldoen aan de Algemene Verordening Gegevensbescherming. Uw persoonsgegevens worden verwerkt volgens de Nederlandse en Europese wetgeving." },
-      { title: "IPTV Nederland: servers in Nederland", desc: "Onze servers staan fysiek in Amsterdam. Uw gegevens blijven in Nederland en vallen onder Nederlands recht. Maximale privacy en controle." },
-      { title: "IPTV Nederland: Nederlandse betalingsprovider", desc: "Wij werken met Mollie en iDEAL — beiden Nederlands. U betaalt veilig via uw eigen bank, precies zoals u gewend bent." },
-      { title: "IPTV Nederland: klachtenservice volgens NL-normen", desc: "Bij een klacht hanteren we dezelfde procedure als Nederlandse telecomaanbieders. Duidelijke afhandeling, vaste contactpersonen en escalatiemogelijkheden." },
+      { title: "IPTV Deutschland: Datenschutz (DSGVO)", desc: "Wir erfüllen die Vorgaben der Datenschutz-Grundverordnung. Ihre personenbezogenen Daten werden gemäß deutschem und europäischem Recht verarbeitet." },
+      { title: "IPTV Deutschland: Server in Deutschland", desc: "Unsere Server stehen physisch in Deutschland. Ihre Daten bleiben in Deutschland und unterliegen deutschem Recht. Maximale Privatsphäre und Kontrolle." },
+      { title: "IPTV Deutschland: europäischer Zahlungsanbieter", desc: "Wir arbeiten mit Stripe und weiteren europäischen Zahlungsdienstleistern. Sie zahlen sicher über Ihre eigene Bank oder Karte, genau wie gewohnt." },
+      { title: "IPTV Deutschland: Beschwerdeservice nach deutschen Standards", desc: "Bei einer Beschwerde folgen wir demselben Verfahren wie deutsche Telekommunikationsanbieter. Klare Abwicklung, feste Ansprechpartner und Eskalationsmöglichkeiten." },
     ],
   },
 
   // ── Section 14: FAQ (exactly 8) ─────────────────────────────────────────
   faq: {
-    eyebrow: "Veelgestelde vragen",
-    title: "Veelgestelde vragen over IPTV in Nederland",
-    subtitle: "IPTV Nederland: de meest gestelde vragen van kijkers.",
+    eyebrow: "Häufig gestellte Fragen",
+    title: "Häufig gestellte Fragen zu IPTV in Deutschland",
+    subtitle: "IPTV Deutschland: die meistgestellten Fragen unserer Zuschauer.",
     faqs: [
       {
-        question: "Wat is IPTV in Nederland precies?",
-        answer: "IPTV (Internet Protocol Television) is televisie via uw internetverbinding in plaats van via kabel of satelliet. U streamt live TV, sport en films direct op uw apparaat. Voor IPTV in Nederland heeft u alleen een internetabonnement en een compatibel apparaat nodig."
+        question: "Was genau ist IPTV in Deutschland?",
+        answer: "IPTV (Internet Protocol Television) ist Fernsehen über Ihre Internetverbindung statt über Kabel oder Satellit. Sie streamen live TV, Sport und Filme direkt auf Ihrem Gerät. Für IPTV in Deutschland benötigen Sie nur einen Internetanschluss und ein kompatibles Gerät."
       },
       {
-        question: "Welke zenders kan ik ontvangen met IPTV in Nederland?",
-        answer: "Bij IPTV Smarter krijgt u een ruime keuze aan Franse zenders (landelijke, publieke, film, sport) en Nederlandse zenders (publieke, commerciële, sport), evenals regionale zenders, in HD en 4K."
+        question: "Welche Sender kann ich mit IPTV in Deutschland empfangen?",
+        answer: "Bei IPTV Germany erhalten Sie eine große Auswahl deutscher Sender (öffentlich-rechtlich, privat, Film, Sport) sowie internationale und Regionalsender, in HD und 4K."
       },
       {
-        question: "Kan ik live voetbal kijken met IPTV?",
-        answer: "Ja, een ruime keuze aan live sportzenders is inbegrepen bij uw abonnement, met uitgebreide voetbaldekking en grote kampioenschappen. Autosport, motorsport, basketbal en vele andere sporten zijn ook beschikbaar in 4K. Het beschikbare aanbod kan per regio verschillen."
+        question: "Kann ich live Fußball mit IPTV sehen?",
+        answer: "Ja, eine große Auswahl an Live-Sportsendern ist in Ihrem Abonnement enthalten, mit umfangreicher Fußball-Berichterstattung und großen Meisterschaften. Motorsport, Wintersport, Basketball und viele weitere Sportarten sind ebenfalls in 4K verfügbar. Das verfügbare Angebot kann je nach Region variieren."
       },
       {
-        question: "Is IPTV legaal in Nederland?",
-        answer: "IPTV is een technologie voor televisie-uitzending via internet. De rechtmatigheid van een dienst hangt af van de juiste uitzendrechten. Wij raden u aan altijd een dienst te kiezen die over de vereiste rechten beschikt en de lokale regelgeving te controleren die op uw situatie van toepassing is."
+        question: "Ist IPTV in Deutschland legal?",
+        answer: "IPTV ist eine Technologie zur Fernsehübertragung über das Internet. Die Rechtmäßigkeit eines Dienstes hängt von den entsprechenden Senderechten ab. Wir empfehlen Ihnen, stets einen Dienst zu wählen, der über die erforderlichen Rechte verfügt, und die für Ihre Situation geltenden lokalen Vorschriften zu prüfen."
       },
       {
-        question: "Heb ik een speciale internetverbinding nodig voor IPTV?",
-        answer: "Een standaard Nederlands internetabonnement van minimaal 25 Mbps volstaat voor HD-streams. Voor 4K raden we 50 Mbps of meer aan. De meeste huishoudens hebben meer dan voldoende snelheid. Onze adaptieve bitrate past zich aan uw verbinding aan."
+        question: "Brauche ich eine spezielle Internetverbindung für IPTV?",
+        answer: "Ein Standard-Internetanschluss mit mindestens 25 Mbit/s genügt für HD-Streams. Für 4K empfehlen wir 50 Mbit/s oder mehr. Die meisten Haushalte verfügen über mehr als genug Geschwindigkeit. Unsere adaptive Bitrate passt sich Ihrer Verbindung an."
       },
       {
-        question: "Werkt IPTV Nederland ook in het buitenland?",
-        answer: "Ja, u kunt uw Franse en Nederlandse zenders overal ter wereld bekijken zolang u een internetverbinding heeft. Ideaal voor vakanties. Sport- en regionale zenders zijn ook wereldwijd beschikbaar."
+        question: "Funktioniert IPTV Deutschland auch im Ausland?",
+        answer: "Ja, Sie können Ihre deutschen Sender überall auf der Welt sehen, solange Sie über eine Internetverbindung verfügen. Ideal für den Urlaub. Sport- und Regionalsender sind ebenfalls weltweit verfügbar."
       },
       {
-        question: "Hoe installeer ik IPTV op mijn Samsung of LG TV?",
-        answer: "Op Samsung en LG Smart TV's installeert u eenvoudig de IPTV Smarters Pro-app via de app store. Voer vervolgens uw M3U-link en Xtream Codes in. Uw zenders worden automatisch geladen met het programma-overzicht. Stap-voor-stap gidsen zijn beschikbaar."
+        question: "Wie installiere ich IPTV auf meinem Samsung- oder LG-Fernseher?",
+        answer: "Auf Samsung- und LG-Smart-TVs installieren Sie einfach die IPTV-Smarters-Pro-App über den App Store. Geben Sie anschließend Ihren M3U-Link und Ihre Xtream Codes ein. Ihre Sender werden automatisch samt Programmführer geladen. Schritt-für-Schritt-Anleitungen sind verfügbar."
       },
       {
-        question: "Kan ik TV kijken zonder schotel of kabel?",
-        answer: "Ja, dat is precies wat IPTV mogelijk maakt. U heeft geen schotel, geen kabelaansluiting en geen coaxkabel nodig. Alleen een internetverbinding en een compatibel apparaat. Dit bespaart installatiekosten en maakt TV-kijken overal mogelijk."
+        question: "Kann ich fernsehen ohne Schüssel oder Kabel?",
+        answer: "Ja, genau das macht IPTV möglich. Sie benötigen keine Schüssel, keinen Kabelanschluss und kein Koaxialkabel. Nur eine Internetverbindung und ein kompatibles Gerät. Das spart Installationskosten und macht Fernsehen überall möglich."
       },
     ],
   },
 
   // ── Section 15: Internal Linking Hub ──────────────────────────────────────
   internalLinks: {
-    eyebrow: "Meer over IPTV",
-    title: "IPTV Nederland: verdiep u met onze andere pagina's",
-    subtitle: "Lees alles over IPTV, speciaal voor Franstaligen in Nederland.",
-    links: [LINK.home, LINK.kopen, LINK.abonnement, LINK.aanbieder, LINK.smarters],
+    eyebrow: "Mehr über IPTV",
+    title: "IPTV Deutschland: vertiefen Sie sich mit unseren anderen Seiten",
+    subtitle: "Lesen Sie alles über IPTV, speziell für Zuschauer in Deutschland.",
+    links: [LINK.home, LINK.kaufen, LINK.abonnement, LINK.anbieter, LINK.smarters],
   },
 
   // ── Section 16: Final CTA ────────────────────────────────────────────────
   finalCta: {
-    title: "Bekijk uw zenders zoals het hoort — in 4K en zonder gedoe",
-    description: "Sluit u aan bij duizenden kijkers. Alle zenders, alle sport, alles inbegrepen. Zonder jaarcontract of verborgen kosten.",
+    title: "Sehen Sie Ihre Sender, wie es sein sollte — in 4K und ohne Aufwand",
+    description: "Schließen Sie sich Tausenden Zuschauern an. Alle Sender, aller Sport, alles inklusive. Ohne Jahresvertrag oder versteckte Kosten.",
   },
 };
 
-export default nederland;
+export default deutschland;

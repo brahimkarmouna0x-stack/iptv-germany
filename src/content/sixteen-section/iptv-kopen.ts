@@ -1,233 +1,233 @@
-﻿import type { SixteenSectionContent } from "./types";
+import type { SixteenSectionContent } from "./types";
 
 const LINK = {
-  home: { label: "IPTV Smarter", href: "/", description: "Het beste IPTV-abonnement van Nederland met 31.000+ zenders en 4K-kwaliteit." },
-  abonnement: { label: "IPTV-abonnement", href: "/iptv-abonnement", description: "Ontdek alle IPTV-abonnementsvormen met een eenvoudige vergelijking." },
-  aanbieder: { label: "IPTV-aanbieder", href: "/iptv-aanbieder", description: "Ontdek waarom IPTV Smarter de beste IPTV-aanbieder van Nederland is." },
-  nederland: { label: "IPTV Nederland", href: "/iptv-nederland", description: "De complete gids voor IPTV in Nederland met alle zenders en sport." },
-  smarters: { label: "IPTV Smarters Pro", href: "/iptv-smarters-pro", description: "Configureer IPTV Smarters Pro eenvoudig met M3U- en Xtream Codes-koppelingen." },
+  home: { label: "IPTV Germany", href: "/", description: "Das beste IPTV-Abonnement Deutschlands mit 31.000+ Sendern und 4K-Qualität." },
+  abonnement: { label: "IPTV-Abonnement", href: "/iptv-abonnement", description: "Entdecken Sie alle IPTV-Abonnementformen im einfachen Vergleich." },
+  anbieter: { label: "IPTV-Anbieter", href: "/iptv-anbieter", description: "Entdecken Sie, warum IPTV Germany der beste IPTV-Anbieter Deutschlands ist." },
+  deutschland: { label: "IPTV Deutschland", href: "/iptv-deutschland", description: "Der komplette Guide zu IPTV in Deutschland mit allen Sendern und Sport." },
+  smarters: { label: "IPTV Smarters Pro", href: "/iptv-smarters-pro", description: "Konfigurieren Sie IPTV Smarters Pro einfach mit M3U- oder Xtream-Codes-Links." },
 };
 
-const iptvKopen: SixteenSectionContent = {
-  slug: "iptv-kopen",
-  path: "/iptv-kopen",
+const iptvKaufen: SixteenSectionContent = {
+  slug: "iptv-kaufen",
+  path: "/iptv-kaufen",
   meta: {
-    title: "IPTV kopen ✓ Betrouwbare IPTV-aankoopgids 2026",
-    description: "IPTV kopen? Vergelijk de beste aanbieders, prijzen en pakketten in Nederland. Onmiddellijke activatie, 31.000+ zenders, 4K-kwaliteit en gratis proefperiode. Begin vandaag nog.",
-    h1: "IPTV kopen in Nederland – Uw complete aankoopgids",
+    title: "IPTV kaufen ✓ Zuverlässiger IPTV-Kaufratgeber 2026",
+    description: "IPTV kaufen? Vergleichen Sie die besten Anbieter, Preise und Pakete in Deutschland. Sofortige Aktivierung, 31.000+ Sender, 4K-Qualität und kostenlose Testphase. Jetzt starten.",
+    h1: "IPTV kaufen in Deutschland – Ihr kompletter Kaufratgeber",
   },
 
   // ── Section 1: Hero ─────────────────────────────────────────────────────
   hero: {
-    pill: "IPTV kopen · Betrouwbaar & snel",
-    title: "IPTV kopen in Nederland – waar moet u op letten?",
-    subtitle: "U overweegt IPTV te kopen? Lees onze gids met aandachtspunten, valkuilen en tips voor de beste keuze. U vindt hier alles voor een veilige aankoop.",
+    pill: "IPTV kaufen · Zuverlässig & schnell",
+    title: "IPTV kaufen in Deutschland – worauf sollten Sie achten?",
+    subtitle: "Sie überlegen, IPTV zu kaufen? Lesen Sie unseren Ratgeber mit wichtigen Punkten, Fallstricken und Tipps für die beste Wahl. Hier finden Sie alles für einen sicheren Kauf.",
     bg: "/images/hero-bg.webp",
-    ctaPrimary: "Vergelijk pakketten",
+    ctaPrimary: "Pakete vergleichen",
     ctaPrimaryHref: "#pakketten",
-    ctaSecondary: "Vraag gratis proefperiode aan",
+    ctaSecondary: "Kostenlose Testphase anfragen",
     ctaSecondaryHref: "#pakketten",
   },
 
   // ── Section 2: Trust bar ────────────────────────────────────────────────
   trustBar: {
     items: [
-      { label: "beschikbare pakketten", value: "2+ maanden" },
-      { label: "actieve klanten", value: "10.000+" },
-      { label: "tevredenheidsscore", value: "4,9/5" },
-      { label: "gratis proefperiode", value: "1 uur" },
+      { label: "verfügbare Pakete", value: "2+ Monate" },
+      { label: "aktive Kunden", value: "10.000+" },
+      { label: "Zufriedenheitswert", value: "4,9/5" },
+      { label: "kostenlose Testphase", value: "1 Stunde" },
     ],
   },
 
   // ── Section 3: Problem ──────────────────────────────────────────────────
   problem: {
-    eyebrow: "Valkuilen bij het kopen van IPTV",
-    title: "Vermijd deze fouten bij het kopen van IPTV",
-    subtitle: "Elk jaar lopen duizenden mensen tegen dezelfde problemen aan bij het kopen van IPTV. Herkent u deze situaties?",
+    eyebrow: "Fallstricke beim IPTV-Kauf",
+    title: "Vermeiden Sie diese Fehler beim Kauf von IPTV",
+    subtitle: "Jedes Jahr stoßen Tausende Menschen beim Kauf von IPTV auf dieselben Probleme. Kommt Ihnen das bekannt vor?",
     pains: [
-      { title: "Onbetrouwbare aanbieders", desc: "Als u een goedkoop IPTV-pakket koopt bij een onbekende aanbieder, kan de dienst na een week stoppen. Uw geld is weg en u zit zonder televisie." },
-      { title: "Onverwachte extra kosten", desc: "Wat een aantrekkelijk aanbod lijkt, wordt achteraf duurder. Verborgen kosten voor betaling, activatie of bepaalde zenders drijven de prijs op." },
-      { title: "Slechte beeldkwaliteit en instabiliteit", desc: "Goedkope IPTV-diensten gebruiken overbelaste servers die zenders laten haperen, vastlopen of in lage resolutie weergeven. Vooral tijdens sportevenementen en piekuren." },
-      { title: "Geen Nederlandse klantenservice", desc: "Bij problemen staat u er alleen voor. Buitenlandse aanbieders bieden geen Nederlandstalige ondersteuning en reageren traag op storingen — of helemaal niet." },
+      { title: "Unseriöse Anbieter", desc: "Kaufen Sie ein günstiges IPTV-Paket bei einem unbekannten Anbieter, kann der Dienst schon nach einer Woche eingestellt werden. Ihr Geld ist weg, und Sie stehen ohne Fernsehen da." },
+      { title: "Unerwartete Zusatzkosten", desc: "Was zunächst nach einem attraktiven Angebot aussieht, wird im Nachhinein teurer. Versteckte Kosten für Zahlung, Aktivierung oder bestimmte Sender treiben den Preis in die Höhe." },
+      { title: "Schlechte Bildqualität und Instabilität", desc: "Günstige IPTV-Dienste nutzen überlastete Server, wodurch Sender ruckeln, einfrieren oder in niedriger Auflösung laufen. Besonders bei Sportevents und zu Stoßzeiten." },
+      { title: "Kein deutschsprachiger Kundenservice", desc: "Bei Problemen stehen Sie allein da. Ausländische Anbieter bieten keinen deutschsprachigen Support und reagieren nur langsam auf Störungen — oder gar nicht." },
     ],
   },
 
   // ── Section 4: Solution ─────────────────────────────────────────────────
   solution: {
-    eyebrow: "IPTV-aankoopgids",
-    title: "IPTV-aankoopgids: hoe herkent u een betrouwbare IPTV-aanbieder",
-    subtitle: "Met onze IPTV-aankoopgids voorkomt u teleurstellingen en kiest u met een gerust hart.",
+    eyebrow: "IPTV-Kaufratgeber",
+    title: "IPTV-Kaufratgeber: So erkennen Sie einen zuverlässigen IPTV-Anbieter",
+    subtitle: "Mit unserem IPTV-Kaufratgeber vermeiden Sie Enttäuschungen und treffen Ihre Wahl mit einem guten Gefühl.",
     points: [
-      { title: "Bekijk beoordelingen en reviews", desc: "Een betrouwbare aanbieder heeft positieve, verifieerbare beoordelingen op Google en Trustpilot. Vertrouw niet alleen op hun eigen website; zoek naar onafhankelijke reviews." },
-      { title: "Vraag een gratis proefperiode aan", desc: "Serieuze aanbieders bieden een risicovrije proefperiode. Test de beeldkwaliteit, stabiliteit en het zenderaanbod voordat u betaalt." },
-      { title: "Let op de betaalmethoden", desc: "Betrouwbare aanbieders bieden iDEAL, creditcard of PayPal. Vermijd aanbieders die alleen cryptocurrency of ongebruikelijke methoden accepteren." },
-      { title: "Controleer de Nederlandse klantenservice", desc: "Een aanbieder met een eigen Nederlandstalige klantenservice en korte responstijden (bijv. via WhatsApp) is een teken van betrouwbaarheid bij problemen." },
+      { title: "Bewertungen und Rezensionen prüfen", desc: "Ein zuverlässiger Anbieter hat positive, überprüfbare Bewertungen bei Google und Trustpilot. Verlassen Sie sich nicht nur auf die eigene Website — suchen Sie nach unabhängigen Rezensionen." },
+      { title: "Kostenlose Testphase anfragen", desc: "Seriöse Anbieter bieten eine risikofreie Testphase. Testen Sie Bildqualität, Stabilität und Senderangebot, bevor Sie bezahlen." },
+      { title: "Auf die Zahlungsmethoden achten", desc: "Zuverlässige Anbieter bieten Kreditkarte, PayPal oder Sofortüberweisung an. Meiden Sie Anbieter, die ausschließlich Kryptowährung oder unübliche Methoden akzeptieren." },
+      { title: "Deutschsprachigen Kundenservice prüfen", desc: "Ein Anbieter mit eigenem deutschsprachigem Kundenservice und kurzen Reaktionszeiten (z. B. über WhatsApp) ist ein Zeichen von Zuverlässigkeit bei Problemen." },
     ],
   },
 
   // ── Section 5: Features ─────────────────────────────────────────────────
   features: {
-    eyebrow: "Streamingskwaliteit",
-    title: "IPTV kopen: streamingskwaliteit en essentiële functies",
-    subtitle: "Wanneer u besluit IPTV te kopen, zijn deze functies essentieel voor de beste ervaring.",
+    eyebrow: "Streamingqualität",
+    title: "IPTV kaufen: Streamingqualität und essenzielle Funktionen",
+    subtitle: "Wenn Sie sich entscheiden, IPTV zu kaufen, sind diese Funktionen essenziell für das beste Erlebnis.",
     features: [
-      { title: "4K Ultra HD-beeldkwaliteit", desc: "Een moderne IPTV-dienst biedt minimaal HD, maar bij voorkeur 4K UHD, of zelfs 8K. Vraag altijd naar de maximale resolutie voor sport en films." },
-      { title: "Adaptieve bitrate voor stabiliteit", desc: "Deze technologie past de kwaliteit automatisch aan uw internetverbinding aan. Geen onderbrekingen meer tijdens wedstrijden, zelfs niet tijdens piekuren." },
-      { title: "Elektronische programmagids (EPG)", desc: "Een complete gids met informatie over elke zender. U ziet wat er nu en later wordt uitgezonden, met filteropties op genre." },
-      { title: "M3U- & Xtream Codes-ondersteuning", desc: "Het pakket moet M3U-koppelingen en Xtream Codes bieden voor eenvoudig gebruik in apps zoals TiviMate, IPTV Smarters Pro, VLC en Perfect Player." },
-      { title: "Multi-apparaten en meerdere kamers", desc: "Een abonnement met meerdere verbindingen om op verschillende apparaten en in verschillende kamers tegelijk te kijken, zonder extra apparatuur." },
-      { title: "Catch-up en timeshift", desc: "Met catch-up kunt u gemiste programma's terugkijken. Timeshift pauzeert en spoelt live-tv terug. Essentieel voor actieve huishoudens." },
+      { title: "4K Ultra HD-Bildqualität", desc: "Ein moderner IPTV-Dienst bietet mindestens HD, vorzugsweise jedoch 4K UHD oder sogar 8K. Fragen Sie immer nach der maximalen Auflösung für Sport und Filme." },
+      { title: "Adaptive Bitrate für Stabilität", desc: "Diese Technologie passt die Qualität automatisch an Ihre Internetverbindung an. Keine Unterbrechungen mehr während Spielen, selbst zu Stoßzeiten." },
+      { title: "Elektronischer Programmführer (EPG)", desc: "Ein vollständiger Guide mit Informationen zu jedem Sender. Sie sehen, was jetzt und später läuft, mit Filteroptionen nach Genre." },
+      { title: "M3U- & Xtream-Codes-Unterstützung", desc: "Das Paket sollte M3U-Links und Xtream Codes bieten, für einfache Nutzung in Apps wie TiviMate, IPTV Smarters Pro, VLC und Perfect Player." },
+      { title: "Mehrere Geräte und Räume", desc: "Ein Abonnement mit mehreren Verbindungen, um auf verschiedenen Geräten und in verschiedenen Räumen gleichzeitig zu schauen, ohne zusätzliche Geräte." },
+      { title: "Catch-up und Timeshift", desc: "Mit Catch-up können Sie verpasste Sendungen nachholen. Timeshift pausiert und spult Live-TV zurück. Essenziell für aktive Haushalte." },
     ],
   },
 
   // ── Section 6: Why Us ────────────────────────────────────────────────────
   whyUs: {
-    eyebrow: "Voordelen",
-    title: "De voordelen van IPTV kopen bij IPTV Smarter",
-    subtitle: "Onze track record spreekt voor zich. Ontdek de voordelen van IPTV kopen bij ons.",
+    eyebrow: "Vorteile",
+    title: "Die Vorteile von IPTV kaufen bei IPTV Germany",
+    subtitle: "Unsere Erfolgsbilanz spricht für sich. Entdecken Sie die Vorteile, IPTV bei uns zu kaufen.",
     reasons: [
-      { title: "Niet goed, geld terug", desc: "Niet tevreden met uw aankoop? U krijgt zonder gedoe uw geld terug. We staan achter onze kwaliteit met een eerlijke garantie die u bij bijna geen enkele andere aanbieder vindt." },
-      { title: "Onmiddellijke activatie na betaling", desc: "Geen uren wachten op een e-mail. Na betaling ontvangt u binnen 5 minuten uw inloggegevens, uw M3U-koppeling en een stap-voor-stap gids. U begint direct." },
-      { title: "Geen verborgen kosten", desc: "Wat u ziet is wat u betaalt. Geen activatiekosten, verzendkosten of toeslagen voor sport of 4K. Het weergegeven bedrag is het enige dat u betaalt." },
+      { title: "Nicht zufrieden, Geld zurück", desc: "Nicht zufrieden mit Ihrem Kauf? Sie erhalten unkompliziert Ihr Geld zurück. Wir stehen zu unserer Qualität mit einer fairen Garantie, die Sie bei kaum einem anderen Anbieter finden." },
+      { title: "Sofortige Aktivierung nach Zahlung", desc: "Kein stundenlanges Warten auf eine E-Mail. Nach der Zahlung erhalten Sie innerhalb von 5 Minuten Ihre Zugangsdaten, Ihren M3U-Link und eine Schritt-für-Schritt-Anleitung. Sie legen sofort los." },
+      { title: "Keine versteckten Kosten", desc: "Was Sie sehen, ist, was Sie zahlen. Keine Aktivierungsgebühren, Versandkosten oder Aufpreise für Sport oder 4K. Der angezeigte Betrag ist alles, was Sie bezahlen." },
     ],
   },
 
   // ── Section 7: How It Works ─────────────────────────────────────────────
   how: {
-    eyebrow: "Installatie",
-    title: "Installatie: IPTV kopen in 3 stappen en direct genieten",
-    subtitle: "De installatie na het kopen van IPTV duurt minder dan 10 minuten.",
+    eyebrow: "Installation",
+    title: "Installation: IPTV in 3 Schritten kaufen und sofort genießen",
+    subtitle: "Die Installation nach dem Kauf von IPTV dauert weniger als 10 Minuten.",
     steps: [
-      { step: "01", title: "Kies uw pakket", desc: "Bekijk de verschillende abonnementen op basis van de gewenste duur en het aantal gelijktijdige verbindingen. Hoe langer de duur, hoe voordeliger de maandprijs." },
-      { step: "02", title: "Betaal veilig", desc: "Betaal eenvoudig en veilig met iDEAL, creditcard of PayPal. Uw betaling wordt direct verwerkt via een beveiligde SSL-omgeving. U ontvangt daarna direct uw inloggegevens." },
-      { step: "03", title: "Installeer en stream", desc: "Volg de duidelijke handleiding of onze installatietips per apparaat. Binnen enkele minuten kijkt u op al uw apparaten naar duizenden zenders in 4K." },
+      { step: "01", title: "Paket wählen", desc: "Vergleichen Sie die verschiedenen Abonnements anhand der gewünschten Laufzeit und der Anzahl gleichzeitiger Verbindungen. Je länger die Laufzeit, desto günstiger der Monatspreis." },
+      { step: "02", title: "Sicher bezahlen", desc: "Zahlen Sie einfach und sicher mit Kreditkarte, PayPal oder Sofortüberweisung. Ihre Zahlung wird sofort über eine gesicherte SSL-Umgebung verarbeitet. Danach erhalten Sie direkt Ihre Zugangsdaten." },
+      { step: "03", title: "Installieren und streamen", desc: "Folgen Sie der klaren Anleitung oder unseren Installationstipps je Gerät. Innerhalb weniger Minuten sehen Sie auf all Ihren Geräten Tausende Sender in 4K." },
     ],
   },
 
   // ── Section 8: Device Compatibility ──────────────────────────────────────
   devices: {
-    eyebrow: "Apparaten & compatibiliteit",
-    title: "Compatibiliteit: op welke apparaten kunt u IPTV gebruiken?",
-    subtitle: "Onze dienst is getest op alle gangbare apparaten. Controleer de compatibiliteit voordat u IPTV koopt.",
+    eyebrow: "Geräte & Kompatibilität",
+    title: "Kompatibilität: Auf welchen Geräten können Sie IPTV nutzen?",
+    subtitle: "Unser Service ist auf allen gängigen Geräten getestet. Prüfen Sie die Kompatibilität, bevor Sie IPTV kaufen.",
     deviceGroups: [
       { name: "Smart TV", items: ["Samsung Smart Hub", "LG webOS TV", "Sony Bravia (Android TV)", "Philips Ambilight", "Panasonic VIERA", "Hisense VIDAA", "TCL Android TV"] },
-      { name: "Streaming & box", items: ["Amazon Fire TV Stick", "Chromecast Ultra", "Nvidia Shield TV Pro", "Apple TV 4K", "Formuler Z11 Pro", "MAG 524"] },
-      { name: "Mobiele apparaten", items: ["iPhone 14/15/16", "iPad Pro/Air", "Samsung Galaxy S24/S25", "Google Pixel 9", "Huawei P-serie", "Xiaomi tablets"] },
-      { name: "Softwaretoepassingen", items: ["IPTV Smarters Pro", "TiviMate", "VLC Media Player", "Kodi", "Perfect Player", "GSE Smart IPTV"] },
+      { name: "Streaming & Box", items: ["Amazon Fire TV Stick", "Chromecast Ultra", "Nvidia Shield TV Pro", "Apple TV 4K", "Formuler Z11 Pro", "MAG 524"] },
+      { name: "Mobile Geräte", items: ["iPhone 14/15/16", "iPad Pro/Air", "Samsung Galaxy S24/S25", "Google Pixel 9", "Huawei P-Serie", "Xiaomi Tablets"] },
+      { name: "Software-Anwendungen", items: ["IPTV Smarters Pro", "TiviMate", "VLC Media Player", "Kodi", "Perfect Player", "GSE Smart IPTV"] },
     ],
-    ctaText: "Bekijk de installatiegids per apparaat",
+    ctaText: "Installationsanleitung je Gerät ansehen",
   },
 
   // ── Section 9: Channels ─────────────────────────────────────────────────
   channels: {
-    eyebrow: "Zenderaanbod",
-    title: "Dit ontvangt u bij het kopen van IPTV bij IPTV Smarter",
-    subtitle: "Een compleet zenderaanbod dat u bij geen enkele andere aanbieder in deze samenstelling vindt.",
+    eyebrow: "Senderangebot",
+    title: "Das erhalten Sie beim Kauf von IPTV bei IPTV Germany",
+    subtitle: "Ein komplettes Senderangebot, das Sie bei keinem anderen Anbieter in dieser Zusammenstellung finden.",
     channelGroups: [
-      { name: "Nederlandse zenders", items: ["Algemene zenders HD", "Publieke zenders HD", "Filmzenders HD", "Amusement HD", "Sportzenders HD", "Cultuurzenders HD", "Regionale zenders", "Muziekzenders HD"] },
-      { name: "Premium sport", items: ["Live voetbal", "Europese competities", "Grote kampioenschappen", "Autosport", "Motorsport", "Vechtsporten", "Tennis", "Basketbal"] },
-      { name: "Films & amusement", items: ["Filmzenders", "Premium series", "Documentaires", "Ontdekking & natuur", "Jeugdzenders", "Tekenfilms", "Comedy", "Lifestyle"] },
-      { name: "Nieuws & documentaires", items: ["Internationaal nieuws", "Brits nieuws", "Nederlands nieuws", "24-uursnieuws", "NL journaals", "Regionaal nieuws", "Geschiedeniszenders", "Natuur & dieren"] },
+      { name: "Deutsche Sender", items: ["Vollprogramme HD", "Öffentlich-rechtliche Sender HD", "Filmsender HD", "Unterhaltung HD", "Sportsender HD", "Kultursender HD", "Regionale Sender", "Musiksender HD"] },
+      { name: "Premium-Sport", items: ["Live-Fußball", "Europapokal-Wettbewerbe", "Große Meisterschaften", "Motorsport", "Wintersport", "Kampfsport", "Tennis", "Basketball"] },
+      { name: "Filme & Unterhaltung", items: ["Filmsender", "Premium-Serien", "Dokumentationen", "Entdeckung & Natur", "Kindersender", "Zeichentrick", "Comedy", "Lifestyle"] },
+      { name: "Nachrichten & Dokumentationen", items: ["Internationale Nachrichten", "Britische Nachrichten", "Deutsche Nachrichten", "24-Stunden-Nachrichten", "Tagesschau & Co.", "Regionale Nachrichten", "Geschichtssender", "Natur & Tiere"] },
     ],
   },
 
   // ── Section 10: Pricing ─────────────────────────────────────────────────
   pricing: {
-    pillText: "Pakketten",
-    title: "IPTV kopen — kies uw pakket",
-    subtitle: "Alle pakketten omvatten sport, 4K en Nederlandse en buitenlandse zenders. Hoe langer de duur, hoe lager de maandprijs.",
+    pillText: "Pakete",
+    title: "IPTV kaufen — wählen Sie Ihr Paket",
+    subtitle: "Alle Pakete umfassen Sport, 4K sowie deutsche und internationale Sender. Je länger die Laufzeit, desto niedriger der Monatspreis.",
   },
 
   // ── Section 11: Comparison ────────────────────────────────────────────────
   comparison: {
-    eyebrow: "Abonnementen vergelijken",
-    title: "Abonnementen vergelijken: IPTV kopen met het beste aanbod",
-    subtitle: "Abonnementen vergelijken is belangrijk. Hier ziet u het verschil tussen IPTV Smarter en andere aanbieders.",
+    eyebrow: "Abonnements vergleichen",
+    title: "Abonnements vergleichen: IPTV kaufen mit dem besten Angebot",
+    subtitle: "Abonnements zu vergleichen ist wichtig. Hier sehen Sie den Unterschied zwischen IPTV Germany und anderen Anbietern.",
     rows: [
-      { feature: "Prijs per maand", us: "Vanaf €7,99", them: "€15 - €40" },
-      { feature: "Gratis proefperiode", us: "Ja, 1 uur", them: "Alleen betaald" },
-      { feature: "Nederlandstalige klantenservice", us: "24/7 via WhatsApp", them: "Zeer beperkt" },
-      { feature: "Serverlocatie", us: "Nederland / België", them: "Buiten de EU" },
-      { feature: "Activatietijd", us: "Binnen 5 minuten", them: "Uren tot dagen" },
-      { feature: "Frequentie van zenderupdates", us: "Dagelijks", them: "Wekelijks / maandelijks" },
-      { feature: "Niet goed, geld terug-garantie", us: "Ja", them: "Nee" },
+      { feature: "Preis pro Monat", us: "Ab 7,99 €", them: "15 € – 40 €" },
+      { feature: "Kostenlose Testphase", us: "Ja, 1 Stunde", them: "Nur kostenpflichtig" },
+      { feature: "Deutschsprachiger Kundenservice", us: "24/7 über WhatsApp", them: "Sehr begrenzt" },
+      { feature: "Serverstandort", us: "Deutschland / Österreich", them: "Außerhalb der EU" },
+      { feature: "Aktivierungszeit", us: "Innerhalb von 5 Minuten", them: "Stunden bis Tage" },
+      { feature: "Häufigkeit der Senderaktualisierung", us: "Täglich", them: "Wöchentlich / monatlich" },
+      { feature: "Zufrieden-oder-Geld-zurück-Garantie", us: "Ja", them: "Nein" },
     ],
   },
 
   // ── Section 12: Testimonials ─────────────────────────────────────────────
   testimonials: {
-    eyebrow: "Beoordelingen",
-    title: "Wat anderen zeggen over hun IPTV-aankoop",
-    subtitle: "Ontdek waarom duizenden klanten hun IPTV-pakket bij ons kopen.",
+    eyebrow: "Bewertungen",
+    title: "Was andere über ihren IPTV-Kauf sagen",
+    subtitle: "Entdecken Sie, warum Tausende Kunden ihr IPTV-Paket bei uns kaufen.",
   },
 
   // ── Section 13: Security & Reliability ────────────────────────────────────
   security: {
-    eyebrow: "Klantenservice",
-    title: "Klantenservice en veiligheid bij het kopen van IPTV",
-    subtitle: "We nemen klantenservice en uw veiligheid serieus met deze maatregelen.",
+    eyebrow: "Kundenservice",
+    title: "Kundenservice und Sicherheit beim Kauf von IPTV",
+    subtitle: "Wir nehmen Kundenservice und Ihre Sicherheit mit diesen Maßnahmen ernst.",
     items: [
-      { title: "SSL-versleutelde bestelling", desc: "Uw bestelling verloopt via een beveiligde verbinding. Alle gegevens worden versleuteld verzonden en nooit op onze servers opgeslagen." },
-      { title: "Betaalmethode naar keuze", desc: "iDEAL (uw eigen bank), creditcard met 3D Secure of PayPal-kopersbescherming. Kies wat u vertrouwt." },
-      { title: "Geen risico op datalekken", desc: "Uw persoonlijke gegevens worden strikt vertrouwelijk behandeld. Geen doorverkoop, geen profilering. Uw privacy staat voorop." },
-      { title: "Transparante voorwaarden", desc: "Geen kleine lettertjes of verborgen clausules. Onze algemene voorwaarden zijn duidelijk: wat u ziet is wat u krijgt." },
+      { title: "SSL-verschlüsselte Bestellung", desc: "Ihre Bestellung läuft über eine gesicherte Verbindung. Alle Daten werden verschlüsselt übertragen und niemals auf unseren Servern gespeichert." },
+      { title: "Zahlungsmethode nach Wahl", desc: "Kreditkarte mit 3D Secure, PayPal-Käuferschutz oder Sofortüberweisung. Wählen Sie, was Sie bevorzugen." },
+      { title: "Kein Risiko von Datenlecks", desc: "Ihre persönlichen Daten werden streng vertraulich behandelt. Kein Weiterverkauf, kein Profiling. Ihre Privatsphäre steht an erster Stelle." },
+      { title: "Transparente Bedingungen", desc: "Kein Kleingedrucktes und keine versteckten Klauseln. Unsere AGB sind klar formuliert: Was Sie sehen, ist, was Sie bekommen." },
     ],
   },
 
   // ── Section 14: FAQ (exactly 8) ─────────────────────────────────────────
   faq: {
-    eyebrow: "Veelgestelde vragen",
-    title: "Uw vragen over het kopen van IPTV — onze antwoorden",
-    subtitle: "De meest gestelde vragen door kopers.",
+    eyebrow: "Häufig gestellte Fragen",
+    title: "Ihre Fragen zum Kauf von IPTV — unsere Antworten",
+    subtitle: "Die häufigsten Fragen von Käufern.",
     faqs: [
       {
-        question: "Is het veilig om IPTV te kopen via een website?",
-        answer: "Ja, mits u bij een betrouwbare aanbieder koopt. Controleer op veilige betaalmethoden (iDEAL, kaart met 3D Secure), duidelijke contactgegevens en klantenservice via telefoon of WhatsApp. Wij voldoen aan alle beveiligingsnormen."
+        question: "Ist es sicher, IPTV über eine Website zu kaufen?",
+        answer: "Ja, sofern Sie bei einem zuverlässigen Anbieter kaufen. Achten Sie auf sichere Zahlungsmethoden (Kreditkarte mit 3D Secure, PayPal), klare Kontaktdaten und Kundenservice per Telefon oder WhatsApp. Wir erfüllen alle Sicherheitsstandards."
       },
       {
-        question: "Wat kost een IPTV-abonnement gemiddeld per maand?",
-        answer: "De prijs varieert van €7 tot €25 per maand, afhankelijk van de duur en het aantal gelijktijdige verbindingen. Met een jaarabonnement betaalt u het minst per maand. Vergelijk altijd de totale kosten en let op verborgen toeslagen."
+        question: "Was kostet ein IPTV-Abonnement durchschnittlich pro Monat?",
+        answer: "Der Preis variiert zwischen 7 € und 25 € pro Monat, abhängig von Laufzeit und Anzahl der gleichzeitigen Verbindungen. Mit einem Jahresabonnement zahlen Sie am wenigsten pro Monat. Vergleichen Sie immer die Gesamtkosten und achten Sie auf versteckte Aufpreise."
       },
       {
-        question: "Kan ik IPTV kopen en direct gebruiken?",
-        answer: "Bij IPTV Smarter, ja. Na betaling ontvangt u binnen 5 minuten uw M3U-koppeling, Xtream Codes en een installatiegids. Geen wachttijd voor handmatige activatie. Download de app, voer de inloggegevens in en u streamt direct."
+        question: "Kann ich IPTV kaufen und sofort nutzen?",
+        answer: "Bei IPTV Germany, ja. Nach der Zahlung erhalten Sie innerhalb von 5 Minuten Ihren M3U-Link, Ihre Xtream Codes und eine Installationsanleitung. Keine Wartezeit für eine manuelle Aktivierung. App herunterladen, Zugangsdaten eingeben — und Sie streamen sofort."
       },
       {
-        question: "Wat is het verschil tussen IPTV kopen en een traditioneel tv-abonnement?",
-        answer: "Bij IPTV koopt u een streamingdienst via internet, zonder kabel, schotel of vast abonnement. U heeft vrijwel altijd een breder aanbod (31.000+ zenders versus 50-100), 4K en VOD, tegen een lagere prijs en zonder jaarcontract."
+        question: "Was ist der Unterschied zwischen IPTV kaufen und einem klassischen TV-Abonnement?",
+        answer: "Bei IPTV kaufen Sie einen Streamingdienst über das Internet, ganz ohne Kabel, Schüssel oder festes Abonnement. Sie erhalten nahezu immer ein breiteres Angebot (31.000+ Sender gegenüber 50-100), 4K und VOD, zu einem niedrigeren Preis und ohne Jahresvertrag."
       },
       {
-        question: "Welke IPTV-app heb ik nodig om te kijken?",
-        answer: "U kunt IPTV Smarters Pro, TiviMate, VLC Media Player, Kodi of Perfect Player gebruiken. Wij leveren een duidelijke installatiegids per apparaat. De meeste apps zijn gratis en eenvoudig te installeren via de appstore."
+        question: "Welche IPTV-App benötige ich zum Anschauen?",
+        answer: "Sie können IPTV Smarters Pro, TiviMate, VLC Media Player, Kodi oder Perfect Player verwenden. Wir liefern eine klare Installationsanleitung je Gerät. Die meisten Apps sind kostenlos und einfach über den App Store zu installieren."
       },
       {
-        question: "Hoeveel verbindingen heb ik nodig voor IPTV?",
-        answer: "1 verbinding volstaat voor één tv tegelijk. Voor een huishouden met 2-3 tv's raden we een pakket met 2 tot 4 gelijktijdige verbindingen aan. Kijkt u ook op telefoon of tablet, dan heeft u een extra verbinding nodig."
+        question: "Wie viele Verbindungen benötige ich für IPTV?",
+        answer: "1 Verbindung reicht für einen Fernseher gleichzeitig. Für einen Haushalt mit 2-3 Fernsehern empfehlen wir ein Paket mit 2 bis 4 gleichzeitigen Verbindungen. Schauen Sie auch auf Smartphone oder Tablet, benötigen Sie eine zusätzliche Verbindung."
       },
       {
-        question: "Wat gebeurt er als IPTV niet werkt na de aankoop?",
-        answer: "Onze supportafdeling is 24/7 beschikbaar via WhatsApp. We bieden ook een gedetailleerde installatiegids per apparaat. Als het technisch niet lukt, helpen we u op afstand. In het uiterste geval krijgt u uw geld terug."
+        question: "Was passiert, wenn IPTV nach dem Kauf nicht funktioniert?",
+        answer: "Unser Support ist 24/7 über WhatsApp erreichbar. Wir bieten außerdem eine detaillierte Installationsanleitung je Gerät. Wenn es technisch nicht klappt, helfen wir Ihnen aus der Ferne. Im äußersten Fall erhalten Sie Ihr Geld zurück."
       },
       {
-        question: "Kan ik na de aankoop overstappen op een ander pakket?",
-        answer: "Ja, u kunt op elk moment overstappen op meer verbindingen of een langer abonnement. Het verschil wordt eenvoudig aangepast. Uw dienst blijft beschikbaar zonder onderbreking tijdens de wijziging."
+        question: "Kann ich nach dem Kauf auf ein anderes Paket wechseln?",
+        answer: "Ja, Sie können jederzeit auf mehr Verbindungen oder ein längeres Abonnement wechseln. Die Differenz wird einfach angepasst. Ihr Service bleibt während der Änderung ohne Unterbrechung verfügbar."
       },
     ],
   },
 
   // ── Section 15: Internal Linking Hub ──────────────────────────────────────
   internalLinks: {
-    eyebrow: "Meer informatie",
-    title: "Waar wilt u meer over weten?",
-    subtitle: "Verdiep u in de verschillende IPTV-onderwerpen en ontdek welke dienst het beste bij u past.",
-    links: [LINK.home, LINK.abonnement, LINK.aanbieder, LINK.nederland, LINK.smarters],
+    eyebrow: "Weitere Informationen",
+    title: "Worüber möchten Sie mehr erfahren?",
+    subtitle: "Vertiefen Sie sich in die verschiedenen IPTV-Themen und entdecken Sie, welcher Service am besten zu Ihnen passt.",
+    links: [LINK.home, LINK.abonnement, LINK.anbieter, LINK.deutschland, LINK.smarters],
   },
 
   // ── Section 16: Final CTA ────────────────────────────────────────────────
   finalCta: {
-    title: "Koop nu uw IPTV-pakket en bespaar direct",
-    description: "Overstappen op IPTV is eenvoudig, voordelig en veilig. Kies uw abonnement, betaal en stream binnen 5 minuten duizenden zenders in 4K.",
+    title: "Kaufen Sie jetzt Ihr IPTV-Paket und sparen Sie sofort",
+    description: "Der Wechsel zu IPTV ist einfach, günstig und sicher. Wählen Sie Ihr Abonnement, bezahlen Sie und streamen Sie innerhalb von 5 Minuten Tausende Sender in 4K.",
   },
 };
 
-export default iptvKopen;
+export default iptvKaufen;

@@ -28,8 +28,8 @@ const FilterBarComponent = ({
         <div className="relative flex items-center gap-1 p-1 bg-blanc-50/5 backdrop-blur-md rounded-full border border-blanc-50/5 overflow-x-auto scrollbar-hide">
           {([
             { id: "all", label: "Alle" },
-            { id: "movies", label: "Films" },
-            { id: "series", label: "Series" },
+            { id: "movies", label: "Filme" },
+            { id: "series", label: "Serien" },
             { id: "lives", label: "Live TV" },
             { id: "sports", label: "Sport" },
           ] as const).map((type) => (
@@ -55,9 +55,9 @@ const FilterBarComponent = ({
         {/* Sort Selector */}
         <div className="flex items-center gap-3 glass p-1.5 rounded-2xl border border-blanc-50/5 self-start overflow-x-auto scrollbar-hide">
           {([
-            { id: "popularity", label: "Populair", Icon: Flame },
-            { id: "rating", label: "Best beoordeeld", Icon: Star },
-            { id: "newest", label: "Nieuwste", Icon: CalendarDays },
+            { id: "popularity", label: "Beliebt", Icon: Flame },
+            { id: "rating", label: "Bestbewertet", Icon: Star },
+            { id: "newest", label: "Neueste", Icon: CalendarDays },
           ] as const).map((opt) => (
             <button
               key={opt.id}

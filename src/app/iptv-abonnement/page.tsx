@@ -30,8 +30,8 @@ export default function IptvAbonnementPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbSchema([
-            { name: "Home", url: "https://iptvsmarter.nl" },
-            { name: "Abonnement IPTV", url: "https://iptvsmarter.nl/iptv-abonnement" },
+            { name: "Home", url: "https://iptv-germany.com" },
+            { name: "IPTV-Abonnement", url: "https://iptv-germany.com/iptv-abonnement" },
           ])),
         }}
       />

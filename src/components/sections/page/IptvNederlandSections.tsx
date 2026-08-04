@@ -2,29 +2,29 @@ import { CheckCircle2 } from "lucide-react";
 
 const nlChannelGroups = [
   {
-    category: "Franse zenders",
-    channels: ["Algemene zenders HD", "Publieke zenders HD", "Film & series HD", "Amusement HD", "Cultuur HD", "Regionale zenders FR"],
+    category: "Deutsche Sender",
+    channels: ["Vollprogramme HD", "Öffentlich-rechtliche Sender HD", "Film & Serien HD", "Unterhaltung HD", "Kultur HD", "Regionale Sender DE"],
     color: "text-france-400",
     border: "border-france-500/20",
     bg: "bg-france-500/5",
   },
   {
-    category: "Nederlandse zenders",
-    channels: ["Publieke zenders HD", "Commerciële zenders HD", "Amusement HD", "Familiezenders HD", "Lifestyle-zenders HD", "Regionale zenders NL"],
+    category: "Internationale Sender",
+    channels: ["Öffentliche Sender HD", "Kommerzielle Sender HD", "Unterhaltung HD", "Familiensender HD", "Lifestyle-Sender HD", "Regionale Sender Int."],
     color: "text-rouge-400",
     border: "border-rouge-500/20",
     bg: "bg-rouge-500/5",
   },
   {
-    category: "Sport & nieuws",
-    channels: ["Live sport HD", "Voetbal HD", "Autosport HD", "Nieuwszenders FR", "Internationaal nieuws", "24/7 nieuws"],
+    category: "Sport & Nachrichten",
+    channels: ["Live-Sport HD", "Fußball HD", "Motorsport HD", "Nachrichtensender", "Internationale Nachrichten", "24/7-Nachrichten"],
     color: "text-france-400",
     border: "border-france-500/20",
     bg: "bg-france-500/5",
   },
   {
-    category: "Regionale TV (NL)",
-    channels: ["Regionale zenders HD", "Lokaal nieuws", "Provinciale zenders", "Regionaal nieuws", "Regionale cultuur", "Regionale sport"],
+    category: "Regional-TV (DE)",
+    channels: ["Regionale Sender HD", "Lokale Nachrichten", "Bundesländer-Sender", "Regionale Nachrichten", "Regionale Kultur", "Regionaler Sport"],
     color: "text-rouge-400",
     border: "border-rouge-500/20",
     bg: "bg-rouge-500/5",
@@ -43,15 +43,15 @@ export function IptvNederlandZenders() {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <span className="inline-block px-4 py-1.5 rounded-full glass text-france-400 text-sm font-bold mb-4 uppercase tracking-wider glow-gold">
-            IPTV-zenders Nederland
+            IPTV-Sender Deutschland
           </span>
           <h2 className="font-display font-bold text-4xl sm:text-5xl mb-4 text-blanc-50">
             Alle{" "}
-            <span className="text-gradient">Franse & Nederlandse zenders</span> via IPTV
+            <span className="text-gradient">deutschen & internationalen Sender</span> per IPTV
           </h2>
           <p className="text-blanc-400 max-w-2xl mx-auto font-medium">
-            Met IPTV in Nederland bekijkt u alle Franse,
-            Nederlandse, sport- en regionale zenders in HD- of 4K-kwaliteit.
+            Mit IPTV in Deutschland sehen Sie alle deutschen,
+            internationalen, Sport- und Regionalsender in HD- oder 4K-Qualität.
           </p>
         </div>
 
@@ -87,8 +87,8 @@ export function IptvNederlandZenders() {
         </div>
 
         <p className="text-center text-blanc-500 text-sm font-medium mt-8">
-          + <span className="text-blanc-300 font-bold">30.900+ overige zenders</span>{" "}
-          uit meer dan 190 landen inbegrepen
+          + <span className="text-blanc-300 font-bold">30.900+ weitere Sender</span>{" "}
+          aus mehr als 190 Ländern inbegriffen
         </p>
       </div>
     </section>
@@ -97,16 +97,16 @@ export function IptvNederlandZenders() {
 
 const nlFaqs = [
   {
-    q: "Welke zenders zijn beschikbaar via IPTV Nederland?",
-    a: "Via IPTV in Nederland bekijkt u een breed assortiment van Franse zenders (algemeen, publiek, film), Nederlandse zenders (publiek, commercieel), sportzenders, nieuwszenders en regionale zenders. Alles in HD of 4K.",
+    q: "Welche Sender sind über IPTV Deutschland verfügbar?",
+    a: "Über IPTV in Deutschland sehen Sie ein breites Angebot an deutschen Sendern (Vollprogramm, öffentlich-rechtlich, Film), internationalen Sendern, Sportsendern, Nachrichtensendern und Regionalsendern. Alles in HD oder 4K.",
   },
   {
-    q: "Is IPTV beschikbaar in Nederland zonder vaste lijn?",
-    a: "Ja. IPTV werkt via uw bestaande internetverbinding: glasvezel, kabel of zelfs mobiel 4G/5G. U heeft geen coaxkabel, schotel of monteur nodig. Aansluiten, configureren, kijken.",
+    q: "Ist IPTV in Deutschland ohne Festnetzanschluss verfügbar?",
+    a: "Ja. IPTV funktioniert über Ihre bestehende Internetverbindung: Glasfaser, Kabel oder sogar mobil per 4G/5G. Sie brauchen kein Koaxialkabel, keine Schüssel und keinen Techniker. Anschließen, konfigurieren, fernsehen.",
   },
   {
-    q: "Kijk ik live voetbal via IPTV Nederland?",
-    a: "Onze IPTV-pakketten bevatten live sportzenders in HD en 4K, met uitgebreide voetbaldekking en grote competities. Beschikbare inhoud kan per regio verschillen. Kijk op mobiel, tablet en Smart TV.",
+    q: "Sehe ich live Fußball über IPTV Deutschland?",
+    a: "Unsere IPTV-Pakete enthalten Live-Sportsender in HD und 4K, mit umfangreicher Fußball-Berichterstattung und großen Wettbewerben. Verfügbare Inhalte können je nach Region variieren. Schauen Sie auf Smartphone, Tablet und Smart TV.",
   },
 ];
 
@@ -120,11 +120,11 @@ export function IptvNederlandFaq() {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10">
             <span className="inline-block px-4 py-1.5 rounded-full glass text-rouge-400 text-sm font-bold mb-4 uppercase tracking-wider glow-red">
-              IPTV Nederland — vragen
+              IPTV Deutschland — Fragen
             </span>
             <h2 className="font-display font-bold text-3xl sm:text-4xl mb-3 text-blanc-50">
-              Veelgestelde vragen over{" "}
-              <span className="text-gradient">IPTV Nederland</span>
+              Häufig gestellte Fragen zu{" "}
+              <span className="text-gradient">IPTV Deutschland</span>
             </h2>
           </div>
           <div className="space-y-4">

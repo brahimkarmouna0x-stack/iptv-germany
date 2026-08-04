@@ -21,14 +21,14 @@ import {
 import { DEVICE_CATEGORIES } from "@/constants/compatibility-data";
 
 const iconMap: Record<string, typeof Tv> = {
-  "Smartphones & tablets": Smartphone,
-  "Smart TV & streaming": Tv,
-  "Computers & laptops": Laptop,
-  "Streaming-apparaten": MonitorPlay,
-  "TV-boxen": Box,
-  "Spelconsoles": Gamepad2,
-  "Mediaspelers": PlayCircle,
-  Browsers: Globe2,
+  "Smartphones & Tablets": Smartphone,
+  "Smart TV & Streaming": Tv,
+  "Computer & Laptops": Laptop,
+  "Streaming-Geräte": MonitorPlay,
+  "TV-Boxen": Box,
+  "Spielekonsolen": Gamepad2,
+  "Mediaplayer": PlayCircle,
+  Browser: Globe2,
 };
 
 const Compatibility = () => {
@@ -90,20 +90,21 @@ const Compatibility = () => {
         <div className="mb-10 text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-france-500/20 bg-france-500/15 px-3.5 py-1.5 text-xs font-black uppercase tracking-[0.14em] text-france-100">
             <Tv size={14} aria-hidden="true" />
-            Universele compatibiliteit
+            Universelle Kompatibilität
           </span>
           <h2 className="mt-4 font-display text-4xl font-black text-blanc-50 sm:text-5xl">
-            Werkt op <span className="text-gradient">bijna elk apparaat</span>
+            Funktioniert auf <span className="text-gradient">fast jedem Gerät</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-sm font-medium leading-6 text-blanc-400 sm:text-base">
-            Zoek uw merk, app, type tv of speler. Wij ondersteunen
-            {totalItems}+ populaire apparaten, apps en IPTV-platforms.
+            Suchen Sie Ihre Marke, App, Ihren TV-Typ oder Player. Wir
+            unterstützen {totalItems}+ beliebte Geräte, Apps und
+            IPTV-Plattformen.
           </p>
         </div>
 
         <div className="mx-auto mb-10 max-w-2xl">
           <label htmlFor="device-search" className="sr-only">
-              Zoek een apparaat of merk
+              Gerät oder Marke suchen
           </label>
           <div className="relative">
             <Search
@@ -116,14 +117,14 @@ const Compatibility = () => {
               type="search"
               value={searchQuery}
               onChange={(event) => setSearchQuery(event.target.value)}
-              placeholder="Zoek Samsung, LG, Firestick, MAG, TiviMate, iPhone..."
+              placeholder="Suchen Sie nach Samsung, LG, Firestick, MAG, TiviMate, iPhone..."
               className="w-full rounded-2xl border border-blanc-50/10 bg-france-900 py-4 pl-13 pr-12 text-blanc-50 outline-none transition-colors placeholder:text-blanc-500 focus:border-france-500/50"
             />
             {searchQuery && (
               <button
                 type="button"
                 onClick={() => setSearchQuery("")}
-                aria-label="Zoekopdracht wissen"
+                aria-label="Suche löschen"
                 className="absolute right-4 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-white/5 text-blanc-400 transition-colors hover:bg-white/10 hover:text-blanc-50"
               >
                 <X size={16} aria-hidden="true" />
@@ -137,7 +138,7 @@ const Compatibility = () => {
               aria-live="polite"
               aria-atomic="true"
             >
-              {filteredCategories.length} categorieën gevonden voor &quot;
+              {filteredCategories.length} Kategorien gefunden für &quot;
               {searchQuery}&quot;
             </p>
           )}
@@ -163,7 +164,7 @@ const Compatibility = () => {
                         {category.title}
                       </h3>
                       <p className="mt-0.5 text-xs font-bold uppercase tracking-[0.12em] text-blanc-500">
-                        {category.matchedItems.length} options
+                        {category.matchedItems.length} Optionen
                       </p>
                     </div>
                   </div>
@@ -211,11 +212,11 @@ const Compatibility = () => {
                 aria-hidden="true"
               />
               <h3 className="text-xl font-black text-blanc-50">
-                Geen apparaat gevonden
+                Kein Gerät gefunden
               </h3>
               <p className="mt-2 text-blanc-400">
-                Neem contact met ons op. IPTV werkt vaak via M3U, Xtream Codes of
-                een webspeler.
+                Kontaktieren Sie uns. IPTV funktioniert meist über M3U, Xtream
+                Codes oder einen Webplayer.
               </p>
             </div>
           )}
@@ -228,11 +229,12 @@ const Compatibility = () => {
                 <Headphones size={24} aria-hidden="true" />
               </div>
               <h3 className="font-display text-2xl font-black text-blanc-50">
-                Staat uw apparaat er niet bij?
+                Ist Ihr Gerät nicht dabei?
               </h3>
               <p className="mt-3 text-sm leading-6 text-blanc-400">
-                Onze IPTV werkt op bijna elk apparaat met internet: via een browser,
-                een M3U-speler, een Xtream Codes-app of een Android-/Smart TV-omgeving.
+                Unser IPTV funktioniert auf fast jedem internetfähigen Gerät:
+                über einen Browser, einen M3U-Player, eine Xtream-Codes-App
+                oder eine Android-/Smart-TV-Umgebung.
               </p>
             </div>
 
@@ -243,7 +245,7 @@ const Compatibility = () => {
                 rel="noreferrer"
                 className="inline-flex items-center justify-center rounded-xl bg-rouge-500 px-5 py-3 text-sm font-black text-blanc-50 transition-colors hover:bg-rouge-600"
               >
-                Live chat
+                Live-Chat
               </a>
               <button
                 type="button"
@@ -251,7 +253,7 @@ const Compatibility = () => {
                 className="inline-flex items-center justify-center gap-3 rounded-xl border border-blanc-50/10 bg-blanc-50/[0.05] px-5 py-3 text-sm font-bold text-blanc-50 transition-colors hover:bg-white/10"
               >
                 <Copy size={16} aria-hidden="true" />
-                {copied ? "Gekopieerd" : phoneNumber ? `+${phoneNumber}` : ""}
+                {copied ? "Kopiert" : phoneNumber ? `+${phoneNumber}` : ""}
               </button>
             </div>
           </div>

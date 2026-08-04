@@ -3,11 +3,11 @@
 const profiles = [
   {
     icon: Tv,
-    type: "Individueel",
-    subtitle: "1 verbinding · 1 apparaat",
+    type: "Einzelperson",
+    subtitle: "1 Verbindung · 1 Gerät",
     description:
-      "U kijkt alleen en heeft één TV of één apparaat. Het basis IPTV-abonnement met 1 gelijktijdige verbinding volstaat. U heeft toegang tot 31.000+ zenders en de volledige VOD-bibliotheek.",
-    highlight: "Geschikt voor studenten en alleenstaanden",
+      "Sie schauen allein und haben einen Fernseher oder ein Gerät. Das Basis-IPTV-Abonnement mit 1 gleichzeitiger Verbindung reicht völlig aus. Sie erhalten Zugriff auf 31.000+ Sender und die vollständige VOD-Bibliothek.",
+    highlight: "Geeignet für Studierende und Alleinstehende",
     color: "text-france-400",
     gradient: "from-france-600/30 to-france-400/15",
     border: "border-france-500/25",
@@ -15,11 +15,11 @@ const profiles = [
   },
   {
     icon: Users,
-    type: "Gezin",
-    subtitle: "2–4 verbindingen · meerdere apparaten",
+    type: "Familie",
+    subtitle: "2–4 Verbindungen · mehrere Geräte",
     description:
-      "Thuis kijken meerdere personen tegelijk op verschillende apparaten. Kies een IPTV-abonnement met 2 tot 4 gelijktijdige verbindingen zodat iedereen zonder onderbreking zijn favoriete programma's kan kijken.",
-    highlight: "Het meest gekozen IPTV-abonnement",
+      "Zu Hause schauen mehrere Personen gleichzeitig auf verschiedenen Geräten. Wählen Sie ein IPTV-Abonnement mit 2 bis 4 gleichzeitigen Verbindungen, damit jeder ohne Unterbrechung sein Lieblingsprogramm sehen kann.",
+    highlight: "Das meistgewählte IPTV-Abonnement",
     color: "text-rouge-400",
     gradient: "from-rouge-600/30 to-rouge-500/15",
     border: "border-rouge-500/25",
@@ -28,10 +28,10 @@ const profiles = [
   {
     icon: MonitorPlay,
     type: "Sport & Premium",
-    subtitle: "Alle zenders · 4K-kwaliteit",
+    subtitle: "Alle Sender · 4K-Qualität",
     description:
-      "U wilt geen enkele wedstrijd missen en kijkt in 4K Ultra HD. Onze IPTV-abonnementen bevatten een breed aanbod aan live sportzenders, met uitgebreide voetbaldekking en grote competities.",
-    highlight: "Voor sport- en filmliefhebbers",
+      "Sie möchten kein Spiel verpassen und schauen in 4K Ultra HD. Unsere IPTV-Abonnements enthalten ein breites Angebot an Live-Sportsendern, mit umfangreicher Fußball-Berichterstattung und großen Wettbewerben.",
+    highlight: "Für Sport- und Filmfans",
     color: "text-france-400",
     gradient: "from-france-600/30 to-france-400/15",
     border: "border-france-500/25",
@@ -48,15 +48,15 @@ export function IptvAbonnementProfiles() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <span className="inline-block px-4 py-1.5 rounded-full glass text-france-400 text-sm font-bold mb-4 uppercase tracking-wider glow-gold">
-            Welk abonnement past bij u?
+            Welches Abonnement passt zu Ihnen?
           </span>
           <h2 className="font-display font-bold text-4xl sm:text-5xl mb-4 text-blanc-50">
-            Kies het juiste{" "}
-            <span className="text-gradient">IPTV-abonnement</span>
+            Wählen Sie das richtige{" "}
+            <span className="text-gradient">IPTV-Abonnement</span>
           </h2>
           <p className="text-blanc-400 max-w-2xl mx-auto font-medium">
-            Elk IPTV-abonnement bevat alle zenders. Het enige verschil
-            is het aantal apparaten dat u tegelijk kunt gebruiken.
+            Jedes IPTV-Abonnement enthält alle Sender. Der einzige Unterschied
+            ist die Anzahl der Geräte, die Sie gleichzeitig nutzen können.
           </p>
         </div>
 
@@ -103,16 +103,16 @@ export function IptvAbonnementProfiles() {
 
 const abonnementFaqs = [
   {
-    q: "Wat is inbegrepen in elk IPTV-abonnement?",
-    a: " Elk IPTV-abonnement van IPTV Smarter bevat 31.000+ live zenders, 140.000+ films en series op aanvraag, een EPG-gids, catch-up TV, 4K Ultra HD-streams en ondersteuning voor alle IPTV-apps. Geen verborgen kosten voor sport of extra zenders.",
+    q: "Was ist in jedem IPTV-Abonnement enthalten?",
+    a: "Jedes IPTV-Abonnement von IPTV Germany enthält 31.000+ Live-Sender, 140.000+ Filme und Serien auf Abruf, einen EPG-Guide, Catch-up-TV, 4K-Ultra-HD-Streams und Unterstützung für alle IPTV-Apps. Keine versteckten Kosten für Sport oder zusätzliche Sender.",
   },
   {
-    q: "Kan ik mijn IPTV-abonnement op elk moment opzeggen?",
-    a: "Ja. Er is geen vast contract. U kiest de looptijd en kunt stoppen of verlengen bij afloop. Lopende abonnementen blijven actief tot het einde van de betaalde periode. Geen opzegkosten, geen ingewikkelde procedures.",
+    q: "Kann ich mein IPTV-Abonnement jederzeit kündigen?",
+    a: "Ja. Es gibt keinen festen Vertrag. Sie wählen die Laufzeit und können bei Ablauf kündigen oder verlängern. Laufende Abonnements bleiben bis zum Ende des bezahlten Zeitraums aktiv. Keine Kündigungskosten, keine komplizierten Verfahren.",
   },
   {
-    q: "Hoe lang duurt het voordat mijn IPTV-abonnement actief is?",
-    a: "Na betaling ontvangt u uw inloggegevens binnen 5 minuten per e-mail. Geen handmatige activering nodig. Voer de gegevens in uw IPTV-app in en u kijkt meteen — dag en nacht, inclusief weekenden.",
+    q: "Wie lange dauert es, bis mein IPTV-Abonnement aktiv ist?",
+    a: "Nach der Zahlung erhalten Sie Ihre Zugangsdaten innerhalb von 5 Minuten per E-Mail. Keine manuelle Aktivierung nötig. Geben Sie die Daten in Ihre IPTV-App ein, und Sie schauen sofort — Tag und Nacht, auch am Wochenende.",
   },
 ];
 
@@ -127,11 +127,11 @@ export function IptvAbonnementFaq() {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10">
             <span className="inline-block px-4 py-1.5 rounded-full glass text-rouge-400 text-sm font-bold mb-4 uppercase tracking-wider glow-red">
-              IPTV-abonnement — vragen
+              IPTV-Abonnement — Fragen
             </span>
             <h2 className="font-display font-bold text-3xl sm:text-4xl mb-3 text-blanc-50">
-              Vragen over uw{" "}
-              <span className="text-gradient">IPTV-abonnement</span>
+              Fragen zu Ihrem{" "}
+              <span className="text-gradient">IPTV-Abonnement</span>
             </h2>
           </div>
           <div className="space-y-4">

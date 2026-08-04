@@ -45,14 +45,14 @@ function Heading({
   );
 }
 
-const MONTHS_FR = [
-  "jan.", "feb.", "mrt.", "apr.", "mei", "jun.",
-  "jul.", "aug.", "sep.", "okt.", "nov.", "dec.",
+const MONTHS_DE = [
+  "Jan.", "Feb.", "Mär.", "Apr.", "Mai", "Jun.",
+  "Jul.", "Aug.", "Sep.", "Okt.", "Nov.", "Dez.",
 ];
-function formatDateNl(iso: string): string {
+function formatDateDe(iso: string): string {
   const [y, m, d] = iso.split("-").map(Number);
   if (!y || !m || !d) return iso;
-  return `${d} ${MONTHS_FR[m - 1]} ${y}`;
+  return `${d}. ${MONTHS_DE[m - 1]} ${y}`;
 }
 
 function Stars({ rating, size = 16 }: { rating: number; size?: number }) {
@@ -206,7 +206,7 @@ function ReviewsSection({
             <span className="flex flex-col items-start">
               <Stars rating={reviews.ratingValue} size={18} />
               <span className="mt-1 text-xs font-bold uppercase tracking-wider text-blanc-500">
-                {reviews.reviewCount.toLocaleString("nl-NL")} beoordelingen
+                {reviews.reviewCount.toLocaleString("de-DE")} Bewertungen
               </span>
             </span>
           </div>
@@ -227,7 +227,7 @@ function ReviewsSection({
                   {review.author}
                 </span>
                 <span className="block text-xs text-blanc-500">
-                  {review.location} · {formatDateNl(review.date)}
+                  {review.location} · {formatDateDe(review.date)}
                 </span>
               </figcaption>
             </figure>
@@ -265,7 +265,7 @@ function LocalCoverageSection({
           <div className="glass rounded-3xl p-6 sm:p-8 border border-blanc-50/5">
             <h3 className="flex items-center gap-2 font-display font-bold text-lg mb-4 text-blanc-50">
               <MapPin size={18} className="text-france-400" aria-hidden="true" />
-              Beschikbaar in deze steden
+              Verfügbar in diesen Städten
             </h3>
             <ul className="flex flex-wrap gap-2.5 mb-8">
               {local.cities.map((city) => (
@@ -280,7 +280,7 @@ function LocalCoverageSection({
 
             <h3 className="flex items-center gap-2 font-display font-bold text-lg mb-4 text-blanc-50">
               <ListChecks size={18} className="text-rouge-400" aria-hidden="true" />
-              In alle provincies
+              In allen Bundesländern
             </h3>
             <ul className="flex flex-wrap gap-2.5">
               {local.provinces.map((province) => (

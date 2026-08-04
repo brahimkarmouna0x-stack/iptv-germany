@@ -1,232 +1,232 @@
-﻿import type { SixteenSectionContent } from "./types";
+import type { SixteenSectionContent } from "./types";
 
 const LINK = {
-  home: { label: "IPTV Smarter", href: "/", description: "De beste IPTV-service van Nederland met 31.000+ zenders en 4K." },
-  kopen: { label: "IPTV Kopen", href: "/iptv-kopen", description: "Koop direct een IPTV-abonnement met veilige betaling." },
-  aanbieder: { label: "IPTV Aanbieder", href: "/iptv-aanbieder", description: "Vergelijk IPTV-aanbieders en ontdek de beste keuze." },
-  nederland: { label: "IPTV Nederland", href: "/iptv-nederland", description: "Alles over IPTV in Nederland: zenders, sport en installatie." },
-  smarters: { label: "IPTV Smarters Pro", href: "/iptv-smarters-pro", description: "Installatiehandleiding IPTV Smarters Pro voor al uw apparaten." },
+  home: { label: "IPTV Germany", href: "/", description: "Der beste IPTV-Service Deutschlands mit 31.000+ Sendern und 4K." },
+  kaufen: { label: "IPTV kaufen", href: "/iptv-kaufen", description: "Kaufen Sie direkt ein IPTV-Abonnement mit sicherer Zahlung." },
+  anbieter: { label: "IPTV-Anbieter", href: "/iptv-anbieter", description: "Vergleichen Sie IPTV-Anbieter und entdecken Sie die beste Wahl." },
+  deutschland: { label: "IPTV Deutschland", href: "/iptv-deutschland", description: "Alles über IPTV in Deutschland: Sender, Sport und Installation." },
+  smarters: { label: "IPTV Smarters Pro", href: "/iptv-smarters-pro", description: "Installationsanleitung für IPTV Smarters Pro auf all Ihren Geräten." },
 };
 
 const abonnement: SixteenSectionContent = {
   slug: "iptv-abonnement",
   path: "/iptv-abonnement",
   meta: {
-    title: "IPTV-abonnement ☑ De Beste Keuze in Nederland",
-    description: "Het beste IPTV-abonnement in Nederland: 31.000+ zenders, alle sport & films, 4K-kwaliteit en 24/7 ondersteuning. Flexibele looptijden zonder jaarcontract. Gratis proefperiode.",
-    h1: "IPTV-abonnement – vergelijk en kies de beste",
+    title: "IPTV-Abonnement ☑ Die beste Wahl in Deutschland",
+    description: "Das beste IPTV-Abonnement in Deutschland: 31.000+ Sender, aller Sport & Filme, 4K-Qualität und 24/7-Support. Flexible Laufzeiten ohne Jahresvertrag. Kostenlose Testphase.",
+    h1: "IPTV-Abonnement – vergleichen und die beste Wahl treffen",
   },
 
   // ── Section 1: Hero ─────────────────────────────────────────────────────
   hero: {
-    pill: "IPTV-abonnement · Vergelijken loont",
-    title: "IPTV-abonnement: het beste IPTV-abonnement voor uw situatie",
-    subtitle: "Op zoek naar een IPTV-abonnement? Maak de juiste keuze dankzij onze heldere vergelijking van diensten, prijzen en mogelijkheden. Alle pakketten getest op kwaliteit.",
+    pill: "IPTV-Abonnement · Vergleichen lohnt sich",
+    title: "IPTV-Abonnement: das beste IPTV-Abonnement für Ihre Situation",
+    subtitle: "Auf der Suche nach einem IPTV-Abonnement? Treffen Sie die richtige Wahl dank unseres übersichtlichen Vergleichs von Diensten, Preisen und Möglichkeiten. Alle Pakete auf Qualität geprüft.",
     bg: "/images/hero-bg.webp",
-    ctaPrimary: "Vergelijk abonnementen",
+    ctaPrimary: "Abonnements vergleichen",
     ctaPrimaryHref: "#pakketten",
-    ctaSecondary: "Start de gratis proefperiode",
+    ctaSecondary: "Kostenlose Testphase starten",
     ctaSecondaryHref: "#pakketten",
   },
 
   // ── Section 2: Trust bar ────────────────────────────────────────────────
   trustBar: {
     items: [
-      { label: "abonnementsvormen", value: "3" },
-      { label: "servers nabij Nederland", value: "99,9%" },
-      { label: "Google-beoordeling", value: "4,9/5" },
-      { label: "tevreden abonnees", value: "10.000+" },
+      { label: "Abonnementformen", value: "3" },
+      { label: "Server nahe Deutschland", value: "99,9%" },
+      { label: "Google-Bewertung", value: "4,9/5" },
+      { label: "zufriedene Abonnenten", value: "10.000+" },
     ],
   },
 
   // ── Section 3: Problem ──────────────────────────────────────────────────
   problem: {
-    eyebrow: "Bekende frustraties",
-    title: "IPTV-abonnement: waarom uw huidige TV-abonnement niet meer volstaat",
-    subtitle: "De manier waarop we tv kijken is veranderd. Toch bieden traditionele aanbieders nog steeds hetzelfde beperkte model.",
+    eyebrow: "Bekannte Frustrationen",
+    title: "IPTV-Abonnement: warum Ihr aktuelles TV-Abonnement nicht mehr ausreicht",
+    subtitle: "Die Art, wie wir fernsehen, hat sich verändert. Trotzdem bieten klassische Anbieter noch immer dasselbe begrenzte Modell.",
     pains: [
-      { title: "IPTV-abonnement: vaste kosten die blijven stijgen", desc: "Elk jaar verhoogt uw TV-aanbieder de prijzen terwijl het aanbod gelijk blijft. U betaalt nu 70 euro of meer voor zenders die u nauwelijks bekijkt." },
-      { title: "IPTV-abonnement: geen flexibiliteit in looptijd", desc: "Een abonnement bij een traditionele aanbieder dwingt u tot langlopende contracten. Bij verhuizing of gewijzigde behoeften betaalt u een hoge boete." },
-      { title: "IPTV-abonnement: beperkt tot slechts één apparaat", desc: "Wilt u op meerdere tv's kijken of onderweg op uw telefoon? Bij de meeste aanbieders betaalt u elke extra aansluiting apart. Duur en gecompliceerd." },
-      { title: "IPTV-abonnement: sport en films ontbreken", desc: "Uw abonnement dekt niet de essentiele sportzenders of nieuwe films. Voor elke toevoeging betaalt u een duur themapakket." },
+      { title: "IPTV-Abonnement: feste Kosten, die weiter steigen", desc: "Jedes Jahr erhöht Ihr TV-Anbieter die Preise, während das Angebot gleich bleibt. Sie zahlen inzwischen 70 Euro oder mehr für Sender, die Sie kaum ansehen." },
+      { title: "IPTV-Abonnement: keine Flexibilität bei der Laufzeit", desc: "Ein Abonnement bei einem klassischen Anbieter zwingt Sie zu langfristigen Verträgen. Bei einem Umzug oder veränderten Bedürfnissen zahlen Sie eine hohe Strafe." },
+      { title: "IPTV-Abonnement: beschränkt auf nur ein Gerät", desc: "Möchten Sie auf mehreren Fernsehern schauen oder unterwegs auf dem Smartphone? Bei den meisten Anbietern zahlen Sie für jeden zusätzlichen Anschluss extra. Teuer und kompliziert." },
+      { title: "IPTV-Abonnement: Sport und Filme fehlen", desc: "Ihr Abonnement deckt nicht die wichtigsten Sportsender oder neue Filme ab. Für jede Erweiterung zahlen Sie ein teures Themenpaket." },
     ],
   },
 
   // ── Section 4: Solution ─────────────────────────────────────────────────
   solution: {
     eyebrow: "",
-    title: "IPTV-abonnement: een modern IPTV-abonnement lost deze problemen op",
-    subtitle: "Een goede IPTV-aanbieder biedt alles in één pakket, zonder uitzondering.",
+    title: "IPTV-Abonnement: ein modernes IPTV-Abonnement löst diese Probleme",
+    subtitle: "Ein guter IPTV-Anbieter bietet alles in einem Paket, ohne Ausnahme.",
     points: [
-      { title: "IPTV-abonnement: alles inbegrepen, geen themapakketten", desc: "Sport, films, 4K, Franse en Nederlandse zenders en internationale zenders — alles inbegrepen in de standaardprijs. Geen dure toeslagen zoals bij kabelaanbieders." },
-      { title: "IPTV-abonnement: opzegbaar op elk moment zonder boete", desc: "Geen jaarcontract. U kiest of u per maand, per kwartaal of per jaar betaalt. Opzegging is eenvoudig en gratis." },
-      { title: "IPTV-abonnement: gelijktijdig kijken op meerdere apparaten", desc: "Een IPTV-abonnement met 2, 3 of 4 verbindingen. Het hele gezin kijkt waar en wanneer het wil — zonder extra aansluitingskosten." },
-      { title: "IPTV-abonnement: duizenden zenders zonder verborgen kosten", desc: "Geen toeslag voor sportzenders, internationale zenders of 4K. Uw maandbedrag is vast en dekt het volledige aanbod." },
+      { title: "IPTV-Abonnement: alles inklusive, keine Themenpakete", desc: "Sport, Filme, 4K, deutsche und internationale Sender — alles im Standardpreis inbegriffen. Keine teuren Aufpreise wie bei Kabelanbietern." },
+      { title: "IPTV-Abonnement: jederzeit ohne Strafe kündbar", desc: "Kein Jahresvertrag. Sie entscheiden, ob Sie monatlich, vierteljährlich oder jährlich zahlen. Die Kündigung ist einfach und kostenlos." },
+      { title: "IPTV-Abonnement: gleichzeitig auf mehreren Geräten schauen", desc: "Ein IPTV-Abonnement mit 2, 3 oder 4 Verbindungen. Die ganze Familie schaut, wo und wann sie möchte — ohne zusätzliche Anschlusskosten." },
+      { title: "IPTV-Abonnement: Tausende Sender ohne versteckte Kosten", desc: "Kein Aufpreis für Sportsender, internationale Sender oder 4K. Ihr Monatsbetrag ist fest und deckt das komplette Angebot ab." },
     ],
   },
 
   // ── Section 5: Features ─────────────────────────────────────────────────
   features: {
-    eyebrow: "Inbegrepen bij elk abonnement",
-    title: "Deze functies standaard inbegrepen bij elk IPTV-abonnement",
-    subtitle: "Ongeacht het gekozen pakket, deze voordelen zijn altijd inbegrepen.",
+    eyebrow: "Inklusive bei jedem Abonnement",
+    title: "Diese Funktionen sind standardmäßig in jedem IPTV-Abonnement enthalten",
+    subtitle: "Unabhängig vom gewählten Paket sind diese Vorteile immer inbegriffen.",
     features: [
-      { title: "IPTV-abonnement: 31.000+ live tv-zenders", desc: "Van het Franse en Nederlandse aanbod tot internationale zenders uit meer dan 190 landen. Altijd iets om naar te kijken, in elke taal en voor elk publiek." },
-      { title: "IPTV-abonnement: 140.000+ films & series (VOD)", desc: "Een uitgebreide video-on-demand-bibliotheek die dagelijks wordt aangevuld. Nieuwste releases, klassiekers en volledige series — zonder extra kosten." },
-      { title: "IPTV-abonnement: 4K & Ultra HD-streams", desc: "De hoogste beeldkwaliteit voor sport, films en documentaires. HDR-ondersteuning voor realistische kleuren en contrasten." },
-      { title: "IPTV-abonnement: elektronische programmagids (EPG)", desc: "Een heldere gids met programmagegevens van alle zenders. Zoek, filter en ontdek wat er nu, straks en morgen wordt uitgezonden." },
-      { title: "IPTV-abonnement: anti-freeze & nul onderbrekingen", desc: "Speciale software minimaliseert onderbrekingen en stabiliseert de stream. Zelfs tijdens piekuren en live sport kijkt u zonder onderbreking." },
-      { title: "IPTV-abonnement: 24/7 klantenservice", desc: "Ons team is altijd bereikbaar via WhatsApp, e-mail of telefoon. Reactie binnen 5 minuten, 7 dagen per week." },
+      { title: "IPTV-Abonnement: 31.000+ Live-TV-Sender", desc: "Vom deutschen Angebot bis zu internationalen Sendern aus mehr als 190 Ländern. Immer etwas zum Anschauen, in jeder Sprache und für jedes Publikum." },
+      { title: "IPTV-Abonnement: 140.000+ Filme & Serien (VOD)", desc: "Eine umfangreiche Video-on-Demand-Bibliothek, die täglich erweitert wird. Neueste Veröffentlichungen, Klassiker und komplette Serien — ohne Aufpreis." },
+      { title: "IPTV-Abonnement: 4K & Ultra HD-Streams", desc: "Die höchste Bildqualität für Sport, Filme und Dokumentationen. HDR-Unterstützung für realistische Farben und Kontraste." },
+      { title: "IPTV-Abonnement: elektronischer Programmführer (EPG)", desc: "Ein übersichtlicher Guide mit Programminformationen zu allen Sendern. Suchen, filtern und entdecken Sie, was jetzt, gleich und morgen läuft." },
+      { title: "IPTV-Abonnement: Anti-Freeze & null Unterbrechungen", desc: "Spezielle Software minimiert Unterbrechungen und stabilisiert den Stream. Selbst zu Stoßzeiten und bei Live-Sport schauen Sie ohne Unterbrechung." },
+      { title: "IPTV-Abonnement: 24/7-Kundenservice", desc: "Unser Team ist immer über WhatsApp, E-Mail oder Telefon erreichbar. Antwort innerhalb von 5 Minuten, an 7 Tagen die Woche." },
     ],
   },
 
   // ── Section 6: Why Us ───────────────────────────────────────────────────
   whyUs: {
-    eyebrow: "Onze belofte",
-    title: "Drie redenen om een IPTV-abonnement af te sluiten bij IPTV Smarter",
-    subtitle: "Waarom kiezen steeds meer huishoudens voor ons abonnementsmodel?",
+    eyebrow: "Unser Versprechen",
+    title: "Drei Gründe für ein IPTV-Abonnement bei IPTV Germany",
+    subtitle: "Warum entscheiden sich immer mehr Haushalte für unser Abonnementmodell?",
     reasons: [
-      { title: "IPTV-abonnement: de laagste prijs per zender", desc: "Bereken het zelf: voor 10 tot 15 euro per maand ontvangt u meer dan 31.000 zenders. Dat is 0,0003 euro per zender. Bij de concurrent betaalt u tot 1 euro per zender per maand." },
-      { title: "IPTV-abonnement: geen verschil tussen de pakketten", desc: "Sommige aanbieders reserveren sport of 4K voor duurdere pakketten. Bij ons heeft u alles in elk abonnement. Het enige verschil: de looptijd en het aantal verbindingen." },
-      { title: "IPTV-abonnement: altijd up-to-date", desc: "Uw IPTV-abonnement wordt dagelijks bijgewerkt met nieuwe zenders, VOD-toevoegingen en verbeteringen. Nooit meer wachten of handmatige installatie." },
+      { title: "IPTV-Abonnement: der niedrigste Preis pro Sender", desc: "Rechnen Sie selbst nach: Für 10 bis 15 Euro im Monat erhalten Sie mehr als 31.000 Sender. Das sind 0,0003 Euro pro Sender. Bei der Konkurrenz zahlen Sie bis zu 1 Euro pro Sender im Monat." },
+      { title: "IPTV-Abonnement: kein Unterschied zwischen den Paketen", desc: "Manche Anbieter reservieren Sport oder 4K für teurere Pakete. Bei uns haben Sie alles in jedem Abonnement. Der einzige Unterschied: die Laufzeit und die Anzahl der Verbindungen." },
+      { title: "IPTV-Abonnement: immer aktuell", desc: "Ihr IPTV-Abonnement wird täglich mit neuen Sendern, VOD-Ergänzungen und Verbesserungen aktualisiert. Kein Warten und keine manuelle Installation mehr nötig." },
     ],
   },
 
   // ── Section 7: How It Works ─────────────────────────────────────────────
   how: {
-    eyebrow: "Aanmeldproces",
-    title: "IPTV-abonnement: start uw IPTV-abonnement in 3 stappen",
-    subtitle: "Van aanmelding tot streamen in minder dan 10 minuten. Geen gecompliceerde installatie.",
+    eyebrow: "Anmeldeprozess",
+    title: "IPTV-Abonnement: starten Sie Ihr IPTV-Abonnement in 3 Schritten",
+    subtitle: "Von der Anmeldung bis zum Streamen in weniger als 10 Minuten. Keine komplizierte Installation.",
     steps: [
-      { step: "01", title: "IPTV-abonnement: kies uw looptijd", desc: "Bekijk de abonnementen per maand, 3 maanden, 6 maanden of 12 maanden. Hoe langer de looptijd, hoe lager de maandelijkse prijs. U kunt altijd verlengen of opzeggen." },
-      { step: "02", title: "IPTV-abonnement: selecteer het aantal verbindingen", desc: "Kies tussen 1, 2, 3 of 4 gelijktijdige streams. Voor een gemiddeld huishouden zijn 2 verbindingen ideaal: een voor de woonkamer en een voor de slaapkamer." },
-      { step: "03", title: "IPTV-abonnement: betaal en stream direct", desc: "Na betaling via iDEAL, creditcard of PayPal ontvangt u uw inloggegevens. Voer de M3U-link of de Xtream Codes in in uw favoriete IPTV-app en begin met kijken." },
+      { step: "01", title: "IPTV-Abonnement: wählen Sie Ihre Laufzeit", desc: "Sehen Sie sich die Abonnements pro Monat, 3 Monate, 6 Monate oder 12 Monate an. Je länger die Laufzeit, desto niedriger der Monatspreis. Sie können jederzeit verlängern oder kündigen." },
+      { step: "02", title: "IPTV-Abonnement: Anzahl der Verbindungen wählen", desc: "Wählen Sie zwischen 1, 2, 3 oder 4 gleichzeitigen Streams. Für einen durchschnittlichen Haushalt sind 2 Verbindungen ideal: eine fürs Wohnzimmer, eine fürs Schlafzimmer." },
+      { step: "03", title: "IPTV-Abonnement: bezahlen und sofort streamen", desc: "Nach der Zahlung per Kreditkarte, PayPal oder Sofortüberweisung erhalten Sie Ihre Zugangsdaten. Geben Sie den M3U-Link oder die Xtream Codes in Ihre bevorzugte IPTV-App ein und beginnen Sie mit dem Schauen." },
     ],
   },
 
   // ── Section 8: Device Compatibility ──────────────────────────────────────
   devices: {
-    eyebrow: "Bijna alle apparaten",
-    title: "IPTV-abonnement: uw IPTV-abonnement werkt op al deze apparaten",
-    subtitle: "IPTV-abonnement: thuis of onderweg, op het apparaat van uw keuze.",
+    eyebrow: "Nahezu alle Geräte",
+    title: "IPTV-Abonnement: Ihr IPTV-Abonnement funktioniert auf all diesen Geräten",
+    subtitle: "IPTV-Abonnement: zu Hause oder unterwegs, auf dem Gerät Ihrer Wahl.",
     deviceGroups: [
       { name: "Smart TV", items: ["Samsung Tizen TV", "LG ThinQ webOS", "Sony Android TV", "Philips Smart TV", "Panasonic My Home Screen", "TCL Roku TV"] },
-      { name: "Streaming-apparaten", items: ["Fire TV Stick Max", "Apple TV HD/4K", "Nvidia Shield Pro", "Chromecast Gen 4", "Formuler Z11", "MAG 524w2"] },
-      { name: "Mobiel & tablet", items: ["iPhone 15/16 Pro", "iPad Air", "Samsung Galaxy S25", "Xiaomi 14T", "Huawei MatePad", "OnePlus 13"] },
-      { name: "Software & apps", items: ["IPTV Smarters Pro", "TiviMate Premium", "VLC Media Player", "Perfect Player", "Kodi Matrix", "IPTV Extreme"] },
+      { name: "Streaming-Geräte", items: ["Fire TV Stick Max", "Apple TV HD/4K", "Nvidia Shield Pro", "Chromecast Gen 4", "Formuler Z11", "MAG 524w2"] },
+      { name: "Mobil & Tablet", items: ["iPhone 15/16 Pro", "iPad Air", "Samsung Galaxy S25", "Xiaomi 14T", "Huawei MatePad", "OnePlus 13"] },
+      { name: "Software & Apps", items: ["IPTV Smarters Pro", "TiviMate Premium", "VLC Media Player", "Perfect Player", "Kodi Matrix", "IPTV Extreme"] },
     ],
-    ctaText: "Volledige compatibiliteitslijst",
+    ctaText: "Vollständige Kompatibilitätsliste",
   },
 
   // ── Section 9: Channels ─────────────────────────────────────────────────
   channels: {
-    eyebrow: "Zenderaanbod",
-    title: "IPTV-abonnement: welke zenders ontvangt u met uw IPTV-abonnement?",
-    subtitle: "Een overzicht van het uitgebreide aanbod dat in elk pakket is inbegrepen.",
+    eyebrow: "Senderangebot",
+    title: "IPTV-Abonnement: welche Sender erhalten Sie mit Ihrem IPTV-Abonnement?",
+    subtitle: "Ein Überblick über das umfangreiche Angebot, das in jedem Paket enthalten ist.",
     channelGroups: [
-      { name: "Franse zenders", items: ["Algemene zenders HD", "Cinema & cultuur HD", "Sportzenders", "Voetbalzenders", "Francophone zenders", "Premium cinema"] },
-      { name: "Sportzenders", items: ["Live sport", "Voetbal", "Internationale sport", "Motorsport", "Vechtsporten", "Sport op aanvraag"] },
-      { name: "Films & series", items: ["Cinema-zenders", "Premium series", "Amusementszenders", "Cinema op aanvraag", "Recente films", "Arthouse cinema"] },
-      { name: "Internationale zenders", items: ["Brits nieuws", "Internationaal nieuws", "Arabisch nieuws", "Duitse zenders", "Frans nieuws", "NL openbare zenders"] },
+      { name: "Deutsche Sender", items: ["Vollprogramme HD", "Öffentlich-rechtliche Sender HD", "Sportsender", "Fußballsender", "Regionale Sender", "Premium-Kino"] },
+      { name: "Sportsender", items: ["Live-Sport", "Fußball", "Internationaler Sport", "Motorsport", "Kampfsport", "Sport auf Abruf"] },
+      { name: "Filme & Serien", items: ["Kinosender", "Premium-Serien", "Unterhaltungssender", "Kino auf Abruf", "Aktuelle Filme", "Arthouse-Kino"] },
+      { name: "Internationale Sender", items: ["Britische Nachrichten", "Internationale Nachrichten", "Arabische Nachrichten", "Türkische Sender", "Französische Nachrichten", "Österreichische & Schweizer Sender"] },
     ],
   },
 
   // ── Section 10: Pricing ─────────────────────────────────────────────────
   pricing: {
-    pillText: "Onze prijzen",
-    title: "IPTV-abonnement: kies uw IPTV-abonnement",
-    subtitle: "Alle pakketten zijn volledig inbegrepen. Geen toeslag voor sport, 4K of Franse en Nederlandse zenders.",
+    pillText: "Unsere Preise",
+    title: "IPTV-Abonnement: wählen Sie Ihr IPTV-Abonnement",
+    subtitle: "Alle Pakete sind vollständig inklusive. Kein Aufpreis für Sport, 4K oder internationale Sender.",
   },
 
   // ── Section 11: Comparison ────────────────────────────────────────────────
   comparison: {
-    eyebrow: "Kosten & vergelijking",
-    title: "IPTV-abonnement: IPTV Smarter versus andere IPTV-abonnementen",
-    subtitle: "Een objectieve vergelijking tussen onze dienst en andere aanbieders.",
+    eyebrow: "Kosten & Vergleich",
+    title: "IPTV-Abonnement: IPTV Germany im Vergleich zu anderen IPTV-Abonnements",
+    subtitle: "Ein objektiver Vergleich zwischen unserem Service und anderen Anbietern.",
     rows: [
-      { feature: "Maandprijs (kortste looptijd)", us: "vanaf 12,99 EUR", them: "14,99 EUR - 29,99 EUR" },
-      { feature: "Maandprijs (langste looptijd)", us: "vanaf 7,99 EUR", them: "9,99 EUR - 19,99 EUR" },
-      { feature: "Gratis proefperiode", us: "Ja, 1 uur", them: "Nee / alleen betaald" },
-      { feature: "Serverlocatie", us: "Eigen servers NL & BE", them: "Gedeeld EU / buiten EU" },
-      { feature: "Vernieuwingsfrequentie zenders", us: "Dagelijks", them: "Wekelijks" },
-      { feature: "Klantenservice", us: "24/7 WhatsApp, telefoon", them: "Beperkt of in het Engels" },
-      { feature: "Tevredenheidsgarantie", us: "Ja, onvoorwaardelijk", them: "Nee" },
+      { feature: "Monatspreis (kürzeste Laufzeit)", us: "ab 12,99 €", them: "14,99 € – 29,99 €" },
+      { feature: "Monatspreis (längste Laufzeit)", us: "ab 7,99 €", them: "9,99 € – 19,99 €" },
+      { feature: "Kostenlose Testphase", us: "Ja, 1 Stunde", them: "Nein / nur kostenpflichtig" },
+      { feature: "Serverstandort", us: "Eigene Server DE & AT", them: "Geteilt EU / außerhalb EU" },
+      { feature: "Aktualisierungsfrequenz Sender", us: "Täglich", them: "Wöchentlich" },
+      { feature: "Kundenservice", us: "24/7 WhatsApp, Telefon", them: "Begrenzt oder auf Englisch" },
+      { feature: "Zufriedenheitsgarantie", us: "Ja, bedingungslos", them: "Nein" },
     ],
   },
 
   // ── Section 12: Testimonials ─────────────────────────────────────────────
   testimonials: {
-    eyebrow: "Ervaringen",
-    title: "IPTV-abonnement: wat abonnees zeggen over hun IPTV-abonnement",
-    subtitle: "IPTV-abonnement: duizenden mensen zijn u voorgegaan.",
+    eyebrow: "Erfahrungen",
+    title: "IPTV-Abonnement: was Abonnenten über ihr IPTV-Abonnement sagen",
+    subtitle: "IPTV-Abonnement: Tausende Menschen haben es bereits getan.",
   },
 
   // ── Section 13: Security & Reliability ────────────────────────────────────
   security: {
-    eyebrow: "Een veilig abonnement",
-    title: "IPTV-abonnement: uw IPTV-abonnement volledig veilig",
-    subtitle: "Wij hanteren de strengste normen op het gebied van veiligheid en betrouwbaarheid.",
+    eyebrow: "Ein sicheres Abonnement",
+    title: "IPTV-Abonnement: Ihr IPTV-Abonnement vollständig sicher",
+    subtitle: "Wir setzen die strengsten Standards in puncto Sicherheit und Zuverlässigkeit ein.",
     items: [
-      { title: "IPTV-abonnement: 99,9% serverbeschikbaarheid", desc: "Onze servers draaien op een redundanter netwerk met automatische failover. Als een server uitvalt, wordt u binnen enkele milliseconden doorgeschakeld naar een back-upserver." },
-      { title: "IPTV-abonnement: veilige betalingen", desc: "Wij werken met Mollie en Stripe, twee van de veiligste betaalverwerkers van Europa. Uw financiele gegevens verlaten nooit hun beveiligde omgeving." },
-      { title: "IPTV-abonnement: geen tracking of profilering", desc: "Wij registreren uw kijkgeschiedenis niet en delen geen gegevens met adverteerders. Uw privacy wordt volledig gerespecteerd." },
-      { title: "IPTV-abonnement: AVG-compliant", desc: "Wij voldoen aan de Algemene Verordening Gegevensbescherming. U heeft altijd toegang tot uw gegevens en controle erover." },
+      { title: "IPTV-Abonnement: 99,9% Serververfügbarkeit", desc: "Unsere Server laufen auf einem redundanten Netzwerk mit automatischem Failover. Fällt ein Server aus, werden Sie innerhalb weniger Millisekunden auf einen Backup-Server umgeleitet." },
+      { title: "IPTV-Abonnement: sichere Zahlungen", desc: "Wir arbeiten mit Stripe, einem der sichersten Zahlungsdienstleister Europas. Ihre Finanzdaten verlassen niemals die gesicherte Umgebung." },
+      { title: "IPTV-Abonnement: kein Tracking oder Profiling", desc: "Wir speichern Ihren Sehverlauf nicht und geben keine Daten an Werbetreibende weiter. Ihre Privatsphäre wird vollständig respektiert." },
+      { title: "IPTV-Abonnement: DSGVO-konform", desc: "Wir erfüllen die Vorgaben der Datenschutz-Grundverordnung. Sie haben jederzeit Zugriff auf Ihre Daten und volle Kontrolle darüber." },
     ],
   },
 
   // ── Section 14: FAQ (exactly 8) ─────────────────────────────────────────
   faq: {
-    eyebrow: "Veelgestelde vragen",
-    title: "Veelgestelde vragen over een IPTV-abonnement",
-    subtitle: "IPTV-abonnement: de antwoorden op de meest gestelde vragen.",
+    eyebrow: "Häufig gestellte Fragen",
+    title: "Häufig gestellte Fragen zu einem IPTV-Abonnement",
+    subtitle: "IPTV-Abonnement: die Antworten auf die häufigsten Fragen.",
     faqs: [
       {
-        question: "Wat is het beste IPTV-abonnement in Nederland?",
-        answer: "Het beste abonnement hangt af van uw kijkgedrag. Voor één tv volstaat een abonnement met 1 verbinding. Voor gezinnen adviseren wij 2 tot 4 verbindingen zodat ieder op het eigen apparaat kan kijken zonder onderbreking. Alle abonnementen bieden hetzelfde zenderaanbod."
+        question: "Was ist das beste IPTV-Abonnement in Deutschland?",
+        answer: "Das beste Abonnement hängt von Ihrem Sehverhalten ab. Für einen Fernseher genügt ein Abonnement mit 1 Verbindung. Familien empfehlen wir 2 bis 4 Verbindungen, sodass jeder auf dem eigenen Gerät ohne Unterbrechung schauen kann. Alle Abonnements bieten dasselbe Senderangebot."
       },
       {
-        question: "Kan ik een IPTV-abonnement afsluiten zonder jaarcontract?",
-        answer: "Ja, bij IPTV Smarter heeft u de keuze uit flexibele looptijden: opzegbaar per maand, 3 maanden, 6 maanden of 12 maanden. Hoe langer de looptijd, hoe lager de maandelijkse prijs. Opzegging is altijd mogelijk zonder boete."
+        question: "Kann ich ein IPTV-Abonnement ohne Jahresvertrag abschließen?",
+        answer: "Ja, bei IPTV Germany haben Sie die Wahl zwischen flexiblen Laufzeiten: kündbar pro Monat, 3 Monate, 6 Monate oder 12 Monate. Je länger die Laufzeit, desto niedriger der Monatspreis. Eine Kündigung ist jederzeit ohne Strafe möglich."
       },
       {
-        question: "Hoeveel kost een IPTV-abonnement per maand in 2026?",
-        answer: "Een IPTV-abonnement kost tussen 7,99 EUR en 12,99 EUR per maand afhankelijk van de gekozen looptijd. Dit omvat alle zenders, sportzenders en de VOD-bibliotheek. Geen verborgen kosten voor 4K of extra apparaten."
+        question: "Wie viel kostet ein IPTV-Abonnement pro Monat im Jahr 2026?",
+        answer: "Ein IPTV-Abonnement kostet zwischen 7,99 € und 12,99 € pro Monat, abhängig von der gewählten Laufzeit. Das umfasst alle Sender, Sportsender und die VOD-Bibliothek. Keine versteckten Kosten für 4K oder zusätzliche Geräte."
       },
       {
-        question: "Sport inbegrepen: welke sportzenders bevat het IPTV-abonnement?",
-        answer: "Ja, een ruime selectie sportzenders is inbegrepen: voetbal, motorsport, motorsport, basketbal, vechtsporten en vele andere disciplines, evenals internationale sportzenders. Het beschikbare aanbod kan per regio verschillen."
+        question: "Sport inklusive: welche Sportsender enthält das IPTV-Abonnement?",
+        answer: "Ja, eine große Auswahl an Sportsendern ist inbegriffen: Fußball, Motorsport, Wintersport, Basketball, Kampfsport und viele weitere Disziplinen sowie internationale Sportsender. Das verfügbare Angebot kann je nach Region variieren."
       },
       {
-        question: "Hoe zeg ik mijn IPTV-abonnement op?",
-        answer: "Opzeggen is eenvoudig. Stuur een bericht via WhatsApp of een e-mail naar ons supportteam. Uw abonnement wordt direct opgezeggen en u betaalt niets meer. Geen opzegtermijn of boete. U kijkt tot het einde van de betaalde periode."
+        question: "Wie kündige ich mein IPTV-Abonnement?",
+        answer: "Die Kündigung ist einfach. Senden Sie eine Nachricht über WhatsApp oder eine E-Mail an unser Support-Team. Ihr Abonnement wird sofort gekündigt, und Sie zahlen nichts mehr. Keine Kündigungsfrist oder Strafe. Sie schauen bis zum Ende des bezahlten Zeitraums weiter."
       },
       {
-        question: "Kan ik meerdere IPTV-abonnementen op hetzelfde apparaat gebruiken?",
-        answer: "Ja, de meeste IPTV-apps ondersteunen meerdere playlists. U schakelt eenvoudig tussen verschillende M3U-links of Xtream Codes. Handig als u bijvoorbeeld een apart abonnement heeft voor een vakantiewoning."
+        question: "Kann ich mehrere IPTV-Abonnements auf demselben Gerät nutzen?",
+        answer: "Ja, die meisten IPTV-Apps unterstützen mehrere Playlists. Sie wechseln einfach zwischen verschiedenen M3U-Links oder Xtream Codes. Praktisch, wenn Sie zum Beispiel ein separates Abonnement für eine Ferienwohnung haben."
       },
       {
-        question: "Wat is het verschil tussen 1, 2, 3 of 4 verbindingen?",
-        answer: "Het aantal verbindingen bepaalt hoeveel apparaten tegelijk kunnen streamen. Met 1 verbinding kijkt u op één scherm. Met 4 verbindingen kunnen vier verschillende apparaten onafhankelijk verschillende zenders bekijken."
+        question: "Was ist der Unterschied zwischen 1, 2, 3 oder 4 Verbindungen?",
+        answer: "Die Anzahl der Verbindungen bestimmt, wie viele Geräte gleichzeitig streamen können. Mit 1 Verbindung schauen Sie auf einem Bildschirm. Mit 4 Verbindungen können vier verschiedene Geräte unabhängig voneinander unterschiedliche Sender anschauen."
       },
       {
-        question: "Ontvang ik een aankoopbewijs voor mijn IPTV-abonnement?",
-        answer: "Ja, u ontvangt een betalingsbevestiging per e-mail met de details van uw aankoop, de gekozen looptijd en de startdatum. Deze dient tevens als garantiebewijs."
+        question: "Erhalte ich einen Kaufbeleg für mein IPTV-Abonnement?",
+        answer: "Ja, Sie erhalten eine Zahlungsbestätigung per E-Mail mit den Details Ihres Kaufs, der gewählten Laufzeit und dem Startdatum. Diese dient zugleich als Garantienachweis."
       },
     ],
   },
 
   // ── Section 15: Internal Linking Hub ──────────────────────────────────────
   internalLinks: {
-    eyebrow: "Ontdek ook",
-    title: "IPTV-abonnement: alles over IPTV en abonnementen",
-    subtitle: "Verdiep uzelf met onze andere pagina's voor een compleet beeld van onze dienst.",
-    links: [LINK.home, LINK.kopen, LINK.aanbieder, LINK.nederland, LINK.smarters],
+    eyebrow: "Entdecken Sie auch",
+    title: "IPTV-Abonnement: alles über IPTV und Abonnements",
+    subtitle: "Vertiefen Sie sich mit unseren anderen Seiten für ein vollständiges Bild unseres Service.",
+    links: [LINK.home, LINK.kaufen, LINK.anbieter, LINK.deutschland, LINK.smarters],
   },
 
   // ── Section 16: Final CTA ────────────────────────────────────────────────
   finalCta: {
-    title: "IPTV-abonnement: kies nu het IPTV-abonnement dat bij u past",
-    description: "Start vandaag nog met het beste IPTV-abonnement van Nederland. Direct toegang tot alle zenders, sport en films — zonder jaarcontract.",
+    title: "IPTV-Abonnement: wählen Sie jetzt das Abonnement, das zu Ihnen passt",
+    description: "Starten Sie noch heute mit dem besten IPTV-Abonnement Deutschlands. Sofortiger Zugang zu allen Sendern, Sport und Filmen — ohne Jahresvertrag.",
   },
 };
 

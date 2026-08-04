@@ -25,16 +25,16 @@ export interface Trending {
  * titles or brand logos here without documented licensing.
  */
 export const trendingNow: Trending[] = [
-  { title: "Actie & avontuur", quality: "4K", genre: "Films", rating: "4K", type: "movies", image: "" },
-  { title: "Bekroonde drama's", quality: "4K", genre: "Films", rating: "4K", type: "movies", image: "" },
-  { title: "Komedies", quality: "HD", genre: "Films", rating: "HD", type: "movies", image: "" },
-  { title: "Sciencefiction & fantasy", quality: "4K", genre: "Series", rating: "4K", type: "series", image: "" },
-  { title: "Politieseries", quality: "4K", genre: "Series", rating: "4K", type: "series", image: "" },
-  { title: "Series om te bingewatchen", quality: "HD", genre: "Series", rating: "HD", type: "series", image: "" },
-  { title: "Live sport", quality: "LIVE", genre: "Sport", rating: "Live", type: "lives", image: "" },
-  { title: "24-uurs nieuws", quality: "HD", genre: "Nieuws", rating: "Live", type: "lives", image: "" },
-  { title: "Kinderzenders", quality: "HD", genre: "Familie", rating: "Live", type: "lives", image: "" },
-  { title: "Muziekzenders", quality: "HD", genre: "Muziek", rating: "Live", type: "lives", image: "" },
-  { title: "Documentaires", quality: "4K", genre: "Ontdekking", rating: "Live", type: "lives", image: "" },
-  { title: "Internationale zenders", quality: "HD", genre: "Internationaal", rating: "Live", type: "lives", image: "" },
+  { title: "Action & Abenteuer", quality: "4K", genre: "Filme", rating: "4K", type: "movies", image: "" },
+  { title: "Preisgekrönte Dramen", quality: "4K", genre: "Filme", rating: "4K", type: "movies", image: "" },
+  { title: "Komödien", quality: "HD", genre: "Filme", rating: "HD", type: "movies", image: "" },
+  { title: "Science-Fiction & Fantasy", quality: "4K", genre: "Serien", rating: "4K", type: "series", image: "" },
+  { title: "Krimiserien", quality: "4K", genre: "Serien", rating: "4K", type: "series", image: "" },
+  { title: "Serien zum Bingewatchen", quality: "HD", genre: "Serien", rating: "HD", type: "series", image: "" },
+  { title: "Live-Sport", quality: "LIVE", genre: "Sport", rating: "Live", type: "lives", image: "" },
+  { title: "24-Stunden-Nachrichten", quality: "HD", genre: "Nachrichten", rating: "Live", type: "lives", image: "" },
+  { title: "Kindersender", quality: "HD", genre: "Familie", rating: "Live", type: "lives", image: "" },
+  { title: "Musiksender", quality: "HD", genre: "Musik", rating: "Live", type: "lives", image: "" },
+  { title: "Dokumentationen", quality: "4K", genre: "Entdeckung", rating: "Live", type: "lives", image: "" },
+  { title: "Internationale Sender", quality: "HD", genre: "Internationaal", rating: "Live", type: "lives", image: "" },
 ];

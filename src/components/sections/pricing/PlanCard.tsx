@@ -48,7 +48,7 @@ const PlanCardComponent = ({
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blanc-950/40 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-blanc-950/80"></span>
           </span>
-          POPULAIR
+          BELIEBT
         </div>
       )}
       <div
@@ -83,7 +83,7 @@ const PlanCardComponent = ({
               {badge.text}
             </p>
           )}
-              {isFree && <p className="text-blanc-400 text-sm">Eerst proberen</p>}
+              {isFree && <p className="text-blanc-400 text-sm">Zuerst testen</p>}
         </div>
 
         {/* Price */}
@@ -92,11 +92,11 @@ const PlanCardComponent = ({
             className={`font-display font-bold text-5xl ${isPopular ? "text-gradient" : "text-blanc-50"}`}
           >
             {isFree ? (
-              "Gratis"
+              "Kostenlos"
             ) : price ? (
               <AnimatedPrice price={price} />
             ) : (
-              "N/B"
+              "N/V"
             )}
           </span>
           <span className="text-blanc-400">/{duration}</span>
@@ -126,8 +126,8 @@ const PlanCardComponent = ({
               aria-hidden="true"
             />
             {isFree
-              ? "Werkt op alle apparaten"
-              : `${connections === 4 ? "4+" : connections} ${connections === 1 ? "apparaat" : "apparaten"} tegelijk`}
+              ? "Funktioniert auf allen Geräten"
+              : `${connections === 4 ? "4+" : connections} ${connections === 1 ? "Gerät" : "Geräte"} gleichzeitig`}
           </li>
           {features.map((feature, idx) => (
             <li
@@ -145,7 +145,7 @@ const PlanCardComponent = ({
           {isFree && (
             <li className="flex items-start gap-3 text-xs text-france-300/90 font-medium pt-2 border-t border-blanc-50/5">
               <TriangleAlert size={14} className="mt-0.5" aria-hidden="true" />
-              <span>Live sport en evenementen niet inbegrepen</span>
+              <span>Live-Sport und Events nicht inbegriffen</span>
             </li>
           )}
         </ul>

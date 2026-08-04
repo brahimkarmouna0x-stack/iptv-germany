@@ -30,8 +30,8 @@ export default function IptvSmartersProPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbSchema([
-            { name: "Home", url: "https://iptvsmarter.nl" },
-            { name: "IPTV Smarters Pro", url: "https://iptvsmarter.nl/iptv-smarters-pro" },
+            { name: "Home", url: "https://iptv-germany.com" },
+            { name: "IPTV Smarters Pro", url: "https://iptv-germany.com/iptv-smarters-pro" },
           ])),
         }}
       />

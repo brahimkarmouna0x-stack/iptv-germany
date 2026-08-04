@@ -3,48 +3,48 @@
 const criteria = [
   {
     icon: Server,
-    title: "Stabiele servers met hoge beschikbaarheid",
-    desc: "Een goede IPTV-aanbieder werkt op een professionele serverinfrastructuur met ten minste 99,5% beschikbaarheid. IPTV Smarter garandeert 99,9% dankzij een redundante datacenterarchitectuur.",
+    title: "Stabile Server mit hoher Verfügbarkeit",
+    desc: "Ein guter IPTV-Anbieter arbeitet mit einer professionellen Serverinfrastruktur mit mindestens 99,5% Verfügbarkeit. IPTV Germany garantiert 99,9% dank einer redundanten Rechenzentrumsarchitektur.",
     color: "text-france-400",
     gradient: "from-france-600/25 to-france-400/10",
     border: "border-france-500/20",
   },
   {
     icon: Globe2,
-    title: "Een uitgebreid en actueel zenderaanbod",
-    desc: "De beste IPTV-aanbieder in Nederland biedt meer dan 31.000 zenders, waaronder alle Franse en Nederlandse zenders, internationale sport en regionale zenders — een aanbod dat dagelijks wordt bijgewerkt.",
+    title: "Ein umfangreiches und aktuelles Senderangebot",
+    desc: "Der beste IPTV-Anbieter in Deutschland bietet mehr als 31.000 Sender, darunter alle deutschen Sender, internationalen Sport und Regionalsender — ein Angebot, das täglich aktualisiert wird.",
     color: "text-rouge-400",
     gradient: "from-rouge-600/25 to-rouge-500/10",
     border: "border-rouge-500/20",
   },
   {
     icon: Headphones,
-    title: "Franstalige klantenservice",
-    desc: "Een betrouwbare IPTV-aanbieder in Nederland biedt ondersteuning in het Frans, via WhatsApp of chat, met een korte responstijd. Geen Engelse scripts of dagenlang wachten.",
+    title: "Deutschsprachiger Kundenservice",
+    desc: "Ein zuverlässiger IPTV-Anbieter in Deutschland bietet Support auf Deutsch, über WhatsApp oder Chat, mit kurzer Reaktionszeit. Keine englischen Skripte oder tagelanges Warten.",
     color: "text-france-400",
     gradient: "from-france-600/25 to-france-400/10",
     border: "border-france-500/20",
   },
   {
     icon: ShieldCheck,
-    title: "Veilig en transparant betalen",
-    desc: "Betrouwbare IPTV-aanbieders accepteren iDEAL, PayPal of creditcard via een beveiligde verbinding. Geen ondoorzichtige betaalmiddelen, geen crypto- of overschrijvingsverplichtingen.",
+    title: "Sicher und transparent bezahlen",
+    desc: "Zuverlässige IPTV-Anbieter akzeptieren Kreditkarte, PayPal oder Sofortüberweisung über eine gesicherte Verbindung. Keine undurchsichtigen Zahlungsmittel, keine Krypto- oder Überweisungspflicht.",
     color: "text-rouge-400",
     gradient: "from-rouge-600/25 to-rouge-500/10",
     border: "border-rouge-500/20",
   },
   {
     icon: Zap,
-    title: "4K-kwaliteit zonder onderbreking",
-    desc: "Een premium IPTV-aanbieder levert echte 4K UHD-streams met adaptieve bitrate. Geen kwaliteitsverlies bij drukte — zelfs niet tijdens grote voetbalwedstrijden of autoraces.",
+    title: "4K-Qualität ohne Unterbrechung",
+    desc: "Ein Premium-IPTV-Anbieter liefert echte 4K-UHD-Streams mit adaptiver Bitrate. Kein Qualitätsverlust bei hoher Auslastung — selbst nicht bei großen Fußballspielen oder Autorennen.",
     color: "text-france-400",
     gradient: "from-france-600/25 to-france-400/10",
     border: "border-france-500/20",
   },
   {
     icon: BadgeCheck,
-    title: "Risicovrije gratis proefperiode",
-    desc: "De beste IPTV-aanbieders ondersteunen hun dienst met een gratis proefperiode. Test alle zenders en functies voordat u betaalt — een serieuze aanbieder vreest geen eerlijke beoordeling.",
+    title: "Risikofreie kostenlose Testphase",
+    desc: "Die besten IPTV-Anbieter untermauern ihren Dienst mit einer kostenlosen Testphase. Testen Sie alle Sender und Funktionen, bevor Sie bezahlen — ein seriöser Anbieter scheut keine ehrliche Bewertung.",
     color: "text-rouge-400",
     gradient: "from-rouge-600/25 to-rouge-500/10",
     border: "border-rouge-500/20",
@@ -60,15 +60,15 @@ export function IptvAanbiederCriteria() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <span className="inline-block px-4 py-1.5 rounded-full glass text-france-400 text-sm font-bold mb-4 uppercase tracking-wider glow-gold">
-            Beoordeel uw aanbieder
+            Bewerten Sie Ihren Anbieter
           </span>
           <h2 className="font-display font-bold text-4xl sm:text-5xl mb-4 text-blanc-50">
-            6 criteria voor de beste{" "}
-            <span className="text-gradient">IPTV-aanbieder</span>
+            6 Kriterien für den besten{" "}
+            <span className="text-gradient">IPTV-Anbieter</span>
           </h2>
           <p className="text-blanc-400 max-w-2xl mx-auto font-medium">
-            Gebruik deze criteria om IPTV-aanbieders te vergelijken en de meest
-            betrouwbare keuze te maken voor uw situatie.
+            Nutzen Sie diese Kriterien, um IPTV-Anbieter zu vergleichen und die
+            zuverlässigste Wahl für Ihre Situation zu treffen.
           </p>
         </div>
 
@@ -103,16 +103,16 @@ export function IptvAanbiederCriteria() {
 
 const aanbiederFaqs = [
   {
-    q: "Hoe kies ik de beste IPTV-aanbieder in Nederland?",
-    a: "Vergelijk IPTV-aanbieders op beschikbaarheid (minimaal 99%), zenderaanbod (31.000+), klantenservice (Franstalig, snel) en veilig betalen. Test altijd eerst via een gratis proefperiode. IPTV Smarter is het beste op alle criteria.",
+    q: "Wie wähle ich den besten IPTV-Anbieter in Deutschland?",
+    a: "Vergleichen Sie IPTV-Anbieter anhand von Verfügbarkeit (mindestens 99%), Senderangebot (31.000+), Kundenservice (deutschsprachig, schnell) und sicherem Bezahlen. Testen Sie immer zuerst über eine kostenlose Testphase. IPTV Germany ist bei allen Kriterien die beste Wahl.",
   },
   {
-    q: "Wat maakt IPTV Smarter beter dan andere aanbieders?",
-    a: "IPTV Smarter combineert het grootste zenderaanbod (31.000+), 4K-kwaliteit, 99,9% beschikbaarheid en 24/7 WhatsApp-ondersteuning in het Frans — alles tegen een competitieve prijs. Geen andere aanbieder biedt dit volledige pakket.",
+    q: "Was macht IPTV Germany besser als andere Anbieter?",
+    a: "IPTV Germany kombiniert das größte Senderangebot (31.000+), 4K-Qualität, 99,9% Verfügbarkeit und 24/7-WhatsApp-Support auf Deutsch — alles zu einem wettbewerbsfähigen Preis. Kein anderer Anbieter bietet dieses vollständige Paket.",
   },
   {
-    q: "Is IPTV Smarter een legale IPTV-aanbieder?",
-    a: "IPTV Smarter levert een technische streamingdienst. Raadpleeg de toepasselijke lokale wetgeving voor uw situatie. Ons platform is technisch ontworpen om gebruikers de beste kijkervaring te bieden.",
+    q: "Ist IPTV Germany ein legaler IPTV-Anbieter?",
+    a: "IPTV Germany bietet einen technischen Streamingdienst an. Bitte prüfen Sie die für Ihre Situation geltenden lokalen Vorschriften. Unsere Plattform ist technisch darauf ausgelegt, Nutzern das beste Seherlebnis zu bieten.",
   },
 ];
 
@@ -127,11 +127,11 @@ export function IptvAanbiederFaq() {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10">
             <span className="inline-block px-4 py-1.5 rounded-full glass text-rouge-400 text-sm font-bold mb-4 uppercase tracking-wider glow-red">
-              IPTV-aanbieder — vragen
+              IPTV-Anbieter — Fragen
             </span>
             <h2 className="font-display font-bold text-3xl sm:text-4xl mb-3 text-blanc-50">
-              Vragen over de{" "}
-              <span className="text-gradient">IPTV-aanbieder</span>
+              Fragen zum{" "}
+              <span className="text-gradient">IPTV-Anbieter</span>
             </h2>
           </div>
           <div className="space-y-4">

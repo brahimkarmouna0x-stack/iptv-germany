@@ -1,4 +1,4 @@
-﻿import { absoluteUrl, OG_IMAGE } from "@/lib/seo";
+import { absoluteUrl, OG_IMAGE } from "@/lib/seo";
 
 // ═════════════════════════════════════════════════════════════════════════════
 //  PHASE 2 — RICH PAGE SCHEMA
@@ -12,14 +12,14 @@
 //  Design notes:
 //   • `metaTitle` is the FINAL <title> string (keyword-first, brand included,
 //     ≤60 chars) and is emitted via `title.absolute` to avoid the root layout's
-//     `%s | IPTV Streaming` template double-suffixing the brand.
+//     `%s | IPTV Germany` template double-suffixing the brand.
 //   • URL-bearing fields (`canonicalUrl`, `ogImage`, hreflang values) are
 //     absolute and built from `SITE.url` in `@/lib/seo`.
 //   • `sections` is a discriminated union rendered by a switch in PageRenderer;
 //     each `type` maps to one lazy-loaded section component.
 // ═════════════════════════════════════════════════════════════════════════════
 
-export type PageLanguage = "nl" | "en";
+export type PageLanguage = "de" | "en";
 
 /** Search intent — drives the section mix and copy a page receives. */
 export type PageIntent =
@@ -176,7 +176,7 @@ export type IPTVPage = {
   keyword: string; // primary keyword (used for search index + labels)
   lang: PageLanguage;
   intent: PageIntent;
-  hreflang: { nl: string; en?: string };
+  hreflang: { de: string; en?: string };
   metaTitle: string; // final <title>, keyword-first, ≤60 chars
   metaDescription: string; // ≤155 chars, action verb + benefit + CTA
   canonicalUrl: string; // absolute
@@ -225,7 +225,7 @@ export type IptvGermanPage = {
   language: "nl" | "en" | "fr" | "es" | "de";
   intent:
     | "general"
-    | "netherlands"
+    | "germany"
     | "app"
     | "device"
     | "subscription"
@@ -238,20 +238,20 @@ export type IptvGermanPage = {
   heroBg?: string;
 };
 
-const basePath = "/iptv-gids";
+const basePath = "/iptv-ratgeber";
 
 /**
  * Slugs that have been promoted to dedicated root-level landing pages. Any
  * internal link to one of these must point straight at the canonical root URL
- * so we never emit a 308 redirect hop (`/iptv-gids/x` → `/x`). External/stale
+ * so we never emit a 308 redirect hop (`/iptv-ratgeber/x` → `/x`). External/stale
  * inbound links are still caught by the redirects in `next.config.ts`.
  */
 export const PROMOTED_TO_ROOT: Record<string, string> = {
   "iptv-abonnement": "/iptv-abonnement",
   "iptv-smarters-pro": "/iptv-smarters-pro",
-  "iptv-nederland": "/iptv-nederland",
-  "iptv-kopen": "/iptv-kopen",
-  "iptv-aanbieder": "/iptv-aanbieder",
+  "iptv-deutschland": "/iptv-deutschland",
+  "iptv-kaufen": "/iptv-kaufen",
+  "iptv-anbieter": "/iptv-anbieter",
 };
 
 /** Canonical in-app path for a vault slug (root URL for promoted slugs). */
@@ -260,176 +260,175 @@ export const iptvPath = (slug: string): string =>
 
 export const IPTV_GERMAN_SLUGS = [
   "iptv",
-  "iptv-ott-service",
-  "iptv-service",
-  "service-iptv",
-  "meilleur-service-iptv",
-  "iptv-services",
-  "services-iptv",
+  "was-ist-iptv",
+  "iptv-streaming-dienst",
+  "iptv-dienst",
+  "iptv-dienstleister",
+  "bester-iptv-dienst",
+  "iptv-dienste",
   "iptv-smarters-pro",
   "abonnement-iptv",
   "iptv-abonnement",
-  "iptv-boitier",
-  "iptv-smart-player",
+  "iptv-box-kaufen",
+  "iptv-mediaplayer",
   "iptv-smarters",
-  "boitier-iptv",
-  "iptv-deutschland",
-  "iptv-stream-player",
+  "beste-iptv-box",
+  "iptv-streaming-player",
   "smart-iptv",
-  "iptv-premium",  "iptv-illegal",
+  "iptv-premium",
+  "iptv-illegal",
   "iptv-pro",
-  "iptv-smarter-pro",  "meilleur-iptv",  "france-iptv",
-  "ip-smart-iptv",
+  "iptv-smarter-pro",
+  "bestes-iptv",
+  "deutsche-iptv-sender",
   "iptv-smarters-player",
-  "iptv-tv",
-  "application-iptv",  "iptv-app",
-  "iptv-application",  "smart-iptv-ip",
-  "app-iptv",  "french-iptv",  "iptv-smarter",
+  "iptv-fernsehen",
+  "iptv-anwendung",
+  "iptv-app",
+  "internationale-iptv-sender",
+  "iptv-smarter",
   "iptv-smarters-pro-android",
   "iptv-smarters-pro-windows",
   "iron-iptv",
-  "setting-iptv",
+  "iptv-einrichten",
   "xtream-iptv",
   "zen-iptv",
   "atlas-iptv",
-  "abonnement-iptv-12-mois-smart-tv",
-  "atlas-pro-iptv",  "hot-iptv",
-  "iptv-free-trial",
+  "iptv-abonnement-12-monate",
+  "atlas-pro-iptv",
+  "hot-iptv",
+  "iptv-kostenlos-testen",
   "iptv-legal",
   "iptv-player",
   "lynk-iptv",
   "m3u-iptv",
-  "meilleur-abonnement-iptv",
-  "premium-iptv",
-  "programme-tv-iptv",
+  "bestes-iptv-abonnement",
+  "iptv-senderliste",
   "pure-iptv",
   "set-iptv",
   "smarters-iptv-pro",
   "smartone-iptv",
   "xenon-iptv",
-  "appli-iptv",
-  "arcom-iptv",  "ip-iptv",
+  "iptv-app-installieren",
+  "iptv-medienanstalt",
+  "iptv-bussgeld",
   "iptv-4k",
-  "iptv-laws",
-  "iptv-prix",
+  "iptv-recht",
+  "iptv-preise",
   "iptv-smart-player-pro",
   "iptv-ss",
-  "premium-iptv-tv",
-  "programme-iptv",
+  "iptv-programmuebersicht",
   "smarter-iptv",
   "smarters-iptv",
-  "test-iptv",  "abonnement-iptv-france",
-  "agence-iptv",
-  "boitier-iptv-amazon",
-  "box-iptv",
-  "decodeur-iptv",
-  "fournisseur-iptv",
-  "iptv-amende",
+  "iptv-testen",
+  "iptv-abo-deutschland",
+  "iptv-agentur",
+  "iptv-box-amazon",
+  "android-iptv-box",
+  "iptv-receiver",
+  "iptv-anbieter",
   "iptv-atlas",
   "iptv-az",
   "iptv-box",
-  "iptv-code",  "iptv-pas-cher",
-  "iptv-smart",
+  "iptv-code",
+  "iptv-guenstig",
   "iptv-smarter-player-pro",
   "iptv-smarters-lite",
-  "iptv-test-gratuit",
+  "iptv-testphase",
   "iptv-with-4k",
   "king-iptv",
-  "legality-of-iptv",
+  "ist-iptv-legal",
   "mario-iptv",
-  "meilleur-application-iptv",
-  "meilleurs-iptv",
+  "beste-iptv-app",
+  "beste-iptv-anbieter",
   "net-iptv",
 ] as const;
 
 type RawSlug = (typeof IPTV_GERMAN_SLUGS)[number];
 
 const titleOverrides: Partial<Record<RawSlug, string>> = {
-  iptv: "IPTV-gids voor stabiel en veilig streamen",
-  "iptv-illegal": "Illegale IPTV: feiten, risico's en veilige alternatieven",
-  "iptv-amende": "IPTV-boetes in Nederland: wat u moet weten",
+  iptv: "IPTV-Ratgeber für stabiles und sicheres Streaming",
+  "iptv-illegal": "Illegales IPTV: Fakten, Risiken und sichere Alternativen",
+  "iptv-bussgeld": "IPTV-Bußgelder in Deutschland: was Sie wissen müssen",
 };
 
-// Dutch display keywords for slugs whose raw tokens are French/English.
-// The URL slug stays untouched (legacy SEO); only the rendered label/title is
-// translated so every visible string on the site reads as Dutch.
-const KEYWORD_DE: Partial<Record<string, string>> = {
-  "iptv-ott-service": "OTT IPTV-diensten",
-  "iptv-service": "Premium IPTV-dienst",
-  "service-iptv": "Betrouwbare IPTV-dienst",
-  "meilleur-service-iptv": "Beste IPTV-dienst Nederland",
-  "iptv-services": "Beste IPTV-diensten",
-  "services-iptv": "IPTV-diensten vergelijken",
-  "iptv-boitier": "IPTV-box kopen",
-  "boitier-iptv": "Beste IPTV-box",
-  "boitier-iptv-amazon": "IPTV-box Amazon",
-  "box-iptv": "Android IPTV-box",
-  "decodeur-iptv": "IPTV-decoder",
-  "decodeur-iptv-avec-code": "IPTV-decoder met code",
-  "meilleur-iptv": "Beste IPTV-aanbieder",
-  "meilleurs-iptv": "Beste IPTV-diensten in 2025",
-  "meilleur-abonnement-iptv": "Best IPTV-abonnement 2025",
-  "meilleur-application-iptv": "Beste IPTV-app voor Smart TV",
-  "fournisseur-iptv": "IPTV-aanbieder Nederland",
-  "agence-iptv": "Premium IPTV-agency",
-  "france-iptv": "IPTV-aanbod Frankrijk",
-  "french-iptv": "Franse IPTV-zenders",
-  "abonnement-iptv-france": "IPTV-abonnement Frankrijk kopen",
-  "iptv-gratuit": "IPTV gratis proefperiode",
-  "iptv-gratuit-sans-code": "IPTV gratis uitproberen",
-  "iptv-test-gratuit": "IPTV-test 24 uur",
-  "iptv-free-trial": "Gratis IPTV-proefperiode Nederland",
-  "iptv-smarters-pro-gratuit": "IPTV Smarters Pro instellen",
-  "code-iptv-gratuit-2025": "IPTV-codes info 2025",
-  "code-iptv-smarters-pro-gratuit-2025": "IPTV Smarters Pro activatie",
-  "code-downloader-iptv-gratuit-2025": "IPTV-downloadercodes",
-  "comment-avoir-les-codes-iptv-gratuit": "IPTV-codes legaal verkrijgen",
-  "telecharger-iptv-gratuit": "IPTV-apps downloaden",
-  "telecharger-iptv-smarters-pro-apk": "IPTV Smarters Pro APK-installatie",
-  "iptv-prix": "IPTV-prijzen vergelijken",
-  "iptv-pas-cher": "Goedkoop IPTV-abonnement",
-  "programme-tv-iptv": "TV-gids & EPG IPTV",
-  "programme-iptv": "IPTV-programmaoverzicht",
-  "application-iptv": "Beste IPTV-apps",
-  "iptv-application": "Beste IPTV-app",
-  "appli-iptv": "IPTV-app installeren",
-  "setting-iptv": "IPTV-instellingen configurer",
-  "free-popular-iptv-playlist": "Populaire M3U IPTV-playlist",
-  "iptv-laws": "IPTV-wetgeving in Nederland",
-  "legality-of-iptv": "Is IPTV legaal?",
-  "iptv-with-4k": "IPTV in 4K Ultra HD",
-  "iptv-deutschland": "Premium IPTV Nederland",
+// German display keywords for slugs whose literal tokens wouldn't read well
+// after a plain hyphen-to-space conversion. The URL slug stays untouched
+// (SEO-native); only the rendered label/title is curated so every visible
+// string on the site reads as natural German.
+const KEYWORD_DE_MAP: Partial<Record<string, string>> = {
+  "was-ist-iptv": "Was ist IPTV",
+  "iptv-streaming-dienst": "IPTV-Streamingdienst",
+  "iptv-dienst": "IPTV-Dienst",
+  "iptv-dienstleister": "IPTV-Dienstleister",
+  "bester-iptv-dienst": "Bester IPTV-Dienst",
+  "iptv-dienste": "IPTV-Dienste",
+  "iptv-box-kaufen": "IPTV-Box kaufen",
+  "iptv-mediaplayer": "IPTV-Mediaplayer",
+  "beste-iptv-box": "Beste IPTV-Box",
+  "iptv-streaming-player": "IPTV-Streaming-Player",
+  "bestes-iptv": "Bestes IPTV",
+  "deutsche-iptv-sender": "Deutsche IPTV-Sender",
+  "iptv-fernsehen": "IPTV-Fernsehen",
+  "iptv-anwendung": "IPTV-Anwendung",
+  "internationale-iptv-sender": "Internationale IPTV-Sender",
+  "iptv-einrichten": "IPTV einrichten",
+  "iptv-abonnement-12-monate": "IPTV-Abonnement für 12 Monate",
+  "iptv-kostenlos-testen": "Kostenlose IPTV-Testphase",
+  "bestes-iptv-abonnement": "Bestes IPTV-Abonnement",
+  "iptv-senderliste": "IPTV-Senderliste",
+  "iptv-app-installieren": "IPTV-App installieren",
+  "iptv-medienanstalt": "IPTV-Medienrecht",
+  "iptv-recht": "IPTV-Recht",
+  "iptv-preise": "IPTV-Preise",
+  "iptv-programmuebersicht": "IPTV-Programmübersicht",
+  "iptv-testen": "IPTV-Test",
+  "iptv-abo-deutschland": "IPTV-Abo in Deutschland",
+  "iptv-agentur": "IPTV-Agentur",
+  "iptv-box-amazon": "IPTV-Box bei Amazon",
+  "android-iptv-box": "Android-IPTV-Box",
+  "iptv-receiver": "IPTV-Receiver",
+  "iptv-anbieter": "IPTV-Anbieter",
+  "iptv-guenstig": "Günstiges IPTV",
+  "iptv-testphase": "IPTV-Testphase",
+  "ist-iptv-legal": "Legalität von IPTV",
+  "beste-iptv-app": "Beste IPTV-App",
+  "beste-iptv-anbieter": "Beste IPTV-Anbieter",
+  "iptv-bussgeld": "IPTV-Bußgeld",
+  "iptv-with-4k": "IPTV mit 4K",
 };
 
 const formatKeyword = (slug: string): string =>
-  KEYWORD_DE[slug] ??
+  KEYWORD_DE_MAP[slug] ??
   slug
     .replace(/-/g, " ")
     .replace(/\biptv\b/gi, "IPTV")
     .replace(/\b4k\b/gi, "4K")
-    .replace(/\bdeutschland\b/gi, "Nederland")
-    .replace(/\bnederland\b/gi, "Nederland")
-    .replace(/\bkpn\b/gi, "KPN")
-    .replace(/\bcz\b/gi, "CZ")
-    .replace(/\bss\b/gi, "SS")
-    .replace(/\big\b/gi, "IG")
     .replace(/\bm3u\b/gi, "M3U")
     .replace(/\bandroid\b/gi, "Android")
     .replace(/\bwindows\b/gi, "Windows")
     .replace(/\breddit\b/gi, "Reddit")
     .replace(/\bmytvonline\b/gi, "MYTVOnline")
     .replace(/\bswiss\b/gi, "Swiss")
-    .replace(/\bosterreich\b/gi, "Österreich");
+    .replace(/\bosterreich\b/gi, "Österreich")
+    .replace(/\batlas\b/gi, "Atlas")
+    .replace(/\bking\b/gi, "King")
+    .replace(/\bmario\b/gi, "Mario")
+    .replace(/\blynk\b/gi, "Lynk")
+    .replace(/\biron\b/gi, "Iron")
+    .replace(/\bzen\b/gi, "Zen")
+    .replace(/\bxenon\b/gi, "Xenon")
+    .replace(/\bpure\b/gi, "Pure")
+    .replace(/\bhot\b/gi, "Hot")
+    .replace(/\bnet\b/gi, "Net")
+    .replace(/\bset\b/gi, "Set");
 
 const titleCase = (value: string) =>
   value.replace(/\b[a-z]/g, (letter) => letter.toUpperCase());
 
 const detectLanguage = (slug: string): IptvGermanPage["language"] => {
-  if (slug.includes("aplicacion")) return "es";
-  if (slug.includes("appli")) return "fr";
-  if (slug.includes("bestes") || slug.includes("bester") || slug.includes("deutschland") || slug.includes("german")) return "de";
   if (
-    slug.includes("best-") ||
+    slug.includes("best") ||
     slug.includes("top-rated") ||
     slug.includes("free")
   ) {
@@ -440,11 +439,9 @@ const detectLanguage = (slug: string): IptvGermanPage["language"] => {
 
 const detectIntent = (slug: string): IptvGermanPage["intent"] => {
   if (
-    slug.includes("illegaal") ||
-    slug.includes("boete") ||
     slug.includes("illegal") ||
-    slug.includes("amende") ||
-    slug.includes("laws") ||
+    slug.includes("bussgeld") ||
+    slug.includes("recht") ||
     slug.includes("legal")
   )
     return "legal";
@@ -452,27 +449,23 @@ const detectIntent = (slug: string): IptvGermanPage["intent"] => {
   if (
     slug.includes("playlist") ||
     slug.includes("m3u") ||
+    slug.includes("kostenlos") ||
     slug.includes("gratis") ||
-    slug.includes("gratuit") ||
     slug.includes("free")
   ) {
     return "playlist";
   }
   if (
     slug.includes("deutschland") ||
+    slug.includes("deutsche") ||
     slug.includes("german") ||
-    slug.includes("nederland") ||
-    slug.includes("dutch") ||
-    slug.includes("kpn") ||
-    slug.includes("nederlandse") ||
-    slug.includes("france") ||
-    slug.includes("french")
+    slug.includes("international")
   ) {
-    return "netherlands";
+    return "germany";
   }
   if (
     slug.includes("app") ||
-    slug.includes("application") ||
+    slug.includes("anwendung") ||
     slug.includes("player") ||
     slug.includes("smarters") ||
     slug.includes("tivimate") ||
@@ -482,37 +475,33 @@ const detectIntent = (slug: string): IptvGermanPage["intent"] => {
     slug.includes("set-iptv") ||
     slug.includes("ss-iptv") ||
     slug.includes("flix") ||
-    slug.includes("xtream") ||
-    slug.includes("appli")
+    slug.includes("xtream")
   ) {
     return "app";
   }
   if (
     slug.includes("box") ||
-    slug.includes("kastje") ||
-    slug.includes("amiko") ||
-    slug.includes("boitier") ||
-    slug.includes("decodeur")
+    slug.includes("receiver") ||
+    slug.includes("amiko")
   )
     return "device";
   if (slug.includes("4k")) return "quality";
   if (
-    slug.includes("aanbieder") ||
-    slug.includes("aanbieders") ||
+    slug.includes("anbieter") ||
+    slug.includes("agentur") ||
+    slug.includes("dienst") ||
     slug.includes("provider") ||
-    slug.includes("suppliers") ||
-    slug.includes("fournisseur") ||
-    slug.includes("agence")
+    slug.includes("suppliers")
   ) {
     return "provider";
   }
   if (
     slug.includes("abonnement") ||
-    slug.includes("abbonement") ||
-    slug.includes("kopen") ||
+    slug.includes("abo") ||
+    slug.includes("kaufen") ||
     slug.includes("test") ||
-    slug.includes("prix") ||
-    slug.includes("pas-cher")
+    slug.includes("preise") ||
+    slug.includes("guenstig")
   ) {
     return "subscription";
   }
@@ -520,11 +509,11 @@ const detectIntent = (slug: string): IptvGermanPage["intent"] => {
 };
 
 const languageAngle: Record<IptvGermanPage["language"], string> = {
-  nl: "voor Nederlandstalige kijkers",
-  en: "voor internationale kijkers",
-  fr: "voor Nederlandstalige gebruikers",
-  es: "voor Nederlandstalige gebruikers",
-  de: "voor Nederlandstalige gebruikers",
+  nl: "für deutschsprachige Zuschauer",
+  en: "für internationale Zuschauer",
+  fr: "für deutschsprachige Nutzer",
+  es: "für deutschsprachige Nutzer",
+  de: "für deutschsprachige Nutzer",
 };
 
 const intentCopy: Record<
@@ -538,141 +527,141 @@ const intentCopy: Record<
   }
 > = {
   general: {
-    label: "IPTV-orientatie",
+    label: "IPTV-Orientierung",
     promise:
-      "een heldere manier om live-tv, films en series via internet te begrijpen",
+      "eine klare Art, Live-TV, Filme und Serien über das Internet zu verstehen",
     benefitSeed: [
-      "duidelijke kanaalstructuur",
-      "stabiele weergave",
-      "snelle start op meerdere apparaten",
+      "übersichtliche Senderstruktur",
+      "stabile Wiedergabe",
+      "schneller Start auf mehreren Geräten",
     ],
     setup:
-      "Begin met uw apparaat, kies een betrouwbare speler en zorg dat uw netwerk stabiel genoeg is voor HD of 4K.",
+      "Beginnen Sie mit Ihrem Gerät, wählen Sie einen zuverlässigen Player und stellen Sie sicher, dass Ihr Netzwerk stabil genug für HD oder 4K ist.",
     safety:
-      "Gebruik alleen bronnen waarvoor u toestemming heeft en vermijd onbekende lijsten die rechten of privacy kunnen schenden.",
+      "Nutzen Sie nur Quellen, für die Sie eine Berechtigung haben, und vermeiden Sie unbekannte Listen, die Rechte oder Ihre Privatsphäre verletzen könnten.",
   },
-  netherlands: {
-    label: "Beste IPTV Nederland",
+  germany: {
+    label: "Bestes IPTV in Deutschland",
     promise:
-      "een praktische gids voor lokale kanalen, regionale content en Nederlandstalige televisie",
+      "ein praktischer Leitfaden zu lokalen Sendern, regionalen Inhalten und deutschsprachigem Fernsehen",
     benefitSeed: [
-      "focus op Nederlandse kanalen",
-      "EPG in het Nederlands",
-      "support afgestemd op lokale gewoonten",
+      "Fokus auf deutsche Sender",
+      "EPG auf Deutsch",
+      "Support, der auf lokale Gewohnheiten abgestimmt ist",
     ],
     setup:
-      "Let op Nederlandse kanaalgroepen, juiste tijdzones in de EPG en apps die goed werken op Smart-tv en Android TV.",
+      "Achten Sie auf deutsche Sendergruppen, korrekte Zeitzonen im EPG und Apps, die auf Smart-TV und Android TV zuverlässig laufen.",
     safety:
-      "Controleer altijd de herkomst van de content en kies transparante voorwaarden in plaats van anonieme beloften.",
+      "Prüfen Sie stets die Herkunft der Inhalte und wählen Sie transparente Bedingungen statt anonymer Versprechen.",
   },
   app: {
-    label: "App & speler",
+    label: "App & Player",
     promise:
-      "een soepele ervaring met heldere installatie, EPG en playlists",
+      "ein reibungsloses Erlebnis mit klarer Installation, EPG und Playlists",
     benefitSeed: [
-      "M3U- en Xtream-ondersteuning",
-      "prettige navigatie",
-      "compatibel met gangbare spelers",
+      "Unterstützung für M3U und Xtream",
+      "angenehme Navigation",
+      "kompatibel mit gängigen Playern",
     ],
     setup:
-      "Installeer de speler uit een betrouwbare store, voer uw gegevens zorgvuldig in en test de zaptijd, EPG en ondertiteling.",
+      "Installieren Sie den Player aus einem vertrauenswürdigen Store, geben Sie Ihre Zugangsdaten sorgfältig ein und testen Sie Zapzeit, EPG und Untertitel.",
     safety:
-      "Bewaar uw inloggegevens veilig en download apps alleen uit betrouwbare bronnen.",
+      "Bewahren Sie Ihre Zugangsdaten sicher auf und laden Sie Apps nur aus vertrauenswürdigen Quellen herunter.",
   },
   device: {
-    label: "Apparaatconfiguratie",
-    promise: "een handige oriëntatie voor boxen, ontvangers en tv-toestellen",
+    label: "Gerätekonfiguration",
+    promise: "eine praktische Orientierung für Boxen, Receiver und Fernsehgeräte",
     benefitSeed: [
-      "geoptimaliseerd voor de afstandsbediening",
-      "4K-compatibele hardware",
-      "stabiele kabel- of wifi-verbinding",
+      "optimiert für die Fernbedienung",
+      "4K-fähige Hardware",
+      "stabile Kabel- oder WLAN-Verbindung",
     ],
     setup:
-      "Werk de firmware bij, gebruik indien mogelijk ethernet en kies een lichte speler die past bij de processor van uw apparaat.",
+      "Aktualisieren Sie die Firmware, nutzen Sie wenn möglich Ethernet und wählen Sie einen leichten Player, der zum Prozessor Ihres Geräts passt.",
     safety:
-      "Vermijd voorgeïnstalleerde boxen met obscure lijsten; dit kan gevaarlijk zijn en juridische risico's met zich meebrengen.",
+      "Vermeiden Sie vorinstallierte Boxen mit obskuren Listen; das kann gefährlich sein und rechtliche Risiken mit sich bringen.",
   },
   subscription: {
-    label: "Abonnementskeuze",
+    label: "Abonnementwahl",
     promise:
-      "een praktische manier om pakketten, proefperiodes en verwachtingen te vergelijken",
+      "eine praktische Art, Pakete, Testphasen und Erwartungen zu vergleichen",
     benefitSeed: [
-      "duidelijke looptijd",
-      "geen verborgen voorwaarden",
-      "hulp bij de activering",
+      "klare Laufzeit",
+      "keine versteckten Bedingungen",
+      "Hilfe bei der Aktivierung",
     ],
     setup:
-      "Vergelijk pakketlooptijd, gelijktijdige verbindingen, proefmogelijkheden en support voordat u betaalt.",
+      "Vergleichen Sie Laufzeit, gleichzeitige Verbindungen, Testmöglichkeiten und Support, bevor Sie bezahlen.",
     safety:
-      "Kies aanbieders die transparant zijn over voorwaarden, contactmogelijkheden en verantwoord gebruik.",
+      "Wählen Sie Anbieter, die transparent bei Bedingungen, Kontaktmöglichkeiten und verantwortungsvoller Nutzung sind.",
   },
   legal: {
-    label: "Juridisch kader",
-    promise: "neutrale uitleg over risico's, rechten en verantwoord streamen",
+    label: "Rechtlicher Rahmen",
+    promise: "neutrale Aufklärung über Risiken, Rechte und verantwortungsvolles Streaming",
     benefitSeed: [
-      "feitelijke uitleg",
-      "geen illegale instructies",
-      "focus op een veilige keuze",
+      "sachliche Erklärung",
+      "keine illegalen Anleitungen",
+      "Fokus auf eine sichere Wahl",
     ],
     setup:
-      "Controleer of een dienst de contentrechten bezit, lees de voorwaarden en wees voorzichtig met extreem goedkope aanbiedingen.",
+      "Prüfen Sie, ob ein Dienst die Rechte an den Inhalten besitzt, lesen Sie die Bedingungen und seien Sie vorsichtig bei extrem günstigen Angeboten.",
     safety:
-      "Deze pagina bevat algemene informatie en moedigt geen onbevoegde toegang tot kanalen of streams aan.",
+      "Diese Seite enthält allgemeine Informationen und ermutigt nicht zum unbefugten Zugriff auf Sender oder Streams.",
   },
   playlist: {
-    label: "Playlist-veiligheid",
+    label: "Playlist-Sicherheit",
     promise:
-      "veilige informatie over M3U-lijsten zonder gehackte streams of dubieuze downloads",
+      "sichere Informationen zu M3U-Listen ohne gehackte Streams oder zweifelhafte Downloads",
     benefitSeed: [
-      "uitleg over playlist-formaten",
-      "privacyvriendelijke controle",
-      "geen illegale streaminglinks",
+      "Erklärung der Playlist-Formate",
+      "datenschutzfreundliche Kontrolle",
+      "keine illegalen Streaming-Links",
     ],
     setup:
-      "Gebruik M3U alleen als formaat voor legitieme bronnen en test lijsten in een speler zonder persoonlijke gegevens te delen.",
+      "Nutzen Sie M3U nur als Format für legitime Quellen und testen Sie Listen in einem Player, ohne persönliche Daten weiterzugeben.",
     safety:
-      "Wij publiceren geen gekraakte playlists en raden af om onbekende streaminglinks te openen.",
+      "Wir veröffentlichen keine gecrackten Playlists und raten davon ab, unbekannte Streaming-Links zu öffnen.",
   },
   quality: {
-    label: "4K-streaming",
-    promise: "tips over beeldkwaliteit, bitrate en netwerkstabiliteit",
+    label: "4K-Streaming",
+    promise: "Tipps zu Bildqualität, Bitrate und Netzwerkstabilität",
     benefitSeed: [
-      "focus op 4K en Full HD",
-      "minder buffering",
-      "realistische snelheidsverwachtingen",
+      "Fokus auf 4K und Full HD",
+      "weniger Ruckeln",
+      "realistische Geschwindigkeitserwartungen",
     ],
     setup:
-      "Gebruik een snelle verbinding, geschikte HDMI-kabels en een speler met hardware-decodering.",
+      "Nutzen Sie eine schnelle Verbindung, passende HDMI-Kabel und einen Player mit Hardware-Decodierung.",
     safety:
-      "Maak kwaliteit niet tot enige criterium; betrouwbaarheid, rechten en support blijven belangrijk.",
+      "Machen Sie Qualität nicht zum einzigen Kriterium; Zuverlässigkeit, Rechte und Support bleiben wichtig.",
   },
   provider: {
-    label: "Aanbieder-oriëntatie",
+    label: "Anbieter-Orientierung",
     promise:
-      "een evenwichtige aanpak voor de keuze van een aanbieder, zonder vooringenomenheid of marketing",
+      "ein ausgewogener Ansatz zur Wahl eines Anbieters, ohne Voreingenommenheit oder Marketing",
     benefitSeed: [
-      "neutrale vergelijking",
-      "servicecontrole",
-      "transparantie van voorwaarden",
+      "neutraler Vergleich",
+      "Servicekontrolle",
+      "Transparenz der Bedingungen",
     ],
     setup:
-      "Controleer de betrouwbaarheid van de aanbieder, contactmogelijkheden, beschikbaarheid van support en klantbeoordelingen voordat u zich abonneert.",
+      "Prüfen Sie die Zuverlässigkeit des Anbieters, Kontaktmöglichkeiten, Support-Verfügbarkeit und Kundenbewertungen, bevor Sie sich anmelden.",
     safety:
-      "Wees voorzichtig met aanbieders zonder bedrijfsinformatie, contactkanaal of duidelijke servicevoorwaarden.",
+      "Seien Sie vorsichtig bei Anbietern ohne Firmeninformationen, Kontaktkanal oder klare Servicebedingungen.",
   },
   adult: {
-    label: "Volwassenencontent",
+    label: "Erwachseneninhalte",
     promise:
-      "privacyvriendelijke informatie over filters, leeftijdsinstellingen en verantwoord kijken",
+      "datenschutzfreundliche Informationen zu Filtern, Alterseinstellungen und verantwortungsvollem Fernsehen",
     benefitSeed: [
-      "kinderslot",
-      "privacy-instellingen",
-      "bewuste kanaalkeuze",
+      "Kindersicherung",
+      "Datenschutzeinstellungen",
+      "bewusste Senderauswahl",
     ],
     setup:
-      "Controleer of uw speler profielen, pincodebeveiliging en kanaalblokkering ondersteunt.",
+      "Prüfen Sie, ob Ihr Player Profile, PIN-Schutz und Senderblockierung unterstützt.",
     safety:
-      "Zorg dat de content legaal beschikbaar is en blokkeer categorieën voor volwassenen voor minderjarigen.",
+      "Stellen Sie sicher, dass die Inhalte legal verfügbar sind, und blockieren Sie Erwachsenenkategorien für Minderjährige.",
   },
 };
 
@@ -682,7 +671,7 @@ const buildMetaDescription = (
   index: number,
 ) => {
   const copy = intentCopy[intent];
-  return `${keyword}: ${copy.label.toLowerCase()} met praktische uitleg over installatie, veiligheid, compatibiliteit en beeldkwaliteit. IPTV Smarter-gids ${index + 1}.`;
+  return `${keyword}: ${copy.label.toLowerCase()} mit praktischen Hinweisen zu Installation, Sicherheit, Kompatibilität und Bildqualität. IPTV Germany-Ratgeber ${index + 1}.`;
 };
 
 const createFaqs = (
@@ -692,19 +681,19 @@ const createFaqs = (
 ): VaultFaq[] => {
   const copy = intentCopy[intent];
   const localized =
-    "De installatie hangt af van uw app, apparaat en de bron van de content.";
+    "Die Installation hängt von Ihrer App, Ihrem Gerät und der Quelle der Inhalte ab.";
 
   return [
     {
-      question: `Waar moet ik op letten bij ${keyword}?`,
-      answer: `${copy.setup} Controleer ook de support, updates en of de dienst past bij uw dagelijkse kijkgewoonten.`,
+      question: `Worauf sollte ich bei ${keyword} achten?`,
+      answer: `${copy.setup} Prüfen Sie außerdem Support, Updates und ob der Dienst zu Ihren täglichen Sehgewohnheiten passt.`,
     },
     {
-      question: `Is ${keyword} geschikt voor 4K-streaming?`,
-      answer: `Ja, zolang uw apparaat, speler en internetverbinding dit ondersteunen. Voor 4K adviseren wij een stabiele verbinding en bij voorkeur ethernet voor vaste tv-installaties.`,
+      question: `Ist ${keyword} für 4K-Streaming geeignet?`,
+      answer: `Ja, solange Ihr Gerät, Player und Ihre Internetverbindung dies unterstützen. Für 4K empfehlen wir eine stabile Verbindung und bei festen TV-Installationen vorzugsweise Ethernet.`,
     },
     {
-      question: `Hoe gebruik ik ${keyword} veilig?`,
+      question: `Wie nutze ich ${keyword} sicher?`,
       answer: `${copy.safety} ${localized}`,
     },
   ];
@@ -715,34 +704,34 @@ const relatedSlugsFor = (
   intent: IptvGermanPage["intent"],
 ) => {
   const preferredByIntent: Record<IptvGermanPage["intent"], RawSlug[]> = {
-    general: ["iptv", "meilleur-iptv", "abonnement-iptv", "iptv-abonnement"],
-    netherlands: ["france-iptv", "french-iptv", "meilleur-iptv", "agence-iptv"],
+    general: ["iptv", "bestes-iptv", "abonnement-iptv", "iptv-abonnement"],
+    germany: ["deutsche-iptv-sender", "internationale-iptv-sender", "bestes-iptv", "iptv-agentur"],
     app: [
       "iptv-smarters",
       "iptv-smarters-pro",
       "iptv-player",
-      "meilleur-application-iptv",
+      "beste-iptv-app",
     ],
-    device: ["iptv-box", "boitier-iptv", "box-iptv", "decodeur-iptv"],
+    device: ["iptv-box", "beste-iptv-box", "android-iptv-box", "iptv-receiver"],
     subscription: [
       "iptv-abonnement",
       "abonnement-iptv",
-      "iptv-prix",
-      "test-iptv",
+      "iptv-preise",
+      "iptv-testen",
     ],
-    legal: ["iptv-illegal", "iptv-amende", "iptv", "fournisseur-iptv"],
+    legal: ["iptv-illegal", "iptv-bussgeld", "iptv", "iptv-anbieter"],
     playlist: [
       "m3u-iptv",
       "iptv-smarters-pro",
       "iptv-abonnement",
       "iptv-player",
     ],
-    quality: ["iptv-4k", "iptv-with-4k", "meilleur-iptv", "iptv-premium"],
+    quality: ["iptv-4k", "iptv-with-4k", "bestes-iptv", "iptv-premium"],
     provider: [
-      "fournisseur-iptv",
-      "agence-iptv",
+      "iptv-anbieter",
+      "iptv-agentur",
       "iptv-atlas",
-      "meilleur-iptv",
+      "bestes-iptv",
     ],
     adult: ["iptv-app", "smart-iptv", "iptv-player", "iptv"],
   };
@@ -762,12 +751,12 @@ const createPage = (
   const intent = detectIntent(slug);
   const copy = intentCopy[intent];
   const title =
-    titleOverrides[slug] ?? `${readableKeyword}: praktische IPTV Smarter-gids`;
-  const metaTitle = `${title} | IPTV Smarter`;
+    titleOverrides[slug] ?? `${readableKeyword}: praktischer IPTV Germany-Ratgeber`;
+  const metaTitle = `${title} | IPTV Germany`;
   const heroHeading =
     slug === "iptv"
-      ? "IPTV zonder gedoe: kies bewust, kijk stabiel"
-      : `${readableKeyword} met de pragmatische aanpak van IPTV Smarter`;
+      ? "IPTV ohne Umwege: bewusst wählen, stabil streamen"
+      : `${readableKeyword} mit dem pragmatischen Ansatz von IPTV Germany`;
 
   return {
     slug,
@@ -778,37 +767,37 @@ const createPage = (
     heroHeading,
     language,
     intent,
-    introCopy: `${readableKeyword} vraagt om meer dan alleen een zoekterm. Deze pagina helpt u bij ${copy.promise}, met bijzondere aandacht voor prestaties, apparaatkeuze, privacy en verantwoord gebruik ${languageAngle[language]}.`,
+    introCopy: `${readableKeyword} erfordert mehr als nur einen Suchbegriff. Diese Seite hilft Ihnen bei ${copy.promise}, mit besonderem Augenmerk auf Leistung, Geräteauswahl, Datenschutz und verantwortungsvolle Nutzung ${languageAngle[language]}.`,
     benefits: copy.benefitSeed.map(
       (benefit, benefitIndex) =>
-        `${benefit} voor ${keyword} ${benefitIndex + 1}`,
+        `${benefit} für ${keyword} ${benefitIndex + 1}`,
     ),
     sections: [
       {
-        heading: `${readableKeyword} in de praktijk`,
-        body: `Bij ${keyword} draait alles om de combinatie van contentbron, speler, apparaat en netwerk. IPTV Streaming ziet dit als een complete kijkervaring, zodat u niet alleen start, maar ook begrijpt waarom het vloeiend of instabiel loopt.`,
+        heading: `${readableKeyword} in der Praxis`,
+        body: `Bei ${keyword} dreht sich alles um die Kombination aus Inhaltsquelle, Player, Gerät und Netzwerk. IPTV Germany versteht dies als vollständiges Seherlebnis, damit Sie nicht nur starten, sondern auch verstehen, warum die Wiedergabe flüssig oder instabil läuft.`,
         points: [
-          "Controleer de compatibiliteit voordat u een pakket of app kiest.",
-          "Gebruik een heldere EPG en logische kanaalgroepen.",
-          "Test de kwaliteit op het apparaat waarop u daadwerkelijk gaat kijken.",
+          "Prüfen Sie die Kompatibilität, bevor Sie ein Paket oder eine App wählen.",
+          "Nutzen Sie einen übersichtlichen EPG und logische Sendergruppen.",
+          "Testen Sie die Qualität auf dem Gerät, auf dem Sie tatsächlich schauen werden.",
         ],
       },
       {
-        heading: `Installatie-checklist voor ${readableKeyword}`,
+        heading: `Installations-Checkliste für ${readableKeyword}`,
         body: copy.setup,
         points: [
-          "Noteer welke app, tv-box of Smart-tv u gebruikt.",
-          "Controleer uw internetsnelheid en wifi-dekking op de kijkplek.",
-          "Bewaar accountgegevens en playlist op een veilige plek.",
+          "Notieren Sie, welche App, TV-Box oder Smart-TV Sie verwenden.",
+          "Prüfen Sie Ihre Internetgeschwindigkeit und WLAN-Abdeckung am Sehplatz.",
+          "Bewahren Sie Kontodaten und Playlist an einem sicheren Ort auf.",
         ],
       },
       {
-        heading: `Veilig en verantwoord gebruik van ${readableKeyword}`,
+        heading: `Sichere und verantwortungsvolle Nutzung von ${readableKeyword}`,
         body: copy.safety,
         points: [
-          "Vermijd onbekende downloads, gekraakte apps en anonieme lijsten.",
-          "Deel geen persoonlijke gegevens met dubieuze aanbieders.",
-          "Kies bronnen met duidelijke voorwaarden en toegankelijke support.",
+          "Vermeiden Sie unbekannte Downloads, gecrackte Apps und anonyme Listen.",
+          "Teilen Sie keine persönlichen Daten mit zweifelhaften Anbietern.",
+          "Wählen Sie Quellen mit klaren Bedingungen und erreichbarem Support.",
         ],
       },
     ],
@@ -826,13 +815,13 @@ export const IPTV_GERMAN_PAGES: IptvGermanPage[] =
     return {
       ...page,
       heroHeading: isAbonnement
-        ? "IPTV in Nederland: herontdek televisie"
+        ? "IPTV in Deutschland: entdecken Sie Fernsehen neu"
         : page.heroHeading,
       metaTitle: isAbonnement
-        ? "IPTV-abonnement Nederland – live streaming, Franse & Nederlandse zenders, 4K/8K, VOD | IPTV Smarter"
+        ? "IPTV-Abonnement Deutschland – Live-Streaming, deutsche Sender, 4K/8K, VOD | IPTV Germany"
         : page.metaTitle,
       metaDescription: isAbonnement
-        ? "IPTV-abonnement & streaming in Nederland met 31.000+ zenders en 140.000+ films & series in 4K/8K. Directe activatie, stabiele servers, alle apparaten ondersteund en premium IPTV-abonnementen voor Nederland en België."
+        ? "IPTV-Abonnement & Streaming in Deutschland mit 31.000+ Sendern und 140.000+ Filmen & Serien in 4K/8K. Direkte Aktivierung, stabile Server, alle Geräte unterstützt und Premium-IPTV-Abonnements für Deutschland, Österreich und die Schweiz."
         : page.metaDescription,
       heroBg: isAbonnement ? "/images/abonnement-bg.webp" : undefined,
       internalLinks: relatedSlugsFor(page.slug, page.intent).map(
@@ -845,7 +834,7 @@ export const IPTV_GERMAN_PAGES: IptvGermanPage[] =
           return {
             label,
             href: iptvPath(relatedSlug),
-            description: `Lees meer over ${label} in de IPTV Streaming kennisbank.`,
+            description: `Mehr über ${label} im IPTV Germany-Ratgeber.`,
           };
         },
       ),
@@ -862,7 +851,7 @@ export const getIptvGermanPage = (slug: string) =>
 export const getIptvGermanPath = (slug: string) => iptvPath(slug);
 
 // ═════════════════════════════════════════════════════════════════════════════
-//  PHASE 3 — RICH CONTENT ENGINE  (emits IPTVPage[] for all 105 slugs)
+//  PHASE 3 — RICH CONTENT ENGINE  (emits IPTVPage[] for all vault slugs)
 //  ---------------------------------------------------------------------------
 //  Every page gets ≥5 discriminated-union sections, ≥5 FAQs and ≥4 internal
 //  links. Content is differentiated by search intent (no near-duplicate copy).
@@ -872,7 +861,7 @@ export const getIptvGermanPath = (slug: string) => iptvPath(slug);
 
 const UPDATED_AT = "2026-05-31";
 // Primary CTA target across all vault pages — points at the root money page
-// directly (no /iptv-gids redirect hop).
+// directly (no /iptv-ratgeber redirect hop).
 const ORDER_HREF = iptvPath("iptv-abonnement");
 const OG = OG_IMAGE.url;
 
@@ -884,26 +873,26 @@ const clamp = (value: string, max: number): string => {
   return `${(lastSpace > max * 0.6 ? cut.slice(0, lastSpace) : cut).trimEnd()}…`;
 };
 
-// ── Intent detection (German-market focused; fixes the legacy FR heuristics) ──
+// ── Intent detection (German-market focused) ──────────────────────────────
 const detectIntentV2 = (slug: string): PageIntent => {
   const has = (...keys: string[]) => keys.some((k) => slug.includes(k));
-  if (has("illegal", "amende", "laws", "legal", "arcom", "strafe", "abmahn"))
+  if (has("illegal", "legal", "bussgeld", "recht", "medienanstalt", "strafe", "abmahn"))
     return "legal";
-  if (has("meilleur", "meilleurs", "beste", "bester", "fournisseur", "agence", "anbieter", "provider", "atlas", "king", "mario", "lynk", "iron", "zen", "xenon", "pure"))
+  if (has("beste", "bester", "anbieter", "agentur", "dienst", "provider", "atlas", "king", "mario", "lynk", "iron", "zen", "xenon", "pure"))
     return "provider";
-  if (has("playlist", "m3u", "gratuit", "gratis", "kostenlos", "code", "telecharger", "downloader", "free"))
+  if (has("playlist", "m3u", "gratis", "kostenlos", "code", "free"))
     return "playlist";
   if (has("4k", "8k", "uhd"))
     return "quality";
-  if (has("boitier", "decodeur", "box", "kastje", "receiver", "stick", "mag"))
+  if (has("box", "receiver", "stick", "mag"))
     return "device";
-  if (has("smarters", "smarter", "smart-player", "smart-iptv", "tivimate", "smartone", "smart-one", "net-iptv", "set-iptv", "ss-iptv", "iptv-ss", "flix", "xtream", "player", "application", "appli", "app", "smart"))
+  if (has("smarters", "smarter", "smart-player", "smart-iptv", "tivimate", "smartone", "smart-one", "net-iptv", "set-iptv", "ss-iptv", "iptv-ss", "flix", "xtream", "player", "anwendung", "app", "smart"))
     return "app";
-  if (has("abonnement", "abbonement", "kaufen", "kopen", "prix", "pas-cher", "premium", "test", "trial", "12-mois"))
+  if (has("abonnement", "abbonement", "abo", "kaufen", "preise", "guenstig", "premium", "test", "trial", "12-monate"))
     return "subscription";
-  if (has("deutschland", "german", "germany", "france", "french", "swiss", "osterreich"))
+  if (has("deutsche", "international", "german", "germany", "swiss", "osterreich"))
     return "landing";
-  if (has("programme", "setting", "comment", "was-ist", "guide"))
+  if (has("programm", "senderliste", "einrichten", "was-ist", "guide"))
     return "guide";
   return "general";
 };
@@ -911,61 +900,61 @@ const detectIntentV2 = (slug: string): PageIntent => {
 // ── Shared content blocks (reused across pages) ──────────────────────────────
 const PRICING_TIERS: PricingTier[] = [
   {
-    name: "1 maand",
+    name: "1 Monat",
     price: "12,99 €",
-    period: "/ maand",
-    description: "Flexibel om uit te proberen",
+    period: "/ Monat",
+    description: "Flexibel zum Ausprobieren",
     features: [
-      "31.000+ live-zenders",
-      "140.000+ films & series",
+      "31.000+ Live-Sender",
+      "140.000+ Filme & Serien",
       "Full HD & 4K",
-      "1 apparaat tegelijk",
-      "Klantenservice 24/7",
+      "1 Gerät gleichzeitig",
+      "Kundenservice 24/7",
     ],
     cta: { label: "Bestellen", href: ORDER_HREF },
   },
   {
-    name: "3 maanden",
+    name: "3 Monate",
     price: "29,99 €",
-    period: "/ 3 maanden",
-    description: "Beste prijs-kwaliteitverhouding",
+    period: "/ 3 Monate",
+    description: "Bestes Preis-Leistungs-Verhältnis",
     features: [
-      "Alles uit het maandpakket",
-      "Streaming 4K / 8K",
-      "2 apparaten tegelijk",
-      "Onderbrekingsvrije servers",
-      "Volledige VOD-toegang",
+      "Alles aus dem Monatspaket",
+      "Streaming in 4K / 8K",
+      "2 Geräte gleichzeitig",
+      "Unterbrechungsfreie Server",
+      "Vollständiger VOD-Zugang",
     ],
-    cta: { label: "Meest populaire pakket", href: ORDER_HREF },
+    cta: { label: "Beliebtestes Paket", href: ORDER_HREF },
     highlighted: true,
-    badge: "Meest populair",
+    badge: "Am beliebtesten",
   },
   {
-    name: "12 maanden",
+    name: "12 Monate",
     price: "79,99 €",
-    period: "/ jaar",
-    description: "Slechts 6,66 € per maand",
+    period: "/ Jahr",
+    description: "Nur 6,66 € pro Monat",
     features: [
-      "Alles uit het 3-maandenpakket",
-      "Tot 5 apparaten",
-      "Prioriteitsklantenservice",
-      "Gratis updates",
-      "Zonder contract",
+      "Alles aus dem 3-Monats-Paket",
+      "Bis zu 5 Geräte",
+      "Prioritäts-Kundenservice",
+      "Kostenlose Updates",
+      "Ohne Vertragsbindung",
     ],
-    cta: { label: "Jaarpakket nemen", href: ORDER_HREF },
+    cta: { label: "Jahrespaket wählen", href: ORDER_HREF },
   },
 ];
 
-const COMPARISON_COLUMNS = ["IPTV Smarter", "Andere aanbieders", "Kabel & Satelliet"];
+const COMPARISON_COLUMNS = ["IPTV Germany", "Andere Anbieter", "Kabel & Satellit"];
 const COMPARISON_ROWS: ComparisonRow[] = [
-  { label: "Live-zenders", values: ["31.000+", "enkele duizenden", "100–300"] },
-  { label: "Films & series (VOD)", values: ["140.000+", "beperkt", false] },
-  { label: "Kwaliteit 4K / 8K", values: [true, "deels", false] },
-  { label: "Gelijktijdige apparaten", values: ["tot 5", "1–2", "1"] },
-  { label: "Contract", values: ["geen", "vaak 24 maanden", "12–24 maanden"] },
-  { label: "Gratis proefperiode", values: [true, false, false] },
-  { label: "Prijs per maand vanaf", values: ["6,66 €", "15–30 €", "vanaf 40 €"] },
-  { label: "Klantenservice 24/7", values: [true, "wisselend", "Telefoonlijn"] },
+  { label: "Live-Sender", values: ["31.000+", "einige Tausend", "100–300"] },
+  { label: "Filme & Serien (VOD)", values: ["140.000+", "begrenzt", false] },
+  { label: "Qualität 4K / 8K", values: [true, "teilweise", false] },
+  { label: "Gleichzeitige Geräte", values: ["bis zu 5", "1–2", "1"] },
+  { label: "Vertragsbindung", values: ["keine", "oft 24 Monate", "12–24 Monate"] },
+  { label: "Kostenlose Testphase", values: [true, false, false] },
+  { label: "Preis pro Monat ab", values: ["6,66 €", "15–30 €", "ab 40 €"] },
+  { label: "Kundenservice 24/7", values: [true, "wechselnd", "Telefonleitung"] },
 ];
 
 const DEVICE_CARDS: DeviceCard[] = [
@@ -980,26 +969,26 @@ const DEVICE_CARDS: DeviceCard[] = [
 ];
 
 const TESTIMONIAL_REVIEWS: Review[] = [
-  { author: "Julien M.", country: "🇳🇱", rating: 5, text: "Eindelijk geen onderbrekingen meer. Voetbal wordt in 4K volledig vloeiend weergegeven – de installatie op de Fire TV Stick duurde slechts 5 minuten." },
-  { author: "Camille L.", country: "🇳🇱", rating: 5, text: "Een enorm aanbod aan films en series, plus een klantenservice die echt binnen enkele minuten reageert. Ik raad het zeker aan." },
-  { author: "Thomas V.", country: "🇧🇪", rating: 4, text: "Zeer stabiel en eerlijke prijzen zonder contract. De gratis proefperiode heeft me overtuigd – ik gebruik nu het jaarpakket." },
-  { author: "Sophie K.", country: "🇳🇱", rating: 5, text: "Werkt tegelijkertijd op Smart TV, telefoon en tablet. De EPG is goed in het Nederlands en de zenders zijn perfect ingedeeld." },
+  { author: "Julian M.", country: "🇩🇪", rating: 5, text: "Endlich keine Unterbrechungen mehr. Fußball wird in 4K vollständig flüssig dargestellt – die Installation auf dem Fire TV Stick hat nur 5 Minuten gedauert." },
+  { author: "Katharina L.", country: "🇩🇪", rating: 5, text: "Ein enormes Angebot an Filmen und Serien, dazu ein Kundenservice, der wirklich innerhalb von Minuten reagiert. Ich kann es nur empfehlen." },
+  { author: "Thomas B.", country: "🇦🇹", rating: 4, text: "Sehr stabil und faire Preise ohne Vertragsbindung. Die kostenlose Testphase hat mich überzeugt – ich nutze jetzt das Jahrespaket." },
+  { author: "Sophie K.", country: "🇨🇭", rating: 5, text: "Läuft gleichzeitig auf Smart TV, Handy und Tablet. Der EPG ist gut auf Deutsch und die Sender sind perfekt sortiert." },
 ];
 
 const CHANNEL_CATEGORIES: ChannelCategory[] = [
-  { name: "Sport", count: 1200, examples: ["Voetbal", "Autosport", "Europese competities", "Vechtsporten"] },
-  { name: "Films & series", count: 140000, examples: ["Blockbusters", "Boxsets", "Nieuw", "Klassiekers"] },
-  { name: "Nieuws", count: 800, examples: ["Frans nieuws", "Internationaal nieuws", "24/7 nieuws", "Brits nieuws"] },
-  { name: "Kinderen", count: 500, examples: ["Tekenfilms", "Jeugdzenders", "Educatieve programma's", "Familiefilms"] },
-  { name: "Internationaal", count: 20000, examples: ["🇹🇷 Türkçe", "🇬🇧 UK", "🇮🇹 IT", "🇪🇸 ES"] },
+  { name: "Sport", count: 1200, examples: ["Fußball", "Motorsport", "Europäische Wettbewerbe", "Kampfsport"] },
+  { name: "Filme & Serien", count: 140000, examples: ["Blockbuster", "Boxsets", "Neuheiten", "Klassiker"] },
+  { name: "Nachrichten", count: 800, examples: ["Deutsche Nachrichten", "Internationale Nachrichten", "24/7-Nachrichten", "Britische Nachrichten"] },
+  { name: "Kinder", count: 500, examples: ["Zeichentrickfilme", "Kindersender", "Bildungsprogramme", "Familienfilme"] },
+  { name: "International", count: 20000, examples: ["🇹🇷 Türkçe", "🇬🇧 UK", "🇮🇹 IT", "🇪🇸 ES"] },
   { name: "4K / UHD", count: 600, examples: ["4K Live", "UHD VOD", "HDR", "8K Demo"] },
 ];
 
 const HOW_STEPS: Step[] = [
-  { title: "Kies een pakket", description: "Kies de gewenste looptijd (1, 3 of 12 maanden) – volledig zonder contract." },
-  { title: "Ontvang de inloggegevens", description: "Direct na uw bestelling ontvangt u automatisch per e-mail uw inloggegevens of M3U/Xtream-gegevens." },
-  { title: "Installeer de app", description: "Installeer een compatibele speler op uw Smart TV, Fire TV Stick, smartphone of PC." },
-  { title: "Inloggen & streamen", description: "Voer de inloggegevens in, de EPG laadt automatisch – en u streamt direct in 4K." },
+  { title: "Paket wählen", description: "Wählen Sie die gewünschte Laufzeit (1, 3 oder 12 Monate) – vollständig ohne Vertragsbindung." },
+  { title: "Zugangsdaten erhalten", description: "Direkt nach Ihrer Bestellung erhalten Sie automatisch per E-Mail Ihre Zugangsdaten oder M3U-/Xtream-Daten." },
+  { title: "App installieren", description: "Installieren Sie einen kompatiblen Player auf Ihrem Smart TV, Fire TV Stick, Smartphone oder PC." },
+  { title: "Anmelden & streamen", description: "Geben Sie die Zugangsdaten ein, der EPG lädt automatisch – und Sie streamen sofort in 4K." },
 ];
 
 // ── Per-intent profile (label, hero copy, feature cards, deep-dive text) ──────
@@ -1021,264 +1010,264 @@ const F = (icon: string, title: string, description: string): Feature => ({ icon
 
 const INTENT_PROFILE: Record<PageIntent, IntentProfile> = {
   general: {
-    label: "De basis van IPTV",
-    headline: (kw) => `${kw} eenvoudig uitgelegd`,
-    subheadline: "Live TV, films en series via internet – eenvoudig, stabiel en in 4K/8K.",
-    badgeTags: ["Duidelijk uitgelegd", "Praktisch", "Bijgewerkt 2026"],
-    ctaLabel: "Bekijk de pakketten",
+    label: "Die Grundlagen von IPTV",
+    headline: (kw) => `${kw} einfach erklärt`,
+    subheadline: "Live-TV, Filme und Serien über das Internet – einfach, stabil und in 4K/8K.",
+    badgeTags: ["Klar erklärt", "Praktisch", "Aktualisiert 2026"],
+    ctaLabel: "Pakete ansehen",
     structuredData: "Article",
     features: [
-      F("Tv", "31.000+ live-zenders", "Compleet aanbod van Franse en Nederlandse zenders plus internationale programma's op één plek."),
-      F("Film", "140.000+ VOD-titels", "Films en series op aanvraag – altijd pauzeren, hervatten of opnieuw beginnen."),
-      F("Wifi", "Stabiel & vloeiend", "Geoptimaliseerde onderbrekingsvrije servers zorgen voor betrouwbaar beeld zonder haperingen."),
-      F("MonitorSmartphone", "Alle apparaten", "Smart TV, Fire TV Stick, smartphone, tablet, box of PC – één toegang voor alles."),
+      F("Tv", "31.000+ Live-Sender", "Komplettes Angebot deutscher und internationaler Sender plus Programme an einem Ort."),
+      F("Film", "140.000+ VOD-Titel", "Filme und Serien auf Abruf – jederzeit pausieren, fortsetzen oder neu beginnen."),
+      F("Wifi", "Stabil & flüssig", "Optimierte, unterbrechungsfreie Server sorgen für zuverlässiges Bild ohne Ruckeln."),
+      F("MonitorSmartphone", "Alle Geräte", "Smart TV, Fire TV Stick, Smartphone, Tablet, Box oder PC – ein Zugang für alles."),
     ],
     intro: (kw) =>
-      `<p><strong>${kw}</strong> staat voor televisie via internet: in plaats van kabel, satelliet of antenne worden zenders en content als datastream verzonden. Dit maakt enorme zenderbibliotheken en VOD-aanbod mogelijk, uitgesteld kijken en gebruik op vrijwel alle apparaten.</p><p>Deze gids legt helder uit hoe ${kw} werkt, wat telt voor kwaliteit en veiligheid, en hoe u in enkele minuten klaar bent om te kijken.</p>`,
+      `<p><strong>${kw}</strong> steht für Fernsehen über das Internet: Statt über Kabel, Satellit oder Antenne werden Sender und Inhalte als Datenstream übertragen. Das ermöglicht riesige Senderbibliotheken und ein umfangreiches VOD-Angebot, zeitversetztes Fernsehen und die Nutzung auf praktisch allen Geräten.</p><p>Dieser Ratgeber erklärt verständlich, wie ${kw} funktioniert, worauf es bei Qualität und Sicherheit ankommt, und wie Sie in wenigen Minuten startklar sind.</p>`,
     deepDive: (kw) => ({
-      heading: `Wat echt telt voor ${kw}`,
-      html: `<p>Drie factoren bepalen een goede ervaring: de <strong>bron</strong> van de content, de <strong>speler</strong> en uw <strong>netwerk</strong>. Een betrouwbare bron met goed bijgehouden EPG, een lichte compatibele speler en een stabiele verbinding (bij voorkeur via LAN) zorgen samen voor vloeiend beeld – zelfs in 4K.</p>`,
+      heading: `Was bei ${kw} wirklich zählt`,
+      html: `<p>Drei Faktoren bestimmen ein gutes Erlebnis: die <strong>Quelle</strong> der Inhalte, der <strong>Player</strong> und Ihr <strong>Netzwerk</strong>. Eine zuverlässige Quelle mit gut gepflegtem EPG, ein leichter, kompatibler Player und eine stabile Verbindung (vorzugsweise per LAN) sorgen gemeinsam für flüssiges Bild – selbst in 4K.</p>`,
     }),
     metaDescription: (kw) =>
-      `Wat is ${kw}? Duidelijk uitgelegd: 31.000+ zenders, 140.000+ films & series, 4K/8K, alle apparaten. Ontdek IPTV Smarter en probeer 7 dagen gratis.`,
+      `Was ist ${kw}? Verständlich erklärt: 31.000+ Sender, 140.000+ Filme & Serien, 4K/8K, alle Geräte. Entdecken Sie IPTV Germany und testen Sie 7 Tage kostenlos.`,
     extraFaqs: (kw) => [
-      { question: "Wat is het verschil tussen IPTV en klassieke televisie?", answer: `Bij ${kw} wordt de content via internet verzonden in plaats van via kabel, satelliet of antenne. Dit maakt veel grotere zender- en VOD-bibliotheken mogelijk, uitgesteld kijken en gebruik op meerdere apparaten tegelijk.` },
-      { question: `Heb ik speciale apparatuur nodig voor ${kw}?`, answer: "Nee, een bestaand apparaat zoals een Fire TV Stick, Smart TV of smartphone is meestal voldoende. Een stabiele internetverbinding is belangrijker dan dure apparatuur." },
+      { question: "Was ist der Unterschied zwischen IPTV und klassischem Fernsehen?", answer: `Bei ${kw} werden Inhalte über das Internet statt über Kabel, Satellit oder Antenne übertragen. Das ermöglicht deutlich größere Sender- und VOD-Bibliotheken, zeitversetztes Fernsehen und die Nutzung auf mehreren Geräten gleichzeitig.` },
+      { question: `Brauche ich spezielle Geräte für ${kw}?`, answer: "Nein, ein vorhandenes Gerät wie ein Fire TV Stick, Smart TV oder Smartphone reicht meist aus. Eine stabile Internetverbindung ist wichtiger als teure Hardware." },
     ],
   },
   guide: {
-    label: "IPTV-gids",
-    headline: (kw) => `${kw}: de complete gids`,
-    subheadline: "Alles wat u nodig heeft voor een eenvoudige start – duidelijk en praktisch.",
-    badgeTags: ["Stap voor stap", "Praktisch", "Bijgewerkt 2026"],
-    ctaLabel: "Beginnen",
+    label: "IPTV-Ratgeber",
+    headline: (kw) => `${kw}: der vollständige Ratgeber`,
+    subheadline: "Alles, was Sie für einen einfachen Start brauchen – klar und praxisnah.",
+    badgeTags: ["Schritt für Schritt", "Praktisch", "Aktualisiert 2026"],
+    ctaLabel: "Jetzt starten",
     structuredData: "Article",
     features: [
-      F("ListChecks", "Duidelijke stappen", "Van installatie tot eerste zender – uitgelegd zonder jargon."),
-      F("Settings", "Optimale instellingen", "Buffer, EPG, ondertiteling en beeldkwaliteit correct instellen."),
-      F("ShieldCheck", "Veiligheid voorop", "Waar u op moet letten voor betrouwbaar en legaal streamen."),
-      F("Headphones", "Hulp bij problemen", "Veelgemaakte fouten en snelle oplossingen in één overzicht."),
+      F("ListChecks", "Klare Schritte", "Von der Installation bis zum ersten Sender – erklärt ohne Fachjargon."),
+      F("Settings", "Optimale Einstellungen", "Puffer, EPG, Untertitel und Bildqualität richtig einstellen."),
+      F("ShieldCheck", "Sicherheit an erster Stelle", "Worauf Sie für zuverlässiges und legales Streaming achten sollten."),
+      F("Headphones", "Hilfe bei Problemen", "Häufige Fehler und schnelle Lösungen in einer Übersicht."),
     ],
     intro: (kw) =>
-      `<p>Deze gids begeleidt u stap voor stap bij <strong>${kw}</strong> – van de juiste speler kiezen, via installatie met M3U of Xtream Codes, tot het fijne afstellen van beeldkwaliteit en EPG.</p>`,
+      `<p>Dieser Ratgeber begleitet Sie Schritt für Schritt bei <strong>${kw}</strong> – von der Wahl des richtigen Players über die Installation mit M3U oder Xtream Codes bis zur Feinabstimmung von Bildqualität und EPG.</p>`,
     deepDive: (kw) => ({
-      heading: `Veelgemaakte fouten voorkomen met ${kw}`,
-      html: `<p>De meeste problemen komen door instabiele wifi, verkeerde bufferinstellingen of onbetrouwbare bronnen. Gebruik LAN waar mogelijk, houd de app bijgewerkt en kies een aanbieder met transparante voorwaarden en support.</p>`,
+      heading: `Häufige Fehler bei ${kw} vermeiden`,
+      html: `<p>Die meisten Probleme entstehen durch instabiles WLAN, falsche Puffereinstellungen oder unzuverlässige Quellen. Nutzen Sie wo möglich LAN, halten Sie die App aktuell und wählen Sie einen Anbieter mit transparenten Bedingungen und Support.</p>`,
     }),
     metaDescription: (kw) =>
-      `${kw} stap voor stap instellen – met checklist, apparaattips en veiligheidsadvies. Lees, start met IPTV Smarter en probeer 7 dagen gratis.`,
+      `${kw} Schritt für Schritt einrichten – mit Checkliste, Gerätetipps und Sicherheitshinweisen. Lesen Sie weiter, starten Sie mit IPTV Germany und testen Sie 7 Tage kostenlos.`,
     extraFaqs: (kw) => [
-      { question: `Hoe lang duurt de installatie van ${kw}?`, answer: "Meestal slechts enkele minuten. Na ontvangst van uw inloggegevens voert u deze in uw speler in, de EPG laadt automatisch en u kunt direct streamen." },
-      { question: "Wat als een zender niet laadt?", answer: "Controleer uw internetverbinding, herstart de app en wis indien nodig de cache. Als het probleem aanhoudt, helpt de 24/7 support van IPTV Smarter u snel verder." },
+      { question: `Wie lange dauert die Installation von ${kw}?`, answer: "Meist nur wenige Minuten. Nach Erhalt Ihrer Zugangsdaten geben Sie diese in Ihrem Player ein, der EPG lädt automatisch und Sie können sofort streamen." },
+      { question: "Was tun, wenn ein Sender nicht lädt?", answer: "Prüfen Sie Ihre Internetverbindung, starten Sie die App neu und löschen Sie bei Bedarf den Cache. Bleibt das Problem bestehen, hilft Ihnen der 24/7-Support von IPTV Germany schnell weiter." },
     ],
   },
   app: {
-    label: "App & speler",
-    headline: (kw) => `${kw} optimaal instellen & gebruiken`,
-    subheadline: "Installatie, EPG en playlists zonder frustratie – compatibel met alle gangbare apparaten.",
-    badgeTags: ["Eenvoudige installatie", "M3U & Xtream", "Alle apparaten", "Support 24/7"],
-    ctaLabel: "Toegang krijgen",
+    label: "App & Player",
+    headline: (kw) => `${kw} optimal einrichten & nutzen`,
+    subheadline: "Installation, EPG und Playlists ohne Frust – kompatibel mit allen gängigen Geräten.",
+    badgeTags: ["Einfache Installation", "M3U & Xtream", "Alle Geräte", "Support 24/7"],
+    ctaLabel: "Zugang erhalten",
     structuredData: "Article",
     features: [
-      F("Download", "M3U & Xtream", "Volledige ondersteuning voor M3U-playlists en Xtream Codes – snelle configuratie."),
-      F("CalendarClock", "Overzichtelijke EPG", "Programmagids in het Nederlands met de juiste tijdzones en logo's."),
-      F("PlayCircle", "Vloeiend zappen", "Korte schakeltijden en stabiele weergave dankzij geoptimaliseerde servers."),
-      F("MonitorSmartphone", "Op alle apparaten", "Eén keer instellen, gebruiken op Smart TV, box, telefoon en PC."),
+      F("Download", "M3U & Xtream", "Vollständige Unterstützung für M3U-Playlists und Xtream Codes – schnelle Konfiguration."),
+      F("CalendarClock", "Übersichtlicher EPG", "Programmführer auf Deutsch mit korrekten Zeitzonen und Logos."),
+      F("PlayCircle", "Flüssiges Zappen", "Kurze Umschaltzeiten und stabile Wiedergabe durch optimierte Server."),
+      F("MonitorSmartphone", "Auf allen Geräten", "Einmal einrichten, nutzen auf Smart TV, Box, Handy und PC."),
     ],
     intro: (kw) =>
-      `<p><strong>${kw}</strong> is een populaire speler voor het afspelen van IPTV-content. Deze gids laat zien hoe u ${kw} installeert, verbindt met M3U of Xtream Codes en beeld, EPG en ondertiteling optimaal afstelt.</p>`,
+      `<p><strong>${kw}</strong> ist ein beliebter Player zum Abspielen von IPTV-Inhalten. Dieser Ratgeber zeigt, wie Sie ${kw} installieren, mit M3U oder Xtream Codes verbinden und Bild, EPG und Untertitel optimal einstellen.</p>`,
     deepDive: (kw) => ({
-      heading: `${kw} correct instellen`,
-      html: `<p>Voer uw inloggegevens zorgvuldig in (server, gebruikersnaam, wachtwoord of M3U-URL). Activeer hardware-decodering, pas de buffergrootte aan uw netwerk aan en laad de EPG voor een volledig programmaoverzicht.</p>`,
+      heading: `${kw} korrekt einrichten`,
+      html: `<p>Geben Sie Ihre Zugangsdaten sorgfältig ein (Server, Benutzername, Passwort oder M3U-URL). Aktivieren Sie die Hardware-Decodierung, passen Sie die Puffergröße an Ihr Netzwerk an und laden Sie den EPG für eine vollständige Programmübersicht.</p>`,
     }),
     metaDescription: (kw) =>
-      `${kw} installeren & instellen: M3U/Xtream, EPG en alle apparaten. IPTV Smarter-gids – begin nu en probeer 7 dagen gratis.`,
+      `${kw} installieren & einrichten: M3U/Xtream, EPG und alle Geräte. IPTV Germany-Ratgeber – jetzt starten und 7 Tage kostenlos testen.`,
     extraFaqs: (kw) => [
-      { question: `Hoe stel ik ${kw} in met M3U of Xtream?`, answer: "Open de app, kies 'Playlist toevoegen' en voer de M3U-URL of uw Xtream-codes in (server, gebruikersnaam, wachtwoord). De EPG laadt vervolgens automatisch." },
-      { question: `Waarom onderbreekt ${kw} soms?`, answer: "Veelvoorkomende oorzaken zijn wifi-schommelingen, een overbelast apparaat of een te kleine buffer. Gebruik LAN, sluit apps op de achtergrond en vergroot de buffergrootte in de instellingen." },
+      { question: `Wie richte ich ${kw} mit M3U oder Xtream ein?`, answer: "Öffnen Sie die App, wählen Sie 'Playlist hinzufügen' und geben Sie die M3U-URL oder Ihre Xtream-Codes ein (Server, Benutzername, Passwort). Der EPG lädt anschließend automatisch." },
+      { question: `Warum unterbricht ${kw} manchmal?`, answer: "Häufige Ursachen sind WLAN-Schwankungen, ein überlastetes Gerät oder ein zu kleiner Puffer. Nutzen Sie LAN, schließen Sie Apps im Hintergrund und erhöhen Sie die Puffergröße in den Einstellungen." },
     ],
   },
   device: {
-    label: "Apparaten & installatie",
-    headline: (kw) => `${kw}: in enkele minuten ingesteld`,
-    subheadline: "Zo krijgt u uw apparaat in enkele stappen aan de slag – stabiel en in de beste kwaliteit.",
-    badgeTags: ["Eenvoudige installatie", "Alle apparaten", "4K-compatibel", "Support 24/7"],
-    ctaLabel: "Toegang krijgen",
+    label: "Geräte & Installation",
+    headline: (kw) => `${kw} in wenigen Minuten eingerichtet`,
+    subheadline: "So bringen Sie Ihr Gerät in wenigen Schritten ans Laufen – stabil und in bester Qualität.",
+    badgeTags: ["Einfache Installation", "Alle Geräte", "4K-fähig", "Support 24/7"],
+    ctaLabel: "Zugang erhalten",
     structuredData: "Article",
     features: [
-      F("Box", "Plug & play", "Compatibel met Fire TV Stick, MAG, Android-box en Smart TV."),
-      F("Wifi", "Stabiel via LAN", "Ethernet-advies voor onderbrekingsvrije 4K op vaste installaties."),
-      F("Cpu", "Hardware-decodering", "Vloeiende weergave afgestemd op de prestaties van uw apparaat."),
-      F("RefreshCw", "Altijd bijgewerkt", "Firmware- en app-updates houden de weergave snel en veilig."),
+      F("Box", "Plug & Play", "Kompatibel mit Fire TV Stick, MAG, Android-Box und Smart TV."),
+      F("Wifi", "Stabil per LAN", "Ethernet-Empfehlung für unterbrechungsfreies 4K bei festen Installationen."),
+      F("Cpu", "Hardware-Decodierung", "Flüssige Wiedergabe abgestimmt auf die Leistung Ihres Geräts."),
+      F("RefreshCw", "Immer aktuell", "Firmware- und App-Updates halten die Wiedergabe schnell und sicher."),
     ],
     intro: (kw) =>
-      `<p>Met <strong>${kw}</strong> wordt uw televisie een heus streamingcentrum. Wij laten zien welke instellingen voor vloeiend beeld zorgen en hoe u het apparaat in enkele stappen configureert.</p>`,
+      `<p>Mit <strong>${kw}</strong> wird Ihr Fernseher zur echten Streaming-Zentrale. Wir zeigen, welche Einstellungen für ein flüssiges Bild sorgen und wie Sie das Gerät in wenigen Schritten konfigurieren.</p>`,
     deepDive: (kw) => ({
-      heading: `Optimale instellingen voor ${kw}`,
-      html: `<p>Werk eerst de firmware bij, verbind het apparaat via ethernet indien mogelijk en kies een lichte speler. Activeer hardware-decodering en stel de resolutie in op uw televisie.</p>`,
+      heading: `Optimale Einstellungen für ${kw}`,
+      html: `<p>Aktualisieren Sie zunächst die Firmware, verbinden Sie das Gerät wenn möglich per Ethernet und wählen Sie einen leichten Player. Aktivieren Sie die Hardware-Decodierung und stellen Sie die Auflösung passend zu Ihrem Fernseher ein.</p>`,
     }),
     metaDescription: (kw) =>
-      `${kw} in enkele minuten instellen: stap-voor-stap gids, tips & support. Stream nu stabiel in 4K met IPTV Smarter.`,
+      `${kw} in wenigen Minuten einrichten: Schritt-für-Schritt-Anleitung, Tipps & Support. Streamen Sie jetzt stabil in 4K mit IPTV Germany.`,
     extraFaqs: (kw) => [
-      { question: `Welke instellingen zijn optimaal voor ${kw}?`, answer: "Werk de firmware bij, gebruik ethernet indien mogelijk, activeer hardware-decodering en kies een lichte speler die past bij de prestaties van uw apparaat." },
-      { question: `Heb ik snel internet nodig voor ${kw}?`, answer: "Voor Full HD is ongeveer 16 Mbit/s voldoende; voor 4K adviseren wij 25 Mbit/s of meer. Belangrijker dan de brutosnelheid is een stabiele verbinding met lage latentie – LAN heeft de voorkeur boven wifi." },
+      { question: `Welche Einstellungen sind optimal für ${kw}?`, answer: "Aktualisieren Sie die Firmware, nutzen Sie wenn möglich Ethernet, aktivieren Sie die Hardware-Decodierung und wählen Sie einen leichten Player passend zur Leistung Ihres Geräts." },
+      { question: `Brauche ich schnelles Internet für ${kw}?`, answer: "Für Full HD reichen etwa 16 Mbit/s aus; für 4K empfehlen wir 25 Mbit/s oder mehr. Wichtiger als die Bruttogeschwindigkeit ist eine stabile Verbindung mit niedriger Latenz – LAN ist gegenüber WLAN zu bevorzugen." },
     ],
   },
   subscription: {
-    label: "Abonnement & prijzen",
-    headline: (kw) => `${kw} – pakketten, prijzen & proefperiode`,
-    subheadline: "Transparante pakketten zonder contract – met directe activatie en gratis proefperiode.",
-    badgeTags: ["Vanaf 6,66 €/maand", "Gratis proefperiode", "Zonder contract", "Direct actief"],
-    ctaLabel: "Gratis uitproberen",
+    label: "Abonnement & Preise",
+    headline: (kw) => `${kw} – Pakete, Preise & Testphase`,
+    subheadline: "Transparente Pakete ohne Vertragsbindung – mit direkter Aktivierung und kostenloser Testphase.",
+    badgeTags: ["Ab 6,66 €/Monat", "Kostenlose Testphase", "Ohne Vertragsbindung", "Direkt aktiv"],
+    ctaLabel: "Kostenlos testen",
     structuredData: "Product",
     features: [
-      F("CreditCard", "Eerlijke prijzen", "Duidelijke pakketten vanaf 6,66 €/maand – zonder verborgen kosten of verplichtingen."),
-      F("Zap", "Direct actief", "Activatie meestal binnen enkele minuten na bestelling."),
-      F("ShieldCheck", "Gratis proefperiode", "Test gerust de stabiliteit, zenders en beeldkwaliteit voordat u kiest."),
-      F("Server", "Premium servers", "Een onderbrekingsvrije infrastructuur voor vloeiend beeld op drukke momenten."),
+      F("CreditCard", "Faire Preise", "Klare Pakete ab 6,66 €/Monat – ohne versteckte Kosten oder Verpflichtungen."),
+      F("Zap", "Direkt aktiv", "Aktivierung meist innerhalb weniger Minuten nach der Bestellung."),
+      F("ShieldCheck", "Kostenlose Testphase", "Testen Sie in Ruhe Stabilität, Sender und Bildqualität, bevor Sie sich entscheiden."),
+      F("Server", "Premium-Server", "Eine unterbrechungsfreie Infrastruktur für flüssiges Bild auch zu Stoßzeiten."),
     ],
     intro: (kw) =>
-      `<p>Bij <strong>${kw}</strong> telt alles: de looptijd, het aantal gelijktijdige apparaten, beeldkwaliteit, stabiliteit en support. IPTV Smarter biedt transparante pakketten zonder contract en met directe activatie.</p>`,
+      `<p>Bei <strong>${kw}</strong> zählt alles: die Laufzeit, die Anzahl gleichzeitiger Geräte, Bildqualität, Stabilität und Support. IPTV Germany bietet transparente Pakete ohne Vertragsbindung und mit direkter Aktivierung.</p>`,
     deepDive: (kw) => ({
-      heading: `${kw}: goed vergelijken`,
-      html: `<p>Kijk niet alleen naar de prijs, maar naar het aantal zenders en VOD-titels, gelijktijdige verbindingen, serverkwaliteit en beschikbaarheid van support. Een proefperiode is de beste manier om de kwaliteit te beoordelen voordat u koopt.</p>`,
+      heading: `${kw}: richtig vergleichen`,
+      html: `<p>Achten Sie nicht nur auf den Preis, sondern auf die Anzahl der Sender und VOD-Titel, gleichzeitige Verbindungen, Serverqualität und die Verfügbarkeit von Support. Eine Testphase ist der beste Weg, die Qualität vor dem Kauf zu beurteilen.</p>`,
     }),
     metaDescription: () =>
-      `IPTV-abonnement vanaf 6,66 €: 31.000+ zenders, 140.000+ VOD, 4K/8K, zonder contract. Kies een pakket, activeer direct en probeer 7 dagen gratis.`,
+      `IPTV-Abonnement ab 6,66 €: 31.000+ Sender, 140.000+ VOD, 4K/8K, ohne Vertragsbindung. Paket wählen, direkt aktivieren und 7 Tage kostenlos testen.`,
     extraFaqs: (kw) => [
-      { question: `Brengt ${kw} een contract met zich mee?`, answer: "Nee. U kiest flexibele looptijden (1, 3 of 12 maanden) zonder automatische verlenging of opzegtermijn." },
-      { question: `Kan ik ${kw} eerst uitproberen?`, answer: "Ja, een gratis proefperiode is mogelijk om gerust de stabiliteit, zenders en beeldkwaliteit te testen voordat u kiest." },
-      { question: "Hoe snel wordt mijn toegang geactiveerd?", answer: "De activatie is meestal direct, binnen enkele minuten na betaling – de inloggegevens komen automatisch per e-mail binnen." },
+      { question: `Ist ${kw} mit einer Vertragsbindung verbunden?`, answer: "Nein. Sie wählen flexible Laufzeiten (1, 3 oder 12 Monate) ohne automatische Verlängerung oder Kündigungsfrist." },
+      { question: `Kann ich ${kw} vorher testen?`, answer: "Ja, eine kostenlose Testphase ermöglicht es Ihnen, Stabilität, Sender und Bildqualität in Ruhe zu prüfen, bevor Sie sich entscheiden." },
+      { question: "Wie schnell wird mein Zugang aktiviert?", answer: "Die Aktivierung erfolgt meist sofort, innerhalb weniger Minuten nach der Zahlung – die Zugangsdaten kommen automatisch per E-Mail." },
     ],
   },
   provider: {
-    label: "Vergelijking van aanbieders",
-    headline: (kw) => `${kw} vergeleken`,
-    subheadline: "Een neutrale blik op zenders, prijzen, kwaliteit en service – voor een weloverwogen keuze.",
-    badgeTags: ["Neutrale vergelijking", "Transparant", "Gratis proefperiode"],
-    ctaLabel: "IPTV Smarter proberen",
+    label: "Anbietervergleich",
+    headline: (kw) => `${kw} im Vergleich`,
+    subheadline: "Ein neutraler Blick auf Sender, Preise, Qualität und Service – für eine gut überlegte Wahl.",
+    badgeTags: ["Neutraler Vergleich", "Transparent", "Kostenlose Testphase"],
+    ctaLabel: "IPTV Germany testen",
     structuredData: "Article",
     features: [
-      F("Scale", "Neutrale vergelijking", "Zenders, prijzen, kwaliteit en support feitelijk naast elkaar gelegd."),
-      F("BadgeCheck", "Betrouwbaarheid controleren", "Transparante voorwaarden, bereikbare support en echte reviews."),
-      F("Wallet", "Eerlijke voorwaarden", "Duidelijke prijzen zonder twijfelachtige 'levenslange' beloften."),
-      F("Star", "Bewezen kwaliteit", "Stabiele servers en een zorgvuldig aanbod in plaats van lege marketingbeloften."),
+      F("Scale", "Neutraler Vergleich", "Sender, Preise, Qualität und Support sachlich gegenübergestellt."),
+      F("BadgeCheck", "Zuverlässigkeit prüfen", "Transparente Bedingungen, erreichbarer Support und echte Bewertungen."),
+      F("Wallet", "Faire Bedingungen", "Klare Preise ohne zweifelhafte 'lebenslange' Versprechen."),
+      F("Star", "Bewährte Qualität", "Stabile Server und ein sorgfältiges Angebot statt leerer Marketingversprechen."),
     ],
     intro: (kw) =>
-      `<p>Bij de zoektocht naar <strong>${kw}</strong> loont een scherpe vergelijking. Wij laten zien welke criteria echt tellen en hoe u een betrouwbare dienst herkent – zonder marketingverhaal.</p>`,
+      `<p>Bei der Suche nach <strong>${kw}</strong> lohnt sich ein genauer Vergleich. Wir zeigen, welche Kriterien wirklich zählen und wie Sie einen zuverlässigen Dienst erkennen – ohne Marketingfloskeln.</p>`,
     deepDive: (kw) => ({
-      heading: `${kw}: waar let u op`,
-      html: `<p>Betrouwbare aanbieders tonen transparante prijzen, bieden bereikbare support en een proefperiode, en maken geen onrealistische beloften. Wees voorzichtig met extreem goedkope 'levenslange' aanbiedingen zonder bedrijfsinformatie of contactgegevens.</p>`,
+      heading: `${kw}: worauf Sie achten sollten`,
+      html: `<p>Zuverlässige Anbieter zeigen transparente Preise, bieten erreichbaren Support und eine Testphase und machen keine unrealistischen Versprechen. Seien Sie vorsichtig bei extrem günstigen 'lebenslangen' Angeboten ohne Firmeninformationen oder Kontaktdaten.</p>`,
     }),
     metaDescription: (kw) =>
-      `${kw} neutraal vergeleken: zenders, prijzen, kwaliteit & support. Vind de juiste aanbieder en probeer IPTV Smarter 7 dagen gratis.`,
+      `${kw} neutral verglichen: Sender, Preise, Qualität & Support. Finden Sie den richtigen Anbieter und testen Sie IPTV Germany 7 Tage kostenlos.`,
     extraFaqs: () => [
-      { question: "Hoe herken ik een betrouwbare IPTV-aanbieder?", answer: "Let op transparante prijzen, bereikbare support, duidelijke voorwaarden, een proefperiode en echte klantbeoordelingen. Wees voorzichtig met extreem goedkope 'levenslange' aanbiedingen." },
-      { question: "Wat kost een goede IPTV-dienst?", answer: "Betrouwbare diensten kosten doorgaans tussen de 7 en 13 € per maand, met korting op langere looptijden. Abnormaal goedkope aanbiedingen zijn vaak instabiel of juridisch problematisch." },
+      { question: "Wie erkenne ich einen zuverlässigen IPTV-Anbieter?", answer: "Achten Sie auf transparente Preise, erreichbaren Support, klare Bedingungen, eine Testphase und echte Kundenbewertungen. Seien Sie vorsichtig bei extrem günstigen 'lebenslangen' Angeboten." },
+      { question: "Was kostet ein guter IPTV-Dienst?", answer: "Zuverlässige Dienste kosten in der Regel zwischen 7 und 13 € pro Monat, mit Rabatt bei längeren Laufzeiten. Ungewöhnlich günstige Angebote sind oft instabil oder rechtlich bedenklich." },
     ],
   },
   legal: {
-    label: "Juridisch kader",
-    headline: (kw) => `${kw}: wat is toegestaan?`,
-    subheadline: "Feitelijke informatie over de wet en risico's – plus veilige en legale alternatieven.",
-    badgeTags: ["Feitelijk & neutraal", "Legale alternatieven", "Privacy"],
-    ctaLabel: "Bekijk het legale alternatief",
+    label: "Rechtlicher Rahmen",
+    headline: (kw) => `${kw}: was ist erlaubt?`,
+    subheadline: "Sachliche Informationen zu Recht und Risiken – plus sichere und legale Alternativen.",
+    badgeTags: ["Sachlich & neutral", "Legale Alternativen", "Datenschutz"],
+    ctaLabel: "Legale Alternative ansehen",
     structuredData: "Article",
     features: [
-      F("Scale", "Juridische duidelijkheid", "IPTV als technologie is legaal – wat telt is de licentie van de bron."),
-      F("ShieldAlert", "Risico's kennen", "Waarschuwingen en boetes dreigen alleen bij duidelijk illegale streams."),
-      F("Lock", "Privacy", "Geen dubieuze apps, geen delen van persoonlijke gegevens."),
-      F("CheckCircle2", "Veilige keuze", "Gelicentieerde en transparante diensten in plaats van anonieme aanbiedingen."),
+      F("Scale", "Rechtliche Klarheit", "IPTV als Technologie ist legal – entscheidend ist die Lizenz der Quelle."),
+      F("ShieldAlert", "Risiken kennen", "Abmahnungen und Bußgelder drohen nur bei eindeutig illegalen Streams."),
+      F("Lock", "Datenschutz", "Keine zweifelhaften Apps, keine Weitergabe persönlicher Daten."),
+      F("CheckCircle2", "Sichere Wahl", "Lizenzierte und transparente Dienste statt anonymer Angebote."),
     ],
     intro: (kw) =>
-      `<p>Rondom het onderwerp <strong>${kw}</strong> bestaat veel onzekerheid. Belangrijk: de IPTV-technologie zelf is volkomen legaal. De legaliteit van een aanbieder hangt uitsluitend af van de vraag of deze de benodigde licenties voor de aangeboden content bezit.</p>`,
+      `<p>Rund um das Thema <strong>${kw}</strong> herrscht viel Unsicherheit. Wichtig: Die IPTV-Technologie selbst ist völlig legal. Die Legalität eines Anbieters hängt ausschließlich davon ab, ob er die notwendigen Lizenzen für die angebotenen Inhalte besitzt.</p>`,
     deepDive: () => ({
-      heading: "Legaal streamen – volkomen veilig",
-      html: `<p>Kies diensten met transparante voorwaarden, bedrijfsinformatie en bereikbare support. Extreem goedkope aanbiedingen met duizenden premium zenders voor een paar euro's zijn een waarschuwingssignaal. Bij twijfel: kies een betrouwbare en gelicentieerde aanbieder.</p>`,
+      heading: "Legal streamen – völlig sicher",
+      html: `<p>Wählen Sie Dienste mit transparenten Bedingungen, Firmeninformationen und erreichbarem Support. Extrem günstige Angebote mit Tausenden Premium-Sendern für wenige Euro sind ein Warnsignal. Im Zweifel: wählen Sie einen zuverlässigen und lizenzierten Anbieter.</p>`,
     }),
     metaDescription: (kw) =>
-      `${kw}: feitelijke informatie over de wet, risico's & veilige alternatieven in Nederland. Informeer u en stream legaal met IPTV Smarter.`,
+      `${kw}: sachliche Informationen zu Recht, Risiken & sicheren Alternativen in Deutschland. Informieren Sie sich und streamen Sie legal mit IPTV Germany.`,
     extraFaqs: (kw) => [
-      { question: `Is ${kw} legaal in Nederland?`, answer: "IPTV als technologie is legaal. Wat telt is de bron: alleen aanbieders met de benodigde licenties zijn legaal. Wij ontraden uitdrukkelijk piraterij of anonieme streams." },
-      { question: "Loop ik het risico op boetes bij illegale IPTV?", answer: "Het gebruik van duidelijk illegale streams kan leiden tot waarschuwingen en boetes. Kies transparante en gelicentieerde diensten om aan de goede kant te blijven." },
+      { question: `Ist ${kw} in Deutschland legal?`, answer: "IPTV als Technologie ist legal. Entscheidend ist die Quelle: Nur Anbieter mit den notwendigen Lizenzen sind legal. Wir raten ausdrücklich von Piraterie oder anonymen Streams ab." },
+      { question: "Drohen bei illegalem IPTV Bußgelder?", answer: "Die Nutzung eindeutig illegaler Streams kann zu Abmahnungen und Bußgeldern führen. Wählen Sie transparente und lizenzierte Dienste, um auf der sicheren Seite zu bleiben." },
     ],
   },
   playlist: {
     label: "Playlists & M3U",
-    headline: (kw) => `${kw} veilig gebruiken`,
-    subheadline: "Playlists goed begrijpen en veilig gebruiken – zonder downloads of dubieuze links.",
-    badgeTags: ["Veilig & betrouwbaar", "M3U / Xtream", "Geen dubieuze links"],
-    ctaLabel: "Bekijk een veilige bron",
+    headline: (kw) => `${kw} sicher nutzen`,
+    subheadline: "Playlists richtig verstehen und sicher nutzen – ohne Downloads oder zweifelhafte Links.",
+    badgeTags: ["Sicher & zuverlässig", "M3U / Xtream", "Keine zweifelhaften Links"],
+    ctaLabel: "Sichere Quelle ansehen",
     structuredData: "Article",
     features: [
-      F("FileCode", "M3U & Xtream", "Duidelijke uitleg over playlist-formaten en de installatie ervan."),
-      F("Lock", "Privacyvriendelijk", "Geen delen van persoonlijke gegevens, geen dubieuze downloads."),
-      F("ShieldCheck", "Betrouwbare bronnen", "Waar u op moet letten om malware en problemen te voorkomen."),
-      F("PlayCircle", "Direct bruikbaar", "Test de lijsten direct in de speler – snel en eenvoudig."),
+      F("FileCode", "M3U & Xtream", "Klare Erklärung der Playlist-Formate und ihrer Installation."),
+      F("Lock", "Datenschutzfreundlich", "Keine Weitergabe persönlicher Daten, keine zweifelhaften Downloads."),
+      F("ShieldCheck", "Zuverlässige Quellen", "Worauf Sie achten sollten, um Malware und Probleme zu vermeiden."),
+      F("PlayCircle", "Sofort nutzbar", "Testen Sie Listen direkt im Player – schnell und einfach."),
     ],
     intro: (kw) =>
-      `<p>Een <strong>${kw}</strong> is uiteindelijk slechts een formaat (meestal M3U of Xtream) dat zenders en streams groepeert. Deze gids legt uit hoe playlists werken en hoe u ze veilig en betrouwbaar kunt gebruiken.</p>`,
+      `<p>Eine <strong>${kw}</strong> ist letztlich nur ein Format (meist M3U oder Xtream), das Sender und Streams gruppiert. Dieser Ratgeber erklärt, wie Playlists funktionieren und wie Sie sie sicher und zuverlässig nutzen.</p>`,
     deepDive: () => ({
-      heading: "Opgelet met gratis lijsten",
-      html: `<p>Gratis lijsten van onbekende bronnen zijn vaak verouderd, instabiel of juridisch problematisch en kunnen malware bevatten. Veiliger: een gelicentieerde dienst met een eigen zorgvuldig aanbod en support.</p>`,
+      heading: "Vorsicht bei kostenlosen Listen",
+      html: `<p>Kostenlose Listen aus unbekannten Quellen sind oft veraltet, instabil oder rechtlich bedenklich und können Malware enthalten. Sicherer: ein lizenzierter Dienst mit eigenem, sorgfältig gepflegtem Angebot und Support.</p>`,
     }),
     metaDescription: (kw) =>
-      `${kw} begrijpen & veilig gebruiken – zonder dubieuze links. M3U/Xtream correct instellen. Lees en stream veilig met IPTV Smarter.`,
+      `${kw} verstehen & sicher nutzen – ohne zweifelhafte Links. M3U/Xtream richtig einrichten. Lesen Sie weiter und streamen Sie sicher mit IPTV Germany.`,
     extraFaqs: (kw) => [
-      { question: `Zijn gratis ${kw}-lijsten veilig?`, answer: "Gratis lijsten van onbekende bronnen zijn vaak instabiel, verouderd of juridisch problematisch en kunnen malware bevatten. Veiliger: een gelicentieerde dienst met een zorgvuldig aanbod." },
-      { question: "Hoe voeg ik een M3U-playlist toe aan de speler?", answer: "Kies in uw speler 'Playlist toevoegen', voer de M3U-URL in en wacht tot de zenders en EPG worden geladen. Bij Xtream-codes voert u in plaats daarvan de server, gebruikersnaam en het wachtwoord in." },
+      { question: `Sind kostenlose ${kw}-Listen sicher?`, answer: "Kostenlose Listen aus unbekannten Quellen sind oft instabil, veraltet oder rechtlich bedenklich und können Malware enthalten. Sicherer: ein lizenzierter Dienst mit sorgfältig gepflegtem Angebot." },
+      { question: "Wie füge ich eine M3U-Playlist im Player hinzu?", answer: "Wählen Sie in Ihrem Player 'Playlist hinzufügen', geben Sie die M3U-URL ein und warten Sie, bis Sender und EPG geladen sind. Bei Xtream-Codes geben Sie stattdessen Server, Benutzername und Passwort ein." },
     ],
   },
   quality: {
-    label: "Beeldkwaliteit & 4K",
+    label: "Bildqualität & 4K",
     headline: (kw) => `${kw} in 4K & 8K`,
-    subheadline: "Ultra-scherp beeld zonder onderbreking – met de juiste instellingen voor 4K en 8K.",
-    badgeTags: ["4K / 8K", "Onderbrekingsvrij", "Hoge snelheid"],
-    ctaLabel: "Stream in 4K",
+    subheadline: "Gestochen scharfes Bild ohne Unterbrechung – mit den richtigen Einstellungen für 4K und 8K.",
+    badgeTags: ["4K / 8K", "Unterbrechungsfrei", "Hohe Geschwindigkeit"],
+    ctaLabel: "In 4K streamen",
     structuredData: "Article",
     features: [
-      F("Sparkles", "Haarscherp beeld", "Nationale 4K- en 8K-streams met hoge bitrate voor maximale scherpte."),
-      F("Gauge", "Weinig onderbrekingen", "Geoptimaliseerde servers en goede instellingen verminderen haperingen."),
-      F("Wifi", "Netwerktips", "Zo stelt u wifi en LAN in voor stabiele streaming van hoge kwaliteit."),
-      F("Cpu", "Passende apparatuur", "Apparaten met hardware-decodering voor onderbrekingsvrije UHD-weergave."),
+      F("Sparkles", "Gestochen scharfes Bild", "Native 4K- und 8K-Streams mit hoher Bitrate für maximale Schärfe."),
+      F("Gauge", "Kaum Unterbrechungen", "Optimierte Server und gute Einstellungen reduzieren Ruckeln."),
+      F("Wifi", "Netzwerktipps", "So stellen Sie WLAN und LAN für stabiles Streaming in hoher Qualität ein."),
+      F("Cpu", "Passende Hardware", "Geräte mit Hardware-Decodierung für unterbrechungsfreie UHD-Wiedergabe."),
     ],
     intro: (kw) =>
-      `<p>Bij <strong>${kw}</strong> draait alles om de balans tussen bandbreedte, apparatuur en bron. Wij laten zien welke waarden u nodig heeft en hoe u onderbrekingen voorkomt.</p>`,
+      `<p>Bei <strong>${kw}</strong> dreht sich alles um die Balance zwischen Bandbreite, Hardware und Quelle. Wir zeigen, welche Werte Sie brauchen und wie Sie Unterbrechungen vermeiden.</p>`,
     deepDive: () => ({
-      heading: "Bandbreedte, snelheid & stabiliteit",
-      html: `<p>Ter indicatie: ongeveer 16 Mbit/s voor Full HD, 25 Mbit/s voor 4K en meer voor 8K. Belangrijker dan de brutosnelheid: een stabiele verbinding met lage latentie. Voor vaste tv-installaties is ethernet de beste keuze.</p>`,
+      heading: "Bandbreite, Geschwindigkeit & Stabilität",
+      html: `<p>Als Richtwert: etwa 16 Mbit/s für Full HD, 25 Mbit/s für 4K und mehr für 8K. Wichtiger als die Bruttogeschwindigkeit ist eine stabile Verbindung mit niedriger Latenz. Für feste TV-Installationen ist Ethernet die beste Wahl.</p>`,
     }),
     metaDescription: (kw) =>
-      `${kw}: ultra-scherp streamen zonder onderbreking – snelheid, apparatuur & netwerk afstellen. Start met IPTV Smarter in 4K/8K.`,
+      `${kw}: gestochen scharf streamen ohne Unterbrechung – Geschwindigkeit, Hardware & Netzwerk richtig einstellen. Starten Sie mit IPTV Germany in 4K/8K.`,
     extraFaqs: (kw) => [
-      { question: `Welke internet snelheid heb ik nodig voor ${kw}?`, answer: "Ter indicatie: ca. 16 Mbit/s voor Full HD, 25 Mbit/s voor 4K en meer voor 8K. Belangrijker dan de brutosnelheid is een stabiele verbinding met lage latentie." },
-      { question: "Waarom zijn er onderbrekingen ondanks snel internet?", answer: "Vaak komt dit door wifi-schommelingen, een overbelast apparaat of een te kleine buffer. Gebruik LAN, activeer hardware-decodering en vergroot de buffergrootte." },
+      { question: `Welche Internetgeschwindigkeit brauche ich für ${kw}?`, answer: "Als Richtwert: ca. 16 Mbit/s für Full HD, 25 Mbit/s für 4K und mehr für 8K. Wichtiger als die Bruttogeschwindigkeit ist eine stabile Verbindung mit niedriger Latenz." },
+      { question: "Warum gibt es Unterbrechungen trotz schnellem Internet?", answer: "Oft liegt es an WLAN-Schwankungen, einem überlasteten Gerät oder einem zu kleinen Puffer. Nutzen Sie LAN, aktivieren Sie die Hardware-Decodierung und erhöhen Sie die Puffergröße." },
     ],
   },
   landing: {
-    label: "Premium IPTV",
-    headline: (kw) => `${kw}: premium streaming zonder beperkingen`,
-    subheadline: "31.000+ zenders, 140.000+ films & series, 4K/8K – op alle apparaten, zonder contract.",
-    badgeTags: ["31.000+ zenders", "4K / 8K", "Gratis proefperiode", "Zonder contract"],
-    ctaLabel: "7 dagen proberen",
+    label: "Premium-IPTV",
+    headline: (kw) => `${kw}: Premium-Streaming ohne Einschränkungen`,
+    subheadline: "31.000+ Sender, 140.000+ Filme & Serien, 4K/8K – auf allen Geräten, ohne Vertragsbindung.",
+    badgeTags: ["31.000+ Sender", "4K / 8K", "Kostenlose Testphase", "Ohne Vertragsbindung"],
+    ctaLabel: "7 Tage testen",
     structuredData: "Product",
     features: [
-      F("Tv", "31.000+ zenders", "Compleet aanbod van Franse en Nederlandse zenders plus internationale programma's."),
-      F("Film", "140.000+ VOD", "Een enorm aanbod films en series op aanvraag, altijd beschikbaar."),
-      F("Sparkles", "4K / 8K", "Ultra-scherp beeld dankzij hoge snelheid en premium servers."),
-      F("MonitorSmartphone", "Alle apparaten", "Smart TV, Fire TV Stick, telefoon, tablet, box en PC – één toegang."),
+      F("Tv", "31.000+ Sender", "Komplettes Angebot deutscher und internationaler Sender plus Programme."),
+      F("Film", "140.000+ VOD", "Ein riesiges Angebot an Filmen und Serien auf Abruf, jederzeit verfügbar."),
+      F("Sparkles", "4K / 8K", "Gestochen scharfes Bild durch hohe Geschwindigkeit und Premium-Server."),
+      F("MonitorSmartphone", "Alle Geräte", "Smart TV, Fire TV Stick, Handy, Tablet, Box und PC – ein Zugang."),
     ],
     intro: (kw) =>
-      `<p><strong>${kw}</strong> staat voor premium streaming zonder compromis: een enorm aanbod zenders en VOD, schitterende 4K/8K-kwaliteit en stabiele servers – alles zonder contract en met directe activatie.</p>`,
+      `<p><strong>${kw}</strong> steht für Premium-Streaming ohne Kompromisse: ein riesiges Angebot an Sendern und VOD, brillante 4K/8K-Qualität und stabile Server – alles ohne Vertragsbindung und mit direkter Aktivierung.</p>`,
     deepDive: () => ({
-      heading: "Waarom IPTV Smarter?",
-      html: `<p>Wij combineren een zorgvuldig aanbod met een onderbrekingsvrije infrastructuur, een EPG in het Nederlands en snelle support. Dankzij de gratis proefperiode ervaart u de kwaliteit zelf voordat u kiest.</p>`,
+      heading: "Warum IPTV Germany?",
+      html: `<p>Wir kombinieren ein sorgfältig gepflegtes Angebot mit einer unterbrechungsfreien Infrastruktur, einem EPG auf Deutsch und schnellem Support. Dank der kostenlosen Testphase erleben Sie die Qualität selbst, bevor Sie sich entscheiden.</p>`,
     }),
     metaDescription: (kw) =>
-      `${kw}: premium IPTV met 31.000+ zenders, 140.000+ films & series in 4K/8K. Zonder contract. Probeer 7 dagen gratis!`,
+      `${kw}: Premium-IPTV mit 31.000+ Sendern, 140.000+ Filmen & Serien in 4K/8K. Ohne Vertragsbindung. Jetzt 7 Tage kostenlos testen!`,
     extraFaqs: () => [
-      { question: "Wat maakt IPTV Smarter beter dan andere aanbieders?", answer: "Een zorgvuldig aanbod met 31.000+ zenders, onderbrekingsvrije servers, een EPG in het Nederlands, eerlijke prijzen zonder contract en een gratis proefperiode om alles risicovrij te testen." },
-      { question: "Is er een contract of proefperiode?", answer: "Er is geen contract – u kiest flexibele looptijden. Een gratis proefperiode maakt het mogelijk vooraf de stabiliteit, zenders en beeldkwaliteit te testen." },
+      { question: "Was macht IPTV Germany besser als andere Anbieter?", answer: "Ein sorgfältig gepflegtes Angebot mit 31.000+ Sendern, unterbrechungsfreie Server, ein EPG auf Deutsch, faire Preise ohne Vertragsbindung und eine kostenlose Testphase, um alles risikofrei zu testen." },
+      { question: "Gibt es eine Vertragsbindung oder Testphase?", answer: "Es gibt keine Vertragsbindung – Sie wählen flexible Laufzeiten. Eine kostenlose Testphase ermöglicht es, Stabilität, Sender und Bildqualität vorab zu testen." },
     ],
   },
 };
@@ -1286,207 +1275,207 @@ const INTENT_PROFILE: Record<PageIntent, IntentProfile> = {
 // ── Why Choose Us — trust-signal features per intent ─────────────────────────
 const WHY_CHOOSE_US_FEATURES: Record<PageIntent, Feature[]> = {
   general: [
-    F("BadgeCheck", "Jaren ervaring", "Al jaren actief op de IPTV-markt met duizenden tevreden klanten in Nederland en België."),
-    F("Eye", "Transparante werking", "Geen verborgen kosten, duidelijke informatie en eerlijke voorwaarden – van A tot Z."),
-    F("Server", "Premium servers", "Een onderbrekingsvrije infrastructuur voor een stabiele ervaring, 24/7."),
-    F("Headphones", "Persoonlijke support", "Onze klantenservice is 24/7 beschikbaar – snel, vriendelijk en in het Nederlands."),
+    F("BadgeCheck", "Jahrelange Erfahrung", "Seit Jahren auf dem IPTV-Markt aktiv, mit Tausenden zufriedenen Kunden in Deutschland, Österreich und der Schweiz."),
+    F("Eye", "Transparente Arbeitsweise", "Keine versteckten Kosten, klare Informationen und faire Bedingungen – von A bis Z."),
+    F("Server", "Premium-Server", "Eine unterbrechungsfreie Infrastruktur für ein stabiles Erlebnis, 24/7."),
+    F("Headphones", "Persönlicher Support", "Unser Kundenservice ist 24/7 erreichbar – schnell, freundlich und auf Deutsch."),
   ],
   guide: [
-    F("BookOpen", "Expertise", "Jaren ervaring gebundeld in duidelijke en praktische gidsen, zonder jargon."),
-    F("ListChecks", "Stap voor stap", "Duidelijke uitleg, afgestemd op beginners, met oog voor detail."),
-    F("RefreshCw", "Altijd bijgewerkt", "Actuele informatie over de nieuwste apps, apparaten en technieken."),
-    F("Wrench", "Probleemoplossing", "Veelgemaakte fouten en hun oplossingen direct toepasbaar in één overzicht."),
+    F("BookOpen", "Expertise", "Jahrelange Erfahrung, gebündelt in klaren und praxisnahen Ratgebern, ohne Fachjargon."),
+    F("ListChecks", "Schritt für Schritt", "Klare Erklärungen, abgestimmt auf Einsteiger, mit Blick fürs Detail."),
+    F("RefreshCw", "Immer aktuell", "Aktuelle Informationen zu den neuesten Apps, Geräten und Techniken."),
+    F("Wrench", "Problemlösung", "Häufige Fehler und ihre Lösungen direkt anwendbar in einer Übersicht."),
   ],
   app: [
-    F("Download", "Eenvoudige installatie", "Binnen 5 minuten klaar met duidelijke instructies voor elke app en speler."),
-    F("AppWindow", "Alle spelers ondersteund", "M3U, Xtream Codes – compatibel met Smarters Pro, TiviMate, XCIPTV en meer."),
-    F("RotateCcw", "Regelmatige updates", "Altijd de nieuwste functies, prestaties en beveiligingsupdates."),
-    F("Navigation", "Makkelijk in gebruik", "EPG in het Nederlands, intuïtieve navigatie en logische zendergroepen."),
+    F("Download", "Einfache Installation", "In 5 Minuten fertig, mit klaren Anleitungen für jede App und jeden Player."),
+    F("AppWindow", "Alle Player unterstützt", "M3U, Xtream Codes – kompatibel mit Smarters Pro, TiviMate, XCIPTV und mehr."),
+    F("RotateCcw", "Regelmäßige Updates", "Immer die neuesten Funktionen, Leistung und Sicherheitsupdates."),
+    F("Navigation", "Einfach zu bedienen", "EPG auf Deutsch, intuitive Navigation und logische Sendergruppen."),
   ],
   device: [
-    F("MonitorSmartphone", "Breedste compatibiliteit", "Fire TV Stick, Smart TV, MAG, Android TV, Apple TV – alles wordt ondersteund."),
-    F("Zap", "Geoptimaliseerd", "Hardware-decodering voor vloeiende 4K-weergave, afgestemd op uw apparaat."),
-    F("Settings", "Makkelijk te configureren", "Een stap-voor-stap gids voor elk platform – geen technische kennis vereist."),
-    F("Wifi", "LAN en wifi", "Stabiele streaming via ethernet of optimale wifi-tips voor draadloze installaties."),
+    F("MonitorSmartphone", "Breiteste Kompatibilität", "Fire TV Stick, Smart TV, MAG, Android TV, Apple TV – alles wird unterstützt."),
+    F("Zap", "Optimiert", "Hardware-Decodierung für flüssige 4K-Wiedergabe, abgestimmt auf Ihr Gerät."),
+    F("Settings", "Einfach zu konfigurieren", "Eine Schritt-für-Schritt-Anleitung für jede Plattform – keine Fachkenntnisse nötig."),
+    F("Wifi", "LAN und WLAN", "Stabiles Streaming per Ethernet oder optimale WLAN-Tipps für drahtlose Installationen."),
   ],
   subscription: [
-    F("BadgeEuro", "Beste prijs-kwaliteitverhouding", "Premium IPTV vanaf slechts 6,66 € per maand, zonder verborgen kosten."),
-    F("Zap", "Directe activatie", "Directe toegang na uw bestelling – geen installatiekosten, geen gedoe."),
-    F("Gift", "Gratis proefperiode", "Test 7 dagen risicovrij voordat u een keuze maakt."),
-    F("FileX", "Zonder contract", "Flexibele looptijden zonder automatische verlenging of opzegtermijn."),
+    F("BadgeEuro", "Bestes Preis-Leistungs-Verhältnis", "Premium-IPTV ab nur 6,66 € pro Monat, ohne versteckte Kosten."),
+    F("Zap", "Direkte Aktivierung", "Direkter Zugang nach Ihrer Bestellung – keine Installationskosten, kein Aufwand."),
+    F("Gift", "Kostenlose Testphase", "7 Tage risikofrei testen, bevor Sie sich entscheiden."),
+    F("FileX", "Ohne Vertragsbindung", "Flexible Laufzeiten ohne automatische Verlängerung oder Kündigungsfrist."),
   ],
   provider: [
-    F("Star", "Bewezen betrouwbaarheid", "Duizenden klanten beoordelen ons met een gemiddelde van 4,9 sterren."),
-    F("Scale", "Eerlijk vergeleken", "Geen marketingverhaal, maar feitelijke informatie om aanbieders te vergelijken."),
-    F("ShieldCheck", "Service gegarandeerd", "Tevreden of geld terug binnen 30 dagen – uw tevredenheid staat voorop."),
-    F("MessageCircle", "Altijd bereikbaar", "Via WhatsApp, e-mail en telefoon – 24/7 beschikbaar in het Nederlands."),
+    F("Star", "Bewährte Zuverlässigkeit", "Tausende Kunden bewerten uns mit durchschnittlich 4,9 Sternen."),
+    F("Scale", "Fair verglichen", "Keine Marketingfloskeln, sondern sachliche Informationen zum Anbietervergleich."),
+    F("ShieldCheck", "Service garantiert", "Zufrieden oder Geld zurück innerhalb von 30 Tagen – Ihre Zufriedenheit steht an erster Stelle."),
+    F("MessageCircle", "Immer erreichbar", "Per WhatsApp, E-Mail und Telefon – 24/7 auf Deutsch verfügbar."),
   ],
   legal: [
-    F("Scale", "Volledig legaal", "Wij werken uitsluitend met gelicentieerde content en transparante bronnen."),
-    F("Lock", "Privacy voorop", "Uw gegevens zijn veilig en worden nooit gedeeld met derden."),
-    F("ShieldCheck", "Zonder risico", "Geen waarschuwingen of boetes – u kiest een legale en veilige dienst."),
-    F("Lightbulb", "Duidelijke adviezen", "Eerlijke informatie over rechten, risico's en verantwoord streamen."),
+    F("Scale", "Vollständig legal", "Wir arbeiten ausschließlich mit lizenzierten Inhalten und transparenten Quellen."),
+    F("Lock", "Datenschutz an erster Stelle", "Ihre Daten sind sicher und werden niemals an Dritte weitergegeben."),
+    F("ShieldCheck", "Ohne Risiko", "Keine Abmahnungen oder Bußgelder – Sie wählen einen legalen und sicheren Dienst."),
+    F("Lightbulb", "Klare Ratschläge", "Ehrliche Informationen zu Rechten, Risiken und verantwortungsvollem Streaming."),
   ],
   playlist: [
-    F("FileCheck", "Betrouwbare lijsten", "Stabiele M3U- en Xtream-playlists zonder dode links of malware."),
-    F("RefreshCw", "Altijd bijgewerkt", "Playlists worden regelmatig vernieuwd voor een optimale ervaring."),
-    F("ShieldCheck", "Veilig gebruik", "Geen dubieuze bronnen, geen verborgen scripts, geen risico voor uw privacy."),
-    F("MessageCircle", "Snelle support", "Hulp bij het installeren van uw playlist in elke gangbare speler."),
+    F("FileCheck", "Zuverlässige Listen", "Stabile M3U- und Xtream-Playlists ohne tote Links oder Malware."),
+    F("RefreshCw", "Immer aktuell", "Playlists werden regelmäßig erneuert für ein optimales Erlebnis."),
+    F("ShieldCheck", "Sichere Nutzung", "Keine zweifelhaften Quellen, keine versteckten Skripte, kein Risiko für Ihre Privatsphäre."),
+    F("MessageCircle", "Schneller Support", "Hilfe bei der Installation Ihrer Playlist in jedem gängigen Player."),
   ],
   quality: [
-    F("Sparkles", "Ultra-scherp beeld", "Nationale 4K- en 8K-streams met hoge bitrate voor maximale scherpte."),
-    F("Gauge", "Minimale onderbrekingen", "Premium onderbrekingsvrije servers voor vloeiend beeld, zelfs op drukke momenten."),
-    F("SlidersHorizontal", "Optimale afstelling", "Tips over snelheid, apparatuur en netwerk voor het beste resultaat."),
-    F("Sun", "HDR-ondersteuning", "HDR10 en Dolby Vision op compatibele apparaten en content."),
+    F("Sparkles", "Gestochen scharfes Bild", "Native 4K- und 8K-Streams mit hoher Bitrate für maximale Schärfe."),
+    F("Gauge", "Minimale Unterbrechungen", "Unterbrechungsfreie Premium-Server für flüssiges Bild, auch zu Stoßzeiten."),
+    F("SlidersHorizontal", "Optimale Abstimmung", "Tipps zu Geschwindigkeit, Hardware und Netzwerk für das beste Ergebnis."),
+    F("Sun", "HDR-Unterstützung", "HDR10 und Dolby Vision auf kompatiblen Geräten und Inhalten."),
   ],
   landing: [
-    F("Gem", "Alles-in-één", "Premium IPTV met zenders, VOD, 4K/8K en support in één compleet pakket."),
-    F("Flag", "In het Nederlands", "EPG in het Nederlands, support in uw taal en lokaal afgestemde diensten."),
-    F("Star", "Bewezen kwaliteit", "12.000+ tevreden klanten en een gemiddelde beoordeling van 4,9 sterren."),
-    F("Gift", "Risicovrij proberen", "7 dagen gratis proefperiode, u betaalt pas daarna – geen risico."),
+    F("Gem", "Alles in einem", "Premium-IPTV mit Sendern, VOD, 4K/8K und Support in einem kompletten Paket."),
+    F("Flag", "Auf Deutsch", "EPG auf Deutsch, Support in Ihrer Sprache und lokal abgestimmte Dienste."),
+    F("Star", "Bewährte Qualität", "12.000+ zufriedene Kunden und eine durchschnittliche Bewertung von 4,9 Sternen."),
+    F("Gift", "Risikofrei testen", "7 Tage kostenlose Testphase, Sie zahlen erst danach – völlig risikofrei."),
   ],
 };
 
 // ── IPTV Benefits — cost-savings & convenience features per intent ────────────
 const IPTV_BENEFITS_FEATURES: Record<PageIntent, Feature[]> = {
   general: [
-    F("Wallet", "Bespaar op uw tv-kosten", "IPTV is aanzienlijk voordeliger dan een traditioneel kabel- of satellietabonnement."),
-    F("Tv", "Enorm aanbod aan zenders", "31.000+ lokale en internationale zenders – sport, nieuws, films, series en meer."),
-    F("MonitorSmartphone", "Kijk op uw apparaat", "Smart TV, smartphone, tablet, laptop of box – u kiest waar en wanneer."),
-    F("Sparkles", "Stream in hoge kwaliteit", "Full HD, 4K en zelfs 8K – afhankelijk van uw apparaat en internetverbinding."),
+    F("Wallet", "Sparen Sie bei den TV-Kosten", "IPTV ist deutlich günstiger als ein herkömmliches Kabel- oder Satellitenabonnement."),
+    F("Tv", "Riesiges Senderangebot", "31.000+ lokale und internationale Sender – Sport, Nachrichten, Filme, Serien und mehr."),
+    F("MonitorSmartphone", "Schauen Sie auf Ihrem Gerät", "Smart TV, Smartphone, Tablet, Laptop oder Box – Sie entscheiden, wo und wann."),
+    F("Sparkles", "In hoher Qualität streamen", "Full HD, 4K und sogar 8K – abhängig von Ihrem Gerät und Ihrer Internetverbindung."),
   ],
   guide: [
-    F("BookOpen", "Leer op uw eigen tempo", "Duidelijk uitgelegd met voorbeelden, stappen en praktische tips."),
-    F("Lightbulb", "Begrijp de technologie", "Geen ingewikkeld jargon, maar duidelijke uitleg die u direct kunt toepassen."),
-    F("ShieldCheck", "Voorkom fouten", "Leer van veelgemaakte fouten, bespaar tijd en voorkom frustratie."),
-    F("Zap", "Stream met vertrouwen", "Na het lezen van deze gids weet u precies hoe alles werkt."),
+    F("BookOpen", "Lernen Sie in Ihrem Tempo", "Klar erklärt mit Beispielen, Schritten und praktischen Tipps."),
+    F("Lightbulb", "Verstehen Sie die Technologie", "Kein kompliziertes Fachjargon, sondern klare Erklärungen, die Sie direkt anwenden können."),
+    F("ShieldCheck", "Fehler vermeiden", "Lernen Sie aus häufigen Fehlern, sparen Sie Zeit und vermeiden Sie Frust."),
+    F("Zap", "Mit Vertrauen streamen", "Nach dem Lesen dieses Ratgebers wissen Sie genau, wie alles funktioniert."),
   ],
   app: [
-    F("AppWindow", "Gebruik elke speler", "Compatibel met Smarters Pro, TiviMate, IPTV Smarters, XCIPTV en nog veel meer."),
-    F("MonitorSmartphone", "Eén account, alles toegankelijk", "Eén keer instellen en overal kijken – op al uw apparaten tegelijk."),
-    F("CalendarClock", "EPG in het Nederlands", "Programmagids in het Nederlands met de juiste tijdzones en duidelijke info."),
-    F("Zap", "Snel schakelen", "Korte schakeltijden en vloeiende weergave van al uw zenders."),
+    F("AppWindow", "Nutzen Sie jeden Player", "Kompatibel mit Smarters Pro, TiviMate, IPTV Smarters, XCIPTV und vielen weiteren."),
+    F("MonitorSmartphone", "Ein Konto, alles verfügbar", "Einmal einrichten und überall schauen – auf allen Geräten gleichzeitig."),
+    F("CalendarClock", "EPG auf Deutsch", "Programmführer auf Deutsch mit korrekten Zeitzonen und klaren Infos."),
+    F("Zap", "Schnell umschalten", "Kurze Umschaltzeiten und flüssige Wiedergabe all Ihrer Sender."),
   ],
   device: [
-    F("MonitorSmartphone", "Een apparaat, eindeloos kijkplezier", "Smart TV, Fire TV Stick, Android-box, Apple TV – alle platforms worden ondersteund."),
-    F("Sparkles", "Altijd het beste beeld", "Automatische afstemming op uw apparaat, tot 4K en HDR."),
-    F("Wallet", "Geen dure apparatuur", "Uw bestaande apparaat is meestal voldoende – geen extra investering nodig."),
-    F("Smartphone", "Ook onderweg", "Kijk mobiel op smartphone en tablet, waar u ook bent."),
+    F("MonitorSmartphone", "Ein Gerät, endloser Sehgenuss", "Smart TV, Fire TV Stick, Android-Box, Apple TV – alle Plattformen werden unterstützt."),
+    F("Sparkles", "Immer das beste Bild", "Automatische Anpassung an Ihr Gerät, bis zu 4K und HDR."),
+    F("Wallet", "Keine teure Hardware", "Ihr vorhandenes Gerät reicht meist aus – keine zusätzliche Investition nötig."),
+    F("Smartphone", "Auch unterwegs", "Schauen Sie mobil auf Smartphone und Tablet, wo Sie auch sind."),
   ],
   subscription: [
-    F("Wallet", "Geen verborgen kosten", "Alles inclusief vanaf 6,66 € per maand – geen installatiekosten of verrassingen."),
-    F("FileX", "Flexibel opzegbaar", "Geen langdurig contract, geen opzegtermijn, totale vrijheid."),
-    F("Sparkles", "Premium kwaliteit", "Onderbrekingsvrije servers, 4K/8K-beeld, 140.000+ VOD-titels en 31.000+ zenders."),
-    F("MonitorSmartphone", "Meerdere apparaten", "Stream op tot 5 apparaten tegelijk, afhankelijk van uw pakket."),
+    F("Wallet", "Keine versteckten Kosten", "Alles inklusive ab 6,66 € pro Monat – keine Installationskosten oder Überraschungen."),
+    F("FileX", "Flexibel kündbar", "Keine langfristige Vertragsbindung, keine Kündigungsfrist, volle Freiheit."),
+    F("Sparkles", "Premium-Qualität", "Unterbrechungsfreie Server, 4K/8K-Bild, 140.000+ VOD-Titel und 31.000+ Sender."),
+    F("MonitorSmartphone", "Mehrere Geräte", "Streamen Sie auf bis zu 5 Geräten gleichzeitig, je nach Paket."),
   ],
   provider: [
-    F("Scale", "Vergelijk met kennis van zaken", "Krijg een duidelijk beeld van zenders, prijzen, kwaliteit en echte service."),
-    F("Server", "Echte prestaties", "Geen lege marketingbeloften, maar echte servers en bewezen beeldkwaliteit."),
-    F("BadgeCheck", "Transparantie voorop", "Duidelijke voorwaarden, eerlijke prijzen en zichtbare klantbeoordelingen."),
-    F("Gift", "Probeer voordat u koopt", "Een gratis proefperiode om alles gerust en risicovrij te beoordelen."),
+    F("Scale", "Fundiert vergleichen", "Erhalten Sie ein klares Bild von Sendern, Preisen, Qualität und echtem Service."),
+    F("Server", "Echte Leistung", "Keine leeren Marketingversprechen, sondern echte Server und bewährte Bildqualität."),
+    F("BadgeCheck", "Transparenz an erster Stelle", "Klare Bedingungen, faire Preise und sichtbare Kundenbewertungen."),
+    F("Gift", "Testen, bevor Sie kaufen", "Eine kostenlose Testphase, um alles in Ruhe und risikofrei zu beurteilen."),
   ],
   legal: [
-    F("ShieldCheck", "Stream met een gerust gevoel", "Legale IPTV betekent geen risico op boetes of juridische problemen."),
-    F("Server", "Stabiel en betrouwbaar", "De kwaliteit van een gelicentieerde bron met duidelijke rechten."),
-    F("Lock", "Privacy beschermd", "Geen dataverzameling door dubieuze partijen, geen tracking."),
-    F("Wallet", "Betaal voor kwaliteit", "Eerlijke prijs voor een eerlijke dienst met echte support."),
+    F("ShieldCheck", "Mit gutem Gewissen streamen", "Legales IPTV bedeutet kein Risiko für Bußgelder oder rechtliche Probleme."),
+    F("Server", "Stabil und zuverlässig", "Die Qualität einer lizenzierten Quelle mit klaren Rechten."),
+    F("Lock", "Datenschutz geschützt", "Keine Datensammlung durch zweifelhafte Anbieter, kein Tracking."),
+    F("Wallet", "Zahlen für Qualität", "Ein fairer Preis für einen fairen Dienst mit echtem Support."),
   ],
   playlist: [
-    F("List", "Georganiseerd kijken", "M3U-playlists met logische zendergroepen en volledige EPG-ondersteuning."),
-    F("Settings", "Zelf beheren", "Organiseer uw playlist, groepeer zenders en stel uw favorieten in."),
-    F("Zap", "Geen dode links", "Een betrouwbare dienst met actuele en functionele streams – geen gedoe."),
-    F("ShieldCheck", "Veilig en leesbaar", "Geen malware, geen phishing – uitsluitend veilige en functionele zenders."),
+    F("List", "Organisiert fernsehen", "M3U-Playlists mit logischen Sendergruppen und vollständiger EPG-Unterstützung."),
+    F("Settings", "Selbst verwalten", "Organisieren Sie Ihre Playlist, gruppieren Sie Sender und legen Sie Favoriten fest."),
+    F("Zap", "Keine toten Links", "Ein zuverlässiger Dienst mit aktuellen und funktionierenden Streams – ohne Aufwand."),
+    F("ShieldCheck", "Sicher und übersichtlich", "Keine Malware, kein Phishing – ausschließlich sichere und funktionierende Sender."),
   ],
   quality: [
-    F("Sparkles", "4K zoals het hoort", "Echte 4K-streams met hoge bitrate, zonder opgeschaald beeld."),
-    F("Gauge", "Geen haperingen", "Onderbrekingsvrije servers voor vloeiende weergave, zelfs op drukke momenten."),
-    F("Sun", "HDR10 en Dolby Vision", "Ondersteuning van de nieuwste HDR-normen op compatibele apparaten."),
-    F("Cpu", "Klaar voor de toekomst", "Voorbij 4K, ook klaar voor 8K op de nieuwste televisies en schermen."),
+    F("Sparkles", "4K, wie es sein soll", "Echte 4K-Streams mit hoher Bitrate, ohne hochskaliertes Bild."),
+    F("Gauge", "Kein Ruckeln", "Unterbrechungsfreie Server für flüssige Wiedergabe, auch zu Stoßzeiten."),
+    F("Sun", "HDR10 und Dolby Vision", "Unterstützung der neuesten HDR-Standards auf kompatiblen Geräten."),
+    F("Cpu", "Bereit für die Zukunft", "Über 4K hinaus, auch bereit für 8K auf den neuesten Fernsehern und Bildschirmen."),
   ],
   landing: [
-    F("Tv", "Een complete tv-ervaring", "31.000+ zenders, 140.000+ films & series en 4K/8K – alles in één abonnement."),
-    F("Wallet", "Aanzienlijke besparing", "Tot 80% goedkoper dan een traditioneel kabelabonnement."),
-    F("MonitorSmartphone", "Overal en altijd", "Kijk thuis op uw tv of onderweg op uw telefoon – waar u ook bent."),
-    F("Gift", "Gratis proberen", "7 dagen gratis, u betaalt pas daarna – volkomen risicovrij."),
+    F("Tv", "Ein vollständiges TV-Erlebnis", "31.000+ Sender, 140.000+ Filme & Serien und 4K/8K – alles in einem Abonnement."),
+    F("Wallet", "Deutliche Ersparnis", "Bis zu 80% günstiger als ein herkömmliches Kabelabonnement."),
+    F("MonitorSmartphone", "Überall und jederzeit", "Schauen Sie zu Hause auf Ihrem Fernseher oder unterwegs auf Ihrem Handy – wo Sie auch sind."),
+    F("Gift", "Kostenlos testen", "7 Tage kostenlos, Sie zahlen erst danach – völlig risikofrei."),
   ],
 };
 
 // ── Internal-link hubs per intent (all targets exist in IPTV_GERMAN_SLUGS) ────
 const INTENT_LINKS: Record<PageIntent, RawSlug[]> = {
-  general: ["iptv-deutschland", "iptv-abonnement", "iptv-smarters-pro", "iptv-box", "m3u-iptv", "iptv-illegal"],
-  guide: ["iptv", "iptv-smarters-pro", "iptv-player", "m3u-iptv", "test-iptv", "iptv-illegal"],
+  general: ["was-ist-iptv", "iptv-abonnement", "iptv-smarters-pro", "iptv-box", "m3u-iptv", "iptv-illegal"],
+  guide: ["iptv", "iptv-smarters-pro", "iptv-player", "m3u-iptv", "iptv-testen", "iptv-illegal"],
   app: ["iptv-smarters-pro", "iptv-player", "smart-iptv", "iptv-box", "m3u-iptv", "iptv-abonnement"],
   device: ["iptv-box", "iptv-smarters-pro", "smart-iptv", "iptv-abonnement", "iptv-4k", "iptv-player"],
-  subscription: ["iptv-abonnement", "iptv-deutschland", "iptv-4k", "test-iptv", "iptv-smarters-pro", "fournisseur-iptv"],
-  provider: ["fournisseur-iptv", "meilleur-iptv", "iptv-abonnement", "iptv-deutschland", "test-iptv", "iptv-illegal"],
-  legal: ["iptv-illegal", "iptv-amende", "iptv", "iptv-abonnement", "fournisseur-iptv", "test-iptv"],
-  playlist: ["m3u-iptv", "iptv-player", "iptv-smarters-pro", "iptv-4k", "test-iptv", "iptv-abonnement"],
-  quality: ["iptv-4k", "iptv-with-4k", "iptv-abonnement", "iptv-box", "iptv-deutschland", "iptv-smarters-pro"],
-  landing: ["iptv-deutschland", "iptv-abonnement", "iptv-smarters-pro", "iptv-box", "iptv-4k", "test-iptv"],
+  subscription: ["iptv-abonnement", "was-ist-iptv", "iptv-4k", "iptv-testen", "iptv-smarters-pro", "iptv-anbieter"],
+  provider: ["iptv-anbieter", "bestes-iptv", "iptv-abonnement", "was-ist-iptv", "iptv-testen", "iptv-illegal"],
+  legal: ["iptv-illegal", "iptv-bussgeld", "iptv", "iptv-abonnement", "iptv-anbieter", "iptv-testen"],
+  playlist: ["m3u-iptv", "iptv-player", "iptv-smarters-pro", "iptv-4k", "iptv-testen", "iptv-abonnement"],
+  quality: ["iptv-4k", "iptv-with-4k", "iptv-abonnement", "iptv-box", "was-ist-iptv", "iptv-smarters-pro"],
+  landing: ["was-ist-iptv", "iptv-abonnement", "iptv-smarters-pro", "iptv-box", "iptv-4k", "iptv-testen"],
 };
 
 // ── Section builders ─────────────────────────────────────────────────────────
 const featuresSection = (profile: IntentProfile): PageSection => ({
   type: "features",
-  heading: "Wat IPTV Smarter onderscheidt",
+  heading: "Was IPTV Germany auszeichnet",
   subheading: profile.label,
   items: profile.features,
 });
 
 const howSection = (): PageSection => ({
   type: "howItWorks",
-  heading: "In 4 stappen klaar",
-  subheading: "Zo eenvoudig is het",
+  heading: "In 4 Schritten startklar",
+  subheading: "So einfach ist es",
   steps: HOW_STEPS,
 });
 
 const pricingSection = (): PageSection => ({
   type: "pricing",
-  heading: "Pakketten & prijzen",
-  subheading: "Flexibel, eerlijk en zonder contract",
+  heading: "Pakete & Preise",
+  subheading: "Flexibel, fair und ohne Vertragsbindung",
   tiers: PRICING_TIERS,
 });
 
 const comparisonSection = (): PageSection => ({
   type: "comparison",
-  heading: "IPTV Smarter vergeleken",
-  subheading: "Zo vergelijkt premium IPTV zich met alternatieven",
+  heading: "IPTV Germany im Vergleich",
+  subheading: "So schneidet Premium-IPTV im Vergleich zu Alternativen ab",
   columns: COMPARISON_COLUMNS,
   rows: COMPARISON_ROWS,
 });
 
 const devicesSection = (): PageSection => ({
   type: "devices",
-  heading: "Op al uw apparaten",
-  subheading: "Compatibel met de meest populaire platforms",
+  heading: "Auf allen Ihren Geräten",
+  subheading: "Kompatibel mit den beliebtesten Plattformen",
   list: DEVICE_CARDS,
 });
 
 const testimonialsSection = (): PageSection => ({
   type: "testimonials",
-  heading: "Wat onze klanten zeggen",
-  subheading: "Meer dan 12.000 tevreden kijkers",
+  heading: "Was unsere Kunden sagen",
+  subheading: "Mehr als 12.000 zufriedene Zuschauer",
   reviews: TESTIMONIAL_REVIEWS,
 });
 
 const channelSection = (): PageSection => ({
   type: "channelList",
-  heading: "31.000+ zenders & 140.000+ VOD",
-  subheading: "Een overzicht van het aanbod",
+  heading: "31.000+ Sender & 140.000+ VOD",
+  subheading: "Ein Überblick über das Angebot",
   categories: CHANNEL_CATEGORIES,
 });
 
 const ctaSection = (kw: string): PageSection => ({
   type: "cta",
-  heading: `Klaar voor ${kw} zonder compromis?`,
-  text: "Begin vandaag nog met IPTV Smarter – 31.000+ zenders, 4K/8K en volledige support op alle apparaten.",
-  cta: { label: "7 dagen proberen", href: ORDER_HREF },
+  heading: `Bereit für ${kw} ohne Kompromisse?`,
+  text: "Starten Sie noch heute mit IPTV Germany – 31.000+ Sender, 4K/8K und vollständiger Support auf allen Geräten.",
+  cta: { label: "7 Tage testen", href: ORDER_HREF },
   variant: "primary",
 });
 
 const richIntro = (profile: IntentProfile, kw: string): PageSection => ({
   type: "richText",
-  heading: `${kw} – het belangrijkste in een notendop`,
+  heading: `${kw} – das Wichtigste in Kürze`,
   html: profile.intro(kw),
 });
 
@@ -1497,14 +1486,14 @@ const richDeep = (profile: IntentProfile, kw: string): PageSection => {
 
 const whyChooseUsSection = (intent: PageIntent, _kw: string): PageSection => ({
   type: "features",
-  heading: "Waarom kiezen voor IPTV Smarter?",
+  heading: "Warum IPTV Germany wählen?",
   subheading: INTENT_PROFILE[intent].label,
   items: WHY_CHOOSE_US_FEATURES[intent],
 });
 
 const iptvBenefitsSection = (intent: PageIntent, _kw: string): PageSection => ({
   type: "features",
-  heading: "De voordelen van IPTV",
+  heading: "Die Vorteile von IPTV",
   subheading: INTENT_PROFILE[intent].label,
   items: IPTV_BENEFITS_FEATURES[intent],
 });
@@ -1573,9 +1562,9 @@ const buildSectionsFor = (intent: PageIntent, kw: string): PageSection[] => {
 /** Base FAQs shared by every page, plus intent-specific extras (total ≥5). */
 const buildFaqsFor = (intent: PageIntent, kw: string): PageFaq[] => {
   const base: PageFaq[] = [
-    { question: `Wat heb ik nodig om ${kw} te gebruiken?`, answer: "U heeft een apparaat met internetverbinding nodig (Smart TV, Fire TV Stick, smartphone, box of PC), een stabiele verbinding (min. 16 Mbit/s voor Full HD, 25+ Mbit/s voor 4K) en een compatibele speler. U ontvangt uw inloggegevens direct per e-mail na uw bestelling." },
-    { question: `Is ${kw} geschikt voor 4K- en 8K-streaming?`, answer: `Ja. Met voldoende bandbreedte en een krachtig apparaat werkt ${kw} in 4K en deels in 8K. Voor vaste installaties adviseren wij LAN/ethernet in plaats van wifi om onderbrekingen te voorkomen.` },
-    { question: `Werkt ${kw} op alle apparaten?`, answer: "Meestal ja – Android, Android TV, Fire TV, Smart TV Samsung & LG, iPhone/iPad, MAG-box en Windows worden ondersteund. Het aantal gelijktijdige streams hangt af van het gekozen pakket." },
+    { question: `Was brauche ich, um ${kw} zu nutzen?`, answer: "Sie benötigen ein Gerät mit Internetverbindung (Smart TV, Fire TV Stick, Smartphone, Box oder PC), eine stabile Verbindung (min. 16 Mbit/s für Full HD, 25+ Mbit/s für 4K) und einen kompatiblen Player. Sie erhalten Ihre Zugangsdaten direkt per E-Mail nach Ihrer Bestellung." },
+    { question: `Ist ${kw} für 4K- und 8K-Streaming geeignet?`, answer: `Ja. Mit ausreichender Bandbreite und einem leistungsfähigen Gerät funktioniert ${kw} in 4K und teilweise in 8K. Für feste Installationen empfehlen wir LAN/Ethernet statt WLAN, um Unterbrechungen zu vermeiden.` },
+    { question: `Funktioniert ${kw} auf allen Geräten?`, answer: "In der Regel ja – Android, Android TV, Fire TV, Smart TV Samsung & LG, iPhone/iPad, MAG-Box und Windows werden unterstützt. Die Anzahl gleichzeitiger Streams hängt vom gewählten Paket ab." },
   ];
   return [...base, ...INTENT_PROFILE[intent].extraFaqs(kw)];
 };
@@ -1585,25 +1574,25 @@ const buildFaqsFor = (intent: PageIntent, kw: string): PageFaq[] => {
 // as explicit InternalLink objects rather than going through iptvPath().
 const MONEY_PAGE_LINKS: InternalLink[] = [
   {
-    label: "IPTV kopen",
-    href: "/iptv-kopen",
-    description: "IPTV in 4 stappen kopen: kies een pakket, betaal en stream binnen 5 minuten.",
+    label: "IPTV kaufen",
+    href: "/iptv-kaufen",
+    description: "IPTV in 4 Schritten kaufen: Paket wählen, bezahlen und innerhalb von 5 Minuten streamen.",
   },
   {
-    label: "IPTV-abonnement",
+    label: "IPTV-Abonnement",
     href: "/iptv-abonnement",
-    description: "Vergelijk alle IPTV-abonnementen met 31.000+ zenders en 4K-kwaliteit.",
+    description: "Vergleichen Sie alle IPTV-Abonnements mit 31.000+ Sendern und 4K-Qualität.",
   },
   {
-    label: "IPTV-aanbieder",
-    href: "/iptv-aanbieder",
-    description: "Ontdek waarom IPTV Smarter de beste IPTV-aanbieder van Nederland is.",
+    label: "IPTV-Anbieter",
+    href: "/iptv-anbieter",
+    description: "Entdecken Sie, warum IPTV Germany der beste IPTV-Anbieter für Deutschland ist.",
   },
 ];
 
 /** ≥4 contextual internal links — always includes the 3 root money pages. */
 const buildLinksFor = (slug: string, intent: PageIntent): InternalLink[] => {
-  const fallback: RawSlug[] = ["iptv", "iptv-deutschland", "iptv-smarters-pro", "iptv-box", "m3u-iptv"];
+  const fallback: RawSlug[] = ["iptv", "was-ist-iptv", "iptv-smarters-pro", "iptv-box", "m3u-iptv"];
   const targets = [...INTENT_LINKS[intent], ...fallback]
     .filter((s, i, arr) => s !== slug && arr.indexOf(s) === i)
     .slice(0, 3);
@@ -1612,7 +1601,7 @@ const buildLinksFor = (slug: string, intent: PageIntent): InternalLink[] => {
     return {
       label,
       href: iptvPath(target),
-      description: `Meer over ${label} in de IPTV Smarter-kennisbank.`,
+      description: `Mehr über ${label} im IPTV Germany-Ratgeber.`,
     };
   });
   // Money pages first; deduplicate by href so vault links that resolve to the
@@ -1626,37 +1615,43 @@ const buildLinksFor = (slug: string, intent: PageIntent): InternalLink[] => {
 // ── Per-page bespoke overrides for the highest-value pages ────────────────────
 const PAGE_OVERRIDES: Partial<Record<RawSlug, Partial<IPTVPage>>> = {
   "iptv-abonnement": {
-    metaTitle: "IPTV-abonnement Nederland vanaf 6,66 € | IPTV Smarter",
-    metaDescription: "IPTV-abonnement Nederland: 31.000+ zenders, 140.000+ films & series in 4K/8K, zonder contract, direct actief. Probeer 7 dagen gratis!",
+    metaTitle: "IPTV-Abonnement Deutschland ab 6,66 € | IPTV Germany",
+    metaDescription: "IPTV-Abonnement Deutschland: 31.000+ Sender, 140.000+ Filme & Serien in 4K/8K, ohne Vertragsbindung, direkt aktiv. Jetzt 7 Tage kostenlos testen!",
     hero: {
-      headline: "IPTV-abonnement Nederland: herontdek televisie",
-      subheadline: "31.000+ zenders, 140.000+ films & series in 4K/8K – zonder contract, direct geactiveerd en op elk apparaat.",
-      cta: { label: "7 dagen proberen", href: ORDER_HREF },
-      badgeTags: ["31.000+ zenders", "4K / 8K", "Zonder contract", "Direct actief"],
+      headline: "IPTV-Abonnement Deutschland: entdecken Sie Fernsehen neu",
+      subheadline: "31.000+ Sender, 140.000+ Filme & Serien in 4K/8K – ohne Vertragsbindung, direkt aktiviert und auf jedem Gerät.",
+      cta: { label: "7 Tage testen", href: ORDER_HREF },
+      badgeTags: ["31.000+ Sender", "4K / 8K", "Ohne Vertragsbindung", "Direkt aktiv"],
       background: "/images/abonnement-bg.webp",
     },
   },
   "abonnement-iptv": {
-    metaTitle: "IPTV-abonnement kopen – Premium | IPTV Smarter",
+    metaTitle: "IPTV-Abonnement kaufen – Premium | IPTV Germany",
     hero: {
-      headline: "IPTV-abonnement: premium streaming voor Nederland",
-      subheadline: "Flexibele pakketten vanaf 6,66 €/maand met 31.000+ zenders, 4K/8K en directe activatie – volledig zonder contract.",
-      cta: { label: "7 dagen proberen", href: ORDER_HREF },
-      badgeTags: ["Vanaf 6,66 €/maand", "Gratis proefperiode", "Zonder contract", "4K / 8K"],
+      headline: "IPTV-Abonnement: Premium-Streaming für Deutschland",
+      subheadline: "Flexible Pakete ab 6,66 €/Monat mit 31.000+ Sendern, 4K/8K und direkter Aktivierung – vollständig ohne Vertragsbindung.",
+      cta: { label: "7 Tage testen", href: ORDER_HREF },
+      badgeTags: ["Ab 6,66 €/Monat", "Kostenlose Testphase", "Ohne Vertragsbindung", "4K / 8K"],
       background: "/images/abonnement-bg.webp",
     },
   },
-  "iptv-deutschland": {
-    metaTitle: "Beste IPTV Nederland – 31.000+ zenders 4K | IPTV Smarter",
-    metaDescription: "Beste IPTV in Nederland met alle Franse en Nederlandse zenders, 140.000+ VOD-titels in 4K/8K en EPG in het Nederlands. Zonder contract. Probeer 7 dagen gratis!",
+  "was-ist-iptv": {
+    metaTitle: "Was ist IPTV? Der Grundlagen-Ratgeber | IPTV Germany",
+    metaDescription: "Was ist IPTV und wie funktioniert Fernsehen über das Internet? Alles zu Sendern, Geräten, Installation und Sicherheit – verständlich erklärt für Deutschland.",
+    hero: {
+      headline: "Was ist IPTV? Fernsehen über das Internet, einfach erklärt",
+      subheadline: "Live-TV, Filme und Serien über Ihre Internetverbindung – wir erklären die Grundlagen, bevor Sie sich für einen Anbieter entscheiden.",
+      cta: { label: "Pakete ansehen", href: ORDER_HREF },
+      badgeTags: ["Grundlagen-Ratgeber", "Für Deutschland", "Unabhängig erklärt"],
+    },
   },
   iptv: {
-    metaTitle: "Wat is IPTV? Gids voor stabiel streamen | IPTV Smarter",
-    metaDescription: "IPTV eenvoudig uitgelegd: hoe tv via internet werkt – apparaten, installatie, veiligheid & 4K. Begrijp het en start met IPTV Smarter.",
+    metaTitle: "Was ist IPTV? Ratgeber für stabiles Streamen | IPTV Germany",
+    metaDescription: "IPTV einfach erklärt: wie Fernsehen über das Internet funktioniert – Geräte, Installation, Sicherheit & 4K. Verstehen Sie es und starten Sie mit IPTV Germany.",
   },
   "iptv-smarters-pro": {
-    metaTitle: "IPTV Smarters Pro instellen (gids) | IPTV Smarter",
-    metaDescription: "IPTV Smarters Pro installeren & instellen: M3U/Xtream, EPG, ondertiteling op alle apparaten. Stap-voor-stap gids van IPTV Smarter.",
+    metaTitle: "IPTV Smarters Pro einrichten (Anleitung) | IPTV Germany",
+    metaDescription: "IPTV Smarters Pro installieren & einrichten: M3U/Xtream, EPG, Untertitel auf allen Geräten. Schritt-für-Schritt-Anleitung von IPTV Germany.",
   },
 };
 
@@ -1666,20 +1661,20 @@ const buildIptvPage = (slug: RawSlug): IPTVPage => {
   const kw = titleCase(keyword);
   const intent = detectIntentV2(slug);
   const profile = INTENT_PROFILE[intent];
-  // Promoted slugs use their root-level canonical path (no /iptv-gids/ prefix)
+  // Promoted slugs use their root-level canonical path (no /iptv-ratgeber/ prefix)
   // so Google never indexes a 308 redirect page as canonical.
   const path = iptvPath(slug);
   const canonicalUrl = absoluteUrl(path);
-  const lang: PageLanguage = "nl";
+  const lang: PageLanguage = "de";
 
-  const metaTitle = clamp(`${kw} | IPTV Smarter`, 60);
+  const metaTitle = clamp(`${kw} | IPTV Germany`, 60);
 
   const base: IPTVPage = {
     slug,
     keyword,
     lang,
     intent,
-    hreflang: { nl: canonicalUrl },
+    hreflang: { de: canonicalUrl },
     metaTitle,
     metaDescription: clamp(profile.metaDescription(kw), 155),
     canonicalUrl,
@@ -1687,7 +1682,7 @@ const buildIptvPage = (slug: RawSlug): IPTVPage => {
     structuredData: profile.structuredData,
     breadcrumbs: [
       { label: "Home", href: "/" },
-      { label: "IPTV-gids", href: basePath },
+      { label: "IPTV-Ratgeber", href: basePath },
       { label: kw, href: path },
     ],
     hero: {

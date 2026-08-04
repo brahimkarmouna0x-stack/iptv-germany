@@ -37,71 +37,71 @@ interface CategoryItem {
 const ROW_A: CategoryItem[] = [
   {
     icon: Tv,
-    title: "Nederlandse zenders",
-    description: "Openbare & private zenders in HD",
+    title: "Deutsche Sender",
+    description: "Öffentlich-rechtliche & private Sender in HD",
     href: "/popular?type=lives",
     gradient: "from-france-500/20 to-france-700/10",
   },
   {
     icon: Trophy,
-    title: "Live sport",
-    description: "Voetbal, autosport, gevechtssporten & meer live",
+    title: "Live-Sport",
+    description: "Fußball, Motorsport, Kampfsport & mehr live",
     href: "/popular?type=sports",
     gradient: "from-rouge-500/20 to-rouge-700/10",
   },
   {
     icon: Film,
-    title: "Films",
-    description: "Nieuwste releases, klassiekers & blockbusters",
+    title: "Filme",
+    description: "Neueste Veröffentlichungen, Klassiker & Blockbuster",
     href: "/popular?type=movies",
     gradient: "from-france-400/20 to-france-600/10",
   },
   {
     icon: MonitorPlay,
-    title: "Series",
-    description: "Populaire series & volledige seizoenen",
+    title: "Serien",
+    description: "Beliebte Serien & ganze Staffeln",
     href: "/popular?type=series",
     gradient: "from-rouge-400/20 to-rouge-600/10",
   },
   {
     icon: Heart,
-    title: "Familiezenders",
-    description: "Entertainment voor het hele gezin",
+    title: "Familiensender",
+    description: "Unterhaltung für die ganze Familie",
     href: "/popular?genre=Famille",
     gradient: "from-pink-500/20 to-pink-700/10",
   },
   {
     icon: Music,
-    title: "Muziek",
-    description: "Muziekzenders, concerten & hitlijsten",
+    title: "Musik",
+    description: "Musiksender, Konzerte & Charts",
     href: "/popular?genre=Musique",
     gradient: "from-violet-500/20 to-violet-700/10",
   },
   {
     icon: Newspaper,
-    title: "Nieuws",
-    description: "24/7 nieuws en actualiteiten",
+    title: "Nachrichten",
+    description: "24/7 Nachrichten und aktuelle Themen",
     href: "/popular?type=lives",
     gradient: "from-blue-500/20 to-blue-700/10",
   },
   {
     icon: Gamepad2,
     title: "Gaming",
-    description: "Live streams, toernooien & gaming nieuws",
+    description: "Livestreams, Turniere & Gaming-News",
     href: "/popular?genre=Gaming",
     gradient: "from-emerald-500/20 to-emerald-700/10",
   },
   {
     icon: BookOpen,
-    title: "Documentaires",
-    description: "Natuur-, wetenschaps- & geschiedenisdocumentaires",
+    title: "Dokumentationen",
+    description: "Natur-, Wissenschafts- & Geschichtsdokumentationen",
     href: "/popular?type=movies",
     gradient: "from-amber-500/20 to-amber-700/10",
   },
   {
     icon: Baby,
-    title: "Kinderzenders",
-    description: "Veilige inhoud voor de kleintjes",
+    title: "Kindersender",
+    description: "Sichere Inhalte für die Kleinen",
     href: "/popular?genre=Famille",
     gradient: "from-sky-400/20 to-sky-600/10",
   },
@@ -110,43 +110,43 @@ const ROW_A: CategoryItem[] = [
 const ROW_B: CategoryItem[] = [
   {
     icon: Globe2,
-    title: "Internationale zenders",
-    description: "Zenders uit meer dan 190 landen wereldwijd",
+    title: "Internationale Sender",
+    description: "Sender aus mehr als 190 Ländern weltweit",
     href: "/popular?genre=Internationaal",
     gradient: "from-france-500/20 to-france-700/10",
   },
   {
     icon: Flag,
-    title: "Nederlandse zenders",
-    description: "Openbare, private & regionale zenders",
+    title: "Deutsche Sender",
+    description: "Öffentlich-rechtliche, private & regionale Sender",
     href: "/popular?type=lives",
     gradient: "from-orange-500/20 to-orange-700/10",
   },
   {
     icon: Landmark,
-    title: "Britse zenders",
-    description: "Algemene & informatieve Britse zenders",
+    title: "Britische Sender",
+    description: "Allgemeine & Informationssender aus Großbritannien",
     href: "/popular?type=lives",
     gradient: "from-red-600/20 to-red-800/10",
   },
   {
     icon: Telescope,
-    title: "Amerikaanse zenders",
-    description: "Amerikaanse informatie-, film- & sportzenders",
+    title: "Amerikanische Sender",
+    description: "Amerikanische Nachrichten-, Film- & Sportsender",
     href: "/popular?type=lives",
     gradient: "from-blue-600/20 to-blue-800/10",
   },
   {
     icon: Goal,
-    title: "Autosport",
-    description: "Auto- & motorraces, rally & meer",
+    title: "Motorsport",
+    description: "Auto- & Motorradrennen, Rallye & mehr",
     href: "/popular?type=sports",
     gradient: "from-rouge-500/20 to-rouge-700/10",
   },
   {
     icon: Swords,
-    title: "Gevechtssporten",
-    description: "Vechtsporten, boksen & worstelen",
+    title: "Kampfsport",
+    description: "Kampfsportarten, Boxen & Wrestling",
     href: "/popular?type=sports",
     gradient: "from-rose-600/20 to-rose-800/10",
   },
@@ -159,22 +159,22 @@ const ROW_B: CategoryItem[] = [
   },
   {
     icon: Drama,
-    title: "Basketbal",
-    description: "Kampioenschappen & internationale competities",
+    title: "Basketball",
+    description: "Meisterschaften & internationale Wettbewerbe",
     href: "/popular?type=sports",
     gradient: "from-amber-600/20 to-amber-800/10",
   },
   {
     icon: MicVocal,
     title: "Entertainment",
-    description: "Talkshows, reality-tv & programma's",
+    description: "Talkshows, Reality-TV & Sendungen",
     href: "/popular?type=lives",
     gradient: "from-france-400/20 to-france-600/10",
   },
   {
     icon: Radio,
     title: "Premium TV",
-    description: "Exclusieve zenders & 4K-ervaring",
+    description: "Exklusive Sender & 4K-Erlebnis",
     href: "/popular?type=lives",
     gradient: "from-france-300/20 to-rouge-500/10",
   },
@@ -272,15 +272,15 @@ const Categories = () => {
             <div className="max-w-2xl">
               <span className="inline-flex items-center gap-2 rounded-full border border-france-500/20 bg-france-500/15 px-3.5 py-1.5 text-xs font-black uppercase tracking-[0.14em] text-france-100">
                 <Tv size={14} aria-hidden="true" />
-                Ontdek
+                Entdecken
               </span>
               <h2 className="mt-4 font-display text-3xl font-black leading-tight text-blanc-50 sm:text-5xl">
-                Inhoud voor <span className="text-gradient"> elk moment</span>
+                Inhalte für <span className="text-gradient"> jeden Moment</span>
               </h2>
             </div>
             <p className="max-w-xl text-sm font-medium leading-6 text-blanc-400 sm:text-base">
-              Sport, films, series, internationale zenders en exclusieve premium
-              inhoud — alles in één abonnement.
+              Sport, Filme, Serien, internationale Sender und exklusive
+              Premium-Inhalte — alles in einem Abonnement.
             </p>
           </div>
         </div>

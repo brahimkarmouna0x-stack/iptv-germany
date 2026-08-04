@@ -4,9 +4,9 @@ const steps = [
   {
     step: "01",
     icon: Package,
-    title: "Kies uw pakket",
+    title: "Wählen Sie Ihr Paket",
     description:
-      "Selecteer het abonnement dat bij u past — van 1 tot 4 gelijktijdige verbindingen, met looptijden vanaf 1 maand.",
+      "Wählen Sie das Abonnement, das zu Ihnen passt — von 1 bis 4 gleichzeitigen Verbindungen, mit Laufzeiten ab 1 Monat.",
     color: "text-france-400",
     gradient: "from-france-600/30 to-france-400/15",
     border: "border-france-500/25",
@@ -14,9 +14,9 @@ const steps = [
   {
     step: "02",
     icon: CreditCard,
-    title: "Betaal veilig",
+    title: "Sicher bezahlen",
     description:
-      "Rond de bestelling af via een beveiligde betaalmethode. Uw persoonlijke gegevens zijn te allen tijde beschermd.",
+      "Schließen Sie die Bestellung über eine sichere Zahlungsmethode ab. Ihre persönlichen Daten sind jederzeit geschützt.",
     color: "text-rouge-400",
     gradient: "from-rouge-600/30 to-rouge-500/15",
     border: "border-rouge-500/25",
@@ -24,9 +24,9 @@ const steps = [
   {
     step: "03",
     icon: Mail,
-    title: "Ontvang uw inloggegevens",
+    title: "Erhalten Sie Ihre Zugangsdaten",
     description:
-      "Direct na de betaling ontvangt u een e-mail met uw persoonlijke inloggegevens en een duidelijke installatiehandleiding.",
+      "Direkt nach der Zahlung erhalten Sie eine E-Mail mit Ihren persönlichen Zugangsdaten und einer verständlichen Installationsanleitung.",
     color: "text-france-400",
     gradient: "from-france-600/30 to-france-400/15",
     border: "border-france-500/25",
@@ -34,9 +34,9 @@ const steps = [
   {
     step: "04",
     icon: Play,
-    title: "Begin met kijken",
+    title: "Mit dem Schauen beginnen",
     description:
-      "Voer uw inloggegevens in op uw apparaat en geniet direct van meer dan 31.000 zenders, films en series in adembenemende 4K.",
+      "Geben Sie Ihre Zugangsdaten auf Ihrem Gerät ein und genießen Sie sofort mehr als 31.000 Sender, Filme und Serien in atemberaubendem 4K.",
     color: "text-rouge-400",
     gradient: "from-rouge-600/30 to-rouge-500/15",
     border: "border-rouge-500/25",
@@ -55,14 +55,14 @@ const HowItWorks = () => {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <span className="inline-block px-4 py-1.5 rounded-full glass text-rouge-400 text-sm font-bold mb-4 uppercase tracking-wider glow-red">
-            Om te beginnen
+            Erste Schritte
           </span>
           <h2 className="font-display font-bold text-4xl sm:text-5xl mb-4 text-blanc-50">
-            In 4 stappen <span className="text-gradient">klaar om te kijken</span>
+            In 4 Schritten <span className="text-gradient">startklar</span>
           </h2>
           <p className="text-blanc-400 max-w-2xl mx-auto font-medium">
-            Van bestelling naar streaming in minder dan 5 minuten. Geen
-            technische kennis vereist.
+            Von der Bestellung zum Streaming in weniger als 5 Minuten. Keine
+            technischen Kenntnisse erforderlich.
           </p>
         </div>
 

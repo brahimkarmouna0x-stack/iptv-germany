@@ -1,24 +1,24 @@
-﻿import React from "react";
+import React from "react";
 import { Check, X } from "lucide-react";
 
 const features = [
-  "Maandelijkse kosten",
-  "Aantal zenders",
-  "4K & HD kwaliteit",
-  "Films & series op aanvraag",
-  "Kijken op meerdere apparaten",
-  "Geen installateur nodig",
-  "Gratis proefperiode",
-  "Direct opzegbaar",
-  "Kijken onderweg",
-  "Internationale zenders",
+  "Monatliche Kosten",
+  "Anzahl Sender",
+  "4K- & HD-Qualität",
+  "Filme & Serien auf Abruf",
+  "Auf mehreren Geräten schauen",
+  "Kein Installateur nötig",
+  "Kostenlose Testphase",
+  "Jederzeit kündbar",
+  "Unterwegs schauen",
+  "Internationale Sender",
 ];
 
 const iptv = [
-  "Vanaf 5,99 EUR/mnd",
-  "Meer dan 31.000",
+  "Ab 5,99 € / Monat",
+  "Mehr als 31.000",
   true,
-  "Volledige VOD",
+  "Vollständiges VOD",
   true,
   true,
   true,
@@ -28,10 +28,10 @@ const iptv = [
 ];
 
 const cable = [
-  "Vanaf 29,99 EUR/mnd",
+  "Ab 29,99 € / Monat",
   "100-300",
   false,
-  "Beperkt",
+  "Begrenzt",
   false,
   false,
   false,
@@ -50,7 +50,7 @@ const Cell = ({ value, highlight = false }: { value: CellValue; highlight?: bool
       </span>
     ) : (
       <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-rouge-900/30 border border-rouge-700/30">
-        <X size={14} className="text-rouge-500" aria-label="Nee" />
+        <X size={14} className="text-rouge-500" aria-label="Nein" />
       </span>
     );
   }
@@ -70,13 +70,13 @@ const ComparisonTable = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <span className="inline-block px-4 py-1.5 rounded-full glass text-france-400 text-sm font-bold mb-4 uppercase tracking-wider glow-gold">
-            Vergelijking
+            Vergleich
           </span>
           <h2 className="font-display font-bold text-4xl sm:text-5xl mb-4 text-blanc-50">
-            IPTV vs <span className="text-gradient">traditionele TV</span>
+            IPTV vs. <span className="text-gradient">klassisches Fernsehen</span>
           </h2>
           <p className="text-blanc-400 max-w-2xl mx-auto font-medium">
-            Ontdek waarom honderdduizenden huishoudens overschakelen op IPTV.
+            Entdecken Sie, warum Hunderttausende Haushalte auf IPTV umsteigen.
           </p>
         </div>
 
@@ -86,12 +86,12 @@ const ComparisonTable = () => {
               <div className="p-5 border-b border-blanc-50/5 bg-blanc-50/[0.02]" />
               <div className="p-5 border-b border-l border-france-400/20 bg-france-500/10 text-center">
                 <span className="font-black text-france-300 tracking-wide uppercase text-xs">
-                  IPTV Smarter
+                  IPTV Germany
                 </span>
               </div>
               <div className="p-5 border-b border-l border-blanc-50/5 bg-blanc-50/[0.02] text-center">
                 <span className="font-black text-blanc-500 tracking-wide uppercase text-xs">
-                  Kabel / Satelliet
+                  Kabel / Satellit
                 </span>
               </div>
 

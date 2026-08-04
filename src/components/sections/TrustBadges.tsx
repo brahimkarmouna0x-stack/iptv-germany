@@ -1,20 +1,20 @@
 import { Lock, ShieldCheck, Zap } from "lucide-react";
 
 const paymentMethods = [
-  { name: "iDEAL", flag: "🇳🇱", popular: true },
-  { name: "PayPal", flag: null, popular: false },
+  { name: "PayPal", flag: null, popular: true },
   { name: "Visa", flag: null, popular: false },
   { name: "Mastercard", flag: null, popular: false },
-  { name: "Bancontact", flag: "🇧🇪", popular: false },
+  { name: "SEPA-Lastschrift", flag: "🇩🇪", popular: false },
+  { name: "Giropay", flag: "🇩🇪", popular: false },
   { name: "Klarna", flag: null, popular: false },
 ];
 
 const trustSignals = [
   {
     icon: ShieldCheck,
-    title: "256-bit SSL-versleuteling",
+    title: "256-Bit-SSL-Verschlüsselung",
     description:
-      "Alle betalingstransacties verlopen via een beveiligde en versleutelde verbinding. Uw bankgegevens zijn te allen tijde beschermd.",
+      "Alle Zahlungstransaktionen laufen über eine sichere, verschlüsselte Verbindung. Ihre Bankdaten sind jederzeit geschützt.",
     color: "text-france-400",
     gradient: "from-france-600/30 to-france-400/15",
     border: "border-france-500/25",
@@ -22,9 +22,9 @@ const trustSignals = [
   },
   {
     icon: Lock,
-    title: "AVG/GDPR-conform",
+    title: "DSGVO-konform",
     description:
-      "Uw persoonlijke gegevens worden nooit verkocht of gedeeld met derden. We voldoen volledig aan de Europese wetgeving inzake privacy.",
+      "Ihre persönlichen Daten werden niemals verkauft oder an Dritte weitergegeben. Wir erfüllen die europäischen Datenschutzbestimmungen vollständig.",
     color: "text-rouge-400",
     gradient: "from-rouge-600/30 to-rouge-500/15",
     border: "border-rouge-500/25",
@@ -32,9 +32,9 @@ const trustSignals = [
   },
   {
     icon: Zap,
-    title: "99,9% beschikbaarheid gegarandeerd",
+    title: "99,9 % Verfügbarkeit garantiert",
     description:
-      "Onze servers draaien op een redundante infrastructuur. Bij storing schakelen we automatisch over op back-upservers — u merkt er niets van.",
+      "Unsere Server laufen auf einer redundanten Infrastruktur. Bei einer Störung schalten wir automatisch auf Backup-Server um — Sie merken nichts davon.",
     color: "text-france-400",
     gradient: "from-france-600/30 to-france-400/15",
     border: "border-france-500/25",
@@ -54,15 +54,16 @@ const TrustBadges = () => {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14 animate-fade-in">
           <span className="inline-block px-4 py-1.5 rounded-full glass text-rouge-400 text-sm font-bold mb-4 uppercase tracking-wider glow-red">
-            Veilige betaling
+            Sichere Zahlung
           </span>
           <h2 className="font-display font-bold text-4xl sm:text-5xl mb-4 text-blanc-50">
-            Uw betaling is{" "}
-            <span className="text-gradient">100% veilig</span>
+            Ihre Zahlung ist{" "}
+            <span className="text-gradient">100 % sicher</span>
           </h2>
           <p className="text-blanc-400 max-w-2xl mx-auto font-medium">
-            Betaal met uw favoriete betaalmethode via een volledig
-            beveiligde verbinding. Geen verborgen kosten, geen verrassingen.
+            Bezahlen Sie mit Ihrer bevorzugten Zahlungsmethode über eine
+            vollständig gesicherte Verbindung. Keine versteckten Kosten, keine
+            Überraschungen.
           </p>
         </div>
 
@@ -91,7 +92,7 @@ const TrustBadges = () => {
               </span>
               {method.popular && (
                 <span className="text-[9px] font-black uppercase tracking-wider bg-france-500/20 text-france-400 px-1.5 py-0.5 rounded-full border border-france-500/20">
-                  Populair
+                  Beliebt
                 </span>
               )}
             </div>

@@ -3,32 +3,32 @@
 const checklistItems = [
   {
     icon: ShieldCheck,
-    title: "Kies een geverifieerde aanbieder",
-    desc: "Controleer altijd of de IPTV-aanbieder geverifieerde beoordelingen heeft, Franstalige ondersteuning biedt en veilige betaalmogelijkheden zoals iDEAL accepteert voordat u een IPTV koopt.",
+    title: "Wählen Sie einen verifizierten Anbieter",
+    desc: "Prüfen Sie immer, ob der IPTV-Anbieter verifizierte Bewertungen hat, deutschsprachigen Support bietet und sichere Zahlungsmöglichkeiten wie Kreditkarte oder PayPal akzeptiert, bevor Sie ein IPTV kaufen.",
     color: "text-france-400",
     gradient: "from-france-600/25 to-france-400/10",
     border: "border-france-500/20",
   },
   {
     icon: Info,
-    title: "Vergelijk het zenderaanbod",
-    desc: "Niet alle IPTV-pakketten bevatten dezelfde zenders. Controleer of de Franse en Nederlandse zenders, sportzenders en uw favoriete internationale zenders zijn inbegrepen.",
+    title: "Vergleichen Sie das Senderangebot",
+    desc: "Nicht alle IPTV-Pakete enthalten dieselben Sender. Prüfen Sie, ob deutsche und internationale Sender, Sportsender und Ihre favorisierten Sender enthalten sind.",
     color: "text-rouge-400",
     gradient: "from-rouge-600/25 to-rouge-500/10",
     border: "border-rouge-500/20",
   },
   {
     icon: CreditCard,
-    title: "Let op de totaalprijs",
-    desc: "Vergelijk de aankoop van IPTV op de maandelijkse prijs, niet alleen op de inloopprijs. Let op activeringskosten, eenmalige kosten en wat er bij verlenging wordt gevraagd. IPTV Smarter hanteert altijd transparante tarieven.",
+    title: "Achten Sie auf den Gesamtpreis",
+    desc: "Vergleichen Sie den Kauf von IPTV anhand des Monatspreises, nicht nur anhand des Einstiegspreises. Achten Sie auf Aktivierungskosten, einmalige Gebühren und die Bedingungen bei Verlängerung. IPTV Germany bietet stets transparente Tarife.",
     color: "text-france-400",
     gradient: "from-france-600/25 to-france-400/10",
     border: "border-france-500/20",
   },
   {
     icon: BadgeCheck,
-    title: "Test altijd eerst met een proefperiode",
-    desc: "Een serieuze IPTV-aanbieder biedt een gratis proefperiode. Test de beeldkwaliteit, stabiliteit tijdens piekuren en gebruiksgemak voordat u een volledig pakket afneemt.",
+    title: "Testen Sie immer zuerst mit einer Testphase",
+    desc: "Ein seriöser IPTV-Anbieter bietet eine kostenlose Testphase. Testen Sie Bildqualität, Stabilität zu Stoßzeiten und Benutzerfreundlichkeit, bevor Sie ein volles Paket abschließen.",
     color: "text-rouge-400",
     gradient: "from-rouge-600/25 to-rouge-500/10",
     border: "border-rouge-500/20",
@@ -44,15 +44,15 @@ export function IptvKopenChecklist() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <span className="inline-block px-4 py-1.5 rounded-full glass text-france-400 text-sm font-bold mb-4 uppercase tracking-wider glow-gold">
-            IPTV-aankoopchecklist
+            IPTV-Kaufchecklist
           </span>
           <h2 className="font-display font-bold text-4xl sm:text-5xl mb-4 text-blanc-50">
-            Waar moet u op letten bij het{" "}
-            <span className="text-gradient">kopen van IPTV</span>?
+            Worauf sollten Sie beim{" "}
+            <span className="text-gradient">Kauf von IPTV</span> achten?
           </h2>
           <p className="text-blanc-400 max-w-2xl mx-auto font-medium">
-            Voorkom teleurstelling: dit zijn de vier punten die elke slimme koper
-            controleert voordat hij IPTV koopt.
+            Vermeiden Sie Enttäuschungen: Das sind die vier Punkte, die jeder
+            kluge Käufer prüft, bevor er IPTV kauft.
           </p>
         </div>
 
@@ -89,16 +89,16 @@ export function IptvKopenChecklist() {
 
 const kopenFaqs = [
   {
-    q: "Kan ik IPTV kopen zonder jaarcontract?",
-    a: "Ja. Bij IPTV Smarter kiest u de looptijd — vanaf 1 maand. U betaalt alleen de gewenste periode, zonder vast te zitten aan een jaarcontract. Hoe langer de looptijd, hoe lager de maandprijs.",
+    q: "Kann ich IPTV ohne Jahresvertrag kaufen?",
+    a: "Ja. Bei IPTV Germany wählen Sie die Laufzeit — schon ab 1 Monat. Sie zahlen nur den gewünschten Zeitraum, ohne an einen Jahresvertrag gebunden zu sein. Je länger die Laufzeit, desto niedriger der Monatspreis.",
   },
   {
-    q: "Wat heb ik nodig om IPTV te kopen en te gebruiken?",
-    a: "U heeft een stabiele internetverbinding nodig (minimaal 10 Mbps voor HD) en een compatibel apparaat: Smart TV, telefoon, tablet, Fire TV Stick of computer. De app configureren duurt minder dan 5 minuten.",
+    q: "Was brauche ich, um IPTV zu kaufen und zu nutzen?",
+    a: "Sie benötigen eine stabile Internetverbindung (mindestens 10 Mbit/s für HD) und ein kompatibles Gerät: Smart TV, Smartphone, Tablet, Fire TV Stick oder Computer. Die App zu konfigurieren dauert weniger als 5 Minuten.",
   },
   {
-    q: "Is het veilig om IPTV te kopen bij IPTV Smarter?",
-    a: "Absoluut. Uw betaling verloopt via beveiligde SSL-verbindingen met iDEAL, PayPal of creditcard. Uw gegevens worden nooit gedeeld met derden. Wij voldoen aan de AVG (Europese privacywetgeving).",
+    q: "Ist es sicher, IPTV bei IPTV Germany zu kaufen?",
+    a: "Absolut. Ihre Zahlung erfolgt über gesicherte SSL-Verbindungen mit Kreditkarte, PayPal oder Sofortüberweisung. Ihre Daten werden niemals an Dritte weitergegeben. Wir erfüllen die DSGVO (europäisches Datenschutzrecht).",
   },
 ];
 
@@ -113,11 +113,11 @@ export function IptvKopenFaq() {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10">
             <span className="inline-block px-4 py-1.5 rounded-full glass text-rouge-400 text-sm font-bold mb-4 uppercase tracking-wider glow-red">
-              IPTV kopen — vragen
+              IPTV kaufen — Fragen
             </span>
             <h2 className="font-display font-bold text-3xl sm:text-4xl mb-3 text-blanc-50">
-              Nog vragen over{" "}
-              <span className="text-gradient">het kopen van IPTV</span>?
+              Noch Fragen zum{" "}
+              <span className="text-gradient">Kauf von IPTV</span>?
             </h2>
           </div>
           <div className="space-y-4">

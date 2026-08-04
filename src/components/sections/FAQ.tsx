@@ -22,10 +22,10 @@ const FAQ = ({
             FAQ
           </span>
             <h2 className="font-display font-bold text-4xl sm:text-5xl mb-4 text-blanc-50">
-              Veelgestelde <span className="text-gradient">vragen</span>
+              Häufig gestellte <span className="text-gradient">Fragen</span>
             </h2>
             <p className="text-blanc-400 font-medium">
-              Alles wat u moet weten over IPTV Smarter en ons abonnement.
+              Alles, was Sie über IPTV Germany und unser Abonnement wissen müssen.
             </p>
         </div>
 

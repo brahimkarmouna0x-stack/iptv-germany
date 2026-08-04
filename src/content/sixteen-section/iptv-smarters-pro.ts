@@ -1,29 +1,29 @@
-﻿import type { SixteenSectionContent } from "./types";
+import type { SixteenSectionContent } from "./types";
 
 const LINK = {
-  home: { label: "IPTV Smarter Home", href: "/", description: "Het beste IPTV-abonnement van Nederland met 31.000+ zenders." },
-  kopen: { label: "IPTV Kopen", href: "/iptv-kopen", description: "Koop direct een IPTV-abonnement met veilige betaling en onmiddellijke activering." },
-  abonnement: { label: "IPTV Abonnement", href: "/iptv-abonnement", description: "Vergelijk IPTV-abonnementen met flexibele looptijden." },
-  aanbieder: { label: "IPTV Aanbieder", href: "/iptv-aanbieder", description: "Vergelijk IPTV-aanbieders en ontdek de beste keuze." },
-  nederland: { label: "IPTV Nederland", href: "/iptv-nederland", description: "Alles over IPTV in Nederland: zenders, sport en installatie." },
+  home: { label: "IPTV Germany Home", href: "/", description: "Das beste IPTV-Abonnement Deutschlands mit 31.000+ Sendern." },
+  kaufen: { label: "IPTV kaufen", href: "/iptv-kaufen", description: "Kaufen Sie direkt ein IPTV-Abonnement mit sicherer Zahlung und sofortiger Aktivierung." },
+  abonnement: { label: "IPTV-Abonnement", href: "/iptv-abonnement", description: "Vergleichen Sie IPTV-Abonnements mit flexiblen Laufzeiten." },
+  anbieter: { label: "IPTV-Anbieter", href: "/iptv-anbieter", description: "Vergleichen Sie IPTV-Anbieter und entdecken Sie die beste Wahl." },
+  deutschland: { label: "IPTV Deutschland", href: "/iptv-deutschland", description: "Alles über IPTV in Deutschland: Sender, Sport und Installation." },
 };
 
 const smartersPro: SixteenSectionContent = {
   slug: "iptv-smarters-pro",
   path: "/iptv-smarters-pro",
   meta: {
-    title: "IPTV Smarters Pro ✓ Installatie- & Configuratiegids 2026",
-    description: "Installatiegids voor IPTV Smarters Pro op Smart TV, Fire TV Stick, Android en iOS. Ontvang uw M3U-links en Xtream Codes voor onmiddellijke activering.",
-    h1: "IPTV Smarters Pro – installatie- en configuratiegids voor elk apparaat",
+    title: "IPTV Smarters Pro ✓ Installations- & Konfigurationsanleitung 2026",
+    description: "Installationsanleitung für IPTV Smarters Pro auf Smart TV, Fire TV Stick, Android und iOS. Erhalten Sie Ihre M3U-Links und Xtream Codes für die sofortige Aktivierung.",
+    h1: "IPTV Smarters Pro – Installations- und Konfigurationsanleitung für jedes Gerät",
   },
 
   // ── Section 1: Hero ─────────────────────────────────────────────────────
   hero: {
-    pill: "IPTV Smarters Pro · Stap voor stap",
-    title: "Installeer IPTV Smarters Pro in een paar minuten",
-    subtitle: "Volg onze duidelijke gids om IPTV Smarters Pro te installeren op uw Smart TV, Fire TV Stick, telefoon of tablet. Uitleg over M3U en Xtream Codes inbegrepen.",
+    pill: "IPTV Smarters Pro · Schritt für Schritt",
+    title: "Installieren Sie IPTV Smarters Pro in wenigen Minuten",
+    subtitle: "Folgen Sie unserer klaren Anleitung, um IPTV Smarters Pro auf Ihrem Smart TV, Fire TV Stick, Smartphone oder Tablet zu installieren. Erklärung zu M3U und Xtream Codes inklusive.",
     bg: "/images/hero-bg.webp",
-    ctaPrimary: "Bekijk de installatiegids",
+    ctaPrimary: "Installationsanleitung ansehen",
     ctaPrimaryHref: "#installatie",
     ctaSecondary: "M3U & Xtream Codes",
     ctaSecondaryHref: "#pakketten",
@@ -32,201 +32,201 @@ const smartersPro: SixteenSectionContent = {
   // ── Section 2: Trust bar ────────────────────────────────────────────────
   trustBar: {
     items: [
-      { label: "gidsen per apparaat", value: "10+" },
-      { label: "app-beoordeling", value: "4,5/5" },
-      { label: "activeringen per dag", value: "100+" },
-      { label: "Nederlandstalige ondersteuning", value: "24/7" },
+      { label: "Anleitungen je Gerät", value: "10+" },
+      { label: "App-Bewertung", value: "4,5/5" },
+      { label: "Aktivierungen pro Tag", value: "100+" },
+      { label: "Deutschsprachiger Support", value: "24/7" },
     ],
   },
 
   // ── Section 3: Problem ──────────────────────────────────────────────────
   problem: {
-    eyebrow: "Veelvoorkomende problemen",
-    title: "Waarom de installatie van IPTV Smarters Pro soms mislukt",
-    subtitle: "Veel gebruikers lopen vast bij de configuratie van IPTV Smarters Pro. Dit zijn de meest voorkomende obstakels.",
+    eyebrow: "Häufige Probleme",
+    title: "Warum die Installation von IPTV Smarters Pro manchmal fehlschlägt",
+    subtitle: "Viele Nutzer stoßen bei der Konfiguration von IPTV Smarters Pro auf Hindernisse. Das sind die häufigsten Stolpersteine.",
     pains: [
-      { title: "IPTV Smarters Pro: het apparaat werkt niet met de app", desc: "Niet alle apparaten ondersteunen IPTV Smarters Pro. Of de app is beschikbaar maar werkt niet goed vanwege verouderde firmware of ontbrekende codecs." },
-      { title: "IPTV Smarters Pro: de M3U-link of Xtream Codes werken niet", desc: "De ontvangen inloggegevens zijn verkeerd ingevoerd, bevatten een typfout, of de aanbieder heeft vage instructies gegeven. Resultaat: een zwart scherm." },
-      { title: "IPTV Smarters Pro: de EPG (programmagids) laadt niet", desc: "Zonder een werkende elektronische programmagids mist u essentiële functies. U ziet alleen zendernummers zonder programmagegevens." },
-      { title: "IPTV Smarters Pro: geen Nederlandstalige installatiehulp", desc: "Bij problemen staat u er alleen voor. YouTube-video's zijn in het Engels of verouderd. Stap-voor-stap gidsen in het Nederlands ontbreken." },
+      { title: "IPTV Smarters Pro: das Gerät funktioniert nicht mit der App", desc: "Nicht alle Geräte unterstützen IPTV Smarters Pro. Oder die App ist zwar verfügbar, funktioniert aber wegen veralteter Firmware oder fehlender Codecs nicht richtig." },
+      { title: "IPTV Smarters Pro: der M3U-Link oder die Xtream Codes funktionieren nicht", desc: "Die erhaltenen Zugangsdaten wurden falsch eingegeben, enthalten einen Tippfehler, oder der Anbieter hat unklare Anweisungen gegeben. Ergebnis: ein schwarzer Bildschirm." },
+      { title: "IPTV Smarters Pro: die EPG (Programmführer) lädt nicht", desc: "Ohne funktionierenden elektronischen Programmführer fehlen Ihnen wichtige Funktionen. Sie sehen nur Sendernummern ohne Programminformationen." },
+      { title: "IPTV Smarters Pro: keine deutschsprachige Installationshilfe", desc: "Bei Problemen stehen Sie allein da. YouTube-Videos sind auf Englisch oder veraltet. Schritt-für-Schritt-Anleitungen auf Deutsch fehlen." },
     ],
   },
 
   // ── Section 4: Solution ─────────────────────────────────────────────────
   solution: {
-    eyebrow: "Onze aanpak",
-    title: "Zo installeert u IPTV Smarters Pro zonder fouten",
-    subtitle: "Met deze gestructureerde aanpak werkt IPTV Smarters Pro in 5 minuten op elk apparaat.",
+    eyebrow: "Unser Ansatz",
+    title: "So installieren Sie IPTV Smarters Pro fehlerfrei",
+    subtitle: "Mit diesem strukturierten Ansatz läuft IPTV Smarters Pro in 5 Minuten auf jedem Gerät.",
     points: [
-      { title: "IPTV Smarters Pro: kies de juiste versie van de app", desc: "IPTV Smarters Pro is beschikbaar voor Smart TV (Samsung, LG, Android TV), Fire TV Stick, iOS en Android. Download altijd de officiële versie uit de app-store van uw apparaat." },
-      { title: "IPTV Smarters Pro: voer uw inloggegevens correct in", desc: "U ontvangt van ons een M3U-link en Xtream Codes. Kopieer ze exact — hoofdlettergevoelig — en plak ze in de app. Wij leveren duidelijke voorbeelden." },
-      { title: "IPTV Smarters Pro: activeer de EPG-gids", desc: "Na het invoeren van uw inloggegevens laadt de app automatisch de programmagids. Controleer of de EPG-URL correct is voor volledige informatie." },
-      { title: "IPTV Smarters Pro: hulp in het Nederlands bij elke stap", desc: "Ons supportteam begeleidt u via WhatsApp bij elke stap van de installatie. Stuur een foto van het probleem en we lossen het binnen 5 minuten op." },
+      { title: "IPTV Smarters Pro: die richtige Version der App wählen", desc: "IPTV Smarters Pro ist verfügbar für Smart TV (Samsung, LG, Android TV), Fire TV Stick, iOS und Android. Laden Sie immer die offizielle Version aus dem App Store Ihres Geräts herunter." },
+      { title: "IPTV Smarters Pro: Zugangsdaten korrekt eingeben", desc: "Sie erhalten von uns einen M3U-Link und Xtream Codes. Kopieren Sie diese exakt — Groß-/Kleinschreibung beachten — und fügen Sie sie in die App ein. Wir liefern klare Beispiele." },
+      { title: "IPTV Smarters Pro: den EPG-Guide aktivieren", desc: "Nach Eingabe Ihrer Zugangsdaten lädt die App automatisch den Programmführer. Prüfen Sie, ob die EPG-URL korrekt ist, für vollständige Informationen." },
+      { title: "IPTV Smarters Pro: Hilfe auf Deutsch bei jedem Schritt", desc: "Unser Support-Team begleitet Sie über WhatsApp durch jeden Installationsschritt. Senden Sie ein Foto des Problems, und wir lösen es innerhalb von 5 Minuten." },
     ],
   },
 
   // ── Section 5: Features ─────────────────────────────────────────────────
   features: {
-    eyebrow: "App-functies",
-    title: "Waarom IPTV Smarters Pro de beste IPTV-app is",
-    subtitle: "Ontdek de functies die IPTV Smarters Pro tot de populairste IPTV-app maken.",
+    eyebrow: "App-Funktionen",
+    title: "Warum IPTV Smarters Pro die beste IPTV-App ist",
+    subtitle: "Entdecken Sie die Funktionen, die IPTV Smarters Pro zur beliebtesten IPTV-App machen.",
     features: [
-      { title: "IPTV Smarters Pro: gebruiksvriendelijke interface", desc: "Een duidelijke en intuïtieve interface die direct laat zien hoe u zenders, films en de programmagids gebruikt. Geschikt voor alle leeftijden." },
-      { title: "IPTV Smarters Pro: M3U- en Xtream Codes-ondersteuning", desc: "Twee manieren om uw IPTV-abonnement te koppelen. M3U voor eenvoudige afspeellijsten, Xtream Codes voor geavanceerde functies zoals EPG en VOD." },
-      { title: "IPTV Smarters Pro: volledige EPG-integratie", desc: "Een complete programmagids met namen, beschrijvingen, tijden en genres. Zoek, filter en ontdek nieuwe programma's." },
-      { title: "IPTV Smarters Pro: multi-scherm-ondersteuning", desc: "Kijk live tv en films op meerdere schermen tegelijk. Ideaal voor gezinnen waar iedereen zijn eigen programma op zijn eigen apparaat wil kijken." },
-      { title: "IPTV Smarters Pro: catch-up en timeshift", desc: "Bekijk gemiste programma's met catch-up. Pauzeer en spoel live tv terug met timeshift. Ook beschikbaar voor Nederlandse en Franse zenders." },
-      { title: "IPTV Smarters Pro: favorieten en ouderlijk toezicht", desc: "Maak uw eigen favorietenlijst met uw meest bekeken zenders. Stel ouderlijk toezicht in voor bepaalde zenders of inhoud." },
+      { title: "IPTV Smarters Pro: benutzerfreundliche Oberfläche", desc: "Eine klare und intuitive Oberfläche, die sofort zeigt, wie Sie Sender, Filme und den Programmführer nutzen. Geeignet für jedes Alter." },
+      { title: "IPTV Smarters Pro: M3U- und Xtream-Codes-Unterstützung", desc: "Zwei Wege, Ihr IPTV-Abonnement zu verbinden. M3U für einfache Playlists, Xtream Codes für erweiterte Funktionen wie EPG und VOD." },
+      { title: "IPTV Smarters Pro: vollständige EPG-Integration", desc: "Ein kompletter Programmführer mit Namen, Beschreibungen, Zeiten und Genres. Suchen, filtern und neue Sendungen entdecken." },
+      { title: "IPTV Smarters Pro: Multi-Screen-Unterstützung", desc: "Sehen Sie Live-TV und Filme auf mehreren Bildschirmen gleichzeitig. Ideal für Familien, in denen jeder sein eigenes Programm auf seinem eigenen Gerät sehen möchte." },
+      { title: "IPTV Smarters Pro: Catch-up und Timeshift", desc: "Verpasste Sendungen mit Catch-up nachholen. Live-TV mit Timeshift pausieren und zurückspulen. Auch für deutsche und internationale Sender verfügbar." },
+      { title: "IPTV Smarters Pro: Favoriten und Kindersicherung", desc: "Erstellen Sie Ihre eigene Favoritenliste mit den meistgesehenen Sendern. Richten Sie eine Kindersicherung für bestimmte Sender oder Inhalte ein." },
     ],
   },
 
   // ── Section 6: Why Us ───────────────────────────────────────────────────
   whyUs: {
-    eyebrow: "Waarom wij",
-    title: "Dit is waarom wij het beste werken met IPTV Smarters Pro",
-    subtitle: "Onze service is volledig geoptimaliseerd voor IPTV Smarters Pro.",
+    eyebrow: "Warum wir",
+    title: "Deshalb funktioniert IPTV Smarters Pro bei uns am besten",
+    subtitle: "Unser Service ist vollständig auf IPTV Smarters Pro optimiert.",
     reasons: [
-      { title: "IPTV Smarters Pro: vooraf geteste M3U & Xtream Codes", desc: "We testen elke M3U-link en elke Xtream Code voordat u deze ontvangt. Garantie dat het direct werkt in IPTV Smarters Pro op elk apparaat." },
-      { title: "IPTV Smarters Pro: installatiegidsen in het Nederlands", desc: "Geen YouTube-video's in het Engels of verouderde forums. Wij bieden actuele stap-voor-stap gidsen in het Nederlands, met schermafbeeldingen per apparaat." },
-      { title: "IPTV Smarters Pro: WhatsApp-hulp 24/7 voor installatie", desc: "Werkt het niet? Stuur een bericht en ons team helpt u op afstand met de installatie van IPTV Smarters Pro. Binnen 5 minuten antwoord." },
+      { title: "IPTV Smarters Pro: vorab getestete M3U & Xtream Codes", desc: "Wir testen jeden M3U-Link und jeden Xtream Code, bevor Sie ihn erhalten. Garantie, dass er sofort in IPTV Smarters Pro auf jedem Gerät funktioniert." },
+      { title: "IPTV Smarters Pro: Installationsanleitungen auf Deutsch", desc: "Keine englischen YouTube-Videos oder veralteten Foren. Wir bieten aktuelle Schritt-für-Schritt-Anleitungen auf Deutsch, mit Bildschirmfotos je Gerät." },
+      { title: "IPTV Smarters Pro: WhatsApp-Hilfe rund um die Uhr", desc: "Funktioniert es nicht? Schreiben Sie uns, und unser Team hilft Ihnen aus der Ferne bei der Installation von IPTV Smarters Pro. Antwort innerhalb von 5 Minuten." },
     ],
   },
 
   // ── Section 7: How It Works ─────────────────────────────────────────────
   how: {
-    eyebrow: "Installatie in 3 stappen",
-    title: "Zo installeert u IPTV Smarters Pro met IPTV Smarter",
-    subtitle: "Volg deze 3 stappen en u kijkt binnen 5 minuten naar duizenden zenders.",
+    eyebrow: "Installation in 3 Schritten",
+    title: "So installieren Sie IPTV Smarters Pro mit IPTV Germany",
+    subtitle: "Folgen Sie diesen 3 Schritten, und Sie sehen innerhalb von 5 Minuten Tausende Sender.",
     steps: [
-      { step: "01", title: "Download IPTV Smarters Pro", desc: "Ga naar de app-store van uw apparaat (Samsung Smart Hub, LG Content Store, Google Play, App Store of Amazon Appstore) en installeer de officiële IPTV Smarters Pro-app." },
-      { step: "02", title: "IPTV Smarters Pro: voer uw inloggegevens in", desc: "Open de app en kies « Login with Xtream Codes » of « Load Your Playlist via M3U URL ». Voer de verstrekte inloggegevens exact in zoals ontvangen per e-mail of WhatsApp." },
-      { step: "03", title: "IPTV Smarters Pro: begin met streamen", desc: "Na het laden van de afspeellijst verschijnen alle zenders, de EPG en de VOD-bibliotheek. Kies een zender en begin met kijken in 4K-kwaliteit." },
+      { step: "01", title: "IPTV Smarters Pro herunterladen", desc: "Gehen Sie zum App Store Ihres Geräts (Samsung Smart Hub, LG Content Store, Google Play, App Store oder Amazon Appstore) und installieren Sie die offizielle IPTV-Smarters-Pro-App." },
+      { step: "02", title: "IPTV Smarters Pro: Zugangsdaten eingeben", desc: "Öffnen Sie die App und wählen Sie „Login with Xtream Codes“ oder „Load Your Playlist via M3U URL“. Geben Sie die bereitgestellten Zugangsdaten exakt so ein, wie Sie sie per E-Mail oder WhatsApp erhalten haben." },
+      { step: "03", title: "IPTV Smarters Pro: mit dem Streamen beginnen", desc: "Nach dem Laden der Playlist erscheinen alle Sender, die EPG und die VOD-Bibliothek. Wählen Sie einen Sender und beginnen Sie mit dem Schauen in 4K-Qualität." },
     ],
   },
 
   // ── Section 8: Device Compatibility ──────────────────────────────────────
   devices: {
-    eyebrow: "Ondersteunde apparaten",
-    title: "IPTV Smarters Pro werkt het beste op deze apparaten",
-    subtitle: "IPTV Smarters Pro is beschikbaar voor de meeste moderne apparaten.",
+    eyebrow: "Unterstützte Geräte",
+    title: "IPTV Smarters Pro funktioniert am besten auf diesen Geräten",
+    subtitle: "IPTV Smarters Pro ist für die meisten modernen Geräte verfügbar.",
     deviceGroups: [
       { name: "Smart TV", items: ["Samsung Smart TV (2017+)", "LG webOS (2018+)", "Android TV (Sony, Philips, TCL)", "Hisense VIDAA", "Panasonic"] },
-      { name: "Streaming-apparaten", items: ["Amazon Fire TV Stick 4K Max", "Google Chromecast with Google TV", "Nvidia Shield TV Pro", "Formuler Z11", "Dune HD", "MAG 524"] },
-      { name: "Mobiele apparaten", items: ["iPhone 12-16 (iOS 15+)", "iPad Pro/Air/Mini (iPadOS)", "Samsung Galaxy S23-25", "Google Pixel 7-9", "OnePlus 12/13", "Xiaomi 14T"] },
-      { name: "Overige platforms", items: ["PC Windows (via BlueStacks)", "Mac (via Android-emulator)", "Linux (via Android-emulator)", "IPTV Smarters PC Edition"] },
+      { name: "Streaming-Geräte", items: ["Amazon Fire TV Stick 4K Max", "Google Chromecast with Google TV", "Nvidia Shield TV Pro", "Formuler Z11", "Dune HD", "MAG 524"] },
+      { name: "Mobile Geräte", items: ["iPhone 12-16 (iOS 15+)", "iPad Pro/Air/Mini (iPadOS)", "Samsung Galaxy S23-25", "Google Pixel 7-9", "OnePlus 12/13", "Xiaomi 14T"] },
+      { name: "Weitere Plattformen", items: ["PC Windows (über BlueStacks)", "Mac (über Android-Emulator)", "Linux (über Android-Emulator)", "IPTV Smarters PC Edition"] },
     ],
-    ctaText: "Bekijk de volledige installatiegids per apparaat",
+    ctaText: "Vollständige Installationsanleitung je Gerät ansehen",
   },
 
   // ── Section 9: Channels ─────────────────────────────────────────────────
   channels: {
-    eyebrow: "Zenders in de app",
-    title: "Dit zijn de zenders die u bekijkt via IPTV Smarters Pro",
-    subtitle: "Een overzicht van het aanbod dat verschijnt in de app na het invoeren van uw inloggegevens.",
+    eyebrow: "Sender in der App",
+    title: "Das sind die Sender, die Sie über IPTV Smarters Pro sehen",
+    subtitle: "Ein Überblick über das Angebot, das nach Eingabe Ihrer Zugangsdaten in der App erscheint.",
     channelGroups: [
-      { name: "Frans & NL aanbod", items: ["Franse algemene zenders HD", "Franse bioscoopzenders HD", "Nederlandse publieke zenders HD", "Nederlandse commerciële zenders HD", "Sportzenders HD", "Voetbal HD", "Cultuur HD", "Comedy HD"] },
-      { name: "Films & series (VOD)", items: ["Nieuwste bioscoopreleases", "Exclusieve originals", "Volledige series", "IMDb Top 250", "Documentaires", "Jeugdprogramma's"] },
-      { name: "Internationaal sport", items: ["Britse sport", "Sport op aanvraag", "Amerikaanse sport", "Internationaal voetbal", "Europese sport", "Afrikaanse sport", "Oceanië sport"] },
-      { name: "Nieuws & informatie", items: ["Internationaal nieuws", "Brits nieuws", "Frans nieuws", "24/7 nieuws", "Europees nieuws", "Arabische actualiteit"] },
+      { name: "Deutsches Angebot", items: ["Vollprogramme HD", "Öffentlich-rechtliche Sender HD", "Regionale Sender HD", "Sportsender HD", "Fußball HD", "Kultur HD", "Comedy HD", "Kindersender HD"] },
+      { name: "Filme & Serien (VOD)", items: ["Neueste Kino-Veröffentlichungen", "Exklusive Originals", "Komplette Serien", "IMDb Top 250", "Dokumentationen", "Kinderprogramme"] },
+      { name: "Internationaler Sport", items: ["Britischer Sport", "Sport auf Abruf", "Amerikanischer Sport", "Internationaler Fußball", "Europäischer Sport", "Afrikanischer Sport", "Ozeanien-Sport"] },
+      { name: "Nachrichten & Information", items: ["Internationale Nachrichten", "Britische Nachrichten", "Französische Nachrichten", "24/7-Nachrichten", "Europäische Nachrichten", "Arabische Nachrichten"] },
     ],
   },
 
   // ── Section 10: Pricing ─────────────────────────────────────────────────
   pricing: {
-    pillText: "Abonnementen",
-    title: "Begin met IPTV Smarters Pro",
-    subtitle: "Kies een abonnement en ontvang onmiddellijk uw M3U-link en Xtream Codes voor IPTV Smarters Pro.",
+    pillText: "Abonnements",
+    title: "Beginnen Sie mit IPTV Smarters Pro",
+    subtitle: "Wählen Sie ein Abonnement und erhalten Sie sofort Ihren M3U-Link und Ihre Xtream Codes für IPTV Smarters Pro.",
   },
 
   // ── Section 11: Comparison ────────────────────────────────────────────────
   comparison: {
-    eyebrow: "M3U configureren",
-    title: "IPTV Smarters Pro vergeleken met andere IPTV-apps",
-    subtitle: "Waarom IPTV Smarters Pro de beste keuze is voor uw IPTV-abonnement.",
+    eyebrow: "M3U konfigurieren",
+    title: "IPTV Smarters Pro im Vergleich zu anderen IPTV-Apps",
+    subtitle: "Warum IPTV Smarters Pro die beste Wahl für Ihr IPTV-Abonnement ist.",
     rows: [
-      { feature: "Gebruiksgemak", us: "Zeer eenvoudig", them: "Moeilijk tot gemiddeld" },
-      { feature: "Ondersteunde apparaten", us: "Smart TV, Fire Stick, iOS, Android", them: "Beperkt tot 1-2 platforms" },
-      { feature: "M3U-ondersteuning", us: "Ja, volledig", them: "Variabel" },
-      { feature: "Xtream Codes API", us: "Ja", them: "Niet altijd" },
-      { feature: "EPG-integratie", us: "Volledig automatisch", them: "Handmatig of afwezig" },
-      { feature: "VOD-ondersteuning", us: "Ja, met zoekfunctie", them: "Beperkt" },
-      { feature: "Multi-scherm", us: "Ja, onbeperkt", them: "Beperkt tot 1 scherm" },
+      { feature: "Benutzerfreundlichkeit", us: "Sehr einfach", them: "Schwierig bis mittel" },
+      { feature: "Unterstützte Geräte", us: "Smart TV, Fire Stick, iOS, Android", them: "Begrenzt auf 1-2 Plattformen" },
+      { feature: "M3U-Unterstützung", us: "Ja, vollständig", them: "Unterschiedlich" },
+      { feature: "Xtream Codes API", us: "Ja", them: "Nicht immer" },
+      { feature: "EPG-Integration", us: "Vollautomatisch", them: "Manuell oder fehlend" },
+      { feature: "VOD-Unterstützung", us: "Ja, mit Suchfunktion", them: "Begrenzt" },
+      { feature: "Multi-Screen", us: "Ja, unbegrenzt", them: "Begrenzt auf 1 Bildschirm" },
     ],
   },
 
   // ── Section 12: Testimonials ─────────────────────────────────────────────
   testimonials: {
-    eyebrow: "Beoordelingen",
-    title: "Wat gebruikers zeggen over IPTV Smarters Pro + IPTV Smarter",
-    subtitle: "Duizenden gebruikers installeren de app met onze hulp.",
+    eyebrow: "Bewertungen",
+    title: "Was Nutzer über IPTV Smarters Pro + IPTV Germany sagen",
+    subtitle: "Tausende Nutzer installieren die App mit unserer Hilfe.",
   },
 
   // ── Section 13: Security & Reliability ────────────────────────────────────
   security: {
-    eyebrow: "Ondersteuning",
-    title: "Veilig gebruik van IPTV Smarters Pro",
-    subtitle: "Wij zorgen voor de veiligheid van uw gegevens en uw apparaten.",
+    eyebrow: "Support",
+    title: "Sichere Nutzung von IPTV Smarters Pro",
+    subtitle: "Wir sorgen für die Sicherheit Ihrer Daten und Ihrer Geräte.",
     items: [
-      { title: "IPTV Smarters Pro: officiële app, geen APK", desc: "Download altijd IPTV Smarters Pro uit de officiële winkel van uw apparaat. Vermijd APK-bestanden van onbekende bronnen die malware kunnen bevatten." },
-      { title: "IPTV Smarters Pro: beveiligde M3U-links", desc: "Uw persoonlijke M3U-link is uniek en mag niet worden gedeeld. Bij verdachte activiteit kunt u een nieuwe link aanvragen bij ons supportteam." },
-      { title: "IPTV Smarters Pro: geen wachtwoorden opgeslagen", desc: "Uw inloggegevens worden alleen lokaal op uw apparaat opgeslagen. Wij slaan geen wachtwoorden op en delen geen gegevens met derden." },
-      { title: "IPTV Smarters Pro: automatische updates", desc: "Houd IPTV Smarters Pro up-to-date voor de beste beveiliging en de nieuwste functies. Updates worden automatisch geïnstalleerd via de app-store." },
+      { title: "IPTV Smarters Pro: offizielle App, keine APK", desc: "Laden Sie IPTV Smarters Pro immer aus dem offiziellen Store Ihres Geräts herunter. Vermeiden Sie APK-Dateien aus unbekannten Quellen, die Malware enthalten können." },
+      { title: "IPTV Smarters Pro: gesicherte M3U-Links", desc: "Ihr persönlicher M3U-Link ist einzigartig und darf nicht geteilt werden. Bei verdächtigen Aktivitäten können Sie bei unserem Support-Team einen neuen Link anfragen." },
+      { title: "IPTV Smarters Pro: keine gespeicherten Passwörter", desc: "Ihre Zugangsdaten werden nur lokal auf Ihrem Gerät gespeichert. Wir speichern keine Passwörter und geben keine Daten an Dritte weiter." },
+      { title: "IPTV Smarters Pro: automatische Updates", desc: "Halten Sie IPTV Smarters Pro für beste Sicherheit und die neuesten Funktionen aktuell. Updates werden automatisch über den App Store installiert." },
     ],
   },
 
   // ── Section 14: FAQ (exactly 8) ─────────────────────────────────────────
   faq: {
     eyebrow: "FAQ",
-    title: "Veelgestelde vragen over IPTV Smarters Pro",
-    subtitle: "De antwoorden op de meest gestelde vragen over installatie en gebruik.",
+    title: "Häufig gestellte Fragen zu IPTV Smarters Pro",
+    subtitle: "Die Antworten auf die häufigsten Fragen zu Installation und Nutzung.",
     faqs: [
       {
-        question: "Wat is IPTV Smarters Pro precies?",
-        answer: "IPTV Smarters Pro is een populaire waarmee u IPTV kunt kijken op verschillende apparaten. De app ondersteunt M3U-afspeellijsten en de Xtream Codes API. Hij is beschikbaar voor Smart TV, Fire TV Stick, iOS, Android en andere platforms."
+        question: "Was genau ist IPTV Smarters Pro?",
+        answer: "IPTV Smarters Pro ist eine beliebte App, mit der Sie IPTV auf verschiedenen Geräten schauen können. Die App unterstützt M3U-Playlists und die Xtream Codes API. Sie ist verfügbar für Smart TV, Fire TV Stick, iOS, Android und weitere Plattformen."
       },
       {
-        question: "Hoe installeer ik IPTV Smarters Pro op mijn Samsung Smart TV?",
-        answer: "Ga naar de Samsung Smart Hub, zoek naar « IPTV Smarters Pro » in de app-store en installeer deze. Open de app, kies « Login with Xtream Codes » en voer uw inloggegevens in. Uw zenders worden automatisch geladen met de programmagids."
+        question: "Wie installiere ich IPTV Smarters Pro auf meinem Samsung Smart TV?",
+        answer: "Gehen Sie zum Samsung Smart Hub, suchen Sie nach „IPTV Smarters Pro“ im App Store und installieren Sie die App. Öffnen Sie sie, wählen Sie „Login with Xtream Codes“ und geben Sie Ihre Zugangsdaten ein. Ihre Sender werden automatisch samt Programmführer geladen."
       },
       {
-        question: "Wat is het verschil tussen M3U en Xtream Codes?",
-        answer: "M3U is een afspeellijst-link met al uw zenders. U plakt de URL in de app en de zenders worden geladen. Xtream Codes is een API-methode waar u een gebruikersnaam, wachtwoord en server-URL invoert, voor een completere ervaring met EPG en VOD."
+        question: "Was ist der Unterschied zwischen M3U und Xtream Codes?",
+        answer: "M3U ist ein Playlist-Link mit all Ihren Sendern. Sie fügen die URL in die App ein, und die Sender werden geladen. Xtream Codes ist eine API-Methode, bei der Sie einen Benutzernamen, ein Passwort und eine Server-URL eingeben, für ein vollständigeres Erlebnis mit EPG und VOD."
       },
       {
-        question: "Waarom werkt IPTV Smarters Pro niet op mijn apparaat?",
-        answer: "Dit kan komen door verouderde firmware, onvoldoende geheugen of een niet-compatibel systeemversie. Controleer of uw apparaat minimaal Android 7.0 of iOS 14 ondersteunt. Bij Smart TV moet de app beschikbaar zijn in de officiële winkel."
+        question: "Warum funktioniert IPTV Smarters Pro nicht auf meinem Gerät?",
+        answer: "Das kann an veralteter Firmware, unzureichendem Speicher oder einer nicht kompatiblen Systemversion liegen. Prüfen Sie, ob Ihr Gerät mindestens Android 7.0 oder iOS 14 unterstützt. Bei Smart TVs muss die App im offiziellen Store verfügbar sein."
       },
       {
-        question: "Hoe voeg ik mijn IPTV-abonnement toe aan IPTV Smarters Pro?",
-        answer: "Open de app, klik op « Login » en kies « Xtream Codes API » of « M3U URL ». Voer uw inloggegevens in (server-URL, gebruikersnaam, wachtwoord of M3U-link). Na het laden verschijnt uw volledige zenderlijst met EPG en VOD."
+        question: "Wie füge ich mein IPTV-Abonnement zu IPTV Smarters Pro hinzu?",
+        answer: "Öffnen Sie die App, klicken Sie auf „Login“ und wählen Sie „Xtream Codes API“ oder „M3U URL“. Geben Sie Ihre Zugangsdaten ein (Server-URL, Benutzername, Passwort oder M3U-Link). Nach dem Laden erscheint Ihre vollständige Senderliste mit EPG und VOD."
       },
       {
-        question: "Hoe krijg ik de EPG-gids aan de slag in IPTV Smarters Pro?",
-        answer: "De EPG wordt automatisch geladen na het invoeren van uw Xtream Codes of M3U-link. Als de gids niet verschijnt, controleer dan of de EPG-URL correct is. Bij IPTV Smarter ontvangt u de juiste EPG-URL als onderdeel van uw configuratie."
+        question: "Wie bringe ich den EPG-Guide in IPTV Smarters Pro zum Laufen?",
+        answer: "Die EPG wird automatisch nach Eingabe Ihrer Xtream Codes oder Ihres M3U-Links geladen. Erscheint der Guide nicht, prüfen Sie, ob die EPG-URL korrekt ist. Bei IPTV Germany erhalten Sie die passende EPG-URL als Teil Ihrer Konfiguration."
       },
       {
-        question: "Kan ik IPTV Smarters Pro op meerdere apparaten tegelijk gebruiken?",
-        answer: "Ja, u kunt IPTV Smarters Pro op al uw apparaten installeren. Afhankelijk van uw abonnement kunt u tegelijk streamen op 1, 2, 3 of 4 apparaten. De app synchroniseert uw favorieten niet tussen apparaten."
+        question: "Kann ich IPTV Smarters Pro auf mehreren Geräten gleichzeitig nutzen?",
+        answer: "Ja, Sie können IPTV Smarters Pro auf all Ihren Geräten installieren. Je nach Abonnement können Sie gleichzeitig auf 1, 2, 3 oder 4 Geräten streamen. Die App synchronisiert Ihre Favoriten nicht zwischen den Geräten."
       },
       {
-        question: "Wat doe ik als IPTV Smarters Pro blijft onderbreken?",
-        answer: "Controleer eerst uw internetverbinding (minimaal 25 Mbps voor HD, 50 Mbps voor 4K). Sluit andere bandbreedte-intensieve apps. Schakel « Hardware Decoding » in in de app-instellingen. Als het probleem aanhoudt, neem contact op met ons supportteam."
+        question: "Was tue ich, wenn IPTV Smarters Pro ständig unterbricht?",
+        answer: "Prüfen Sie zunächst Ihre Internetverbindung (mindestens 25 Mbit/s für HD, 50 Mbit/s für 4K). Schließen Sie andere bandbreitenintensive Apps. Aktivieren Sie „Hardware Decoding“ in den App-Einstellungen. Besteht das Problem weiter, kontaktieren Sie unser Support-Team."
       },
     ],
   },
 
   // ── Section 15: Internal Linking Hub ──────────────────────────────────────
   internalLinks: {
-    eyebrow: "Meer IPTV-hulppagina's",
-    title: "IPTV Smarters Pro: ontdek meer over IPTV en onze diensten",
-    subtitle: "Bekijk onze andere pagina's voor een compleet overzicht van ons aanbod.",
-    links: [LINK.home, LINK.kopen, LINK.abonnement, LINK.aanbieder, LINK.nederland],
+    eyebrow: "Weitere IPTV-Hilfeseiten",
+    title: "IPTV Smarters Pro: entdecken Sie mehr über IPTV und unseren Service",
+    subtitle: "Sehen Sie sich unsere anderen Seiten für einen vollständigen Überblick über unser Angebot an.",
+    links: [LINK.home, LINK.kaufen, LINK.abonnement, LINK.anbieter, LINK.deutschland],
   },
 
   // ── Section 16: Final CTA ────────────────────────────────────────────────
   finalCta: {
-    title: "Klaar om IPTV Smarters Pro te installeren?",
-    description: "Kies een abonnement, ontvang onmiddellijk uw M3U-link en Xtream Codes, en stream duizenden zenders in 5 minuten op uw favoriete apparaat.",
+    title: "Bereit, IPTV Smarters Pro zu installieren?",
+    description: "Wählen Sie ein Abonnement, erhalten Sie sofort Ihren M3U-Link und Ihre Xtream Codes, und streamen Sie in 5 Minuten Tausende Sender auf Ihrem bevorzugten Gerät.",
   },
 };
 

@@ -30,8 +30,8 @@ export default function IptvAanbiederPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbSchema([
-            { name: "Home", url: "https://iptvsmarter.nl" },
-            { name: "Fournisseur IPTV", url: "https://iptvsmarter.nl/iptv-aanbieder" },
+            { name: "Home", url: "https://iptv-germany.com" },
+            { name: "IPTV-Anbieter", url: "https://iptv-germany.com/iptv-anbieter" },
           ])),
         }}
       />

@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { type ReactNode } from "react";
 import {
@@ -19,16 +19,16 @@ interface HeroProps {
 }
 
 const quickPoints = [
-  "Directe activering",
-  "Alle apparaten",
-  "Klantenservice 24/7",
+  "Sofortige Aktivierung",
+  "Alle Geräte",
+  "Kundenservice rund um die Uhr",
 ];
 
 const showcaseStats = [
-  { icon: Tv, label: "Live zenders", value: "31.000+ zenders" },
-  { icon: Film, label: "Films & series (VOD)", value: "Uitgebreide VOD-bibliotheek" },
-  { icon: MonitorPlay, label: "Beeldkwaliteit", value: "4K & 8K HDR" },
-  { icon: ShieldCheck, label: "Serverbeschikbaarheid", value: "99,9% uptime" },
+  { icon: Tv, label: "Live-Sender", value: "31.000+ Sender" },
+  { icon: Film, label: "Filme & Serien (VOD)", value: "Umfangreiche VOD-Bibliothek" },
+  { icon: MonitorPlay, label: "Bildqualität", value: "4K & 8K HDR" },
+  { icon: ShieldCheck, label: "Serververfügbarkeit", value: "99,9% Uptime" },
 ];
 
 const Hero = ({ pillText, title, subtitle, bgImage }: HeroProps) => {
@@ -64,15 +64,15 @@ const Hero = ({ pillText, title, subtitle, bgImage }: HeroProps) => {
           <div className="w-full lg:w-[54%] flex flex-col items-center text-center lg:items-start lg:text-left animate-fade-up">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-france-950/70 backdrop-blur-md border border-france-500/30 mb-7 text-xs sm:text-sm text-france-300 font-semibold tracking-wide shadow-[0_0_20px_rgba(236,201,75,0.12)]">
               <span className="h-2 w-2 rounded-full bg-france-400 animate-live-pulse" aria-hidden="true" />
-              {pillText || "IPTV Premium - IPTV Smarter Nederland"}
+              {pillText || "IPTV Premium - IPTV Germany Deutschland"}
             </span>
 
             <h1 className="font-display font-bold text-[1.75rem] leading-[1.12] sm:text-4xl md:text-5xl lg:text-5xl xl:text-[3.4rem] mb-5 text-blanc-50 tracking-tight drop-shadow-[0_2px_6px_rgba(0,0,0,0.85)]">
               {title || (
                 <>
-                  IPTV Smarter Nederland
+                  IPTV Germany Deutschland
                   <span className="mt-3 block bg-linear-to-r from-france-300 via-france-400 to-france-500 bg-clip-text text-transparent">
-                    Meer dan 31.000 Zenders, Films &amp; Series in 4K
+                    Mehr als 31.000 Sender, Filme &amp; Serien in 4K
                   </span>
                 </>
               )}
@@ -80,7 +80,7 @@ const Hero = ({ pillText, title, subtitle, bgImage }: HeroProps) => {
 
             <p className="text-base sm:text-lg md:text-xl text-blanc-300 max-w-xl mb-7 leading-relaxed drop-shadow-[0_1px_3px_rgba(0,0,0,0.85)]">
               {subtitle ||
-                "Profiteer van een premium IPTV Smarter in Nederland met meer dan 31.000 tv-zenders, films, series en sportevenementen in 4K en Full HD kwaliteit. Directe activering, snelle servers en een geoptimaliseerde IPTV-ervaring."}
+                "Profitieren Sie von einem Premium-IPTV Germany in Deutschland mit mehr als 31.000 TV-Sendern, Filmen, Serien und Sportereignissen in 4K- und Full-HD-Qualität. Sofortige Aktivierung, schnelle Server und ein optimiertes IPTV-Erlebnis."}
             </p>
 
             {/* Quick value chips */}
@@ -110,14 +110,14 @@ const Hero = ({ pillText, title, subtitle, bgImage }: HeroProps) => {
                   className="group-hover:scale-110 transition-transform"
                   aria-hidden="true"
                 />
-                Start gratis proefperiode
+                Kostenlose Testphase starten
               </Link>
               <Link
                 href="#pakketten"
                 className="w-full sm:w-auto px-9 py-4 rounded-2xl bg-france-950/40 backdrop-blur-md text-blanc-50 font-bold text-base sm:text-lg hover:bg-france-500/10 transition-all flex items-center justify-center gap-3 border border-france-500/35 hover:border-france-400/60"
               >
                 <Layers size={20} className="text-france-400" aria-hidden="true" />
-                Bekijk pakketten
+                Pakete ansehen
               </Link>
             </div>
 
@@ -136,7 +136,7 @@ const Hero = ({ pillText, title, subtitle, bgImage }: HeroProps) => {
                   >
                     <Image
                       src={src}
-                      alt={`Gebruiker ${i + 1}`}
+                      alt={`Nutzer ${i + 1}`}
                       fill
                       sizes="36px"
                       className="object-cover"
@@ -161,7 +161,7 @@ const Hero = ({ pillText, title, subtitle, bgImage }: HeroProps) => {
                   </span>
                 </div>
                 <p className="text-xs text-blanc-400 font-medium">
-                  Goedgekeurd door kijkers in Nederland
+                  Empfohlen von Zuschauern in Deutschland
                 </p>
               </div>
             </div>
@@ -177,7 +177,7 @@ const Hero = ({ pillText, title, subtitle, bgImage }: HeroProps) => {
               <div className="hero-float-card absolute -left-10 top-10 z-20 flex items-center gap-2 rounded-2xl border border-france-500/30 bg-france-950/80 px-4 py-3 backdrop-blur-md shadow-2xl">
                 <span className="badge-live">LIVE</span>
                 <span className="text-sm font-semibold text-blanc-50">
-                  Live sport
+                  Live-Sport
                 </span>
               </div>
               <div
@@ -185,7 +185,7 @@ const Hero = ({ pillText, title, subtitle, bgImage }: HeroProps) => {
                 style={{ animationDelay: "1.2s" }}
               >
                 <MonitorPlay size={18} className="text-france-400" aria-hidden="true" />
-                <span className="text-sm font-semibold text-blanc-50">4K - Zonder onderbreking</span>
+                <span className="text-sm font-semibold text-blanc-50">4K – Ohne Unterbrechung</span>
               </div>
 
               {/* Main glass command panel */}
@@ -197,7 +197,7 @@ const Hero = ({ pillText, title, subtitle, bgImage }: HeroProps) => {
                       <Tv size={18} aria-hidden="true" />
                     </span>
                     <div>
-                      <p className="text-sm font-bold text-blanc-50">IPTV Smarter</p>
+                      <p className="text-sm font-bold text-blanc-50">IPTV Germany</p>
                       <p className="text-[11px] text-blanc-400">Premium Streaming</p>
                     </div>
                   </div>
@@ -229,7 +229,7 @@ const Hero = ({ pillText, title, subtitle, bgImage }: HeroProps) => {
                   className="btn-gold mt-5 flex w-full items-center justify-center gap-2"
                 >
                   <Play size={16} fill="currentColor" aria-hidden="true" />
-                  Beginnen
+                  Jetzt starten
                 </Link>
               </div>
             </div>

@@ -19,21 +19,21 @@ import { SafeImage } from "@/components/shared/SafeImage";
 type GenreCard = { title: string; tag: string; icon: LucideIcon; image?: string };
 
 const CATALOG: GenreCard[] = [
-  { title: "Nieuwste films", tag: "Films 4K", icon: Popcorn, image: "/images/movies/4.webp" },
-  { title: "Populaire series", tag: "Volledige seizoenen", icon: Clapperboard, image: "/images/movies/6.webp" },
-  { title: "Actie & avontuur", tag: "Films", icon: Film, image: "/images/movies/9.webp" },
-  { title: "Sciencefiction", tag: "Series", icon: Ghost, image: "/images/movies/10.webp" },
-  { title: "Grote klassiekers", tag: "Filmtheek", icon: Sparkles, image: "/images/movies/11.webp" },
-  { title: "Kinderzenders", tag: "Gezin", icon: Baby, image: "/images/movies/14.webp" },
+  { title: "Neueste Filme", tag: "Filme 4K", icon: Popcorn, image: "/images/movies/4.webp" },
+  { title: "Beliebte Serien", tag: "Ganze Staffeln", icon: Clapperboard, image: "/images/movies/6.webp" },
+  { title: "Action & Abenteuer", tag: "Filme", icon: Film, image: "/images/movies/9.webp" },
+  { title: "Science-Fiction", tag: "Serien", icon: Ghost, image: "/images/movies/10.webp" },
+  { title: "Große Klassiker", tag: "Filmbibliothek", icon: Sparkles, image: "/images/movies/11.webp" },
+  { title: "Kindersender", tag: "Familie", icon: Baby, image: "/images/movies/14.webp" },
 ];
 
 const CHANNELS: GenreCard[] = [
-  { title: "Live sport", tag: "Live HD", icon: Trophy },
-  { title: "24/7 nieuws", tag: "Live", icon: Newspaper },
-  { title: "Muziekzenders", tag: "Live", icon: Music },
-  { title: "Documentaires", tag: "Ontdekking", icon: PlayCircle },
-  { title: "Internationale zenders", tag: "190+ landen", icon: Globe2 },
-  { title: "Premium 4K zenders", tag: "Ultra HD", icon: Radio },
+  { title: "Live-Sport", tag: "Live HD", icon: Trophy },
+  { title: "24/7-Nachrichten", tag: "Live", icon: Newspaper },
+  { title: "Musiksender", tag: "Live", icon: Music },
+  { title: "Dokumentationen", tag: "Entdeckung", icon: PlayCircle },
+  { title: "Internationale Sender", tag: "190+ Länder", icon: Globe2 },
+  { title: "Premium-4K-Sender", tag: "Ultra HD", icon: Radio },
 ];
 
 const PosterCard = ({ item }: { item: GenreCard }) => {
@@ -104,15 +104,16 @@ const TrendingSection = () => {
           <div>
             <span className="inline-flex items-center gap-2 rounded-full border border-france-500/20 bg-france-500/15 px-3.5 py-1.5 text-xs font-black uppercase tracking-[0.14em] text-france-100">
               <Sparkles size={14} aria-hidden="true" />
-              VOD-bibliotheek
+              VOD-Bibliothek
             </span>
             <h2 className="mt-4 font-display text-4xl font-black leading-tight text-blanc-50 sm:text-5xl">
-              Populaire films &amp; series
+              Beliebte Filme &amp; Serien
             </h2>
           </div>
           <p className="max-w-xl text-sm font-medium leading-6 text-blanc-400 sm:text-base">
-            Ontdek duizenden films en series op aanvraag, gecategoriseerd per
-            genre, plus de nieuwste releases — alles in HD en 4K.
+            Entdecken Sie tausende Filme und Serien auf Abruf, kategorisiert
+            nach Genre, sowie die neuesten Veröffentlichungen — alles in HD
+            und 4K.
           </p>
         </div>
 
@@ -123,12 +124,12 @@ const TrendingSection = () => {
                 <span className="grid h-10 w-10 place-items-center rounded-full border border-france-300/20 bg-france-500/15 text-france-300">
                   <PlayCircle size={21} aria-hidden="true" />
                 </span>
-                Meest bekeken genres
+                Meistgesehene Genres
               </h3>
             </div>
 
             <SliderFrame>
-              <div className="overflow-hidden pb-7 pt-2" aria-label="Film- en seriestructuren">
+              <div className="overflow-hidden pb-7 pt-2" aria-label="Film- und Serienkategorien">
                 <div className="poster-slider-track flex w-max">
                   <div className="flex gap-4 pr-4 sm:gap-5 sm:pr-5">
                     {originalItems.map((item, index) => (
@@ -148,7 +149,7 @@ const TrendingSection = () => {
           <div>
             <div className="mb-5 flex items-center justify-between gap-4">
               <span className="text-xs font-black uppercase tracking-[0.16em] text-france-100/65">
-                Premium zenders
+                Premium-Sender
               </span>
               <h3 className="flex items-center gap-3 text-xl font-black text-blanc-50">
                 <span className="grid h-10 w-10 place-items-center rounded-full border border-rouge-300/15 bg-rouge-400/10 text-rouge-200">
@@ -159,7 +160,7 @@ const TrendingSection = () => {
             </div>
 
             <SliderFrame compact>
-              <div className="overflow-hidden pb-7 pt-2" aria-label="Live-zendercategorieën">
+              <div className="overflow-hidden pb-7 pt-2" aria-label="Live-Senderkategorien">
                 <div className="channel-slider-track flex w-max">
                   <div className="flex gap-4 pr-4">
                     {channelItems.map((item, index) => (

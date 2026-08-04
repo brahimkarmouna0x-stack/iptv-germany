@@ -2,12 +2,12 @@
 
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
-export const alt = "IPTV kopen in Nederland — IPTV Smarter";
+export const alt = "IPTV kaufen in Deutschland — IPTV Germany";
 
 export default function Image() {
   return renderOgImage({
-    eyebrow: "IPTV kopen",
-    title: "IPTV kopen in Nederland",
-    subtitle: "Veilige bestelling, directe activering en streaming in 5 minuten.",
+    eyebrow: "IPTV kaufen",
+    title: "IPTV kaufen in Deutschland",
+    subtitle: "Sichere Bestellung, sofortige Aktivierung und Streaming in 5 Minuten.",
   });
 }

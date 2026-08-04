@@ -30,8 +30,8 @@ export default function IptvNederlandPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbSchema([
-            { name: "Home", url: "https://iptvsmarter.nl" },
-            { name: "IPTV Nederland", url: "https://iptvsmarter.nl/iptv-nederland" },
+            { name: "Home", url: "https://iptv-germany.com" },
+            { name: "IPTV Deutschland", url: "https://iptv-germany.com/iptv-deutschland" },
           ])),
         }}
       />

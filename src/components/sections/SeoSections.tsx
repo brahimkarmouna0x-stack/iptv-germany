@@ -1,4 +1,4 @@
-﻿import {
+import {
   Award,
   ChevronDown,
   Globe2,
@@ -16,11 +16,11 @@
 import { faqSchema } from "@/lib/structured-data";
 
 /**
- * The four brand SEO sections required for the fr-NL homepage:
- *   1. Waarom kiezen voor IPTV Smarter in Nederland ?
- *   2. De functies van ons IPTV Premium-abonnement
- *   3. Veelgestelde vragen over ons IPTV-abonnement  (+ FAQPage JSON-LD)
- *   4. Waarom kiezen Franstaligen in Nederland voor ons ?
+ * The four brand SEO sections for the de-DE homepage:
+ *   1. Warum sich für IPTV Germany in Deutschland entscheiden
+ *   2. Die Funktionen unseres IPTV Premium-Abonnements
+ *   3. Häufig gestellte Fragen zu unserem IPTV-Abonnement (+ FAQPage JSON-LD)
+ *   4. Warum deutsche Kunden IPTV Germany vertrauen (Support, Datenschutz, Server)
  *
  * Reuses the existing design system (glass cards, france/rouge palette,
  * gradient headings) so the visual identity stays unchanged.
@@ -29,132 +29,132 @@ import { faqSchema } from "@/lib/structured-data";
 const whyChoose = [
   {
     icon: Tv,
-    title: "Meer dan 31.000 zenders in 4K",
+    title: "Mehr als 31.000 Sender in 4K",
     description:
-      "Franse, Nederlandse en internationale zenders, films en series in 4K en Full HD — het meest complete aanbod van Nederland in één abonnement.",
+      "Deutsche und internationale Sender, Filme und Serien in 4K und Full HD — das umfassendste Angebot in einem Abonnement.",
   },
   {
     icon: Zap,
-    title: "Directe activering",
+    title: "Sofortige Aktivierung",
     description:
-      "Ontvang uw inloggegevens via e-mail enkele minuten na betaling. Geen monteur, geen schotel, geen wachttijd.",
+      "Erhalten Sie Ihre Zugangsdaten wenige Minuten nach der Zahlung per E-Mail. Kein Techniker, keine Satellitenschüssel, keine Wartezeit.",
   },
   {
     icon: Server,
-    title: "Snelle & stabiele servers",
+    title: "Schnelle & stabile Server",
     description:
-      "Een infrastructuur met hoge beschikbaarheid nabij Nederland garandeert een vloeiende 4K-stream zonder onderbreking, zelfs tijdens grote sportevenementen.",
+      "Eine hochverfügbare Infrastruktur in der Nähe Deutschlands sorgt für einen flüssigen 4K-Stream ohne Unterbrechung, selbst bei großen Sportereignissen.",
   },
   {
     icon: Headphones,
-    title: "Franstalige ondersteuning 24/7",
+    title: "Deutschsprachiger Support rund um die Uhr",
     description:
-      "Ons team beantwoordt uw vragen dag en nacht via WhatsApp, met een gemiddelde responstijd van minder dan 5 minuten.",
+      "Unser Team beantwortet Ihre Fragen Tag und Nacht über WhatsApp, mit einer durchschnittlichen Antwortzeit von unter 5 Minuten.",
   },
   {
     icon: Wallet,
-    title: "Zonder verplichtingen",
+    title: "Ohne Verpflichtungen",
     description:
-      "Geen vast contract en geen verborgen kosten. Kies de looptijd die bij u past en stop wanneer u wilt.",
+      "Kein fester Vertrag und keine versteckten Kosten. Wählen Sie die Laufzeit, die zu Ihnen passt, und kündigen Sie, wann Sie möchten.",
   },
   {
     icon: ShieldCheck,
-    title: "100% veilige betaling",
+    title: "100 % sichere Zahlung",
     description:
-      "Betaal via een versleutelde verbinding met iDEAL, creditcard of PayPal. Uw gegevens zijn te allen tijde beschermd.",
+      "Bezahlen Sie über eine verschlüsselte Verbindung per SEPA-Lastschrift, Kreditkarte oder PayPal. Ihre Daten sind jederzeit geschützt.",
   },
 ];
 
 const features = [
   {
     icon: MonitorPlay,
-    title: "Kwaliteit 4K, Full HD & HDR",
+    title: "4K-, Full-HD- & HDR-Qualität",
     description:
-      "Een scherp en gedetailleerd beeld op elk apparaat, met automatische aanpassing van de bitrate om onderbrekingen te voorkomen.",
+      "Ein scharfes, detailreiches Bild auf jedem Gerät, mit automatischer Bitratenanpassung zur Vermeidung von Unterbrechungen.",
   },
   {
     icon: Globe2,
-    title: "Zenders uit meer dan 190 landen",
+    title: "Sender aus mehr als 190 Ländern",
     description:
-      "Franse, Arabische, Turkse, Marokkaanse, Engelse en internationale zenders op één plek.",
+      "Deutsche, arabische, türkische, englische und viele weitere internationale Sender an einem Ort.",
   },
   {
     icon: Sparkles,
-    title: "Films & series op aanvraag",
+    title: "Filme & Serien auf Abruf",
     description:
-      "Meer dan 140.000 VOD-titels, van de nieuwste releases tot de klassiekers, beschikbaar wanneer u maar wilt.",
+      "Mehr als 140.000 VOD-Titel, von den neuesten Veröffentlichungen bis zu den Klassikern, verfügbar wann immer Sie möchten.",
   },
   {
     icon: Users,
-    title: "Tot 4 apparaten tegelijk",
+    title: "Bis zu 4 Geräte gleichzeitig",
     description:
-      "Het hele gezin kijkt tegelijk op Smart TV, smartphone, tablet, box of computer, zonder onderbreking.",
+      "Die ganze Familie schaut gleichzeitig auf Smart-TV, Smartphone, Tablet, Box oder Computer, ohne Unterbrechung.",
   },
   {
     icon: Award,
-    title: "Gids voor programma's (EPG) & catch-up",
+    title: "Programmführer (EPG) & Catch-up",
     description:
-      "Een volledige EPG en TV replay om gemakkelijk uw favoriete programma's terug te vinden.",
+      "Ein vollständiger EPG und TV-Replay, um Ihre Lieblingssendungen einfach wiederzufinden.",
   },
   {
     icon: Zap,
-    title: "Compatibel met alle IPTV-apps",
+    title: "Kompatibel mit allen IPTV-Apps",
     description:
-      "IPTV Smarters Pro, TiviMate, VLC en nog veel meer, via Xtream Codes of M3U-playlist.",
+      "IPTV Smarters Pro, TiviMate, VLC und viele weitere, über Xtream Codes oder M3U-Playlist.",
   },
 ];
 
 const faqs = [
   {
-    question: "Wat is inbegrepen in het IPTV-abonnement van IPTV Smarter?",
+    question: "Was ist im IPTV-Abonnement von IPTV Germany enthalten?",
     answer:
-      "Elk abonnement bevat meer dan 31.000 live zenders, 140.000+ films en series op aanvraag, 4K/Full HD-kwaliteit, een volledige-programmagids en sport- en internationale zenders — zonder verborgen kosten.",
+      "Jedes Abonnement umfasst mehr als 31.000 Live-Sender, 140.000+ Filme und Serien auf Abruf, 4K/Full-HD-Qualität, einen vollständigen Programmführer sowie Sport- und internationale Sender — ohne versteckte Kosten.",
   },
   {
-    question: "Is de activering echt direct?",
+    question: "Ist die Aktivierung wirklich sofort?",
     answer:
-      "Ja. Na uw betaling ontvangt u uw inloggegevens en activatielink via e-mail enkele minuten. U kunt dezelfde avond nog beginnen met kijken.",
+      "Ja. Nach Ihrer Zahlung erhalten Sie Ihre Zugangsdaten und den Aktivierungslink innerhalb weniger Minuten per E-Mail. Sie können noch am selben Abend mit dem Schauen beginnen.",
   },
   {
-    question: "Op welke apparaten kan ik kijken?",
+    question: "Auf welchen Geräten kann ich schauen?",
     answer:
-      "Op Smart TV (Samsung, LG, Sony), smartphones en tablets Android/iOS, Amazon Fire TV Stick, Android TV-box, Windows- en Mac-computers, en populaire IPTV-applicaties zoals IPTV Smarters Pro, TiviMate en VLC.",
+      "Auf Smart-TVs (Samsung, LG, Sony), Android-/iOS-Smartphones und -Tablets, Amazon Fire TV Stick, Android-TV-Boxen, Windows- und Mac-Computern sowie beliebten IPTV-Apps wie IPTV Smarters Pro, TiviMate und VLC.",
   },
   {
-    question: "Is er een gratis proefperiode?",
+    question: "Gibt es eine kostenlose Testphase?",
     answer:
-      "Ja, we bieden een gratis proefperiode om de kwaliteit en stabiliteit te testen voordat u uw abonnement kiest. Neem contact op met ons team via WhatsApp om ervan te profiteren.",
+      "Ja, wir bieten eine kostenlose Testphase, damit Sie Qualität und Stabilität testen können, bevor Sie sich für ein Abonnement entscheiden. Kontaktieren Sie unser Team über WhatsApp, um sie zu nutzen.",
   },
   {
-    question: "Is de service beschikbaar in het Frans in Nederland?",
+    question: "Ist der Kundenservice auf Deutsch verfügbar?",
     answer:
-      "Absoluut. IPTV Smarter is bedoeld voor Franstaligen in Nederland: Franse zenders, interface en klantenservice volledig in het Frans, 24/7 beschikbaar.",
+      "Ja. Unser gesamter Support — von der Bestellung bis zur technischen Hilfe — steht Ihnen auf Deutsch zur Verfügung, rund um die Uhr über WhatsApp.",
   },
   {
-    question: "Kan ik op elk moment opzeggen?",
+    question: "Kann ich jederzeit kündigen?",
     answer:
-      "Ja. Er zijn geen verplichtingen en geen opzegkosten. Uw service blijft actief tot het einde van uw huidige periode.",
+      "Ja. Es gibt keine Verpflichtungen und keine Kündigungsgebühren. Ihr Service bleibt bis zum Ende Ihres aktuellen Zeitraums aktiv.",
   },
 ];
 
-const francophoneReasons = [
-  {
-    icon: Globe2,
-    title: "Al uw Franse zenders",
-    description:
-      "Franse openbare, algemene, film- en sportzenders en meer — vind de Franse tv terug waar u ook bent in Nederland.",
-  },
+const germanTrustReasons = [
   {
     icon: MessageCircle,
-    title: "Een 100% Franstalige service",
+    title: "Deutschsprachiger Support, 24/7",
     description:
-      "Interface, installatiehandleidingen en klantenservice volledig in het Frans, voor een eenvoudige ervaring zonder taalbarrière.",
+      "Unser Serviceteam beantwortet Ihre Fragen jederzeit auf Deutsch über WhatsApp — mit einer durchschnittlichen Antwortzeit von unter 5 Minuten.",
   },
   {
     icon: ShieldCheck,
-    title: "Betrouwbaarheid en transparantie",
+    title: "DSGVO-konformer Datenschutz",
     description:
-      "Stabiele servers, duidelijke prijzen en een gratis proefperiode: de gemoedsrust die de Franstalige gemeenschap in Nederland verwacht.",
+      "Ihre persönlichen Daten werden ausschließlich nach europäischem Datenschutzrecht verarbeitet und niemals an Dritte weitergegeben.",
+  },
+  {
+    icon: Server,
+    title: "Schnelle Server für Deutschland",
+    description:
+      "Eine stabile, latenzarme Infrastruktur sorgt für flüssiges Streaming in ganz Deutschland — auch bei großen Sportereignissen.",
   },
 ];
 
@@ -218,14 +218,14 @@ const SeoSections = () => {
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in">
-            <Eyebrow>De nr. 1 keuze in Nederland</Eyebrow>
+            <Eyebrow>Die Nr. 1 Wahl in Deutschland</Eyebrow>
             <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl mb-4 text-blanc-50">
-              Waarom kiezen voor{" "}
-              <span className="text-gradient">IPTV Smarter</span> in Nederland&nbsp;?
+              Warum sich für{" "}
+              <span className="text-gradient">IPTV Germany</span> in Deutschland entscheiden&nbsp;?
             </h2>
             <p className="text-blanc-400 max-w-2xl mx-auto font-medium">
-              Een premium IPTV-abonnement voor Nederland: meer zenders,
-              betere kwaliteit en een Franstalige service, voor een eerlijke prijs.
+              Ein Premium-IPTV-Abonnement für Deutschland: mehr Sender,
+              bessere Qualität und deutschsprachiger Service, zu einem fairen Preis.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -249,14 +249,14 @@ const SeoSections = () => {
         <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-blanc-50/10 to-transparent" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in">
-            <Eyebrow tone="red">Premium functies</Eyebrow>
+            <Eyebrow tone="red">Premium-Funktionen</Eyebrow>
             <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl mb-4 text-blanc-50">
-              De functies van ons{" "}
-              <span className="text-gradient">IPTV Premium-abonnement</span>
+              Die Funktionen unseres{" "}
+              <span className="text-gradient">IPTV-Premium-Abonnements</span>
             </h2>
             <p className="text-blanc-400 max-w-2xl mx-auto font-medium">
-              Alles wat u nodig heeft voor een complete, vloeiende
-              streamingervaring zonder compromissen.
+              Alles, was Sie für ein vollständiges, flüssiges
+              Streaming-Erlebnis ohne Kompromisse brauchen.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -281,11 +281,11 @@ const SeoSections = () => {
           <div className="text-center mb-16 animate-fade-in">
             <Eyebrow>FAQ</Eyebrow>
             <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl mb-4 text-blanc-50">
-              Veelgestelde vragen over ons{" "}
-              <span className="text-gradient">IPTV-abonnement</span>
+              Häufig gestellte Fragen zu unserem{" "}
+              <span className="text-gradient">IPTV-Abonnement</span>
             </h2>
             <p className="text-blanc-400 font-medium">
-              De antwoorden op de meest gestelde vragen van onze abonnees in Nederland.
+              Antworten auf die häufigsten Fragen unserer Abonnenten in Deutschland.
             </p>
           </div>
           <div className="space-y-4">
@@ -314,7 +314,7 @@ const SeoSections = () => {
         </div>
       </section>
 
-      {/* ── 4 — Waarom de Franstaligen voor ons kiezen ───────────────── */}
+      {/* ── 4 — Waarom Duitse klanten ons vertrouwen ───────────────── */}
       <section
         className="py-24 relative overflow-hidden bg-black/20"
         style={{ contentVisibility: "auto", containIntrinsicSize: "auto 620px" }}
@@ -322,18 +322,19 @@ const SeoSections = () => {
         <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-blanc-50/10 to-transparent" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in">
-            <Eyebrow tone="red">Franstalige gemeenschap</Eyebrow>
+            <Eyebrow tone="red">Vertrauen & Datenschutz</Eyebrow>
             <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl mb-4 text-blanc-50">
-              Waarom kiezen Franstalige gebruikers in Nederland{" "}
-              <span className="text-gradient">voor ons</span>&nbsp;?
+              Warum sich deutsche Kunden{" "}
+              <span className="text-gradient">für uns entscheiden</span>&nbsp;?
             </h2>
             <p className="text-blanc-400 max-w-2xl mx-auto font-medium">
-              Een Franse IPTV, een Franstalige service en de betrouwbaarheid
-              die de Franstalige gemeenschap in Nederland verwacht.
+              Deutschsprachiger Service, DSGVO-konformer Datenschutz und
+              schnelle Server — genau das, was deutsche Nutzer von einem
+              Premium-IPTV-Anbieter erwarten.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {francophoneReasons.map((item) => (
+            {germanTrustReasons.map((item) => (
               <IconCard
                 key={item.title}
                 Icon={item.icon}

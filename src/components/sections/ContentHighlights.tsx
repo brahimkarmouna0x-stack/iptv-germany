@@ -1,13 +1,13 @@
-﻿import { Clapperboard, Globe2, Trophy, Tv } from "lucide-react";
+import { Clapperboard, Globe2, Trophy, Tv } from "lucide-react";
 
 const highlights = [
   {
     icon: Tv,
-    eyebrow: "31.000+ zenders",
-    title: "Live televisie",
+    eyebrow: "31.000+ Sender",
+    title: "Live-Fernsehen",
     description:
-      "Alle Nederlandse en Franse zenders, regionale tv en honderden internationale nieuwskanalen — live en zonder vertraging.",
-    bullets: ["NL algemene zenders", "Film & cultuur zenders", "NL publieke & prive zenders"],
+      "Alle deutschen Sender, regionales Fernsehen und Hunderte internationale Nachrichtenkanäle — live und ohne Verzögerung.",
+    bullets: ["Deutsche Sender", "Film- & Kultursender", "Öffentlich-rechtliche & private Sender"],
     color: "text-france-400",
     gradient: "from-france-600/25 to-france-400/10",
     border: "border-france-500/25",
@@ -16,11 +16,11 @@ const highlights = [
   },
   {
     icon: Clapperboard,
-    eyebrow: "140.000+ titels",
-    title: "Films & series",
+    eyebrow: "140.000+ Titel",
+    title: "Filme & Serien",
     description:
-      "Een uitgebreide videobibliotheek met de nieuwste blockbusters, klassiekers en series om te bingewatchen in 4K HDR.",
-    bullets: ["Nieuwste releases", "Populaire series", "Documentaires & animatie"],
+      "Eine umfangreiche Videobibliothek mit den neuesten Blockbustern, Klassikern und Serien zum Bingewatchen in 4K HDR.",
+    bullets: ["Neueste Veröffentlichungen", "Beliebte Serien", "Dokumentationen & Animation"],
     color: "text-rouge-400",
     gradient: "from-rouge-600/25 to-rouge-500/10",
     border: "border-rouge-500/25",
@@ -29,11 +29,11 @@ const highlights = [
   },
   {
     icon: Trophy,
-    eyebrow: "Alle grote competities",
-    title: "Sport & evenementen",
+    eyebrow: "Alle großen Wettbewerbe",
+    title: "Sport & Events",
     description:
-      "Van voetbal tot grote Europese competities, autosport, tennis en meer — mis geen enkele wedstrijd.",
-    bullets: ["Live voetbal", "Autosport", "Tennis & wielrennen"],
+      "Von Fußball über große europäische Wettbewerbe bis zu Motorsport, Tennis und mehr — verpassen Sie kein einziges Spiel.",
+    bullets: ["Live-Fußball", "Motorsport", "Tennis & Radsport"],
     color: "text-france-400",
     gradient: "from-france-600/25 to-france-400/10",
     border: "border-france-500/25",
@@ -42,11 +42,11 @@ const highlights = [
   },
   {
     icon: Globe2,
-    eyebrow: "190+ landen",
-    title: "Internationale zenders",
+    eyebrow: "190+ Länder",
+    title: "Internationale Sender",
     description:
-      "Kijk naar Arabische, Turkse, Marokkaanse, Engelse en tientallen andere internationale zenders — alles in één abonnement.",
-    bullets: ["Arabisch & Turks", "Marokkaans & Frans", "VK, VS & meer"],
+      "Schauen Sie arabische, türkische, marokkanische, englische und Dutzende weitere internationale Sender — alles in einem Abonnement.",
+    bullets: ["Arabisch & Türkisch", "Marokkanisch & Französisch", "UK, USA & mehr"],
     color: "text-rouge-400",
     gradient: "from-rouge-600/25 to-rouge-500/10",
     border: "border-rouge-500/25",
@@ -66,15 +66,15 @@ const ContentHighlights = () => {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <span className="inline-block px-4 py-1.5 rounded-full glass text-france-400 text-sm font-bold mb-4 uppercase tracking-wider glow-gold">
-            Uw entertainment
+            Ihr Entertainment
           </span>
           <h2 className="font-display font-bold text-4xl sm:text-5xl mb-4 text-blanc-50">
-            Alles wat u wilt kijken,{" "}
-            <span className="text-gradient">op één plek</span>
+            Alles, was Sie sehen möchten,{" "}
+            <span className="text-gradient">an einem Ort</span>
           </h2>
           <p className="text-blanc-400 max-w-2xl mx-auto font-medium">
-            Van live nieuws tot blockbusters, van sportevenementen tot
-            internationale zenders — IPTV Smarter heeft alles.
+            Von Live-Nachrichten bis zu Blockbustern, von Sportevents bis zu
+            internationalen Sendern — IPTV Germany hat alles.
           </p>
         </div>
 

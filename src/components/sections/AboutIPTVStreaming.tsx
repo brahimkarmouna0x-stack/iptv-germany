@@ -1,10 +1,10 @@
-﻿import { Clapperboard, Globe2, Signal, Tv } from "lucide-react";
+import { Clapperboard, Globe2, Signal, Tv } from "lucide-react";
 
 const stats = [
-  { icon: Tv, value: "31.000+", label: "Live zenders bij IPTV Smarter" },
-  { icon: Clapperboard, value: "140.000+", label: "Films & series op aanvraag" },
-  { icon: Globe2, value: "190+", label: "Landen in ons aanbod" },
-  { icon: Signal, value: "99,9%", label: "Beschikbaarheidsgarantie" },
+  { icon: Tv, value: "31.000+", label: "Live-Sender bei IPTV Germany" },
+  { icon: Clapperboard, value: "140.000+", label: "Filme & Serien auf Abruf" },
+  { icon: Globe2, value: "190+", label: "Länder in unserem Angebot" },
+  { icon: Signal, value: "99,9%", label: "Verfügbarkeitsgarantie" },
 ];
 
 const AboutIPTVStreaming = () => {
@@ -24,35 +24,35 @@ const AboutIPTVStreaming = () => {
             {/* Left — text */}
             <div className="animate-fade-in">
               <span className="inline-block px-4 py-1.5 rounded-full glass text-france-400 text-sm font-bold mb-6 uppercase tracking-wider glow-gold">
-                Over IPTV Smarter
+                Über IPTV Germany
               </span>
               <h2 className="font-display font-bold text-4xl sm:text-5xl mb-6 text-blanc-50 leading-tight">
-                Wat is{" "}
-                <span className="text-gradient">IPTV Smarter</span>?
+                Was ist{" "}
+                <span className="text-gradient">IPTV Germany</span>?
               </h2>
               <div className="space-y-4 text-blanc-400 font-medium leading-relaxed">
                 <p>
-                  <strong className="text-blanc-200">IPTV Smarter</strong> is
-                  een premium IPTV-aanbieder in Nederland die u toegang geeft tot
-                  meer dan 31.000 live zenders, films en series via uw
-                  internetverbinding — zonder vast contract of duur
-                  kabelabonnement.
+                  <strong className="text-blanc-200">IPTV Germany</strong> ist
+                  ein Premium-IPTV-Anbieter in Deutschland, der Ihnen Zugang zu
+                  mehr als 31.000 Live-Sendern, Filmen und Serien über Ihre
+                  Internetverbindung bietet — ohne festen Vertrag oder teures
+                  Kabelabonnement.
                 </p>
                 <p>
-                  Met{" "}
-                  <strong className="text-blanc-200">IPTV Smarter</strong>
-                  kijkt u naar alles wat u wilt: van Franse en
-                  Nederlandse zenders tot grote sportevenementen, met
-                  internationale zenders uit meer dan 190 landen. Alles in adembenemende 4K Ultra
-                  HD op het apparaat van uw keuze.
+                  Mit{" "}
+                  <strong className="text-blanc-200">IPTV Germany</strong>
+                  {" "}sehen Sie alles, was Sie möchten: von deutschen Sendern
+                  bis zu großen Sportereignissen, mit internationalen Sendern
+                  aus mehr als 190 Ländern. Alles in atemberaubendem 4K Ultra
+                  HD auf dem Gerät Ihrer Wahl.
                 </p>
                 <p>
-                  Wij vinden dat kwalitatieve IPTV toegankelijk moet zijn voor iedereen.
-                  Daarom biedt{" "}
-                  <strong className="text-blanc-200">IPTV Smarter</strong>{" "}
-                  competitieve abonnementstarieven, een gratis proefperiode en
-                  persoonlijke klantenservice 24/7 via WhatsApp — om overal en
-                  altijd te genieten van premium tv.
+                  Wir sind der Meinung, dass hochwertiges IPTV für jeden
+                  zugänglich sein sollte. Deshalb bietet{" "}
+                  <strong className="text-blanc-200">IPTV Germany</strong>{" "}
+                  wettbewerbsfähige Abopreise, eine kostenlose Testphase und
+                  persönlichen Kundenservice rund um die Uhr per WhatsApp —
+                  damit Sie überall und jederzeit Premium-TV genießen können.
                 </p>
               </div>
             </div>

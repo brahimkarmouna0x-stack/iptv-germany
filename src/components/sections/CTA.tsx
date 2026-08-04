@@ -23,9 +23,9 @@ const CTA = async ({
             <h2 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl mb-6 text-blanc-50 leading-tight">
               {title || (
                 <>
-                  Klaar voor{" "}
+                  Bereit für{" "}
                   <span className="text-gradient">
-                    entertainment zonder grenzen
+                    Entertainment ohne Grenzen
                   </span>
                   <br />?
                 </>
@@ -33,7 +33,7 @@ const CTA = async ({
             </h2>
             <p className="text-blanc-400 text-lg max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
               {description ||
-                "Sluit u aan bij meer dan 500.000 tevreden abonnees over de hele wereld. Begin vandaag nog met streamen dankzij onze risicovrije proefperiode."}
+                "Schließen Sie sich mehr als 500.000 zufriedenen Abonnenten weltweit an. Beginnen Sie noch heute mit dem Streamen dank unserer risikofreien Testphase."}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
@@ -45,7 +45,7 @@ const CTA = async ({
                   className="text-france-300"
                   aria-hidden="true"
                 />
-                Start gratis proefperiode
+                Kostenlose Testphase starten
               </Link>
               <a
                 href={whatsapp}
@@ -54,11 +54,11 @@ const CTA = async ({
                 className="px-10 py-5 rounded-full glass text-blanc-50 font-bold text-lg hover:bg-white/10 transition-all flex items-center gap-3 border border-blanc-50/10 active:scale-95"
               >
                 <MessageCircle size={21} aria-hidden="true" />
-                Chat met ons
+                Mit uns chatten
               </a>
             </div>
             <p className="text-xs text-blanc-500 mt-6 font-bold tracking-wider uppercase">
-              Geen creditcard vereist. Op elk moment opzegbaar.
+              Keine Kreditkarte erforderlich. Jederzeit kündbar.
             </p>
           </div>
         </div>

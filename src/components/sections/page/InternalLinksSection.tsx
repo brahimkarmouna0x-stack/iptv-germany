@@ -8,8 +8,8 @@ import type { InternalLink } from "@/content/iptv-german-pages";
  */
 export default function InternalLinksSection({
   links,
-  eyebrow = "Meer in de kennisbank",
-  heading = "Gerelateerde onderwerpen",
+  eyebrow = "Mehr im Wissensportal",
+  heading = "Verwandte Themen",
 }: {
   links: InternalLink[];
   eyebrow?: string;
