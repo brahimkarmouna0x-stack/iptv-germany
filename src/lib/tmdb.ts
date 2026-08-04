@@ -42,4 +42,4 @@ export const FALLBACK_IMAGE =
  * displayed wherever TMDB-sourced data (titles, posters, ratings) is shown.
  */
 export const TMDB_ATTRIBUTION =
-  "Dit product maakt gebruik van de TMDB API, maar wordt niet goedgekeurd of gecertificeerd door TMDB. Gegevens en afbeeldingen van films/series worden uitsluitend ter informatie aangeboden.";
+  "Dieses Produkt nutzt die TMDB-API, wird jedoch nicht von TMDB unterstützt oder zertifiziert. Angaben und Bilder zu Filmen/Serien werden ausschließlich zu Informationszwecken bereitgestellt.";

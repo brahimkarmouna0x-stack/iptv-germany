@@ -51,27 +51,27 @@ export const metadata: Metadata = {
     },
   },
   manifest: "/site.webmanifest",
-  // `?v=7` busts aggressive browser favicon caching after the 2026-07-25 icon refresh.
+  // `?v=8` busts aggressive browser favicon caching after the 2026-08-04 logo refresh.
   icons: {
     icon: [
-      { url: "/favicon.ico?v=7", sizes: "any", type: "image/x-icon" },
-      { url: "/favicon-16x16.png?v=7", type: "image/png", sizes: "16x16" },
-      { url: "/favicon-32x32.png?v=7", type: "image/png", sizes: "32x32" },
-      { url: "/favicon-48x48.png?v=7", type: "image/png", sizes: "48x48" },
-      { url: "/favicon-96x96.png?v=7", type: "image/png", sizes: "96x96" },
-      { url: "/favicon-192x192.png?v=7", type: "image/png", sizes: "192x192" },
-      { url: "/favicon-256x256.png?v=7", type: "image/png", sizes: "256x256" },
+      { url: "/favicon.ico?v=8", sizes: "any", type: "image/x-icon" },
+      { url: "/favicon-16x16.png?v=8", type: "image/png", sizes: "16x16" },
+      { url: "/favicon-32x32.png?v=8", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-48x48.png?v=8", type: "image/png", sizes: "48x48" },
+      { url: "/favicon-96x96.png?v=8", type: "image/png", sizes: "96x96" },
+      { url: "/favicon-192x192.png?v=8", type: "image/png", sizes: "192x192" },
+      { url: "/favicon-256x256.png?v=8", type: "image/png", sizes: "256x256" },
     ],
-    shortcut: ["/favicon.ico?v=7"],
+    shortcut: ["/favicon.ico?v=8"],
     apple: [
-      { url: "/apple-touch-icon.png?v=7", sizes: "180x180", type: "image/png" },
-      { url: "/apple-touch-icon-152x152.png?v=7", sizes: "152x152", type: "image/png" },
-      { url: "/apple-touch-icon-167x167.png?v=7", sizes: "167x167", type: "image/png" },
+      { url: "/apple-touch-icon.png?v=8", sizes: "180x180", type: "image/png" },
+      { url: "/apple-touch-icon-152x152.png?v=8", sizes: "152x152", type: "image/png" },
+      { url: "/apple-touch-icon-167x167.png?v=8", sizes: "167x167", type: "image/png" },
     ],
     other: [
       {
         rel: "apple-touch-icon-precomposed",
-        url: "/apple-touch-icon.png?v=7",
+        url: "/apple-touch-icon.png?v=8",
       },
     ],
   },
@@ -87,8 +87,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://iptv-germany.com/images/logo-iptv-streaming.png",
-        width: 1505,
-        height: 1352,
+        width: 1200,
+        height: 630,
         alt: "IPTV Germany – Premium IPTV-Abonnement in Deutschland",
       },
     ],
@@ -105,16 +105,15 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  // Google Search Console verification tokens were removed here — the old
-  // tokens belonged to the iptvsmarter.nl property and are meaningless (and
-  // potentially misleading) on iptv-germany.com. Add a fresh verification
-  // token for the new domain once it's registered in Search Console:
-  // verification: { google: ["<new-token>"] },
+  // Google Search Console verification for the iptv-germany.com property.
+  verification: {
+    google: ["H7gKJISItEHjJYDZB0QjYE5Ji31M9HLd0sNQFBUKSHk"],
+  },
 };
 
 // Theme color + color scheme belong in the viewport export in Next.js 16.
 export const viewport: Viewport = {
-  themeColor: "#060B16",
+  themeColor: "#000000",
   colorScheme: "dark",
 };
 

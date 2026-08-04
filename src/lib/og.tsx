@@ -28,7 +28,7 @@ export function renderOgImage({
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#060B16",
+          background: "#000000",
           padding: "72px",
           position: "relative",
         }}
@@ -76,7 +76,7 @@ export function renderOgImage({
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div
             style={{
-              color: "#4A72BE",
+              color: "#FFCE00",
               fontSize: "26px",
               fontWeight: 700,
               textTransform: "uppercase",

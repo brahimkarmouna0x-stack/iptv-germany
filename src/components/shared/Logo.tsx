@@ -19,14 +19,14 @@ interface LogoProps {
 
 /**
  * The brand wordmark asset and its TRUE intrinsic dimensions.
- * `site-logo.png` is a wide horizontal wordmark (icon + brand name).
- * The real pixel ratio is 2500x700 (3.57:1) — declaring the correct ratio is
- * essential so `w-auto` derives the proper width and the mark is never
- * letterboxed/shrunk inside a mismatched box (and keeps CLS at zero).
+ * `site-logo.png` is the icon + brand-name lockup. The real pixel ratio is
+ * 2096x1449 (~1.45:1) — declaring the correct ratio is essential so `w-auto`
+ * derives the proper width and the mark is never letterboxed/stretched
+ * inside a mismatched box (and keeps CLS at zero).
  */
-const LOGO_SRC = "/images/site-logo.png?v=2";
-const LOGO_WIDTH = 2500;
-const LOGO_HEIGHT = 700;
+const LOGO_SRC = "/images/site-logo.png?v=3";
+const LOGO_WIDTH = 2096;
+const LOGO_HEIGHT = 1449;
 
 /**
  * Single source of truth for the IPTV Germany brand mark.

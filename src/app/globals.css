@@ -1,37 +1,37 @@
 /* ===== TAILWIND BASE ===== */
 @import "tailwindcss";
 
-/* ===== NEDERLAND DESIGN SYSTEM — Red · White · Blue (dark premium) ===== */
+/* ===== GERMANY DESIGN SYSTEM — Schwarz · Rot · Gold (dark premium) ===== */
 /* Token families keep their historic names (france/rouge/blanc) but now
-   express a Dutch-flag identity (no gold anywhere):
-   - france-* : BLUE brand accent (#21468B, bright end) blending into deep NAVY ink (dark end)
-   - rouge-*  : RED (#AE1C28) — energetic primary CTA / live / danger
+   express a German-flag identity:
+   - france-* : GOLD brand accent (#FFCE00, bright end) blending into BLACK (dark end)
+   - rouge-*  : RED (#DD0000) — energetic primary CTA / live / danger
    - blanc-*  : neutral foundation (white → near-black) */
 @theme {
-  /* Dutch Blue — Primary brand accent (bright end → navy ink at dark end) */
-  --color-france-50: #EEF3FB;
-  --color-france-100: #D6E1F4;
-  --color-france-200: #AEC2E8;
-  --color-france-300: #6E8FCB; /* light blue — hover / active links */
-  --color-france-400: #4A72BE; /* blue accent — text, icons, highlights */
-  --color-france-500: #21468B; /* primary Dutch blue */
-  --color-france-600: #1B3A74; /* deep blue — solid blue buttons / hover */
-  --color-france-700: #15294E; /* navy — borders & gradient bridge */
-  --color-france-800: #0F1B33; /* deep navy — surfaces / headers */
-  --color-france-900: #0A1322; /* near-black navy */
-  --color-france-950: #060B16; /* base background (deep navy-black) */
+  /* German Gold — Primary brand accent (bright end → black ink at dark end) */
+  --color-france-50: #FFFCE8;
+  --color-france-100: #FFF6BF;
+  --color-france-200: #FFEC85;
+  --color-france-300: #FFE04D;
+  --color-france-400: #FFD61F; /* gold accent — text, icons, highlights */
+  --color-france-500: #FFCE00; /* primary German gold */
+  --color-france-600: #CCA500; /* deep gold — solid gold buttons / hover */
+  --color-france-700: #997C00; /* dark gold — borders & gradient bridge */
+  --color-france-800: #665300; /* bronze — surfaces / headers */
+  --color-france-900: #332900; /* near-black bronze */
+  --color-france-950: #000000; /* base background (German flag black) */
 
-  /* Dutch Red — Accent / Live / Primary CTA */
-  --color-rouge-50: #FCF2F3;
-  --color-rouge-100: #F8DEE0;
-  --color-rouge-200: #F0BCC0;
-  --color-rouge-300: #E08A90;
-  --color-rouge-400: #D05a62;
-  --color-rouge-500: #AE1C28; /* Primary accent — Dutch red */
-  --color-rouge-600: #951620; /* Hover */
-  --color-rouge-700: #79111A;
-  --color-rouge-800: #5C0D14;
-  --color-rouge-900: #3D080D;
+  /* German Red — Accent / Live / Primary CTA */
+  --color-rouge-50: #FDECEC;
+  --color-rouge-100: #FBD0D0;
+  --color-rouge-200: #F7A3A3;
+  --color-rouge-300: #F07070;
+  --color-rouge-400: #E83D3D;
+  --color-rouge-500: #DD0000; /* Primary accent — German red */
+  --color-rouge-600: #B80000; /* Hover */
+  --color-rouge-700: #930000;
+  --color-rouge-800: #6E0000;
+  --color-rouge-900: #490000;
 
   /* Neutral Foundation — white → near-black (no blue tint) */
   --color-blanc-50: #FFFFFF;
@@ -182,13 +182,13 @@
 @layer components {
   /* Glass morphism — neutral ink tint */
   .glass {
-    background: rgba(10, 19, 34, 0.82);
-    border: 1px solid rgba(74, 114, 190, 0.14);
+    background: rgba(10, 10, 10, 0.82);
+    border: 1px solid rgba(255, 206, 0, 0.14);
     box-shadow: 0 14px 34px -28px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.05);
   }
   .glass-strong {
-    background: rgba(6, 11, 22, 0.94);
-    border: 1px solid rgba(74, 114, 190, 0.18);
+    background: rgba(5, 5, 5, 0.94);
+    border: 1px solid rgba(255, 206, 0, 0.18);
     box-shadow: 0 18px 44px -32px rgba(0, 0, 0, 0.82), inset 0 1px 0 rgba(255, 255, 255, 0.06);
   }
 
@@ -211,19 +211,19 @@
     font-size: 0.875rem;
     font-weight: 600;
     color: white;
-    box-shadow: 0 10px 15px -3px rgba(218, 33, 40, 0.32);
+    box-shadow: 0 10px 15px -3px rgba(221, 0, 0, 0.32);
     transition: all 0.2s var(--ease-france);
   }
   .btn-primary:hover {
     background: var(--color-rouge-600);
-    box-shadow: 0 12px 22px -6px rgba(218, 33, 40, 0.45);
+    box-shadow: 0 12px 22px -6px rgba(221, 0, 0, 0.45);
   }
   .btn-primary:active {
     transform: scale(0.98);
     background: var(--color-rouge-700);
   }
 
-  /* Secondary CTA Button — solid Dutch blue with white text */
+  /* Secondary CTA Button — solid German gold with black text (contrast) */
   .btn-gold {
     position: relative;
     overflow: hidden;
@@ -232,13 +232,13 @@
     padding: 0.75rem 1.5rem;
     font-size: 0.875rem;
     font-weight: 700;
-    color: #FFFFFF;
-    box-shadow: 0 10px 15px -3px rgba(33, 70, 139, 0.32);
+    color: var(--color-france-950);
+    box-shadow: 0 10px 15px -3px rgba(255, 206, 0, 0.32);
     transition: all 0.2s var(--ease-france);
   }
   .btn-gold:hover {
     background: var(--color-france-600);
-    box-shadow: 0 12px 22px -6px rgba(33, 70, 139, 0.45);
+    box-shadow: 0 12px 22px -6px rgba(255, 206, 0, 0.45);
   }
   .btn-gold:active {
     transform: scale(0.98);
@@ -279,17 +279,17 @@
     }
   }
 
-  /* Dutch Gradient Hero — Navy ink → deep red → Dutch blue accent */
+  /* German Gradient Hero — Black ink → deep red → gold accent */
   .gradient-france {
-    background: linear-gradient(135deg, #060B16 0%, #3D080D 48%, #951620 72%, #21468B 100%);
+    background: linear-gradient(135deg, #000000 0%, #490000 48%, #B80000 72%, #FFCE00 100%);
   }
 
   /* Soft accent glows */
   .glow-gold {
-    box-shadow: 0 0 0 1px rgba(74, 114, 190, 0.16), 0 18px 60px -28px rgba(33, 70, 139, 0.45);
+    box-shadow: 0 0 0 1px rgba(255, 206, 0, 0.16), 0 18px 60px -28px rgba(255, 206, 0, 0.45);
   }
   .glow-red {
-    box-shadow: 0 0 0 1px rgba(174, 28, 40, 0.16), 0 18px 60px -28px rgba(174, 28, 40, 0.45);
+    box-shadow: 0 0 0 1px rgba(221, 0, 0, 0.16), 0 18px 60px -28px rgba(221, 0, 0, 0.45);
   }
 
   /* Content containment for heavy sections */
@@ -336,16 +336,16 @@
   .stagger-children > *:nth-child(7) { animation-delay: 300ms; }
   .stagger-children > *:nth-child(8) { animation-delay: 350ms; }
 
-  /* Text gradient for premium headings — light blue → white → light red */
+  /* Text gradient for premium headings — light gold → white → light red */
   .text-gradient-france {
-    background: linear-gradient(135deg, #6E8FCB, #FFFFFF, #E08A90);
+    background: linear-gradient(135deg, #FFE04D, #FFFFFF, #F07070);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, #6E8FCB, #FFFFFF, #E08A90);
+    background: linear-gradient(135deg, #FFE04D, #FFFFFF, #F07070);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -485,7 +485,7 @@
   }
 }
 
-/* French number formatting */
+/* Tabular number formatting (aligned digits for prices/stats) */
 .french-num {
   font-variant-numeric: tabular-nums;
 }
