@@ -105,16 +105,11 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  // Google Search Console verification — hardcoded tokens (each emits its own
-  // <meta name="google-site-verification" content="…"> in <head>). Multiple
-  // tokens are safe to keep together; each corresponds to a separate GSC
-  // verification and removing one only affects that property/account.
-  verification: {
-    google: [
-      "o4G_tLrmH256Z9UOuMDB7tm8A5Dswf7C8fxqWw04Kk8",
-      "NShYZNQt74hHeSab6Dc4vM2q0xtWM6JFKiINCazFb5E",
-    ],
-  },
+  // Google Search Console verification tokens were removed here — the old
+  // tokens belonged to the iptvsmarter.nl property and are meaningless (and
+  // potentially misleading) on iptv-germany.com. Add a fresh verification
+  // token for the new domain once it's registered in Search Console:
+  // verification: { google: ["<new-token>"] },
 };
 
 // Theme color + color scheme belong in the viewport export in Next.js 16.
