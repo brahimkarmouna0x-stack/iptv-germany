@@ -160,7 +160,7 @@ export default async function RootLayout({
           id="skip-to-content"
           className="fixed -top-40 left-4 z-[9999] rounded-xl bg-rouge-500 px-6 py-3 font-black text-blanc-50 shadow-lg transition-all focus:top-4 focus:outline-2 focus:outline-france-400"
         >
-          Ga naar inhoud
+          Zum Inhalt springen
         </a>
 
         <NavBar />
